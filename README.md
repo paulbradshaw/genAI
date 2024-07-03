@@ -6,5 +6,6 @@ This repo contains various resources related to the use of generative AI in jour
 
 * ChatGPT: https://chatgpt.com/
 * Google Gemini: https://gemini.google.com/app
+* Claude: https://claude.ai/
 * ChatGPT Playground (tweak settings such as 'temperature'): https://platform.openai.com/playground
 * Custom GPTs: https://chatgpt.com/gpts

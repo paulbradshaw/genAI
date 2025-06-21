@@ -28,6 +28,7 @@ I've created a folder of [documents to try with NotebookLM (etc)](https://github
 
 * [Google Colab](https://colab.research.google.com/) is a tool in Google Drive for writing Python and R notebooks. Its built-in AI will suggest code based on your comments and text blocks - you may need to use the built-in Gemini functionality first to activate it. You can also troubleshoot error messages by clicking on the option to have Gemini examine errors and suggest fixes
 * Tools for generating regular expressions include [Regex.ai](https://regex.ai/), [RegexGo](https://www.regexgo.com/) and [rgx.tools](https://rgx.tools/)
+* [Cursor](https://www.cursor.com/en) is an "AI code editor"
 
 ## GenAI tools: OSINT
 

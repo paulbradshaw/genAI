@@ -13,3 +13,12 @@ Break down that feedback into bullet points with links to the relevant guideline
 
 Here is the draft: [PASTE DRAFT]
 ```
+## Red-teaming
+
+'Red-teaming' is the process of working through how an adversary might 'attack' you or your systems. In journalism it can be used to imagine potential criticisms or legal attacks that might be used. Here's a prompt to red-team a story based on criticisms.
+
+```
+Read through this article and red team it for me. Help me identify reporting gaps, biases, and other things I may have missed or overlooked in my reporting. Explain how I can remedy or fix them. 
+
+[PASTE OR ATTACH STORY]
+```

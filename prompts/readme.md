@@ -1,8 +1,14 @@
 # Prompt recipes, examples and templates
 
-This repo contains examples of prompts using a range of prompt design techniques for a range of purposes.
+This repo contains examples of prompts using a range of prompt design techniques for a range of purposes. You can find prompts in the following categories:
 
-Useful resources on prompt design include:
+* [Prompts for idea generation and development](https://github.com/paulbradshaw/genAI/blob/main/prompts/ideageneration.md)
+* [Prompts for research and lead generation](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)
+* [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
+
+## Useful resources on prompt design
+
+Some of the resources used include:
 
 * Moran, Kate. [CARE: Structure for Crafting AI Prompts](https://www.nngroup.com/articles/careful-prompts/), Nielsen Norman Group
 * [Investigative journalism and ChatGPT: using generative AI for story ideas](https://onlinejournalismblog.com/2024/07/10/investigative-journalism-and-chatgpt-using-generative-ai-for-story-ideas/)

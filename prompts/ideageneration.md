@@ -4,6 +4,8 @@ Below are some examples of prompts for idea generation. Square brackets indicate
 
 ## A basic CAREful prompt
 
+This prompt includes context, asks for something specific, with rules and examples (CARE).
+
 ```
 I am an investigative journalist working for a national news website in Spain. The audience is urban professionals aged 20-40.  
 Generate 5 ideas for features about [water abstraction]. Each idea should be max 50 words.
@@ -11,6 +13,8 @@ Generate 5 ideas for features about [water abstraction]. Each idea should be max
 ```
 
 ## A follow-up prompt applying a framework
+
+'Teaching' the chatbot some principles of your trade improves results and helps avoid deskilling. Here's an example (the four rules come from [this blog post](https://onlinejournalismblog.com/2024/07/10/investigative-journalism-and-chatgpt-using-generative-ai-for-story-ideas/):
 
 ```
 There are four particular types of stories that investigative journalists tell about rules. Those are:
@@ -24,6 +28,8 @@ Generate two story ideas for each of these types
 ```
 
 ## A prompt using the 7 angles framework
+
+Here's another example of teaching as part of a prompt. This one uses the [7 angles for data stories](https://onlinejournalismblog.com/2020/08/11/here-are-the-7-types-of-stories-most-often-found-in-data/)
 
 ```
 You are an editor in a data journalism team at a UK news website. I am going to give you some information about types of story angles that can help you identify story ideas based on any dataset.
@@ -61,6 +67,8 @@ DT11 0PX"	226143	85310	19.6	32.5	FALSE			0	0	32.4	67.6	38.2	61.8	44.9	55.1	53.3	
 ```
 
 ## A prompt augmented with documents
+
+Adding documents can 'ground' your prompt in more specific, concrete information. 
 
 ```
 [ATTACH DOCS]

@@ -1,5 +1,7 @@
 # Prompts for idea generation
 
+![](https://onlinejournalismblog.com/wp-content/uploads/2024/07/ai-pyramid-preproduction.png)
+
 Below are some examples of prompts for idea generation. Square brackets indicate elements that can be replaced with your own contexts.
 
 ## A basic CAREful prompt

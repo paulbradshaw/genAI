@@ -3,10 +3,13 @@
 Some tips when it comes to using genAI for help with coding:
 
 * A little knowledge goes a long way: genAI is most useful if you learn at least some coding/jargon
-* Ask it to explain to a child so your understanding grows (and you don’t become deskilled)
-* For scraping, specify the HTML tags/attributes that contain the information you want to fetch
+* Ask it to explain its code to a child so your understanding grows (and you don’t become deskilled)
 * Break down each step for better results
-* Check the website isn’t serving different HTML to the scraper when compared to what you see in a browser
+* For scraping, specify the HTML tags/attributes that contain the information you want to fetch
+* For scraping, if it's not giving you the results you expect, check the website isn’t serving different HTML to the scraper when compared to what you see in a browser
+* For spreadsheet formulae, specify the data structure (including what columns or cells you want a formula to use)
+
+More on this in my post [Using generative AI as a scraping assistant](https://onlinejournalismblog.com/2024/10/01/using-generative-ai-as-a-scraping-assistant/) and [Using generative AI as a spreadsheet and data cleaning assistant](https://onlinejournalismblog.com/2024/09/26/using-generative-ai-as-a-spreadsheet-and-data-cleaning-assistant/)
 
 ## Writing a scraper in Google Colab
 

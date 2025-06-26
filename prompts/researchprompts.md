@@ -1,5 +1,9 @@
 # Prompts for research
 
+![](https://onlinejournalismblog.com/wp-content/uploads/2024/08/ai-pyramid-research.png)
+
+Research tasks where genAI tools might play a role include document summarisation, lead generation, background research, source suggestions, sourcing strategies, code for scraping, data analysis, and OSINT strategies (including Google Dorks). 
+
 There are a number of **risks** in genAI tools for research:
 
 * Hallucination (genAI makes up information - and references/citations)

@@ -108,6 +108,20 @@ List examples of organisations, networks, or directories (especially UK-based, b
 Provide guidance on how to approach individuals who are not traditional media commentators or who may have limited media experience.
 ```
 
+## Company structures
+
+AI can be particularly useful in digging into company accounts. It is beset to use a version of the accounts that is readable, so look for the original PDF on the company website rather than scanned versions that might have been submitted to company registries like Companies House.
+
+Here is a template prompt for exploring accounts:
+
+```
+Here is the latest annual report for a company. Use the document to understand the structure of parent companies and subsidiaries that this company sits within (include the numbers of pages where the information can be found). Generate code in Mermaid that describes that structure (remove any parentheses as these will cause problems in Mermaid)
+```
+
+The resulting code can be pasted into the [Mermaid editor](https://mermaid.live/edit) to generate a flow chart. As always, this will need checking against the sections in the accounts identified, as well as other sources. Further research into parent and subsidiary companies will be needed to expand the diagram into more levels of detail.
+
+
+
 ## FOI requests
 
 GenAI can be useful in **drafting** your FOI request, before you refine it - or you can use it to **review** an existing FOI request. Here's an example of a prompt to draft an initial FOI:

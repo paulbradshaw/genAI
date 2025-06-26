@@ -76,3 +76,21 @@ You are a sceptical education reporter with excellent judgment for what makes a 
 
 Look at the attached rules, regulations, laws and guidance that apply to uniform and identify 5 areas that might be potential avenues to investigate. 
 ```
+
+## Ideas review
+
+Ideas will always be shaped by your own biases - the limits of your experience and knowledge - and those of any tools you are using. It is a good idea to 'counter-weight' these biases with a prompt that forces you and the AI tool to expose them to critical scrutiny. Here's a prompt that attempts to do that:
+
+```
+You are an editor on a [PUBLICATION + AUDIENCE]. I am about to present you with some ideas for potential stories.
+
+Provide feedback on the ideas, considering how my perspective—as a [DESCRIBE YOUR DEMOGRAPHIC] working in an industry that lacks diversity—might be shaping or limiting what I notice, prioritise or overlook.
+
+Have I considered diversity in its broadest sense—including but not limited to race, ethnicity, gender, age, disability, socio-economic background, geography, education, religion, sexual orientation, neurodiversity, and migration status?
+
+Whose voices are represented in this story—and whose are missing? What assumptions might I be making about ‘mainstream’ experiences, and how might I challenge those?
+
+Are there communities or perspectives that are rarely heard in coverage of this topic—and how could I centre or include them meaningfully rather than marginally?
+
+Here are the ideas: [PASTE IDEAS]
+```

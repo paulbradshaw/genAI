@@ -1,12 +1,12 @@
 # Generative AI resources, tips and tools
 
-This repo contains various resources related to the use of generative AI (aka Large Language Models or LLMs) in journalism. You can find other lists at the [Journalist's Toolbox](https://journaliststoolbox.ai/chatgpt-tools/) and [AI Tools for Local Newsrooms Database](https://airtable.com/appnP5pmnsMFGYoAI/shrQeIsvzGoTbdp7b/tblvwDhL4X23V1pTp/viwN8zctay9H2N0ir?blocks=hide).
-
-Tools are listed below. 
+This repo contains various resources related to the use of generative AI (aka Large Language Models or LLMs) in journalism. 
 
 * Go to the [prompts folder](https://github.com/paulbradshaw/genAI/tree/main/prompts) to see **prompt design templates**.
 * You'll find tips on **document search and document sets** to try out in [this folder](https://github.com/paulbradshaw/genAI/tree/main/docsfornotebooklm)
 * Also here are [**slides** from my Centre for Investigative Journalism Summer School 2025 presentation on using genAI](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202025.pdf) and [slides from 2024](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202024.pdf).
+
+Tools are listed below. 
 
 ## General-purpose genAI tools
 
@@ -89,3 +89,6 @@ I've created a folder of [documents to try with NotebookLM (etc)](https://github
 * [Data Analyst](https://chatgpt.com/g/g-HMNcP6w7d-data-analyst?model=gpt-4o) is a custom GPT that offers to "Drop in any files and I can help analyze and visualize your data."
 * [Lore Machine](https://www.loremachine.world/) "transforms story text into multimedia" ([used by one journalist to turn a story into a comic](https://www.technologyreview.com/2024/03/05/1089458/generative-ai-turn-my-story-into-comic-images-lore-machine/?truid=%252A%257CLINKID%257C%252A&mc_cid=17070bf49e&mc_eid=32e65cfa9b))
 
+## Other lists
+
+You can find other lists at the [Journalist's Toolbox](https://journaliststoolbox.ai/chatgpt-tools/) and [AI Tools for Local Newsrooms Database](https://airtable.com/appnP5pmnsMFGYoAI/shrQeIsvzGoTbdp7b/tblvwDhL4X23V1pTp/viwN8zctay9H2N0ir?blocks=hide).

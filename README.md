@@ -4,9 +4,9 @@ This repo contains various resources related to the use of generative AI (aka La
 
 Tools are listed below. 
 
-* Go to the [prompts folder](https://github.com/paulbradshaw/genAI/tree/main/prompts) to see prompts.
-* You'll find tips on document search and document sets to try out in [this folder](https://github.com/paulbradshaw/genAI/tree/main/docsfornotebooklm)
-* Also here are [slides from my Centre for Investigative Journalism Summer School 2025 presentation on using genAI](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202025.pdf) and [slides from 2024](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202024.pdf).
+* Go to the [prompts folder](https://github.com/paulbradshaw/genAI/tree/main/prompts) to see **prompt design templates**.
+* You'll find tips on **document search and document sets** to try out in [this folder](https://github.com/paulbradshaw/genAI/tree/main/docsfornotebooklm)
+* Also here are [**slides** from my Centre for Investigative Journalism Summer School 2025 presentation on using genAI](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202025.pdf) and [slides from 2024](https://github.com/paulbradshaw/genAI/blob/main/AI%20in%20journalism%20CIJ%202024.pdf).
 
 ## General-purpose genAI tools
 

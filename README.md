@@ -1,6 +1,8 @@
-# Resources related to generative AI 
+# Generative AI resources, tips and tools
 
 This repo contains various resources related to the use of generative AI (aka Large Language Models or LLMs) in journalism. You can find other lists at the [Journalist's Toolbox](https://journaliststoolbox.ai/chatgpt-tools/) and [AI Tools for Local Newsrooms Database](https://airtable.com/appnP5pmnsMFGYoAI/shrQeIsvzGoTbdp7b/tblvwDhL4X23V1pTp/viwN8zctay9H2N0ir?blocks=hide).
+
+Tools are listed below. Go to the [prompts folder](https://github.com/paulbradshaw/genAI/tree/main/prompts) to see prompts. You'll find tips on document search and document sets to try out in [this folder](https://github.com/paulbradshaw/genAI/tree/main/docsfornotebooklm)
 
 ## General-purpose genAI tools
 

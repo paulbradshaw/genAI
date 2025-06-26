@@ -1,5 +1,15 @@
 # Prompts for research
 
+There are a number of **risks** in genAI tools for research:
+
+* Hallucination (genAI makes up information - and references/citations)
+* Biases (training data reflects wider issues around who is able to publish online and what they publish about)
+* Knowledge cut-off (many genAI tools are only trained up to a certain date)
+* Positivity and gullibility/credulousness (genAI is not very good at questioning sources or the premise of your prompt)
+* Greediness (genAI tools tend to do more than asked).
+
+The following prompts incorporate techniques to reduce some of these risks.
+
 ## Role prompting + Chain of Thought (CoT) + temperature
 
 This prompt combines a number of prompt design techniques to reduce (but not remove!) the risk of hallucination:
@@ -20,7 +30,7 @@ Avoid conjecture – if data or confirmation is lacking, state that clearly.
 
 ## ReAct (Reason + Act) prompting
 
-Adapted from [Advanced Prompt Engineering for Reducing Hallucination](https://medium.com/@bijit211987/advanced-prompt-engineering-for-reducing-hallucination-bb2c8ce62fc6)
+Another prompt design technique to tackle potential hallucination. Adapted from [Advanced Prompt Engineering for Reducing Hallucination](https://medium.com/@bijit211987/advanced-prompt-engineering-for-reducing-hallucination-bb2c8ce62fc6)
 
 ```
 Prompt 1: [QUESTION]
@@ -81,13 +91,22 @@ Provide guidance on how to approach individuals who are not traditional media co
 
 ## FOI requests
 
+GenAI can be useful in **drafting** your FOI request, before you refine it - or you can use it to **review** an existing FOI request. Here's an example of a prompt to draft an initial FOI:
+
 ```
 You are a [UK journalist] working on an investigation into [schools' contracts with suppliers of school uniform and sports kits]. Write an FOI request that can be sent to [each school] asking for details of the contract - anticipating potential exemptions that they may try to use to refuse the request
 ```
 
+Here's one to review it:
+
+```
+You are a [media lawyer with an expertise in FOI]. A journalist working on an investigation into [schools' contracts with suppliers of school uniform and sports kits] has drafted an FOI request to send to [schools] asking for details of [contracts].
+
+'Red team' the request as if you were the recipient. Anticipate potential exemptions that they may try to use to refuse the request, or other ways they may wilfully misinterpret the request to avoid providing the information that the journalist wants.
+```
+
 ## Other research tasks that genAI is useful for
 
-* FOI requests: Draft and review (ask it to anticipate potential exemptions, or ‘red team’ it)
 * Scraping: Use built-in AI in Google Colab etc.
 * Sources: strategies and organisations, not just names
 * Google Dorks: dedicated AI tools: DorkGPT, Henk Van Ess’s Google Word Sniper & AI Search Whisperer; Dork Genius; EarthGPT (satellite imagery)

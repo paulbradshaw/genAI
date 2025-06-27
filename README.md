@@ -44,6 +44,9 @@ I've created a folder of [documents to try with NotebookLM (etc)](https://github
 
 ## Transcription
 
+* [Otter](https://get.otter.ai/) is an especially widely used AI-powered transcription tool, as is [Trint](https://trint.com/)
+* [oTranscribe](https://otranscribe.com/) is an "open-source, browser-based transcription tool ideal for journalists and academic researchers who need a free and private solution" ([DigitalOcean](https://www.digitalocean.com/resources/articles/ai-transcription-tools#otranscribe))
+* [Descript](https://www.descript.com/) combines transcription with audio and video editing with text-based multi-track editing
 * [Whisper Web](https://huggingface.co/spaces/Xenova/whisper-web) offers "machine learning-powered speech recognition directly in your browser"
 
 ## Research-focused genAI tools including summarisation
@@ -82,6 +85,7 @@ I've created a folder of [documents to try with NotebookLM (etc)](https://github
   
 ## Data/spreadsheet tools
 
+* Google Sheets has an `AI` function. [I wrote a guide to using it here](https://onlinejournalismblog.com/2025/04/10/google-sheets-has-a-new-ai-function-how-does-it-perform-on-classification-tasks/)
 * HuggingFace's [Sheets](https://huggingface.co/spaces/aisheets/sheets) "is a tool to build and transform structured tables using AI and web search. You can build tables from scratch or augment your own spreadsheets"
 
 ## Visual tools

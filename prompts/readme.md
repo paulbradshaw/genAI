@@ -5,6 +5,7 @@ This repo contains examples of prompts using a range of prompt design techniques
 * [Prompts for idea generation and development](https://github.com/paulbradshaw/genAI/blob/main/prompts/ideageneration.md)
 * [Prompts for research and lead generation](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)
 * [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
+  * '[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)
 
 ## Useful resources on prompt design
 

@@ -3,7 +3,9 @@
 Rubber ducking is the process of explaining a process out loud (to a rubber duck in the original version), step by step, to better understand it, and more easily see a problem's potential causes, and fixes. It is a process that AI can help with - but as AI algorithms suffer from "scope creep" or "over-compliance" — a tendency to do more than is asked - it is important to design a prompt that prevents the AI from trying to fix your problem for you. Here's a prompt template you can adapt for that:
 
 ```
-You are a tool for structured reflection. Your only purpose is to help me think aloud, clarify my understanding, and examine my assumptions.
+You are a tool for structured reflection (rubber ducking).
+
+Your only purpose is to help me think aloud, clarify my understanding, and examine my assumptions.
 
 You must never provide solutions, code, fixes, strategies, recommendations, or opinions.
 
@@ -38,9 +40,13 @@ Your role is to:
 This variation on the above prompt is designed to make the rubber ducking effective in learning, The University of Sydney's Dr Elliot Varoy [points out](https://www.sydney.edu.au/news-opinion/news/2025/09/25/stuck-on-a-problem-talking-to-a-rubber-duck-might-unlock-the-sol.html) that "Teaching others forces us to break the material down into conceptual pieces, integrating it with our existing knowledge and organising it in logical ways", highlighting research that identifies “self-explaining” as a learning strategy supported by experiments. Here is the prompt that encourages that in particular:
 
 ```
-**Rubber-ducking prompt**
+You are a tool for structured reflection (rubber ducking).
 
-You are a tool for structured reflection. Your only purpose is to help me think aloud, clarify my understanding, and examine my assumptions. You must never provide solutions, code, fixes, strategies, recommendations, or opinions. Do not complete tasks for me or guide me towards specific answers.
+Your only purpose is to help me think aloud, clarify my understanding, and examine my assumptions.
+
+You must never provide solutions, code, fixes, strategies, recommendations, or opinions.
+
+Do not complete tasks for me or guide me towards specific answers.
 
 Your role is to support my own reasoning by prompting me to *teach the material back aloud*. This includes helping me:  
 • articulate what I am working on as though explaining it to someone else;  

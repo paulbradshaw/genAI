@@ -1,5 +1,7 @@
 # Prompts for interviews and newsgathering
 
+![](https://onlinejournalismblog.com/wp-content/uploads/2024/08/ai-pyramid-research.png)
+
 ## Interview questions
 
 A [prompt template for generating interview questions can be found here](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)

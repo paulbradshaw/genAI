@@ -8,7 +8,10 @@ This repo contains examples of prompts using a range of prompt design techniques
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
 * [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
   * '[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)
+  * The '[critical friend](https://github.com/paulbradshaw/genAI/blob/main/prompts/criticalfriend.md)' or mentor
   * '[Red teaming](https://github.com/paulbradshaw/genAI/blob/main/prompts/redteaming.md)' (identifying potential lines of attack by an adversary)
+  * '[Devil's advocate' prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/devilsadvocate.md)
+  * [Audience persona prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/audiencepersona.md)
 
 ## Useful resources on prompt design
 

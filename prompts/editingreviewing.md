@@ -13,6 +13,22 @@ Break down that feedback into bullet points with links to the relevant guideline
 
 Here is the draft: [PASTE DRAFT]
 ```
-## Red teaming
+## Rubber ducking
+
+'[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)
+
+## The critical friend/mentor
+
+[Critical friend and mentor prompts](https://github.com/paulbradshaw/genAI/blob/main/prompts/criticalfriend.md)
+
+## Red teaming (identifying potential lines of attack by an adversary)
 
 [See the prompts for red teaming here](https://github.com/paulbradshaw/genAI/blob/main/prompts/redteaming.md)
+
+## Devil's advocate prompting
+  
+'[Devil's advocate' prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/devilsadvocate.md)
+
+## Audience persona prompting
+
+[Audience persona prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/audiencepersona.md)

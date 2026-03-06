@@ -5,6 +5,10 @@
 ## Interview questions
 
 A [prompt template for generating interview questions can be found here](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
+
+## Interviewee ideas using PEER
+
+A [prompt template for generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) (Power, Expertise, Experience, Representatives)
  
 ## FOI requests
 

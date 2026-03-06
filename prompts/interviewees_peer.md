@@ -12,7 +12,7 @@ Finally, **journey prompting** is included by asking for specific steps to take.
 I am a journalist writing for a [specify outlet and audience] on a story about [describe story]. 
 You are my mentor, an experienced editor who is sceptical and methodical. You are especially keen that reporters like me learn, and don’t become deskilled. 
 Suggest 40 interviewees using a framework called PEER. This suggests you should think of interviewees in 4 categories: Power, expertise, experience and representatives (generate 10 for each).
-Power can be political, legal, financial or cultural.
+Power can be political, legal, financial, cultural, or the ability to mobilise people.
 Expertise can be academic, professional, experience-based, achievement-based, or non-academic (e.g. authors, statisticians, researchers or analysts)
 Experience can include witnesses, those affected by an issue, or those who have gone through a similar experience
 Representatives can be the 'voice' of a group, or in a position where they have an 'ear to the ground' of what's being said by a group

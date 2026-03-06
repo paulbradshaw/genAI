@@ -5,6 +5,7 @@ This repo contains examples of prompts using a range of prompt design techniques
 * [Prompts for idea generation and development](https://github.com/paulbradshaw/genAI/blob/main/prompts/ideageneration.md)
 * [Prompts for lead generation and background research](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)
 * [Prompts for interviews and newsgathering](https://github.com/paulbradshaw/genAI/blob/main/prompts/newsgathering.md)
+  * [Generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) 
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
 * [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
   * '[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)

@@ -50,8 +50,47 @@ https://reports.ofsted.gov.uk/search?q=&location=&radius=&level_1_types=1&level_
       <h3 class="search-result__title heading--main"><a href="/provider/1000/17101">5 DIMENSIONS TRUST</a></h3><ul class="search-result__provider-info"><li>Category: <strong>Multi-academy trust</strong></li></ul><address class="search-result__address"></address><ul class="search-result__provider-info"></ul>    </li>
 3. Store the results in a dataframe, with the following columns: provider URL, provider name, category
 4. Export as a CSV
-5. Download that CSV 
+5. Download that CSV
+
+Use the most energy efficient way of achieving this task: for example, do not visit pages and ensure code considers energy consumption.
 Keep the code as simple as possible so I can understand it.
+Avoid more advanced use of code.
+More lines of simpler code that break down the process is better than fewer lines of more complex code that are harder to unpick
+Add comments to each line of code explaining in simple English what is happening
+I don't want to be deskilled by using AI, so explain what is happening in simple terms a normal person can understand.
+```
+
+## Scraping in Colab: a more detailed prompt for multi-stage scraping
+
+This template expands on the previous one to include information that allows the LLM to generate code to scrape at two levels: a links page, and a details page.
+
+```
+Write a Python scraper that would work in Colab. It should collect data on Ofsted inspections of each school within a multi academy trust. That data includes text descriptions and is on a range of different pages. 
+
+Here's the information you need:
+The multi academy trust page has a link to the pages for each school within that trust. That URL is: https://reports.ofsted.gov.uk/provider/1000/4320 
+Each school's URL looks like this: https://reports.ofsted.gov.uk/provider/21/139094
+And the HTML block they are in looks like this:
+<li class="responsible-link"> <h3 class="responsible-link__title"><a href="/provider/21/139094">Aerodrome Primary Academy</a></h3> <address class="responsible-link__address">Goodwin Road, Croydon, Surrey, CR0 4EJ</address> <p>Latest report: <b>11 November 2025</b></p> <p>Age Range: <b>3 - 11</b></p> </li>
+Those blocks contain useful data on the date of the report, age range, etc. which should also be stored by the scraper.
+The school page seems to include a 'report card' which is a long string of text contained within this HTML tag:
+<iframe id="report-card-iframe" 
+The long string of text starts with
+srcdoc='&lt;!DOCTYPE html&gt;
+It includes lots of different information which should be split up if possible - e.g. there's a safeguarding section there, one on achievement, then attendance and behaviour and so on. It looks like ;h3 class=&quot might be a good indicator of where each section heading starts.
+The page also contains links to PDF reports with text that tends to follow a pattern such as '11 November 2025: School inspection: (PDF)' 
+The HTML block for that looks like this: 
+                          <span class="event__title heading--sub"><a class="publication-link" target="_blank" href="https://files.ofsted.gov.uk/v1/file/50293463"><time>11 November 2025</time>: School inspection: (<span class="filetype">PDF</span>)                 <span class="nonvisual">School inspection, pdf - 12 January 2026</span></a><div>Published on <time>12 January 2026</time></div></span>
+
+The scraper should:
+1. go to that URL: https://reports.ofsted.gov.uk/provider/1000/4320
+2. fetch the links to each school page, plus additional data about that school
+3. Go to each school page and fetch the text of their report, if any exists, plus links to any report documents.
+4. Store the results in a dataframe, with a row for each school, a column for the trust it belongs to and the URL for that trust, and a column for each item of information extracted for each school. If possible use separate columns for separate text sections from the report card. Include a column for links to PDF reports, separating each link with a pipe. Include a column for the text associated with each PDF report, separating each link with a pipe so those can be matched to the report links at the same position.
+5. Export as a CSV and Download that CSV 
+
+Keep the code as simple as possible so I can understand it.
+Use the most energy efficient way of achieving this task: for example, do not visit pages and ensure code considers energy consumption.
 Avoid more advanced use of code.
 More lines of simpler code that break down the process is better than fewer lines of more complex code that are harder to unpick
 Add comments to each line of code explaining in simple English what is happening

@@ -57,6 +57,7 @@ Keep the code as simple as possible so I can understand it.
 Avoid more advanced use of code.
 More lines of simpler code that break down the process is better than fewer lines of more complex code that are harder to unpick
 Add comments to each line of code explaining in simple English what is happening
+Make the code ‘templatable’ so it can be easily adapted for other projects.
 I don't want to be deskilled by using AI, so explain what is happening in simple terms a normal person can understand.
 ```
 
@@ -94,5 +95,6 @@ Use the most energy efficient way of achieving this task: for example, do not vi
 Avoid more advanced use of code.
 More lines of simpler code that break down the process is better than fewer lines of more complex code that are harder to unpick
 Add comments to each line of code explaining in simple English what is happening
+Make the code ‘templatable’ so it can be easily adapted for other projects.
 I don't want to be deskilled by using AI, so explain what is happening in simple terms a normal person can understand.
 ```

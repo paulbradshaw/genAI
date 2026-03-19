@@ -9,12 +9,18 @@ This repo contains examples of prompts using a range of prompt design techniques
 * [Prompts for interviews and newsgathering](https://github.com/paulbradshaw/genAI/blob/main/prompts/newsgathering.md)
   * [Generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) 
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
+* Prompts for drafting, writing or reversioning:
+  * [Claude skill: turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/skills/links_for_newsletter.md)
 * [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
   * '[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)
   * The '[critical friend](https://github.com/paulbradshaw/genAI/blob/main/prompts/criticalfriend.md)' or mentor
   * '[Red teaming](https://github.com/paulbradshaw/genAI/blob/main/prompts/redteaming.md)' (identifying potential lines of attack by an adversary)
   * '[Devil's advocate' prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/devilsadvocate.md)
   * [Audience persona prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/audiencepersona.md)
+
+## [Claude skills](https://github.com/paulbradshaw/genAI/tree/main/prompts/skills)
+
+* [Turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/skills/links_for_newsletter.md)
 
 ## Useful resources on prompt design
 

@@ -7,6 +7,7 @@ This repo contains examples of prompts using a range of prompt design techniques
   * [Generate a research briefing for an event](https://github.com/paulbradshaw/genAI/blob/main/prompts/eventbriefing.md)
   * [Generate code for scraping data](https://github.com/paulbradshaw/genAI/blob/main/prompts/scraping.md)
   * [Analyse data](https://github.com/paulbradshaw/genAI/blob/main/prompts/dataanalysis.md)
+  * [Turn documents into data](https://github.com/paulbradshaw/genAI/blob/main/prompts/documentsintodata.md)
 * [Prompts for interviews and newsgathering](https://github.com/paulbradshaw/genAI/blob/main/prompts/newsgathering.md)
   * [Generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) 
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)

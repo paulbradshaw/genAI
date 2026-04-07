@@ -61,14 +61,18 @@ Look at the attached conference proceedings and identify which 10 pieces of info
 Internally generate three possible responses, then evaluate each for accuracy against the context
 ```
 
-## Summarising documents
+## Using documents to generate a matrix of ideas
 
 This prompt applies the same techniques as above, but also thinks about a structured output: a table.
 
 ```
-You are a sceptical education reporter with excellent judgment for what makes a compelling news story. You have years of experience of unpacking PR spin and political misinformation. You are looking for ideas for a story about school uniform, specifically any potential stories about 1) rules not being followed, or 2) enforced, 3) unintended consequences of rules, or 4) new rules being needed. 
+You are a sceptical education reporter with excellent judgment for what makes a compelling news story.
+You have years of experience of unpacking PR spin and political misinformation.
+You are looking for ideas for a story about school uniform, specifically any potential stories about
+1) rules not being followed, or 2) enforced, 3) unintended consequences of rules, or 4) new rules being needed. 
 
-Look at the attached rules, regulations, laws and guidance that apply to uniform and create a table of all the rules mentioned, identifying the document(s) and page(s) where the rules comes from. Add columns for each of the four categories listed above, with suggestions. Provide a downloadable table in markdown.
+Look at the attached rules, regulations, laws and guidance that apply to uniform and create a table of all the rules mentioned, identifying the document(s) and page(s) where the rules comes from.
+Add columns for each of the four categories listed above, with suggestions. Provide a downloadable table in markdown.
 ```
 
 ## Focusing on techniques, not answers

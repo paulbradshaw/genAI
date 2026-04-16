@@ -2,7 +2,7 @@
 
 You can [see this Google Gem here](https://gemini.google.com/gem/2325558e97a5). The descripion is "*Look for story ideas and leads in Gender Pay Gap action plans. Upload an action plan and ask for story ideas - or ask for story ideas based on the action plans already uploaded to this tool.*"
 
-The 'Knowledge' for the Gem is a collection of recommended actions for gender pay gap action plans, as well as a selection of gender pay gap action plans. These have been uploaded to NotebookLM, as Google Gems limits you to only 10 documents but you can also link to a NotebookLM notebook (NotebookLM's limit is 50).
+The 'Knowledge' for the Gem is a collection of [recommended actions](https://www.gov.uk/government/collections/action-plans-list-of-actions) for gender pay gap action plans, as well as a selection of gender pay gap action plans. These have been uploaded to NotebookLM, as Google Gems limits you to only 10 documents but you can also link to a NotebookLM notebook (NotebookLM's limit is 50).
 
 Here are the custom instructions used for the gem. This can be adapted for similar scenarios:
 

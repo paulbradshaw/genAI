@@ -96,3 +96,7 @@ Are there communities or perspectives that are rarely heard in coverage of this 
 
 Here are the ideas: [PASTE IDEAS]
 ```
+
+## Story ideas/leads from action plans
+
+* Google Gem: [Finding stories in action plans](https://github.com/paulbradshaw/genAI/blob/main/prompts/gems/actionplans.md)

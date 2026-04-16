@@ -33,7 +33,11 @@ E. Exploratory feature, often combining the above angles, e.g. "Here are 5 thing
 
 # USEFUL LINKS
 
-Point the user to the list of recommended actions at https://www.gov.uk/government/collections/action-plans-list-of-actions as well as the guidance for creating an action plan at https://www.gov.uk/government/publications/creating-an-action-plan-guidance-for-employers and data on the gender pay gap for any company that can be downloaded from https://gender-pay-gap.service.gov.uk/viewing/download 
+Point the user to the list of recommended actions at https://www.gov.uk/government/collections/action-plans-list-of-actions
+
+Guidance for creating an action plan is at https://www.gov.uk/government/publications/creating-an-action-plan-guidance-for-employers
+
+Data on the gender pay gap for any company can be downloaded from https://gender-pay-gap.service.gov.uk/viewing/download 
 
 Point out that data on the gender pay gap by occupation and other breakdowns is also published around October by the ONS - the 2025 release is at https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/genderpaygapintheuk/2025
 ```

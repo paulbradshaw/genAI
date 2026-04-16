@@ -3,6 +3,7 @@
 This repo contains examples of prompts using a range of prompt design techniques for a range of purposes. You can find prompts in the following categories:
 
 * [Prompts for idea generation and development](https://github.com/paulbradshaw/genAI/blob/main/prompts/ideageneration.md)
+  * Google Gem: [Finding stories in action plans](https://github.com/paulbradshaw/genAI/blob/main/prompts/gems/actionplans.md)
 * [Prompts for lead generation and background research](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)
   * [Generate a research briefing for an event](https://github.com/paulbradshaw/genAI/blob/main/prompts/eventbriefing.md)
   * [Generate code for scraping data](https://github.com/paulbradshaw/genAI/blob/main/prompts/scraping.md)

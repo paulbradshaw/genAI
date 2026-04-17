@@ -28,7 +28,7 @@ This repo contains examples of prompts using a range of prompt design techniques
 
 ## [Custom GPTs, Gemini Gems and Claude Skills](https://github.com/paulbradshaw/genAI/tree/main/prompts/customGPTskillsGems)
 
-Some of the examples are built using the 'custom' model options on ChatGPT, Claude and Gemini. You can see them all and find out more in this folder.
+Some of the examples are built using the 'custom' model options on ChatGPT, Claude and Gemini. You can see them all and find out more in [this folder](https://github.com/paulbradshaw/genAI/tree/main/prompts/customGPTskillsGems).
 
 ## Useful resources on prompt design
 

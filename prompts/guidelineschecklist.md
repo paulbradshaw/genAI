@@ -16,5 +16,6 @@ One video to test it with is [this one hour Ethical Journalism Network panel on 
 Create a checklist that journalists can use for any stories they are producing relating to [TOPIC].
 Make it suitable for a journalist who has written a draft and needs to check for specific mistakes or omissions.
 Limit it to 10 items.
+For each item indicate the source(s) and the page number/timestamp so I can explore guidance in context.
 Make it succinct and practical.
 ```

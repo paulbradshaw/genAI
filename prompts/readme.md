@@ -7,6 +7,7 @@ This repo contains examples of prompts using a range of prompt design techniques
 * [Prompts for lead generation and background research](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)
   * [Generate a research briefing for an event](https://github.com/paulbradshaw/genAI/blob/main/prompts/eventbriefing.md)
   * [Generate code for scraping data](https://github.com/paulbradshaw/genAI/blob/main/prompts/scraping.md)
+  * [Create a Gemini Gem for finding stories in documents (action plans)](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/gemActionplans.md)
 * Prompts for data extraction and analysis
   * [Analyse data](https://github.com/paulbradshaw/genAI/blob/main/prompts/dataanalysis.md)
   * [Turn documents into data](https://github.com/paulbradshaw/genAI/blob/main/prompts/documentsintodata.md)
@@ -15,17 +16,19 @@ This repo contains examples of prompts using a range of prompt design techniques
   * [Generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) 
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
 * Prompts for drafting, writing or reversioning:
-  * [Claude skill: turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/skills/links_for_newsletter.md)
+  * [Claude skill: turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md)
+  * [Vibe coding a scrollytell template](https://github.com/paulbradshaw/genAI/blob/main/prompts/scrollytell.md)
 * [Prompts for editing and reviewing](https://github.com/paulbradshaw/genAI/blob/main/prompts/editingreviewing.md)
   * '[Rubber ducking](https://github.com/paulbradshaw/genAI/blob/main/prompts/rubberducking.md)' (help with articulating a process to solve a problem)
   * The '[critical friend](https://github.com/paulbradshaw/genAI/blob/main/prompts/criticalfriend.md)' or mentor
   * '[Red teaming](https://github.com/paulbradshaw/genAI/blob/main/prompts/redteaming.md)' (identifying potential lines of attack by an adversary)
   * '[Devil's advocate' prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/devilsadvocate.md)
   * [Audience persona prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/audiencepersona.md)
+  * [Custom GPT: a mini editor](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/GPTminieditor.md)
 
-## [Claude skills](https://github.com/paulbradshaw/genAI/tree/main/prompts/skills)
+## [Custom GPTs, Gemini Gems and Claude Skills](https://github.com/paulbradshaw/genAI/tree/main/prompts/customGPTskillsGems)
 
-* [Turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/skills/links_for_newsletter.md)
+Some of the examples are built using the 'custom' model options on ChatGPT, Claude and Gemini. You can see them all and find out more in this folder.
 
 ## Useful resources on prompt design
 

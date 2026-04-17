@@ -2,7 +2,26 @@
 
 This repo contains resources related to custom chatbots built on top of large language models (LLM). 
   
-ChatGPT calls these Custom GPTs, Gemini calls them Gems and Claude calls them Skills. 
+ChatGPT calls these Custom GPTs, Gemini calls them [Gems](https://gemini.google.com/gems/view) and Claude calls them Skills. 
+
+Gemini Gems are free to create at the time of writing. To use Custom GPTs or Claude Skills you will need a paid account. 
 
 There are differences in how they work but the broad principle is similar: each of them allows you to build something on top of the LLM by adding custom instructions and uploading files which responses can be 'grounded' in.
 
+## Gemini Gems
+
+You can only upload 10 documents to a gem, but you can also link it to a collection of documents stored in NotebookLM, which provides a way around this (NotebookLM has a limit of 50 documents).
+
+* [Finding stories in action plans](https://github.com/paulbradshaw/genAI/blob/main/prompts/gems/actionplans.md)
+
+## Custom GPTs
+
+* A CustomGPT to provide student journalists with feedback and guidance: [Paul's mini editor](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/GPTminieditor.md)
+
+## Claude Skills
+
+Claude Skills use markdown files, so the files that start with `skill` in this directory are the actual markdown files that you upload to Claude or that Claude creates. 
+
+This also means it's easy to share skills and use other people's - you can find skills made by other people by searching around. [Florent Daudens shares his skills in a guide here](https://huggingface.co/spaces/fdaudens/ai-journalism-skills)
+
+* [A Skill to generate a newsletter section based on links that I've bookmarked on Pinboard](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md)

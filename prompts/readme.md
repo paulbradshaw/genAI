@@ -25,6 +25,7 @@ This repo contains examples of prompts using a range of prompt design techniques
   * '[Red teaming](https://github.com/paulbradshaw/genAI/blob/main/prompts/redteaming.md)' (identifying potential lines of attack by an adversary)
   * '[Devil's advocate' prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/devilsadvocate.md)
   * [Audience persona prompting](https://github.com/paulbradshaw/genAI/blob/main/prompts/audiencepersona.md)
+  * [Turning guidelines or panel discussion into an editing checklist](https://github.com/paulbradshaw/genAI/blob/main/prompts/guidelineschecklist.md)
   * [Custom GPT: a mini editor](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/GPTminieditor.md)
 
 ## [Custom GPTs, Gemini Gems and Claude Skills](https://github.com/paulbradshaw/genAI/tree/main/prompts/customGPTskillsGems)

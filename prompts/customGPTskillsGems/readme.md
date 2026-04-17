@@ -13,6 +13,7 @@ There are differences in how they work but the broad principle is similar: each 
 You can only upload 10 documents to a gem, but you can also link it to a collection of documents stored in NotebookLM, which provides a way around this (NotebookLM has a limit of 50 documents).
 
 * [Finding stories in action plans](https://github.com/paulbradshaw/genAI/blob/main/prompts/gems/actionplans.md)
+* [An assistant for finding stories in company accounts](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/gemCompanyAccounts.md)
 
 ## Custom GPTs
 

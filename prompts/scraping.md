@@ -98,3 +98,42 @@ Add comments to each line of code explaining in simple English what is happening
 Make the code ‘templatable’ so it can be easily adapted for other projects.
 I don't want to be deskilled by using AI, so explain what is happening in simple terms a normal person can understand.
 ```
+
+## Scraping in ChatGPT using the API
+
+![](https://substackcdn.com/image/fetch/$s_!8joH!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F53d89705-2aa0-4b45-b345-2c9140d2aa7d_1000x445.png)
+
+Economist data journalist Ainslie Johnstone [wrote about her use of ChatGPT to scrape information about researchers in the Economist newsletter](https://theeconomistoffthecharts.substack.com/p/meet-our-ai-research-assistant?utm_source=post-email-title&publication_id=5997275&post_id=194275146&utm_campaign=email-post-title&isFreemail=true&r=h8or&triedRedirect=true&utm_medium=email). She used the API so her prompt is structured as JSON, which I've extracted (using AI of course) and pasted below:
+
+```
+system_msg <- paste(
+  "You are a rigorous research assistant tasked with finding the educational and work histories of AI researchers.",
+  "Use web_search to consult authoritative, current sources.",
+  "Return ONLY compact JSON exactly matching this schema (no prose):",
+  '{
+  "undergrad": {"university": "", "country": ""},
+  "graduate_list": [
+    {"degree": "", "field": "", "university": "", "country": "", "year": ""}
+  ],
+  "work_list": [
+    {"position": "", "employer": "", "country": "", "year": ""}
+  ],
+  "current_affiliation": {"institution": "", "country": ""},
+  "hq_country": "",
+  "is_current_grad_student": false,
+  "institution_type": "academia|private",
+  "sources": [{"title": "", "url": ""}]
+}',
+  "Rules:",
+  "- Use provided websites when present (openreview profile, orcid, dblp, google_scholar, homepage, affiliation, aff_domain).",
+  "- Countries MUST be ISO3 codes (USA, CHN, GBR).",
+  "- If a field is unknown, use empty string or null-do NOT invent.",
+  "- Include 1-3 sources with URLs.",
+  sep = "\n"
+)
+```
+
+## Scraping using the Claude Chrome extension
+
+A similar approach can be used with Claude's Chrome extension, which allows you to give instructions to Claude that it can execute in your browser. The advantage of this is that it can take advantage of cookies and logins which wouldn't be accessible through normal Claude, and it will check with you at any point it needs to make a decision (as well as its original plan). You can also trigger this process in Claude's desktop app by saying "using Chrome" in your prompt.
+

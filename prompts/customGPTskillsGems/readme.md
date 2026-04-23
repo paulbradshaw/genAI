@@ -23,6 +23,8 @@ You can only upload 10 documents to a gem, but you can also link it to a collect
 
 Claude Skills use markdown files, so the files that start with `skill` in this directory are the actual markdown files that you upload to Claude or that Claude creates. 
 
+* [This newsletter skill](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md) converts a HTML page of bookmarks from a Pinboard account into a newsletter section rounding up those links.
+
 ## Claude Artifacts
 
 Creating an Artifact in Claude involves some initial questions before the more customised prompting starts. You can [see an example of responses and prompts used to create a dashboard here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_artifact.md)

@@ -1,11 +1,12 @@
-# LA Capital Data Explorer – Chat Transcript
+# Prompts for a data dashboard (Claude Artifact)
 
----
+Below is a transcript of a chat to create a Claude Artifact: a [dashboard to explore data](https://claude.ai/public/artifacts/6d56f4ec-4395-4adf-bded-2338aa55db8c)
 
-**User:** Apps and websites
+Creating an Artifact in Claude starts with a guide that asks you some initial questions. In this case you first choose the category **Apps and websites**.
 
----
+Below are the initial questions and responses:
 
+```
 **Assistant:** Great choice! There are many different types of apps and websites we could create. To get started, could you tell me:
 - What kind of app or website did you have in mind?
 - What's the main purpose or idea?
@@ -31,29 +32,13 @@ What kind of data will you be displaying, and who's the audience for this tool? 
 **User:**
 - How will data get into the app? → User uploads a file (CSV/Excel)
 - What types of visualizations do you need? → Tables, Charts & graphs, CSV download
+```
 
----
+At this point Claude presents you with a plan for the data analytics web app, and asks `Does this match your vision? Any changes before I start building?`
 
-**Assistant:** Great choices! Here's my plan for your data analytics web app:
+Here's the rest of the interaction:
 
-**📊 CSV/Excel Analytics Dashboard**
-
-A clean, minimal web app where users upload a CSV or Excel file and instantly get a rich, interactive view of their data.
-
-**Core Features:**
-- **File upload** — drag & drop or click to upload CSV or Excel files
-- **Auto-detection** — automatically reads column types (numbers, text, dates) and suggests visualizations
-- **KPI summary row** — shows row count, column count, and key stats at a glance
-- **Interactive table** — sortable, paginated data table
-- **Charts** — auto-generated bar/line charts based on numeric columns, with the ability to choose X/Y axes
-- **CSV download** — export the current (filtered/sorted) view back to CSV
-
-**Style:** White background, light gray accents, clean sans-serif typography — no clutter, just data.
-
-Does this match your vision? Any changes before I start building?
-
----
-
+```
 **User:** I want to create an interface which allows journalists to select an authority of interest (from unique values in rows), and measures of interest (columns) and get a downloadable CSV of the results (plus some visual representation of it). I need to attach two key datasets:
 - Timeseries data on asset sales by councils
 - Meta data on what the columns mean
@@ -145,11 +130,4 @@ The upload panel should now always be visible. You should see two file inputs �
 **Assistant:** *(Added a description panel below the header explaining the tool's purpose, how to use it, and linking to the GOV.UK source.)*
 
 Done! There's now a description panel just below the header that explains what the tool does, how to use it, and links to the GOV.UK source.
-
----
-
-**User:** Can you give me all the prompts and responses from this chat as a .md file?
-
----
-
-**Assistant:** *(This document.)*
+```

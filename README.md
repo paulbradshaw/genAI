@@ -19,7 +19,7 @@ Tools are listed below.
 * Google Gemini: https://gemini.google.com/app
   * Google AI Studio (Gemini, but change temperature and other settings including audio generation): https://aistudio.google.com/
 * Microsoft Copilot: https://copilot.microsoft.com/
-* [LM Studio](https://lmstudio.ai/) allows you to download and run LLMs locally including Llama, DeepSeek, Qwen and Gemma
+* [LM Studio](https://lmstudio.ai/) and [Ollama](https://ollama.com/) allow you to download and run LLMs locally including Llama, DeepSeek, Qwen and Gemma
 
 * [ChatBetter](https://www.chatbetter.com/) allows you to run a prompt across multiple LLMs, and [Galaxy.ai](https://galaxy.ai/) offers a single subscription to all services 
 

@@ -58,7 +58,6 @@ I've created a folder of [documents to try with NotebookLM (etc)](https://github
 * [AURA](https://www.journalismai.info/blog/an-ai-research-tool-for-journalists) is "an AI-driven research tool designed to automate the creation of comprehensive, Wikipedia-style reports on various topics. STORM operates by gathering information from multiple sources, generating outlines, and producing well-structured articles with citations."
 * [SmolDocling](https://huggingface.co/ds4sd/SmolDocling-256M-preview) is a tool for extracting text from images, including "Chart Recognition – Extracts and interprets chart data" and "Table Recognition – Supports column and row headers for structured table extraction."
 * [Caracal](https://huggingface.co/spaces/wjbmattingly/caracal) extracts text from handwriting including named entity recognition
-* Financial research: [Fintool](https://fintool.com/) gets "answers from SEC filings, earnings calls, and financial data"
 * [Papercheck](https://daniellakens.blogspot.com/2025/06/introducing-papercheck.html?m=1) is "An Automated Tool to Check for Best Practices in Scientific Articles", that runs as a package in R
 * [Document Claim Mapping](https://github.com/francesco-s/document-claim-mapping) "processes documents and maps factual claims to their corresponding source news."
 

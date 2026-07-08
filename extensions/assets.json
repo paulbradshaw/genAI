@@ -1,0 +1,20 @@
+[
+  {
+    "address": "14 High Street, Leeds",
+    "authority": "Leeds City Council",
+    "price": 75000,
+    "year": 2022
+  },
+  {
+    "address": "Former Depot, Wakefield Road",
+    "authority": "Bradford Council",
+    "price": 150000,
+    "year": 2021
+  },
+  {
+    "address": "29 Philpott Avenue",
+    "authority": "Southend Council",
+    "price": 150000,
+    "year": 2021
+  }
+]

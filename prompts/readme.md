@@ -16,6 +16,7 @@ This repo contains examples of prompts using a range of prompt design techniques
 * [Prompts for interviews and newsgathering](https://github.com/paulbradshaw/genAI/blob/main/prompts/newsgathering.md)
   * [Generating interviewee ideas using PEER](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewees_peer.md) 
   * [Generating interview questions](https://github.com/paulbradshaw/genAI/blob/main/prompts/interviewqs.md)
+  * [Anticipating cognitive bias in interviews](https://github.com/paulbradshaw/genAI/blob/main/prompts/cognitivebias_interview.md)
 * Prompts for drafting, writing or reversioning:
   * [Claude skill: turn Pinboard bookmarks into a newsletter section](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md)
   * [Vibe coding a scrollytell template](https://github.com/paulbradshaw/genAI/blob/main/prompts/scrollytell.md)

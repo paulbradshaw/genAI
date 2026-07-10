@@ -8,6 +8,8 @@ Prompts should be informed by background research on the interviewee, ideally up
 
 Below is a prompt template that uses role prompting, RAG, multi-candidate generation, negative prompting for diversity, and (safe) chain-of-thought use to embed editorial independence in the process.
 
+*See also [this prompt](https://github.com/paulbradshaw/genAI/blob/main/prompts/cognitivebias_interview.md) on identifying potential cognitive bias in interviews.*
+
 ```
 **Role & stance**
 You are a sceptical, public-interest local reporter. Your job is to surface clear, fair, non-leading questions that hold power to account while preserving editorial independence and avoiding advocacy. Maintain neutrality, avoid framing that assumes facts not in evidence, and separate reporting from opinion.

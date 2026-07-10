@@ -1,0 +1,31 @@
+﻿Deal_ID,Issuer_Name,Sector,Region,Country,Instrument_Type,Amount_USDmm,Coupon_or_Spread,Issue_Date,Maturity_Date,Rating_S&P,Rating_Moodys,Leverage_at_Close_x,Covenant_Type,Sponsor,Use_of_Proceeds
+LL-2024-001,Vantage Point Solutions,Real Estate Services,North America,United States,Term Loan B,1124,S+377bps,17/07/2024,17/07/2030,BB+,Ba1,4.3,Cov-Lite,Solstice Equity Partners,General corporate purposes
+LL-2025-002,Ironbridge Holdings,Packaging,North America,United States,Unsecured Notes,711,S+626bps,23/08/2026,23/08/2034,BB-,B1,7.4,Cov-Heavy,Ellison Partners,LBO financing
+LL-2026-003,Yarrow Logistics,Real Estate Services,Asia-Pacific,Australia,Term Loan B,1756,10.54%,05/01/2025,05/01/2032,CCC+,Ba2,5.9,Springing Covenant,Fenwick Capital,Refinancing existing debt
+LL-2023-004,Cormorant Corp,Industrials,Europe,Spain,Unsecured Notes,609,10.37%,23/05/2023,23/05/2028,B-,Ba3,5.3,Cov-Lite,Redgate Investors,LBO financing
+LL-2024-005,Elmsworth Ventures,Real Estate Services,Europe,Italy,Senior Secured Notes,1280,S+463bps,16/05/2024,16/05/2030,BB+,B1,6.9,Cov-Heavy,Trellis Capital,Refinancing existing debt
+LL-2025-006,Meridian Ventures,Hotels & Leisure,North America,United States,Senior Secured Notes,587,S+580bps,07/03/2026,07/03/2033,B+,B2,6.6,Cov-Heavy,Fenwick Capital,Add-on acquisition financing
+LL-2026-007,Calderwood Industries,Consumer Retail,Latin America,Mexico,Senior Secured Notes,1457,S+349bps,11/10/2023,11/10/2031,CCC+,Ba2,5.3,Springing Covenant,Cairngorm Partners,General corporate purposes
+LL-2023-008,Ironbridge Ventures,Aerospace & Defense,Latin America,Brazil,Term Loan B,634,9.18%,25/10/2026,25/10/2031,BB-,Caa2,4,Springing Covenant,Redgate Investors,General corporate purposes
+LL-2024-009,Greystone Group,Food & Beverage,Europe,Italy,Senior Secured Notes,1040,9.04%,06/08/2023,06/08/2030,BB+,B3,5.7,Cov-Lite,Whitfield & Co.,Refinancing existing debt
+LL-2025-010,Brightwell Industries,Real Estate Services,Europe,United Kingdom,Senior Secured Notes,362,S+573bps,08/05/2024,08/05/2029,CCC,Ba3,4.9,Springing Covenant,Trellis Capital,Dividend recapitalisation
+LL-2026-011,Oakhaven Foods,Hotels & Leisure,Europe,Spain,Term Loan B,559,9.75%,30/09/2024,30/09/2032,BB,B3,4.1,Springing Covenant,Marlowe Capital Partners,General corporate purposes
+LL-2023-012,Calderwood Systems,Software,Europe,United Kingdom,Revolving Credit Facility,543,S+341bps,26/05/2023,26/05/2028,CCC,B1,5.9,Springing Covenant,Fenwick Capital,General corporate purposes
+LL-2024-013,Vantage Point Networks,Food & Beverage,Asia-Pacific,Singapore,Unsecured Notes,828,S+374bps,26/08/2025,26/08/2033,BB+,Ba2,4.2,Springing Covenant,Whitfield & Co.,LBO financing
+LL-2025-014,Ironbridge Logistics,Building Products,Europe,Germany,Term Loan B,881,S+418bps,25/01/2024,25/01/2032,BB,Ba1,6.3,Springing Covenant,Northbridge Capital,LBO financing
+LL-2026-015,Drummond Holdings,Packaging,Europe,Germany,Unsecured Notes,154,S+530bps,12/04/2025,12/04/2033,CCC+,B2,7.2,Cov-Heavy,Redgate Investors,Add-on acquisition financing
+LL-2023-016,Silverton Solutions,Real Estate Services,Asia-Pacific,Singapore,Term Loan B,1384,S+354bps,24/01/2024,24/01/2031,BB+,Ba1,6,Springing Covenant,Solstice Equity Partners,Dividend recapitalisation
+LL-2024-017,Meridian Industries,Building Products,North America,United States,Revolving Credit Facility,1131,S+445bps,16/01/2024,16/01/2029,BB,Caa1,6.3,Springing Covenant,Solstice Equity Partners,Refinancing existing debt
+LL-2025-018,Everside Ventures,Media & Entertainment,Latin America,Mexico,Unsecured Notes,672,S+527bps,03/10/2026,03/10/2033,BB,Ba1,5.6,Springing Covenant,Ellison Partners,LBO financing
+LL-2026-019,Drummond Corp,Food & Beverage,Europe,Italy,Second Lien Term Loan,410,10.90%,27/06/2024,27/06/2030,B,Ba1,6.3,Springing Covenant,Redgate Investors,LBO financing
+LL-2023-020,Juniper Materials,Telecom,Europe,France,Second Lien Term Loan,486,7.28%,25/08/2023,25/08/2028,B,Caa2,4.9,Cov-Lite,Ellison Partners,Add-on acquisition financing
+LL-2024-021,Ironbridge Group,Hotels & Leisure,Latin America,Brazil,Revolving Credit Facility,1314,9.69%,08/01/2023,08/01/2030,BB+,Ba2,4.3,Springing Covenant,Cascade Equity,General corporate purposes
+LL-2025-022,Juniper Systems,Business Services,North America,Canada,Second Lien Term Loan,497,S+346bps,07/04/2026,07/04/2032,B+,Ba2,5.2,Springing Covenant,Trellis Capital,General corporate purposes
+LL-2026-023,Yarrow Systems,Transportation & Logistics,Europe,Germany,Senior Secured Notes,590,6.62%,29/11/2023,29/11/2029,BB,Caa1,7.1,Cov-Heavy,Marlowe Capital Partners,Dividend recapitalisation
+LL-2023-024,Meridian Systems,Chemicals,Asia-Pacific,India,Term Loan B,1745,S+423bps,17/09/2024,17/09/2030,B,B3,6.2,Cov-Heavy,Solstice Equity Partners,Refinancing existing debt
+LL-2024-025,Brackenridge Industries,Transportation & Logistics,North America,United States,Second Lien Term Loan,1352,S+460bps,18/06/2024,18/06/2030,B-,Caa1,6.1,Springing Covenant,Ellison Partners,Add-on acquisition financing
+LL-2025-026,Vantage Point Solutions,Telecom,Europe,France,Second Lien Term Loan,862,S+600bps,01/04/2023,01/04/2031,B-,B3,6.3,Cov-Lite,Redgate Investors,General corporate purposes
+LL-2026-027,Greystone Networks,Energy Services,Latin America,Chile,Senior Secured Notes,1166,9.27%,30/10/2024,30/10/2032,B,Caa1,5.9,Cov-Lite,Redgate Investors,Refinancing existing debt
+LL-2023-028,Vantage Point Corp,Pharma,Europe,Netherlands,Unsecured Notes,1460,S+551bps,02/04/2026,02/04/2033,BB-,Ba2,5,Springing Covenant,Fenwick Capital,Refinancing existing debt
+LL-2024-029,Everside Holdings,Business Services,North America,United States,Senior Secured Notes,1773,S+426bps,09/10/2026,09/10/2033,BB,Caa2,5.5,Springing Covenant,Fenwick Capital,Dividend recapitalisation
+LL-2025-030,Drummond Industries,Transportation & Logistics,Asia-Pacific,Japan,Senior Secured Notes,440,S+327bps,29/03/2025,29/03/2031,CCC,Ba1,6,Cov-Lite,Cairngorm Partners,Dividend recapitalisation

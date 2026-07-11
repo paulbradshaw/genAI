@@ -57,6 +57,7 @@ Some of the resources used include:
 * [Finding Newsworthy Documents using Generative AI](https://generative-ai-newsroom.com/finding-newsworthy-documents-using-generative-ai-a43a41a90e30)
 * [RAG does not stop hallucinations](https://www.reddit.com/r/LangChain/comments/1amjc9g/rag_does_not_stop_hallucinations/)
 * FT: [Have AI Got News For You (YouTube)](https://www.youtube.com/watch?v=6UkEFuLSoh4&t=14m35)
+* [Reusable Prompt Patterns — Coaching AI for Investigative Reporting](https://charlesminshew.github.io/ire26/01-coaching-ai/prompts.html) and Charles Minshew's [slides for IRE26](https://charlesminshew.github.io/ire26/)
 
 
 

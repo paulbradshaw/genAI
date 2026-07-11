@@ -34,6 +34,7 @@ Tools are listed below.
 * ChatPDF: https://www.chatpdf.com/
 * AnythingLLM: https://anythingllm.com/
 * PDF.ai: https://pdf.ai/
+* [Semantra](https://github.com/freedmand/semantra) allows you to run semantic (i.e. not literal) searches on a set of documents on your computer.
 
 I've created a folder of [documents to try with NotebookLM (etc)](https://github.com/paulbradshaw/genAI/tree/main/docsfornotebooklm). Some suggestions:
 

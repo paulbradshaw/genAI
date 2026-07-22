@@ -51,7 +51,9 @@ Confirm you understand before we proceed
 [PASTE OR ATTACH THE STORY]
 ```
 
-## Red-teaming an FOI request
+## Getting critical feedback on an FOI request
+
+AI can be especially useful in providing a fresh perspective on something you've written. This prompt uses role prompting to look at the draft from a more legal point of view.
 
 ```
 You are a media lawyer who is an expert in the FOI Act.
@@ -62,3 +64,12 @@ Identify any potential exemptions that might be used and what phrases might be i
 [PASTE YOUR DRAFT FOI REQUEST]
 ```
 
+## Red-teaming an FOI request
+
+```
+You are an FOI officer at [SPECIFY ORGANISATION].
+Look at the attached FOI and identify reasons why you might refuse the request, or only be able to provide a lower level of detail than that requested.
+Those reasons could be legal (e.g. exemptions under the FOI Act), practical (e.g. internal systems) or something else.
+List the reasons succinctly, no more than 20 words per reason.
+For each reason, suggest ways of improving the request, max 20 words per suggestion.
+```

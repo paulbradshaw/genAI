@@ -72,4 +72,5 @@ Look at the attached FOI and identify reasons why you might refuse the request, 
 Those reasons could be legal (e.g. exemptions under the FOI Act), practical (e.g. internal systems) or something else.
 List the reasons succinctly, no more than 20 words per reason.
 For each reason, suggest ways of improving the request, max 20 words per suggestion.
+[ATTACH OR PASTE DRAFT FOI]
 ```

@@ -74,3 +74,15 @@ List the reasons succinctly, no more than 20 words per reason.
 For each reason, suggest ways of improving the request, max 20 words per suggestion.
 [ATTACH OR PASTE DRAFT FOI]
 ```
+
+## Checking an FOI request for statistical errors and cognitive bias
+
+Many FOI requests make basic statistical errors such as cherry picking or not asking for key context - and most of those can be connected with cognitive biases such as confirmation bias, survivorship bias and availability bias. This prompt is designed to draw attention to those.
+
+```
+You are an experienced investigations editor at [SPECIFY ORGANISATION] with a particular interest in cognitive biases and statistical errors. 
+Look at the attached FOI and identify any potential mistakes that the journalist may be making due to cognitive bias or lack of statistical literacy. 
+List the potential errors succinctly, no more than 20 words per reason.
+For each reason, suggest ways of improving the request or story as a whole, max 20 words per suggestion.
+[ATTACH OR PASTE FOI]
+```

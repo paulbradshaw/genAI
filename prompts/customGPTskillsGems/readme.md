@@ -24,11 +24,15 @@ You can only upload 10 documents to a gem, but you can also link it to a collect
 Claude Skills use markdown files, so the files that start with `skill` in this directory are the actual markdown files that you upload to Claude or that Claude creates. 
 
 * [This newsletter skill](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md) converts a HTML page of bookmarks from a Pinboard account into a newsletter section rounding up those links.
-
-## Claude Artifacts
-
-Creating an Artifact in Claude involves some initial questions before the more customised prompting starts. You can [see an example of responses and prompts used to create a dashboard here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_artifact.md)
+* [A Skill to generate a newsletter section based on links that I've bookmarked on Pinboard](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md)
 
 This also means it's easy to share skills and use other people's - you can find skills made by other people by searching around. [Florent Daudens shares his skills in a guide here](https://huggingface.co/spaces/fdaudens/ai-journalism-skills)
 
-* [A Skill to generate a newsletter section based on links that I've bookmarked on Pinboard](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/skillNewsletterLinks.md)
+## Claude Artifacts
+
+Creating an Artifact in Claude involves some initial questions before the more customised prompting starts. You can see: 
+
+* [an example of responses and prompts used to create a dashboard here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_artifact.md) and an [exported prompt template here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_template_guide.md)
+* [prompts to create a 'Higher or Lower' game](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/higher_lower_game.md)
+
+

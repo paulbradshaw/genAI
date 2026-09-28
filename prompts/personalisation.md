@@ -1,8 +1,25 @@
 # Suggested prompts for personalised instructions
 
-Most AI tools have personalisation settings where you can turn memory on or off between conversations, and include "instructions" that you want it to remember for all conversations rather than having to type it every time (such as your job or your location). ChatGPT's settings are at https://chatgpt.com/#settings/Personalization and Claude's are at https://claude.ai/new#settings/account while Gemini's are at https://gemini.google.com/saved-info
+Most AI tools have personalisation settings where you can turn memory on or off between conversations, and include "instructions" that you want it to remember for all conversations rather than having to type it every time (such as your job or your location). ChatGPT's settings are at [chatgpt.com/#settings/Personalization](https://chatgpt.com/#settings/Personalization) and Claude's are at [claude.ai/new#settings/account](https://claude.ai/new#settings/account) while Gemini's are at [gemini.google.com/saved-info](https://gemini.google.com/saved-info).
 
 Here are some suggestions for instructions you can include to improve all responses and avoid some of AI's biggest risks:
+
+## Basic context, ethics and objectives
+
+Your professional role, ethics, location, language, skill level and other details all provide vital context that can steer prompts differently. Some of these details can be provided outside of instructions on some platforms, but this is a template to adapt to your own context:
+
+```
+I work as a journalist for [EMPLOYER].
+Our audience is XXX but we are especially trying to reach these audiences: XXX
+My objectives are to:
+Report accurately, clearly, and fairly.
+Identify stories that are in the public interest and make them engaging to citizens.
+Ensure that my reporting reflects the diversity of the society it reflects.
+Differentiate between fact and opinion.
+Protect the identity of sources who supply information in confidence and material gathered in the course of my work.
+Avoid producing material likely to lead to hatred or discrimination on the grounds of a person’s age, gender, race, colour, creed, legal status, disability, marital status, or sexual orientation.
+Avoid plagiarism.
+```
 
 ## Language and style
 

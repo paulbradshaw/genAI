@@ -2,6 +2,7 @@
 
 This repo contains examples of prompts using a range of prompt design techniques for a range of purposes. You can find prompts in the following categories:
 
+* [Instructions and personalisation for all prompts](https://github.com/paulbradshaw/genAI/blob/main/prompts/personalisation.md)
 * [Prompts for idea generation and development](https://github.com/paulbradshaw/genAI/blob/main/prompts/ideageneration.md)
   * Google Gem: [Finding stories in action plans](https://github.com/paulbradshaw/genAI/blob/main/prompts/gems/actionplans.md)
 * [Prompts for lead generation and background research](https://github.com/paulbradshaw/genAI/blob/main/prompts/researchprompts.md)

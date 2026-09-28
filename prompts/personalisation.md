@@ -1,15 +1,19 @@
 # Suggested prompts for personalised instructions
 
-Most AI tools have personalisation settings where you can turn memory on or off between conversations, and include "instructions" that you want it to remember for all conversations rather than having to type it every time (such as your job or your location). ChatGPT's settings are at [chatgpt.com/#settings/Personalization](https://chatgpt.com/#settings/Personalization) and Claude's are at [claude.ai/new#settings/account](https://claude.ai/new#settings/account) while Gemini's are at [gemini.google.com/saved-info](https://gemini.google.com/saved-info).
+Most AI tools have personalisation settings where you can give it some extra information that informs your conversations. 
 
-Here are some suggestions for instructions you can include to improve all responses and avoid some of AI's biggest risks:
+One example of this is having 'memory' on between conversations, but this is quite a crude measure which doesn't allow you to be explicit about what is most important to remember.
+
+Much better are the "instructions" that can ask it to remember for all conversations rather than having to type it every time (such as your job or your location). ChatGPT's settings are at [chatgpt.com/#settings/Personalization](https://chatgpt.com/#settings/Personalization) and Claude's are at [claude.ai/new#settings/account](https://claude.ai/new#settings/account) while Gemini's are at [gemini.google.com/saved-info](https://gemini.google.com/saved-info).
+
+Here are some suggestions for instructions you can include to improve all responses and avoid some of AI's biggest risks (note: if you hit the character limit, try asking an AI tool to summarise the instructions within that limit)
 
 ## Basic context, ethics and objectives
 
-Your professional role, ethics, location, language, skill level and other details all provide vital context that can steer prompts differently. Some of these details can be provided outside of instructions on some platforms, but this is a template to adapt to your own context:
+Your professional role, ethics, location, language, skill level and other details all provide vital context that can steer prompts differently. You might paste or paraphrase your organisation's guidelines here, or the [NUJ's code of conduct](https://www.nuj.org.uk/about-us/rules-and-guidance/code-of-conduct.html), as I have below:
 
 ```
-I work as a journalist for [EMPLOYER].
+I work as a journalist for XXX
 Our audience is XXX but we are especially trying to reach these audiences: XXX
 My objectives are to:
 Report accurately, clearly, and fairly.
@@ -28,12 +32,12 @@ This addresses a basic bias towards US English in most AI training data, as well
 ```
 Write in UK English. No title case.
 Keep responses short. Don't use two words where one will do, or a long word when a short one works fine.
-Keep paragraphs short and don't use too many of them. 
+Keep paragraphs short and don't use too many of them - this is overridden by the need to provide sources for information or avoiding deskillin.
 ```
 
-## Permission to fail
+## Anti-hallucination measure
 
-This addresses AI tools' design bias to try to satisfy your request even when it doesn't have enough information.
+This addresses AI tools' design bias to try to satisfy your request even when it doesn't have enough information. It won't prevent hallucination, but it should help to reduce one of the factors that contributes to it.
 
 ```
 If you do not know the answer to a question, or have very little information to draw on, say so.
@@ -52,6 +56,8 @@ Suggest better ways of phrasing that will avoid confirmation bias.
 
 ## Anti-deskilling measure
 
+Deskilling is a major risk with AI, with multiple studies pointing to negative impacts on learning from relying on AI. 
+
 ```
 I don't want to become deskilled.
 I don't want to lose skills through not practising them. 
@@ -65,12 +71,13 @@ Ensure that responses are designed to build and hone skills and keep knowledge a
 
 You will need the sources of any information provided by AI, so this instruction ensure that it provides them. 
 
-Note that AI does not 'source' material like a search engine: it first drafts a response based on language patterns, and *then* finds sources that match its response (a type of confirmation bias). It may adjust its response based on those sources, but fundamentally it's not looking at the sources first in most cases.
+Note that in many situations AI does not 'source' material like a search engine: it first drafts a response based on language patterns, and *then* finds sources that match its response, so its response will not always accurately reflect the source.
 
 ```
 Evaluate the credibility, authority and recency of sources when providing factual responses.
 Prefer those sources which score more highly.
 Seek out diverse voices and perspectives.
-Include the sources for every factual claim in your responses (including page numbers).
+Include the sources for every factual claim in your responses
+Include page numbers if you are able to see the document, such as when I have uploaded documents.
 Indicate reliability or uncertainty - use a categoric scale rather than percentages.
 ```

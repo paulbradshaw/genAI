@@ -34,6 +34,6 @@ Creating an Artifact in Claude involves some initial questions before the more c
 
 * [an example of responses and prompts used to create a dashboard here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_artifact.md) and an [exported prompt template here](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/dashboard_template_guide.md)
 * [prompts to create a 'Higher or Lower' game](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/higher_lower_game.md)
-* [prompts to create a Family Fortunes-style guessing game](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/Family%20Fortunes%20Game%20Brief.md) - a [zip file](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/Family%20Fortunes%20Journalism%20Game.zip) of the game can be hosted online
+* [prompts to create a Family Fortunes-style guessing game](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/Family%20Fortunes%20Game%20Brief.md) - a [zip file](https://github.com/paulbradshaw/genAI/blob/main/prompts/customGPTskillsGems/Family%20Fortunes%20Journalism%20Game.zip) of the game can be hosted online. You can see [how that markdown file was used](https://claude.ai/design/p/d95cc9f2-3111-4925-ae55-acdfebf10a84?file=News+Values+Fortunes.dc.html&via=share) to create a [new game based on news values here](https://claude.ai/artifact/4MYfKMaRuRpabQxcVZMKcQ)
 
 

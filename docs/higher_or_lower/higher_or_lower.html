@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f5f3ee;color:#1b1a18;font-family:'Public Sans',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1b1a18}a:hover{color:oklch(0.5 0.16 28)}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#f5f3ee">
+  <div style="max-width:1120px;margin:0 auto;padding:40px 40px 64px;display:flex;flex-direction:column;gap:32px">
+
+    <header style="display:flex;flex-direction:column;gap:14px;border-top:4px solid #1b1a18;padding-top:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:oklch(0.5 0.16 28)">Council property sales</div>
+        <div style="display:flex;align-items:center;gap:20px">
+          <div style="display:flex;gap:6px">
+            <sc-for list="{{ progress }}" as="p" hint-placeholder-count="5">
+              <div style="width:36px;height:6px;background:{{ p.bg }}"></div>
+            </sc-for>
+          </div>
+          <div style="font-size:14px;font-weight:600;font-variant-numeric:tabular-nums">{{ progressLabel }}</div>
+          <sc-if value="{{ showScore }}" hint-placeholder-val="{{ true }}">
+            <div style="font-size:14px;color:#5c5a55;font-variant-numeric:tabular-nums">Score {{ score }}</div>
+          </sc-if>
+        </div>
+      </div>
+      <h1 style="margin:0;font-family:Newsreader,Georgia,serif;font-weight:600;font-size:52px;line-height:1.05;letter-spacing:-.01em">Higher or lower?</h1>
+      <p style="margin:0;max-width:680px;font-size:18px;line-height:1.5;color:#45433f;text-wrap:pretty">Five properties sold by {{ council }}. Guess what the first one sold for, then decide whether each next property sold for more or less than the one before.</p>
+    </header>
+
+    <sc-if value="{{ isFirst }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:start">
+        <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+          <div style="aspect-ratio:3/2;background:#e6e2d9;overflow:hidden">
+            <img src="{{ first.img }}" alt="{{ first.address }}" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="font-family:Newsreader,Georgia,serif;font-size:26px;font-weight:600;line-height:1.2">{{ first.address }}</div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#5c5a55">
+              <span>{{ first.postcode }}</span><span>Sold {{ first.dateLabel }}</span>
+              <a href="{{ first.sv }}" target="_blank" rel="noopener" style="color:inherit">View on Street View ↗</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px;border-top:1px solid #1b1a18;padding-top:20px">
+          <sc-if value="{{ firstAsking }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <label for="guess" style="font-size:20px;font-weight:600;line-height:1.35">What did the council sell this property for?</label>
+              <div style="font-size:15px;color:#5c5a55;line-height:1.5">Get within {{ tolPct }}% of the sale price to score a point.</div>
+              <div style="display:flex;align-items:center;border:2px solid #1b1a18;background:#fff">
+                <span style="padding:0 4px 0 16px;font-size:28px;font-weight:600">£</span>
+                <input id="guess" inputmode="numeric" autocomplete="off" placeholder="250,000" value="{{ guessText }}" onChange="{{ onGuessChange }}" onKeyDown="{{ onGuessKey }}" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:14px 16px 14px 4px;font:600 28px 'Public Sans',sans-serif;font-variant-numeric:tabular-nums;color:#1b1a18">
+              </div>
+              <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+                <div style="font-size:14px;color:oklch(0.5 0.16 28)">{{ error }}</div>
+              </sc-if>
+              <button onClick="{{ submitGuess }}" style="align-self:flex-start;border:0;background:#1b1a18;color:#fff;font:600 17px 'Public Sans',sans-serif;padding:14px 28px;cursor:pointer" style-hover="background:#3a3834">Reveal price</button>
+            </div>
+          </sc-if>
+          <sc-if value="{{ firstRevealed }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:18px">
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <div style="font-size:14px;color:#5c5a55">Sold for</div>
+                <div style="font-family:Newsreader,Georgia,serif;font-size:56px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums">{{ first.price }}</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;padding:14px 0;border-top:1px solid #d6d2c8;border-bottom:1px solid #d6d2c8">
+                <div style="font-size:15px;font-weight:700;color:{{ verdictColor }}">{{ verdictTitle }}</div>
+                <div style="font-size:15px;line-height:1.5;color:#45433f">{{ verdictText }}</div>
+              </div>
+              <button onClick="{{ next }}" style="align-self:flex-start;border:0;background:#1b1a18;color:#fff;font:600 17px 'Public Sans',sans-serif;padding:14px 28px;cursor:pointer" style-hover="background:#3a3834">Next property →</button>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isPair }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start">
+        <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+          <div style="aspect-ratio:3/2;background:#e6e2d9;overflow:hidden">
+            <img src="{{ left.img }}" alt="{{ left.address }}" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:600;line-height:1.2">{{ left.address }}</div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#5c5a55">
+              <span>{{ left.postcode }}</span><span>Sold {{ left.dateLabel }}</span>
+              <a href="{{ left.sv }}" target="_blank" rel="noopener" style="color:inherit">View on Street View ↗</a>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid #1b1a18;padding-top:16px">
+            <div style="font-size:14px;color:#5c5a55">Sold for</div>
+            <div style="font-family:Newsreader,Georgia,serif;font-size:48px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums">{{ left.price }}</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+          <div style="aspect-ratio:3/2;background:#e6e2d9;overflow:hidden">
+            <img src="{{ right.img }}" alt="{{ right.address }}" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:600;line-height:1.2">{{ right.address }}</div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#5c5a55">
+              <span>{{ right.postcode }}</span><span>Sold {{ right.dateLabel }}</span>
+              <a href="{{ right.sv }}" target="_blank" rel="noopener" style="color:inherit">View on Street View ↗</a>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px;border-top:1px solid #1b1a18;padding-top:16px">
+            <sc-if value="{{ pairAsking }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:14px">
+                <div style="font-size:18px;font-weight:600;line-height:1.35">Did this sell for more or less than {{ left.price }}?</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                  <button onClick="{{ chooseHigher }}" style="border:2px solid #1b1a18;background:#1b1a18;color:#fff;font:600 18px 'Public Sans',sans-serif;padding:16px;cursor:pointer" style-hover="background:#3a3834">▲ Higher</button>
+                  <button onClick="{{ chooseLower }}" style="border:2px solid #1b1a18;background:#fff;color:#1b1a18;font:600 18px 'Public Sans',sans-serif;padding:16px;cursor:pointer" style-hover="background:#ebe8e1">▼ Lower</button>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ pairRevealed }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:16px">
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="font-size:14px;color:#5c5a55">Sold for</div>
+                  <div style="font-family:Newsreader,Georgia,serif;font-size:48px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums">{{ right.price }}</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid #d6d2c8;border-bottom:1px solid #d6d2c8">
+                  <div style="font-size:15px;font-weight:700;color:{{ verdictColor }}">{{ verdictTitle }}</div>
+                  <div style="font-size:15px;line-height:1.5;color:#45433f">{{ verdictText }}</div>
+                </div>
+                <button onClick="{{ next }}" style="align-self:flex-start;border:0;background:#1b1a18;color:#fff;font:600 17px 'Public Sans',sans-serif;padding:14px 28px;cursor:pointer" style-hover="background:#3a3834">{{ nextLabel }}</button>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ ended }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:32px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;border-top:1px solid #1b1a18;padding-top:24px">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="font-size:14px;color:#5c5a55">Your score</div>
+            <div style="font-family:Newsreader,Georgia,serif;font-size:88px;font-weight:600;line-height:.95;font-variant-numeric:tabular-nums">{{ score }}</div>
+            <div style="font-size:17px;color:#45433f">{{ endLine }}</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+            <div style="display:flex;gap:12px">
+              <button onClick="{{ share }}" style="border:2px solid #1b1a18;background:#fff;color:#1b1a18;font:600 16px 'Public Sans',sans-serif;padding:13px 24px;cursor:pointer" style-hover="background:#ebe8e1">Share score</button>
+              <button onClick="{{ restart }}" style="border:2px solid #1b1a18;background:#1b1a18;color:#fff;font:600 16px 'Public Sans',sans-serif;padding:13px 24px;cursor:pointer" style-hover="background:#3a3834">Play again</button>
+            </div>
+            <sc-if value="{{ shareMsg }}" hint-placeholder-val="{{ false }}">
+              <div style="font-size:13px;color:#5c5a55">{{ shareMsg }}</div>
+            </sc-if>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column">
+          <div style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding-bottom:12px;border-bottom:1px solid #1b1a18">The five sales, in the order you saw them</div>
+          <sc-for list="{{ recap }}" as="r" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:120px minmax(0,1fr) auto auto;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #d6d2c8">
+              <div style="aspect-ratio:3/2;background:#e6e2d9;overflow:hidden"><img src="{{ r.img }}" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+                <div style="font-size:16px;font-weight:600">{{ r.address }}, {{ r.postcode }}</div>
+                <div style="font-size:14px;color:#5c5a55">Sold {{ r.dateLabel }} · {{ r.task }}</div>
+              </div>
+              <div style="font-family:Newsreader,Georgia,serif;font-size:26px;font-weight:600;font-variant-numeric:tabular-nums">{{ r.price }}</div>
+              <div style="width:72px;text-align:right;font-size:14px;font-weight:700;color:{{ r.color }}">{{ r.outcome }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <footer style="font-size:13px;color:#77746d;line-height:1.5">Sale prices and completion dates from {{ council }} property disposal records. Images from Google Street View.</footer>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;councilName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Gloucestershire County Council&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;tolerancePct&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:10,&quot;min&quot;:5,&quot;max&quot;:30,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;showRunningScore&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const SV = {
+  '110': 'https://www.google.com/maps/place/Site+of,+33+Victoria+St,+Cinderford+GL14+2ET/@51.8225904,-2.5006214,194a,75y,276.86h,78.89t/data=!3m7!1e1!3m5!1sslyvZgzvOWMawEQ9F3lDZQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D11.111271669665456%26panoid%3DslyvZgzvOWMawEQ9F3lDZQ%26yaw%3D276.8614090876939!7i16384!8i8192!4m13!1m7!3m6!1s0x4871a56172d36b47:0x42ba869cb0f03b44!2sSite+of,+33+Victoria+St,+Cinderford+GL14+2ET!3b1!8m2!3d51.8226238!4d-2.500689!3m4!1s0x4871a56172d36b47:0x42ba869cb0f03b44!8m2!3d51.8226238!4d-2.500689?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D',
+  '592': 'https://www.google.com/maps/place/Joys+Green+Cp+School,+School+Rd,+Joys+Green,+Lydbrook+GL17+9QX/@51.8452078,-2.5765151,149a,75y,73.21h,90t/data=!3m7!1e1!3m5!1sRA9ATxxhIC_OsqThntrRgg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DRA9ATxxhIC_OsqThntrRgg%26yaw%3D73.2075!7i16384!8i8192!4m15!1m8!3m7!1s0x4871b05dff9e1065:0x1cd0a6743c17238b!2sJoys+Green+Cp+School,+School+Rd,+Joys+Green,+Lydbrook+GL17+9QX!3b1!8m2!3d51.8453119!4d-2.5760167!16s%2Fg%2F11rtc84_sv!3m5!1s0x4871b05dff9e1065:0x1cd0a6743c17238b!8m2!3d51.8453119!4d-2.5760167!16s%2Fg%2F11rtc84_sv?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D',
+  '1232': 'https://www.google.com/maps/place/Police+House,+95+Bisley+Old+Rd,+Stroud+GL5+1NL/@51.7446783,-2.1974945,174a,75y,345.15h,90t/data=!3m7!1e1!3m5!1shOwrGXqrmswut2zoemLgow!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DhOwrGXqrmswut2zoemLgow%26yaw%3D345.14594!7i16384!8i8192!4m15!1m8!3m7!1s0x48710c20fefa75e1:0x8f8fb2a2f4161d50!2sPolice+House,+95+Bisley+Old+Rd,+Stroud+GL5+1NL!3b1!8m2!3d51.7448572!4d-2.1975714!16s%2Fg%2F11pdl_k_04!3m5!1s0x48710c20fefa75e1:0x8f8fb2a2f4161d50!8m2!3d51.7448572!4d-2.1975714!16s%2Fg%2F11pdl_k_04?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D',
+  '805': 'https://www.google.com/maps/place/Mathews+Way,+Stroud/@51.7504675,-2.2330481,85a,75y,64.11h,108.66t/data=!3m7!1e1!3m5!1scKUwsvcqWuoCrtfK1bP6tw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-18.662893434987964%26panoid%3DcKUwsvcqWuoCrtfK1bP6tw%26yaw%3D64.11184165361192!7i16384!8i8192!4m6!3m5!1s0x48710956f1c87e5d:0xf5822bb8061626df!8m2!3d51.7504572!4d-2.2342851!16s%2Fg%2F1vxz91gl?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D',
+  '991': 'https://www.google.com/maps/place/1+Lowerfield,+Ampney+St+Mary,+Cirencester+GL7+5EB/@51.7325077,-1.8823188,123a,75y,147.89h,97.35t/data=!3m7!1e1!3m5!1sRVmnZTrQegoEA5R82f09Hw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-7.3484508352530185%26panoid%3DRVmnZTrQegoEA5R82f09Hw%26yaw%3D147.8946386241013!7i16384!8i8192!4m6!3m5!1s0x48713e5fd0bbc647:0x4c09ee7911f2eb7e!8m2!3d51.7312797!4d-1.8819585!16s%2Fg%2F11csmp5_8c?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D'
+};
+const DATA = [
+  { uprn: '110', address: 'Site of 33 Victoria Street, Cinderford', postcode: 'GL14 2ET', amount: 173000, date: '10/11/2023' },
+  { uprn: '592', address: 'Joys Green Centre Alternative Provision School, Lydbrook, Glos', postcode: 'GL17 9QX', amount: 250000, date: '05/02/2025' },
+  { uprn: '1232', address: '95 Bisley Old Road, Stroud', postcode: 'GL5 1NL', amount: 362250, date: '24/02/2026' },
+  { uprn: '805', address: 'Wyatt House, Mathews Way, Stroud', postcode: 'GL5 4EE', amount: 500000, date: '17/03/2025' },
+  { uprn: '991', address: '1 Lowerfield, Ampney St Mary, Cirencester', postcode: 'GL7 5EB', amount: 540000, date: '22/01/2021' }
+];
+const RIGHT = 'oklch(0.48 0.13 150)', WRONG = 'oklch(0.5 0.16 28)';
+const money = n => '£' + Math.round(n).toLocaleString('en-GB');
+const dateLabel = s => { const [d, m, y] = s.split('/').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); };
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const card = p => p && ({ ...p, img: 'images/' + p.uprn + '.png', price: money(p.amount), dateLabel: dateLabel(p.date), sv: SV[p.uprn] });
+
+class Component extends DCLogic {
+  state = this.fresh();
+  fresh() { return { order: shuffle(DATA), step: 0, revealed: false, ended: false, guessText: '', error: '', results: [], shareMsg: '' }; }
+  tol() { return (this.props.tolerancePct ?? 10) / 100; }
+
+  submitGuess = () => {
+    const g = Number(String(this.state.guessText).replace(/[^\d.]/g, ''));
+    if (!g) return this.setState({ error: 'Enter a price in pounds.' });
+    const a = this.state.order[0].amount;
+    this.setState({ error: '', revealed: true, results: [{ correct: Math.abs(g - a) / a <= this.tol(), guess: g }] });
+  };
+  choose = dir => {
+    const { order, step, results } = this.state;
+    const actual = order[step].amount > order[step - 1].amount ? 'higher' : 'lower';
+    const r = results.slice(); r[step] = { correct: dir === actual, dir };
+    this.setState({ results: r, revealed: true });
+  };
+  next = () => {
+    const s = this.state.step + 1;
+    if (s >= this.state.order.length) this.setState({ ended: true });
+    else this.setState({ step: s, revealed: false });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  share = async () => {
+    const n = this.state.results.filter(r => r.correct).length;
+    const text = `I scored ${n}/${this.state.order.length} on Higher or Lower: council property sales.`;
+    try {
+      if (navigator.share) { await navigator.share({ text, url: location.href }); return; }
+      await navigator.clipboard.writeText(text + ' ' + location.href);
+      this.setState({ shareMsg: 'Copied to clipboard' });
+    } catch (e) { this.setState({ shareMsg: '' }); }
+  };
+
+  renderVals() {
+    const { order, step, revealed, ended, results } = this.state;
+    const total = order.length;
+    const score = results.filter(r => r && r.correct).length;
+    const tolPct = this.props.tolerancePct ?? 10;
+    const council = this.props.councilName ?? 'Gloucestershire County Council';
+    const cur = results[step];
+    let verdictTitle = '', verdictText = '', verdictColor = RIGHT;
+    if (revealed && cur) {
+      verdictColor = cur.correct ? RIGHT : WRONG;
+      if (step === 0) {
+        const a = order[0].amount, diff = (cur.guess - a) / a;
+        verdictTitle = cur.correct ? `Correct: within ${tolPct}%` : `Not within ${tolPct}%`;
+        verdictText = `You guessed ${money(cur.guess)}, which is ${Math.abs(Math.round(diff * 100))}% ${diff >= 0 ? 'above' : 'below'} the sale price.`;
+      } else {
+        const d = order[step].amount - order[step - 1].amount;
+        verdictTitle = cur.correct ? 'Correct' : 'Wrong';
+        verdictText = `It sold for ${money(Math.abs(d))} ${d > 0 ? 'more' : 'less'} than the previous property.`;
+      }
+    }
+    const recap = order.map((p, i) => {
+      const r = results[i] || {};
+      return { ...card(p), task: i === 0 ? (r.guess ? `You guessed ${money(r.guess)}` : 'Price guess') : `You said ${r.dir || '–'}`, outcome: r.correct ? 'Correct' : 'Wrong', color: r.correct ? RIGHT : WRONG };
+    });
+    return {
+      council, tolPct,
+      progress: order.map((_, i) => ({ bg: i < step || (i === step && (revealed || ended)) ? '#1b1a18' : i === step && !ended ? '#8f8b82' : '#d6d2c8' })),
+      progressLabel: ended ? 'Finished' : `Property ${step + 1} of ${total}`,
+      showScore: (this.props.showRunningScore ?? true) && !ended,
+      score: `${score}/${total}`,
+      isFirst: !ended && step === 0, firstAsking: !revealed, firstRevealed: revealed,
+      isPair: !ended && step > 0, pairAsking: !revealed, pairRevealed: revealed,
+      ended,
+      first: card(order[0]), left: card(order[step - 1]) || {}, right: card(order[step]) || {},
+      guessText: this.state.guessText, error: this.state.error,
+      onGuessChange: e => this.setState({ guessText: e.target.value.replace(/[^\d,.]/g, ''), error: '' }),
+      onGuessKey: e => { if (e.key === 'Enter') this.submitGuess(); },
+      submitGuess: this.submitGuess,
+      chooseHigher: () => this.choose('higher'), chooseLower: () => this.choose('lower'),
+      next: this.next, nextLabel: step >= total - 1 ? 'See your score →' : 'Next property →',
+      verdictTitle, verdictText, verdictColor,
+      endLine: score === total ? 'A perfect round.' : `You got ${score} of ${total} right.`,
+      recap, share: this.share, shareMsg: this.state.shareMsg,
+      restart: () => { this.setState(this.fresh()); window.scrollTo({ top: 0 }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

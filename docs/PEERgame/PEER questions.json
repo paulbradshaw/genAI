@@ -1,0 +1,856 @@
+{
+  "roles": {
+    "power": {
+      "label": "Power",
+      "answers": "What is being done? What should or will be done?",
+      "includes": "Political, legal, financial, cultural and mobilisation power. Not only politicians."
+    },
+    "expertise": {
+      "label": "Expertise",
+      "answers": "Why is this happening? How does it work?",
+      "includes": "Academics, researchers, senior professionals, award-winners, people with long experience of a process."
+    },
+    "experience": {
+      "label": "Experience",
+      "answers": "What happened? What is it like to be affected?",
+      "includes": "Eyewitnesses, people affected by an issue, people who went through something similar."
+    },
+    "rep": {
+      "label": "Representative",
+      "answers": "How widespread is it? How do the people affected feel?",
+      "includes": "Unions, professional bodies, charities, community leaders, group admins, elected representatives."
+    }
+  },
+  "levels": [
+    {
+      "title": "Know your PEER",
+      "kind": "classify",
+      "pts": 1,
+      "brief": "Each card shows a story lead, a source, and the question you plan to ask them. Decide which PEER role that source plays in the story.",
+      "how": [
+        "Read the story lead and the question the source will be asked.",
+        "Pick Power, Expertise, Experience or Representative, then lock in.",
+        "The question tells you the role. Who they are only tells you which roles are possible."
+      ],
+      "items": [
+        {
+          "genre": "Crime",
+          "format": "News",
+          "lead": "Spate of catalytic converter thefts hits market town",
+          "source": "Chief inspector, local police",
+          "ask": "What are officers doing to catch those responsible?",
+          "answer": "power",
+          "why": "Police hold legal power: they enforce the law. Asking what is being done about a problem is a question for a source of power."
+        },
+        {
+          "genre": "Health",
+          "format": "News",
+          "lead": "A&E waiting times hit a record high this winter",
+          "source": "Professor of health policy who studies NHS performance data",
+          "ask": "Why are waits getting longer, and how does this winter compare with previous years?",
+          "answer": "expertise",
+          "why": "Academic expertise answers the ‘why’ and ‘how’ questions and puts the figures in context: is it getting better or worse?"
+        },
+        {
+          "genre": "Education",
+          "format": "Feature",
+          "lead": "What it’s like to start university as a care leaver",
+          "source": "A second-year student who grew up in foster care",
+          "ask": "What was your first term like?",
+          "answer": "experience",
+          "why": "Someone affected by the issue can put a human face to it and answer ‘What is it like?’. These sources are often the hardest to find."
+        },
+        {
+          "genre": "Transport",
+          "format": "News",
+          "lead": "Bus company cuts evening services across the region",
+          "source": "Regional secretary of the transport workers’ union",
+          "ask": "How do drivers feel about the changes to their shifts?",
+          "answer": "rep",
+          "why": "A union can speak formally on behalf of its members, and its leaders are elected. They give the reaction of a whole group, not one person."
+        },
+        {
+          "genre": "Environment",
+          "format": "News",
+          "lead": "River declared unsafe for swimming after sewage spill",
+          "source": "Paddleboard instructor who was on the water when the discharge started",
+          "ask": "What did you see and smell that morning?",
+          "answer": "experience",
+          "why": "An eyewitness describes what happened first hand. Witnesses are almost always quoted on details of description."
+        },
+        {
+          "genre": "Sport",
+          "format": "News",
+          "lead": "Abuse of referees in grassroots football reaches new high",
+          "source": "County football association",
+          "ask": "What sanctions will clubs face if their players or fans abuse officials?",
+          "answer": "power",
+          "why": "Sports governing bodies have legal power: they make and enforce the rules. Power is not only political."
+        },
+        {
+          "genre": "Housing",
+          "format": "News",
+          "lead": "Tenants report black mould across council estate",
+          "source": "Chair of the estate’s residents’ association",
+          "ask": "How many households have come to you with damp or mould problems?",
+          "answer": "rep",
+          "why": "The residents’ association speaks for a wider group and can tell you how widespread the problem is, which one tenant cannot."
+        }
+      ]
+    },
+    {
+      "title": "Same face, different role",
+      "kind": "classify",
+      "pts": 2,
+      "brief": "The same kinds of people keep coming back: MPs, former footballers, authors, group admins. Their role changes with the story and the question you ask.",
+      "how": [
+        "Ignore the job title for a moment and focus on the question.",
+        "Ask yourself: is this about action, explanation, lived experience, or the views of a group?",
+        "Within one story a source should play one role, so the question has to be clear."
+      ],
+      "items": [
+        {
+          "genre": "Politics",
+          "format": "News",
+          "lead": "Council to close three branch libraries",
+          "source": "The local MP",
+          "ask": "How many constituents have contacted you about the closures?",
+          "answer": "rep",
+          "why": "Here the MP is the voice of their constituents and has an ‘ear to the ground’. The council holds the power to close or save the libraries."
+        },
+        {
+          "genre": "Politics",
+          "format": "Feature",
+          "lead": "MPs speak out about the online abuse they receive",
+          "source": "An MP",
+          "ask": "What kind of messages have you received, and how has it affected you?",
+          "answer": "experience",
+          "why": "In this story the MP is someone affected by the issue. They are asked what it is like, not what they will do about it."
+        },
+        {
+          "genre": "Politics",
+          "format": "Feature",
+          "lead": "Survival guide for the new intake of MPs",
+          "source": "Former chief whip who served 20 years in Parliament",
+          "ask": "What do new MPs most often get wrong in their first year?",
+          "answer": "expertise",
+          "why": "Two decades in a senior role gives professional expertise in how Parliament works. They are offering insight, not taking action."
+        },
+        {
+          "genre": "Health",
+          "format": "News",
+          "lead": "Town left without a single NHS dentist taking new patients",
+          "source": "Health minister",
+          "ask": "What is the government doing to bring dentists to the area?",
+          "answer": "power",
+          "why": "The minister has responsibility for the sector and the power to spend money and change rules. They are asked about action."
+        },
+        {
+          "genre": "Sport",
+          "format": "Feature",
+          "lead": "Cup final preview: can the underdogs cause an upset?",
+          "source": "Former footballer who played in two cup finals",
+          "ask": "How should the underdogs set up to stop their opponents’ midfield?",
+          "answer": "expertise",
+          "why": "A former player can give expert insight into tactics. This is the expertise of achievement and long professional experience."
+        },
+        {
+          "genre": "Sport",
+          "format": "Feature",
+          "lead": "The day I walked out at a cup final",
+          "source": "Former footballer who played in two cup finals",
+          "ask": "What does it feel like to walk out of the tunnel on final day?",
+          "answer": "experience",
+          "why": "Same person, different question. Now they describe a first-hand experience rather than analysing tactics."
+        },
+        {
+          "genre": "Arts",
+          "format": "News",
+          "lead": "Campaign launched to save school libraries",
+          "source": "Bestselling children’s author with two million followers",
+          "ask": "Will you use your platform to call on the government to protect library funding?",
+          "answer": "power",
+          "why": "An author can be a voice of expertise, but here they are using cultural and mobilisation power to call for action."
+        },
+        {
+          "genre": "Community",
+          "format": "News",
+          "lead": "Parents angry at parking fines outside primary school",
+          "source": "Admin of a 12,000-member local parents’ Facebook group",
+          "ask": "What concerns are members raising most often?",
+          "answer": "rep",
+          "why": "A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them."
+        }
+      ]
+    },
+    {
+      "title": "Find the blind spot",
+      "kind": "gap",
+      "pts": 3,
+      "brief": "Each story draft already has some sources. Work out which question it still fails to answer, then choose the best person to approach.",
+      "how": [
+        "Check which PEER roles the draft already has.",
+        "Ask: does it say what is being done, why it is happening, what it is like, and how people are reacting?",
+        "Watch out for vox pops, friends, family and sources who repeat a role you already have."
+      ],
+      "items": [
+        {
+          "genre": "Health",
+          "format": "News",
+          "lead": "Pharmacies ration ADHD medication as shortage drags on",
+          "have": [
+            {
+              "type": "power",
+              "text": "Department of Health spokesperson says supply problems will be resolved by spring."
+            },
+            {
+              "type": "expertise",
+              "text": "Pharmacology lecturer explains how manufacturing problems led to the shortage."
+            }
+          ],
+          "prompt": "The story explains what is being done and why. What is missing?",
+          "answer": "b",
+          "options": [
+            {
+              "id": "a",
+              "source": "Shoppers stopped outside a city-centre pharmacy",
+              "ask": "What do you think about the medication shortage?",
+              "tag": "Vox pop",
+              "note": "Random passers-by have no particular power, expertise or experience of the issue."
+            },
+            {
+              "id": "b",
+              "source": "Parent whose son has gone three weeks without medication, found through an ADHD charity",
+              "ask": "How has the shortage affected your family?",
+              "tag": "Best choice: Experience",
+              "note": "Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk."
+            },
+            {
+              "id": "c",
+              "source": "Your flatmate, who has an ADHD diagnosis",
+              "ask": "Have you had trouble getting your prescription?",
+              "tag": "Friend or family",
+              "note": "A conflict of interest, and you can’t present them independently. Use your contacts to find someone else instead."
+            },
+            {
+              "id": "d",
+              "source": "A second pharmacology academic at another university",
+              "ask": "Why is there a shortage?",
+              "tag": "Role already covered",
+              "note": "The draft already has this expertise. A second expert adds little unless they disagree."
+            }
+          ],
+          "why": "The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline."
+        },
+        {
+          "genre": "Crime",
+          "format": "News",
+          "lead": "Shoplifting up 30% in the city centre, figures show",
+          "have": [
+            {
+              "type": "experience",
+              "text": "Shop owner describes being threatened by a shoplifter last month."
+            },
+            {
+              "type": "expertise",
+              "text": "Criminologist explains what is driving the rise in retail crime."
+            }
+          ],
+          "prompt": "The draft has context and colour. What question is left hanging?",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "source": "Police and crime commissioner",
+              "ask": "What resources are being put into tackling retail crime?",
+              "tag": "Best choice: Power",
+              "note": "The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply."
+            },
+            {
+              "id": "b",
+              "source": "Shoppers on the high street",
+              "ask": "Do you feel safe shopping in town?",
+              "tag": "Vox pop",
+              "note": "Opinions from random passers-by don’t answer any of the story’s questions."
+            },
+            {
+              "id": "c",
+              "source": "Another shop owner on the same street",
+              "ask": "Have you been targeted too?",
+              "tag": "Role already covered",
+              "note": "A second case study adds colour but doesn’t fill the gap: nobody is being held to account."
+            },
+            {
+              "id": "d",
+              "source": "Your uncle, a retired police officer",
+              "ask": "Why don’t police turn up to shoplifting any more?",
+              "tag": "Friend or family",
+              "note": "Family members are not independent sources, and a retired officer has no power over current policy."
+            }
+          ],
+          "why": "Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply."
+        },
+        {
+          "genre": "Education",
+          "format": "News",
+          "lead": "Primary school to move to a four-day week amid staff shortages",
+          "have": [
+            {
+              "type": "power",
+              "text": "Headteacher says the change is the only way to keep classes covered."
+            },
+            {
+              "type": "power",
+              "text": "Council confirms it has approved the timetable change."
+            }
+          ],
+          "prompt": "Two sources of power, both explaining the decision. Who is missing?",
+          "answer": "c",
+          "options": [
+            {
+              "id": "a",
+              "source": "Passers-by near the school gates",
+              "ask": "Is a four-day week a good idea?",
+              "tag": "Vox pop",
+              "note": "People who happen to be walking past may not even have children at the school."
+            },
+            {
+              "id": "b",
+              "source": "Education secretary",
+              "ask": "What is the government doing about teacher recruitment nationally?",
+              "tag": "Role already covered",
+              "note": "Another source of power. The story already has two, and none of the affected families have a voice."
+            },
+            {
+              "id": "c",
+              "source": "Chair of the school’s parent council",
+              "ask": "What have parents told you about the change?",
+              "tag": "Best choice: Representative",
+              "note": "Speaks for parents as a group and can say how widespread concern is. This is the reaction the story lacks."
+            },
+            {
+              "id": "d",
+              "source": "Your cousin, who teaches at a different school",
+              "ask": "Would you want a four-day week?",
+              "tag": "Friend or family",
+              "note": "Not independent, and not connected to this school."
+            }
+          ],
+          "why": "The draft only has the people who made the decision. A representative provides the reaction that moves the story on, and could give it a new angle."
+        },
+        {
+          "genre": "Sport",
+          "format": "Feature",
+          "lead": "Why are so many girls quitting football at 14?",
+          "have": [
+            {
+              "type": "expertise",
+              "text": "Researcher at a women’s sport charity explains the drop-off in the figures."
+            },
+            {
+              "type": "experience",
+              "text": "A 15-year-old describes why she stopped playing for her club."
+            }
+          ],
+          "prompt": "The feature explains the problem and shows the impact. What is it missing?",
+          "answer": "d",
+          "options": [
+            {
+              "id": "a",
+              "source": "Comments under a club’s Instagram post about girls’ teams",
+              "ask": "(Quoting comments directly)",
+              "tag": "Unverified",
+              "note": "Anonymous comments can’t be verified, and they don’t represent anyone. They might point you to sources, though."
+            },
+            {
+              "id": "b",
+              "source": "Your younger sister, who gave up last year",
+              "ask": "Why did you stop playing?",
+              "tag": "Friend or family",
+              "note": "Family members aren’t independent. Find case studies through clubs, charities or forums instead."
+            },
+            {
+              "id": "c",
+              "source": "A second teenager who quit",
+              "ask": "Why did you stop?",
+              "tag": "Role already covered",
+              "note": "Useful for colour, but the story already has experience. Nobody is asked what will change."
+            },
+            {
+              "id": "d",
+              "source": "Head of women’s and girls’ football at the national FA",
+              "ask": "What is being done to keep teenage girls playing?",
+              "tag": "Best choice: Power",
+              "note": "The governing body has power to change rules, funding and facilities. It answers ‘What is being done?’."
+            }
+          ],
+          "why": "Even a feature benefits from someone who can say what is being done. Here that is a sports governing body, which has legal and financial power over the game."
+        }
+      ]
+    },
+    {
+      "title": "Answer the story’s questions",
+      "kind": "slots",
+      "pts": 4,
+      "brief": "Each story raises several questions. Match a source to each one. Some candidates are weak, and some are good sources in the wrong place.",
+      "how": [
+        "Drag a source onto the question it answers, or tap the source then tap the question.",
+        "Tap a filled question to send its source back.",
+        "Every question must be filled, and every match must be right, to score."
+      ],
+      "items": [
+        {
+          "genre": "Crime",
+          "format": "News",
+          "lead": "Knife crime arrests of under-18s double in two years",
+          "slots": [
+            {
+              "id": "s1",
+              "q": "What is it like for families affected?",
+              "type": "experience",
+              "answer": "p1"
+            },
+            {
+              "id": "s2",
+              "q": "Why is this happening?",
+              "type": "expertise",
+              "answer": "p2"
+            },
+            {
+              "id": "s3",
+              "q": "What is being done about it?",
+              "type": "power",
+              "answer": "p3"
+            },
+            {
+              "id": "s4",
+              "q": "How are young people in the city reacting?",
+              "type": "rep",
+              "answer": "p4"
+            }
+          ],
+          "pool": [
+            {
+              "id": "p1",
+              "source": "Mother whose son was stabbed, now volunteers with a victims’ charity",
+              "ask": "How has your family’s life changed since the attack?"
+            },
+            {
+              "id": "p2",
+              "source": "Criminologist who studies youth violence",
+              "ask": "What explains the rise among under-18s?"
+            },
+            {
+              "id": "p3",
+              "source": "City mayor, who controls the violence reduction budget",
+              "ask": "What will you do to bring the numbers down?"
+            },
+            {
+              "id": "p4",
+              "source": "Elected chair of the city’s youth council",
+              "ask": "What are young people telling you about safety?"
+            },
+            {
+              "id": "p5",
+              "source": "Teenagers approached outside a shopping centre",
+              "ask": "Do you know anyone who carries a knife?",
+              "tag": "Vox pop",
+              "note": "Ethically risky with under-18s, and they represent nobody but themselves."
+            },
+            {
+              "id": "p6",
+              "source": "Crime novelist",
+              "ask": "Why do you think young people carry knives?",
+              "tag": "Wrong role for this story",
+              "note": "Writing crime fiction isn’t expertise in youth violence."
+            },
+            {
+              "id": "p7",
+              "source": "Your friend’s younger brother, who is at a local school",
+              "ask": "Is knife crime a problem at your school?",
+              "tag": "Friend or family",
+              "note": "Not independent, and a child you know personally."
+            }
+          ],
+          "why": "A full news story needs all four roles here: a family for impact, an expert for context, the mayor for action, and an elected youth body for reaction."
+        },
+        {
+          "genre": "Health",
+          "format": "Feature",
+          "lead": "Living with long Covid, three years on",
+          "slots": [
+            {
+              "id": "s1",
+              "q": "What does daily life look like with long Covid?",
+              "type": "experience",
+              "answer": "p1"
+            },
+            {
+              "id": "s2",
+              "q": "What does the latest research say?",
+              "type": "expertise",
+              "answer": "p2"
+            },
+            {
+              "id": "s3",
+              "q": "What are patients telling support groups?",
+              "type": "rep",
+              "answer": "p3"
+            }
+          ],
+          "pool": [
+            {
+              "id": "p1",
+              "source": "Nurse who has been unable to work since 2023, found through a long Covid support group",
+              "ask": "Talk me through a typical day."
+            },
+            {
+              "id": "p2",
+              "source": "Researcher leading a long Covid clinical trial",
+              "ask": "What have we learned about recovery?"
+            },
+            {
+              "id": "p3",
+              "source": "Founder of a national long Covid patient network",
+              "ask": "What are the most common problems members raise?"
+            },
+            {
+              "id": "p4",
+              "source": "Wellness influencer who sells recovery supplements",
+              "ask": "How can people recover faster?",
+              "tag": "Wrong role for this story",
+              "note": "A large following is cultural power, not expertise, and they have a financial interest."
+            },
+            {
+              "id": "p5",
+              "source": "People in a GP waiting room",
+              "ask": "Do you know anyone with long Covid?",
+              "tag": "Vox pop",
+              "note": "Second-hand and random. Find people with direct experience."
+            },
+            {
+              "id": "p6",
+              "source": "Your aunt, who had Covid twice",
+              "ask": "Do you still feel tired?",
+              "tag": "Friend or family",
+              "note": "Family, and having Covid is not the same as having long Covid."
+            }
+          ],
+          "why": "A human-interest feature can leave out power and still work. It leads on experience, with research and a patient network to show this is not just one person’s story."
+        },
+        {
+          "genre": "Sport",
+          "format": "News",
+          "lead": "Premier League club announces 20% rise in ticket prices",
+          "slots": [
+            {
+              "id": "s1",
+              "q": "How have fans reacted?",
+              "type": "rep",
+              "answer": "p1"
+            },
+            {
+              "id": "s2",
+              "q": "Why has the club done this? (Right of reply)",
+              "type": "power",
+              "answer": "p2"
+            },
+            {
+              "id": "s3",
+              "q": "Can the club justify it financially?",
+              "type": "expertise",
+              "answer": "p3"
+            },
+            {
+              "id": "s4",
+              "q": "What does it mean for families who go every week?",
+              "type": "experience",
+              "answer": "p4"
+            }
+          ],
+          "pool": [
+            {
+              "id": "p1",
+              "source": "Chair of the club’s independent supporters’ trust",
+              "ask": "What are your members saying about the rise?"
+            },
+            {
+              "id": "p2",
+              "source": "Club chief executive",
+              "ask": "Why are prices going up, and will you reconsider?"
+            },
+            {
+              "id": "p3",
+              "source": "Football finance analyst who studies club accounts",
+              "ask": "Does the club need the extra revenue?"
+            },
+            {
+              "id": "p4",
+              "source": "Season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust",
+              "ask": "Can you still afford to go?"
+            },
+            {
+              "id": "p5",
+              "source": "Replies under the club’s announcement on social media",
+              "ask": "(Quoting the angriest replies)",
+              "tag": "Unverified",
+              "note": "Anonymous replies can’t be verified. Use them to find sources, not as quotes."
+            },
+            {
+              "id": "p6",
+              "source": "Your housemate, who supports a rival club",
+              "ask": "What do you make of the price rise?",
+              "tag": "Friend or family",
+              "note": "Not affected, not independent."
+            },
+            {
+              "id": "p7",
+              "source": "Former player turned TV pundit",
+              "ask": "Is this bad for the game?",
+              "tag": "Wrong role for this story",
+              "note": "Cultural power and opinion, but not the supporters’ voice and not financial expertise."
+            }
+          ],
+          "why": "The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact."
+        }
+      ]
+    },
+    {
+      "title": "Build the interview list",
+      "kind": "build",
+      "pts": 5,
+      "brief": "No more hints about which questions to answer. Read the lead, decide what the story needs, and pick your interview list.",
+      "how": [
+        "Decide what type of story it is first. An advice feature needs different voices from a news story.",
+        "Pick exactly the number asked for.",
+        "Your list scores if every pick is strong and you cover the roles the story needs."
+      ],
+      "items": [
+        {
+          "genre": "Money",
+          "format": "Feature",
+          "lead": "Make your money last until payday: the experts’ guide",
+          "pick": 3,
+          "need": [
+            "expertise"
+          ],
+          "only": [
+            "expertise"
+          ],
+          "pool": [
+            {
+              "id": "a",
+              "source": "Debt adviser at a money advice charity",
+              "ask": "What is the first thing people should cut back on?",
+              "type": "expertise",
+              "note": "Professional expertise from working with people in debt every day."
+            },
+            {
+              "id": "b",
+              "source": "Author of a bestselling budgeting book",
+              "ask": "What is your simplest budgeting rule?",
+              "type": "expertise",
+              "note": "Non-academic expertise. Authors are often keen to talk."
+            },
+            {
+              "id": "c",
+              "source": "Economist who researches household spending",
+              "ask": "Where does the average household’s money go?",
+              "type": "expertise",
+              "note": "Academic expertise adds evidence to the tips."
+            },
+            {
+              "id": "d",
+              "source": "Blogger who paid off £40,000 of debt and now writes about frugal living",
+              "ask": "What habit made the biggest difference?",
+              "type": "expertise",
+              "note": "Experiential expertise: long, deep experience of the process."
+            },
+            {
+              "id": "e",
+              "source": "Chancellor of the Exchequer",
+              "ask": "What are you doing about the cost of living?",
+              "type": "power",
+              "note": "Power, but an advice feature isn’t asking what is being done."
+            },
+            {
+              "id": "f",
+              "source": "Bank chief executive",
+              "ask": "Will interest rates come down?",
+              "type": "power",
+              "note": "Financial power, but not the voice this guide needs."
+            },
+            {
+              "id": "g",
+              "source": "Shoppers in a supermarket",
+              "ask": "How do you save money?",
+              "type": null,
+              "tag": "Vox pop",
+              "note": "Readers want tips from people who know more than they do."
+            },
+            {
+              "id": "h",
+              "source": "Your parents, who are good with money",
+              "ask": "Any tips?",
+              "type": null,
+              "tag": "Friend or family",
+              "note": "Not independent, and no credentials to offer readers."
+            }
+          ],
+          "why": "Some stories only need one type of source. An experts’ guide is built from a range of expertise: professional, academic, authors and people with long experience."
+        },
+        {
+          "genre": "Transport",
+          "format": "News",
+          "lead": "Rail operator cancels 400 trains in a week over driver shortages",
+          "pick": 4,
+          "need": [
+            "power",
+            "expertise",
+            [
+              "experience",
+              "rep"
+            ]
+          ],
+          "pool": [
+            {
+              "id": "a",
+              "source": "Rail operator’s managing director",
+              "ask": "Why were so many trains cancelled, and when will it improve?",
+              "type": "power",
+              "note": "The operator is responsible, so it must get a right of reply."
+            },
+            {
+              "id": "b",
+              "source": "Transport secretary",
+              "ask": "Will you step in over the operator’s performance?",
+              "type": "power",
+              "note": "Political power to act on the operator’s contract."
+            },
+            {
+              "id": "c",
+              "source": "Commuter who has received a warning at work for being late, found via a passenger forum",
+              "ask": "How have the cancellations affected you?",
+              "type": "experience",
+              "note": "Shows the impact. Forums are a good place to find people affected."
+            },
+            {
+              "id": "d",
+              "source": "General secretary of the train drivers’ union",
+              "ask": "Why are there not enough drivers?",
+              "type": "rep",
+              "note": "Speaks for drivers and can explain the shortage from their side."
+            },
+            {
+              "id": "e",
+              "source": "Head of the independent passenger watchdog",
+              "ask": "How many complaints have you received this week?",
+              "type": "rep",
+              "note": "Represents passengers and can say how widespread the problem is."
+            },
+            {
+              "id": "f",
+              "source": "Transport academic who studies rail staffing",
+              "ask": "Is this shortage a one-off or a long-term trend?",
+              "type": "expertise",
+              "note": "Independent context on whether things are getting better or worse."
+            },
+            {
+              "id": "g",
+              "source": "People waiting on the platform",
+              "ask": "Are you annoyed?",
+              "type": null,
+              "tag": "Vox pop",
+              "note": "Of course they are. That tells readers nothing new."
+            },
+            {
+              "id": "h",
+              "source": "Your dad, who commutes by train",
+              "ask": "Has your train been cancelled?",
+              "type": null,
+              "tag": "Friend or family",
+              "note": "Family members aren’t independent sources."
+            }
+          ],
+          "why": "A strong news story here needs someone held to account, independent context, and either a person affected or a group representing them."
+        },
+        {
+          "genre": "Education",
+          "format": "News",
+          "lead": "Exam board error gave 2,000 students the wrong A-level grades",
+          "pick": 4,
+          "need": [
+            "power",
+            "experience",
+            [
+              "rep",
+              "expertise"
+            ]
+          ],
+          "pool": [
+            {
+              "id": "a",
+              "source": "The exam board",
+              "ask": "How did the error happen and how will students be compensated?",
+              "type": "power",
+              "note": "Responsible for the error, so they need a right of reply."
+            },
+            {
+              "id": "b",
+              "source": "Exams regulator",
+              "ask": "What action will you take against the exam board?",
+              "type": "power",
+              "note": "Legal power to enforce rules on exam boards."
+            },
+            {
+              "id": "c",
+              "source": "Student who lost her university place because of the error, found through her post about it on TikTok",
+              "ask": "What happened when you got your results?",
+              "type": "experience",
+              "note": "Shows the impact. Verify her story with documents before you publish."
+            },
+            {
+              "id": "d",
+              "source": "Head teachers’ association",
+              "ask": "How many schools have been affected?",
+              "type": "rep",
+              "note": "Speaks for schools and can say how widespread the problem is."
+            },
+            {
+              "id": "e",
+              "source": "Former chief examiner",
+              "ask": "How do marking errors on this scale happen?",
+              "type": "expertise",
+              "note": "Professional expertise to explain the process."
+            },
+            {
+              "id": "f",
+              "source": "Celebrity who failed their A-levels and became a millionaire",
+              "ask": "Do grades really matter?",
+              "type": null,
+              "tag": "Wrong role for this story",
+              "note": "Cultural power, but irrelevant to whether the board got it wrong."
+            },
+            {
+              "id": "g",
+              "source": "Students on a university campus",
+              "ask": "Do you trust exam results?",
+              "type": null,
+              "tag": "Vox pop",
+              "note": "Random students who weren’t affected."
+            },
+            {
+              "id": "h",
+              "source": "Your younger brother, who is in year 12",
+              "ask": "Are you worried about next year?",
+              "type": null,
+              "tag": "Friend or family",
+              "note": "Family, and not affected."
+            }
+          ],
+          "why": "The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>PEER: who should you call?</title>
+<link rel="stylesheet" href="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/styles.css">
+<script src="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--color-bg)} a{color:var(--color-accent-700)} a:hover{color:var(--color-accent-800)} button{font:inherit;color:inherit}</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;background-color:var(--color-bg);color:var(--color-text);font-family:var(--font-body);background-image:linear-gradient(color-mix(in srgb, var(--color-text) 4%, transparent) 1px, transparent 1px),linear-gradient(90deg, color-mix(in srgb, var(--color-text) 4%, transparent) 1px, transparent 1px);background-size:40px 40px;">
+
+  <header class="nav" style="border-bottom:1px solid var(--color-divider);background:var(--color-bg);padding:12px 24px;flex-wrap:wrap;gap:16px;">
+    <div class="nav-brand" style="display:flex;align-items:baseline;gap:12px;font-size:24px;letter-spacing:0.04em;">PEER<span style="font-family:var(--font-body);font-weight:400;font-size:13px;letter-spacing:0;color:var(--color-neutral-700);white-space:nowrap;">Who should you call?</span></div>
+    <sc-if value="{{ inGame }}" hint-placeholder-val="{{ false }}">
+      <div style="font-size:13px;color:var(--color-neutral-700);">{{ progressText }}</div>
+    </sc-if>
+    <sc-if value="{{ teamsInGame }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;gap:8px;">
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--color-divider);border-color:{{ blueBorder }};background:{{ blueBg }};">
+          <span style="width:10px;height:10px;background:var(--color-accent-700);"></span>
+          <span style="font-family:var(--font-heading);font-weight:600;font-size:15px;">Blue</span>
+          <span style="font-family:var(--font-heading);font-weight:600;font-size:22px;min-width:24px;text-align:right;">{{ scoreBlue }}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--color-divider);border-color:{{ redBorder }};background:{{ redBg }};">
+          <span style="width:10px;height:10px;background:oklch(0.5 0.13 25);"></span>
+          <span style="font-family:var(--font-heading);font-weight:600;font-size:15px;">Red</span>
+          <span style="font-family:var(--font-heading);font-weight:600;font-size:22px;min-width:24px;text-align:right;">{{ scoreRed }}</span>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ soloInGame }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--color-divider);">
+        <span style="font-family:var(--font-heading);font-weight:600;font-size:15px;">Score</span>
+        <span style="font-family:var(--font-heading);font-weight:600;font-size:22px;">{{ scoreBlue }}</span>
+      </div>
+    </sc-if>
+    <sc-if value="{{ inGame }}" hint-placeholder-val="{{ false }}">
+      <button class="btn btn-ghost" onClick="{{ quit }}">Quit to menu</button>
+    </sc-if>
+  </header>
+
+  <main style="flex:1;width:100%;max-width:1120px;margin:0 auto;padding:32px 24px 64px;display:flex;flex-direction:column;gap:28px;">
+
+    <!-- START -->
+    <sc-if value="{{ isStart }}" hint-placeholder-val="{{ true }}">
+      <section data-screen-label="Start" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px;align-items:start;">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">A game about making the best interview choices</div>
+          <h1 style="font-size:64px;line-height:0.95;margin:0;text-wrap:balance;">Who should you call?</h1>
+          <p style="font-size:17px;max-width:52ch;margin:0;text-wrap:pretty;">Every story raises questions. PEER is a checklist of the four kinds of source who can answer them. Work through five levels, from naming a source’s role to building a full interview list for a story lead.</p>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:8px;">
+            <sc-for list="{{ primer }}" as="t" hint-placeholder-count="4">
+              <div class="card blueprint" style="padding:16px;gap:8px;">
+                <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                <div style="display:flex;align-items:center;gap:8px;color:var(--color-accent-700);">{{ t.icon }}<span style="font-family:var(--font-heading);font-weight:600;font-size:22px;color:var(--color-text);">{{ t.label }}</span></div>
+                <div style="font-size:14px;font-weight:500;">{{ t.answers }}</div>
+                <div style="font-size:13px;color:var(--color-neutral-700);">{{ t.includes }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;max-width:60ch;">
+            <div style="display:flex;gap:10px;"><span style="font-family:var(--font-heading);font-weight:600;color:var(--color-accent-700);">01</span><span>The same person can play different roles. A politician might be power in one story and a representative in another, so read the question they will be asked.</span></div>
+            <div style="display:flex;gap:10px;"><span style="font-family:var(--font-heading);font-weight:600;color:var(--color-accent-700);">02</span><span>Random members of the public, friends and family are not on the list. Every source should be there for their power, expertise, experience or the people they represent.</span></div>
+          </div>
+        </div>
+
+        <div class="card blueprint" style="padding:24px;gap:22px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <h3 style="margin:0;">Set up a game</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="font-size:12px;color:var(--color-neutral-700);">Players</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--color-divider);">
+              <sc-for list="{{ modeOpts }}" as="m" hint-placeholder-count="2">
+                <button onClick="{{ m.onClick }}" style="border:0;padding:12px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:2px;background:{{ m.bg }};color:{{ m.fg }};">
+                  <span style="font-family:var(--font-heading);font-weight:600;font-size:17px;">{{ m.label }}</span>
+                  <span style="font-size:12px;">{{ m.sub }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="font-size:12px;color:var(--color-neutral-700);">Start at level</div>
+            <div style="display:flex;flex-direction:column;border:1px solid var(--color-divider);">
+              <sc-for list="{{ levelOpts }}" as="l" hint-placeholder-count="5">
+                <button onClick="{{ l.onClick }}" style="border:0;border-bottom:1px solid var(--color-divider);padding:10px 12px;cursor:pointer;text-align:left;display:grid;grid-template-columns:32px 1fr auto;gap:10px;align-items:baseline;background:{{ l.bg }};color:{{ l.fg }};" style-hover="background:var(--color-accent-100);color:var(--color-text);">
+                  <span style="font-family:var(--font-heading);font-weight:600;font-size:18px;">{{ l.num }}</span>
+                  <span style="display:flex;flex-direction:column;gap:1px;"><span style="font-family:var(--font-heading);font-weight:600;font-size:17px;">{{ l.title }}</span><span style="font-size:12px;">{{ l.sub }}</span></span>
+                  <span style="font-size:12px;white-space:nowrap;">{{ l.pts }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="font-size:13px;color:var(--color-neutral-700);">{{ modeRule }}</div>
+          <button class="btn btn-primary blueprint" onClick="{{ startGame }}" style="padding:14px 18px;font-size:18px;justify-content:space-between;">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <span>Start game</span>{{ arrowIcon }}
+          </button>
+        </div>
+      </section>
+    </sc-if>
+
+    <!-- LEVEL INTRO -->
+    <sc-if value="{{ isIntro }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="Level intro" style="display:flex;flex-direction:column;gap:24px;max-width:760px;margin:24px auto 0;width:100%;">
+        <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">Level {{ lvNum }} of 5 · {{ lvPtsText }}</div>
+        <h1 style="font-size:72px;line-height:0.95;margin:0;">{{ lvTitle }}</h1>
+        <p style="font-size:18px;margin:0;text-wrap:pretty;">{{ lvBrief }}</p>
+        <div class="card blueprint" style="padding:20px;gap:10px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div class="card-kicker" style="color:var(--color-accent-700);">How to play</div>
+          <sc-for list="{{ lvHow }}" as="h" hint-placeholder-count="3">
+            <div style="display:flex;gap:10px;font-size:15px;"><span style="font-family:var(--font-heading);font-weight:600;color:var(--color-accent-700);">{{ h.n }}</span><span>{{ h.text }}</span></div>
+          </sc-for>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <button class="btn btn-primary blueprint" onClick="{{ beginLevel }}" style="padding:14px 22px;font-size:18px;">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <span>Start level {{ lvNum }}</span>{{ arrowIcon }}
+          </button>
+          <sc-if value="{{ teams }}" hint-placeholder-val="{{ false }}">
+            <span style="display:flex;align-items:center;gap:8px;font-size:15px;"><span style="width:10px;height:10px;background:{{ turnSolid }};"></span>{{ turnName }} to play first</span>
+          </sc-if>
+        </div>
+      </section>
+    </sc-if>
+
+    <!-- QUESTION -->
+    <sc-if value="{{ isQ }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="Question" style="display:flex;flex-direction:column;gap:24px;">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between;">
+          <sc-if value="{{ teams }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:10px;padding:8px 16px;background:{{ turnSolid }};color:var(--color-bg);font-family:var(--font-heading);font-weight:600;font-size:20px;letter-spacing:0.02em;">{{ usersIcon }}<span>{{ turnName }}’s turn</span></div>
+          </sc-if>
+          <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">Level {{ lvNum }} · {{ lvTitle }} · {{ lvPtsText }}</div>
+          <sc-if value="{{ showTimer }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:6px;font-family:var(--font-heading);font-weight:600;font-size:22px;color:{{ timerColor }};">{{ clockIcon }}{{ timeLeft }}s</div>
+          </sc-if>
+        </div>
+
+        <div class="card blueprint" style="padding:24px;gap:12px;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="tag tag-accent">{{ item.genre }}</span>
+            <span class="tag tag-outline" style="color:var(--color-accent-700);border-color:var(--color-accent-700);">{{ item.format }}</span>
+          </div>
+          <div class="card-kicker" style="color:var(--color-accent-700);">Story lead</div>
+          <h2 style="font-size:36px;margin:0;text-wrap:balance;">{{ item.lead }}</h2>
+        </div>
+
+        <!-- classify -->
+        <sc-if value="{{ isClassify }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;">
+            <div style="display:flex;flex-direction:column;gap:6px;padding:4px 0;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">Source</div>
+              <div style="font-family:var(--font-heading);font-weight:600;font-size:26px;line-height:1.15;">{{ item.source }}</div>
+              <div style="font-size:12px;color:var(--color-neutral-700);margin-top:14px;">You will ask them</div>
+              <div style="font-size:19px;line-height:1.4;">“{{ item.ask }}”</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">What role do they play in this story?</div>
+              <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
+                <sc-for list="{{ typeOpts }}" as="o" hint-placeholder-count="4">
+                  <button class="blueprint" onClick="{{ o.onClick }}" style="cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:6px;padding:14px;border:1px solid var(--color-divider);border-color:{{ o.border }};box-shadow:{{ o.ring }};background:{{ o.bg }};" style-hover="border-color:var(--color-accent);">
+                    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                    <span style="display:flex;align-items:center;gap:8px;color:var(--color-accent-700);">{{ o.icon }}<span style="font-family:var(--font-heading);font-weight:600;font-size:20px;color:var(--color-text);">{{ o.label }}</span></span>
+                    <span style="font-size:13px;color:var(--color-neutral-700);">{{ o.answers }}</span>
+                    <sc-if value="{{ o.hasMark }}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:{{ o.markColor }};">{{ o.mark }}</span></sc-if>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- gap -->
+        <sc-if value="{{ isGap }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px;align-items:start;">
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">Already in your draft</div>
+              <sc-for list="{{ haveList }}" as="h" hint-placeholder-count="2">
+                <div style="display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-left:2px solid var(--color-accent-400);background:color-mix(in srgb, var(--color-accent) 6%, transparent);">
+                  <span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--color-accent-700);">{{ h.icon }}{{ h.label }}</span>
+                  <span style="font-size:15px;">{{ h.text }}</span>
+                </div>
+              </sc-for>
+              <div style="font-size:15px;margin-top:6px;font-weight:500;">{{ item.prompt }}</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">Choose one source to approach</div>
+              <sc-for list="{{ gapOpts }}" as="o" hint-placeholder-count="4">
+                <button class="blueprint" onClick="{{ o.onClick }}" style="cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--color-divider);border-color:{{ o.border }};box-shadow:{{ o.ring }};background:{{ o.bg }};" style-hover="border-color:var(--color-accent);">
+                  <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                  <span style="font-family:var(--font-heading);font-weight:600;font-size:19px;line-height:1.2;">{{ o.source }}</span>
+                  <span style="font-size:14px;color:var(--color-neutral-800);">Ask: “{{ o.ask }}”</span>
+                  <sc-if value="{{ o.reveal }}" hint-placeholder-val="{{ false }}">
+                    <span style="display:flex;flex-direction:column;gap:4px;margin-top:6px;padding-top:8px;border-top:1px solid var(--color-divider);">
+                      <span style="font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:{{ o.markColor }};">{{ o.tag }}</span>
+                      <span style="font-size:13px;">{{ o.note }}</span>
+                    </span>
+                  </sc-if>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- slots -->
+        <sc-if value="{{ isSlots }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:28px;align-items:start;">
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">Questions this story needs to answer. Drag a source onto each one, or tap a source and then a question.</div>
+              <sc-for list="{{ slotList }}" as="sl" hint-placeholder-count="4">
+                <div onDragOver="{{ sl.onDragOver }}" onDrop="{{ sl.onDrop }}" onClick="{{ sl.onClick }}" style="display:flex;flex-direction:column;gap:8px;padding:14px;border:1px dashed var(--color-neutral-500);border-color:{{ sl.border }};background:{{ sl.bg }};cursor:pointer;min-height:96px;">
+                  <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline;">
+                    <span style="font-family:var(--font-heading);font-weight:600;font-size:19px;">{{ sl.q }}</span>
+                    <sc-if value="{{ sl.reveal }}" hint-placeholder-val="{{ false }}"><span style="display:flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:var(--color-accent-700);white-space:nowrap;">{{ sl.icon }}{{ sl.typeLabel }}</span></sc-if>
+                  </div>
+                  <sc-if value="{{ sl.filled }}" hint-placeholder-val="{{ false }}">
+                    <div style="padding:10px 12px;border:1px solid var(--color-divider);background:var(--color-bg);display:flex;flex-direction:column;gap:2px;">
+                      <span style="font-weight:700;font-size:14px;">{{ sl.placedSource }}</span>
+                      <span style="font-size:13px;color:var(--color-neutral-700);">Ask: “{{ sl.placedAsk }}”</span>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ sl.empty }}" hint-placeholder-val="{{ true }}">
+                    <div style="font-size:13px;color:var(--color-neutral-600);">{{ sl.emptyText }}</div>
+                  </sc-if>
+                  <sc-if value="{{ sl.reveal }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size:13px;font-weight:500;color:{{ sl.markColor }};">{{ sl.verdict }}</div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">{{ poolHeading }}</div>
+              <sc-for list="{{ poolList }}" as="c" hint-placeholder-count="6">
+                <div draggable="{{ c.draggable }}" onDragStart="{{ c.onDragStart }}" onClick="{{ c.onClick }}" class="blueprint" style="cursor:grab;display:flex;flex-direction:column;gap:4px;padding:12px 14px;border:1px solid var(--color-divider);border-color:{{ c.border }};box-shadow:{{ c.ring }};background:{{ c.bg }};" style-hover="border-color:var(--color-accent);">
+                  <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                  <span style="font-weight:700;font-size:14px;">{{ c.source }}</span>
+                  <span style="font-size:13px;color:var(--color-neutral-700);">Ask: “{{ c.ask }}”</span>
+                  <sc-if value="{{ c.reveal }}" hint-placeholder-val="{{ false }}">
+                    <span style="font-size:13px;margin-top:4px;padding-top:6px;border-top:1px solid var(--color-divider);"><b style="color:{{ c.markColor }};">{{ c.tag }}.</b> {{ c.note }}</span>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- build -->
+        <sc-if value="{{ isBuild }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:28px;align-items:start;">
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="font-size:12px;color:var(--color-neutral-700);">Candidate sources. Tap or drag to add to your list.</div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:12px;">
+                <sc-for list="{{ buildPool }}" as="c" hint-placeholder-count="8">
+                  <div draggable="{{ c.draggable }}" onDragStart="{{ c.onDragStart }}" onClick="{{ c.onClick }}" class="blueprint" style="cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:12px 14px;border:1px solid var(--color-divider);border-color:{{ c.border }};box-shadow:{{ c.ring }};background:{{ c.bg }};" style-hover="border-color:var(--color-accent);">
+                    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                    <span style="display:flex;justify-content:space-between;gap:8px;"><span style="font-weight:700;font-size:14px;">{{ c.source }}</span><span style="color:var(--color-accent-700);">{{ c.checkIcon }}</span></span>
+                    <span style="font-size:13px;color:var(--color-neutral-700);">Ask: “{{ c.ask }}”</span>
+                    <sc-if value="{{ c.reveal }}" hint-placeholder-val="{{ false }}">
+                      <span style="font-size:13px;margin-top:4px;padding-top:6px;border-top:1px solid var(--color-divider);"><b style="color:{{ c.markColor }};">{{ c.tag }}.</b> {{ c.note }}</span>
+                    </sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div onDragOver="{{ listDragOver }}" onDrop="{{ listDrop }}" class="card blueprint" style="padding:18px;gap:10px;min-height:240px;">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <h4 style="margin:0;">Your interview list</h4>
+                <span style="font-family:var(--font-heading);font-weight:600;font-size:18px;">{{ pickCount }} / {{ item.pick }}</span>
+              </div>
+              <div style="font-size:13px;color:var(--color-neutral-700);">Choose exactly {{ item.pick }}. Think about which questions this story raises before you pick.</div>
+              <sc-for list="{{ pickedList }}" as="p" hint-placeholder-count="0">
+                <div onClick="{{ p.onClick }}" style="display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 10px;border:1px solid var(--color-divider);background:var(--color-bg);cursor:pointer;font-size:14px;">
+                  <span><b>{{ p.n }}.</b> {{ p.source }}</span><span style="color:var(--color-neutral-600);">{{ p.xIcon }}</span>
+                </div>
+              </sc-for>
+              <sc-if value="{{ noPicks }}" hint-placeholder-val="{{ true }}">
+                <div style="padding:20px;border:1px dashed var(--color-neutral-400);font-size:13px;color:var(--color-neutral-600);text-align:center;">Drop sources here</div>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- actions / feedback -->
+        <sc-if value="{{ notAnswered }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+            <button class="btn btn-primary blueprint" onClick="{{ submit }}" disabled="{{ cantSubmit }}" style="padding:12px 22px;font-size:18px;">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              Lock in answer
+            </button>
+            <span style="font-size:13px;color:var(--color-neutral-700);">{{ submitHint }}</span>
+          </div>
+        </sc-if>
+        <sc-if value="{{ isAnswered }}" hint-placeholder-val="{{ false }}">
+          <div class="card blueprint elev-md" style="padding:22px;gap:12px;background:var(--color-bg);border-color:{{ fbBorder }};">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;align-items:center;gap:10px;color:{{ fbColor }};">{{ fbIcon }}<h3 style="margin:0;color:var(--color-text);">{{ fbTitle }}</h3></div>
+            <sc-for list="{{ fbIssues }}" as="is" hint-placeholder-count="0">
+              <div style="font-size:14px;display:flex;gap:8px;"><span style="color:var(--color-neutral-600);">—</span><span>{{ is.text }}</span></div>
+            </sc-for>
+            <p style="font-size:16px;margin:0;max-width:75ch;text-wrap:pretty;">{{ item.why }}</p>
+            <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px;">
+              <button class="btn btn-primary blueprint" onClick="{{ next }}" style="padding:12px 22px;font-size:18px;">
+                <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                <span>{{ nextLabel }}</span>{{ arrowIcon }}
+              </button>
+              <sc-if value="{{ showHandover }}" hint-placeholder-val="{{ false }}">
+                <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-heading);font-weight:600;font-size:18px;"><span style="width:10px;height:10px;background:{{ nextTurnSolid }};"></span>{{ handoverText }}</span>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showCheat }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0;border-top:1px solid var(--color-divider);padding-top:14px;margin-top:8px;">
+            <sc-for list="{{ primer }}" as="t" hint-placeholder-count="4">
+              <div style="display:flex;gap:8px;padding:4px 12px 4px 0;font-size:12px;color:var(--color-neutral-700);">
+                <span style="color:var(--color-accent-700);">{{ t.smallIcon }}</span>
+                <span><b style="color:var(--color-text);">{{ t.label }}</b> {{ t.answers }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </section>
+    </sc-if>
+
+    <!-- LEVEL END / GAME END -->
+    <sc-if value="{{ isLevelEnd }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="Level complete" style="display:flex;flex-direction:column;gap:24px;max-width:760px;margin:24px auto 0;width:100%;">
+        <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">{{ endKicker }}</div>
+        <h1 style="font-size:72px;line-height:0.95;margin:0;text-wrap:balance;">{{ endTitle }}</h1>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;">
+          <sc-for list="{{ endCards }}" as="e" hint-placeholder-count="2">
+            <div class="card blueprint" style="padding:20px;gap:6px;border-color:{{ e.border }};">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-heading);font-weight:600;font-size:20px;"><span style="width:10px;height:10px;background:{{ e.solid }};"></span>{{ e.name }}</div>
+              <div style="font-family:var(--font-heading);font-weight:600;font-size:56px;line-height:1;">{{ e.score }}</div>
+              <div style="font-size:13px;color:var(--color-neutral-700);">{{ e.stats }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:16px;margin:0;max-width:65ch;">{{ endNote }}</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <sc-if value="{{ hasNextLevel }}" hint-placeholder-val="{{ true }}">
+            <button class="btn btn-primary blueprint" onClick="{{ nextLevel }}" style="padding:14px 22px;font-size:18px;">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <span>{{ nextLevelLabel }}</span>{{ arrowIcon }}
+            </button>
+          </sc-if>
+          <button class="btn btn-secondary" onClick="{{ quit }}" style="padding:14px 22px;font-size:18px;">Back to menu</button>
+        </div>
+      </section>
+    </sc-if>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;timer&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[0,30,60,90],&quot;default&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Gameplay&quot;},&quot;shuffle&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Gameplay&quot;},&quot;showCheatSheet&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Gameplay&quot;}}">
+const RED = "oklch(0.5 0.13 25)", RED_T = "oklch(0.95 0.025 25)";
+const OK = "var(--color-accent-700)", BAD = "oklch(0.5 0.13 25)";
+const ORDER = ["power", "expertise", "experience", "rep"];
+const T = {
+  power: { label: "Power", answers: "What is being done? What should or will be done?", includes: "Political, legal, financial, cultural and mobilisation power. Not only politicians." },
+  expertise: { label: "Expertise", answers: "Why is this happening? How does it work?", includes: "Academics, researchers, senior professionals, award-winners, people with long experience of a process." },
+  experience: { label: "Experience", answers: "What happened? What is it like to be affected?", includes: "Eyewitnesses, people affected by an issue, people who went through something similar." },
+  rep: { label: "Representative", answers: "How widespread is it? How do the people affected feel?", includes: "Unions, professional bodies, charities, community leaders, group admins, elected representatives." }
+};
+const ICONS = {
+  power: ["M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"],
+  expertise: ["M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z", "M22 10v6", "M6 12.5V16a6 3 0 0 0 12 0v-3.5"],
+  experience: ["M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0", { c: [12, 12, 3] }],
+  rep: ["m3 11 18-5v12L3 14v-3z", "M11.6 16.8a3 3 0 1 1-5.8-1.6"],
+  check: ["M20 6 9 17l-5-5"],
+  checkCircle: [{ c: [12, 12, 10] }, "m9 12 2 2 4-4"],
+  xCircle: [{ c: [12, 12, 10] }, "m15 9-6 6", "m9 9 6 6"],
+  x: ["M18 6 6 18", "m6 6 12 12"],
+  arrow: ["M5 12h14", "m12 5 7 7-7 7"],
+  clock: [{ c: [12, 12, 10] }, "M12 6v6l4 2"],
+  users: ["M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", { c: [9, 7, 4] }, "M22 21v-2a4 4 0 0 0-3-3.87", "M16 3.13a4 4 0 0 1 0 7.75"]
+};
+function icon(name, size) {
+  const s = size || 20;
+  return React.createElement("svg", { width: s, height: s, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", style: { display: "block", flex: "none" } },
+    ICONS[name].map((d, i) => typeof d === "string" ? React.createElement("path", { key: i, d }) : React.createElement("circle", { key: i, cx: d.c[0], cy: d.c[1], r: d.c[2] })));
+}
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+const WEAK = {
+  vox: "Vox pop",
+  friend: "Friend or family",
+  dup: "Role already covered",
+  off: "Wrong role for this story",
+  unverified: "Unverified",
+};
+
+const LEVELS = [
+  {
+    title: "Know your PEER", kind: "classify", pts: 1,
+    brief: "Each card shows a story lead, a source, and the question you plan to ask them. Decide which PEER role that source plays in the story.",
+    how: ["Read the story lead and the question the source will be asked.", "Pick Power, Expertise, Experience or Representative, then lock in.", "The question tells you the role. Who they are only tells you which roles are possible."],
+    items: [
+      { genre: "Crime", format: "News", lead: "Spate of catalytic converter thefts hits market town", source: "Chief inspector, local police", ask: "What are officers doing to catch those responsible?", answer: "power", why: "Police hold legal power: they enforce the law. Asking what is being done about a problem is a question for a source of power." },
+      { genre: "Health", format: "News", lead: "A&E waiting times hit a record high this winter", source: "Professor of health policy who studies NHS performance data", ask: "Why are waits getting longer, and how does this winter compare with previous years?", answer: "expertise", why: "Academic expertise answers the ‘why’ and ‘how’ questions and puts the figures in context: is it getting better or worse?" },
+      { genre: "Education", format: "Feature", lead: "What it’s like to start university as a care leaver", source: "A second-year student who grew up in foster care", ask: "What was your first term like?", answer: "experience", why: "Someone affected by the issue can put a human face to it and answer ‘What is it like?’. These sources are often the hardest to find." },
+      { genre: "Transport", format: "News", lead: "Bus company cuts evening services across the region", source: "Regional secretary of the transport workers’ union", ask: "How do drivers feel about the changes to their shifts?", answer: "rep", why: "A union can speak formally on behalf of its members, and its leaders are elected. They give the reaction of a whole group, not one person." },
+      { genre: "Environment", format: "News", lead: "River declared unsafe for swimming after sewage spill", source: "Paddleboard instructor who was on the water when the discharge started", ask: "What did you see and smell that morning?", answer: "experience", why: "An eyewitness describes what happened first hand. Witnesses are almost always quoted on details of description." },
+      { genre: "Sport", format: "News", lead: "Abuse of referees in grassroots football reaches new high", source: "County football association", ask: "What sanctions will clubs face if their players or fans abuse officials?", answer: "power", why: "Sports governing bodies have legal power: they make and enforce the rules. Power is not only political." },
+      { genre: "Housing", format: "News", lead: "Tenants report black mould across council estate", source: "Chair of the estate’s residents’ association", ask: "How many households have come to you with damp or mould problems?", answer: "rep", why: "The residents’ association speaks for a wider group and can tell you how widespread the problem is, which one tenant cannot." }
+    ]
+  },
+  {
+    title: "Same face, different role", kind: "classify", pts: 2,
+    brief: "The same kinds of people keep coming back: MPs, former footballers, authors, group admins. Their role changes with the story and the question you ask.",
+    how: ["Ignore the job title for a moment and focus on the question.", "Ask yourself: is this about action, explanation, lived experience, or the views of a group?", "Within one story a source should play one role, so the question has to be clear."],
+    items: [
+      { genre: "Politics", format: "News", lead: "Council to close three branch libraries", source: "The local MP", ask: "How many constituents have contacted you about the closures?", answer: "rep", why: "Here the MP is the voice of their constituents and has an ‘ear to the ground’. The council holds the power to close or save the libraries." },
+      { genre: "Politics", format: "Feature", lead: "MPs speak out about the online abuse they receive", source: "An MP", ask: "What kind of messages have you received, and how has it affected you?", answer: "experience", why: "In this story the MP is someone affected by the issue. They are asked what it is like, not what they will do about it." },
+      { genre: "Politics", format: "Feature", lead: "Survival guide for the new intake of MPs", source: "Former chief whip who served 20 years in Parliament", ask: "What do new MPs most often get wrong in their first year?", answer: "expertise", why: "Two decades in a senior role gives professional expertise in how Parliament works. They are offering insight, not taking action." },
+      { genre: "Health", format: "News", lead: "Town left without a single NHS dentist taking new patients", source: "Health minister", ask: "What is the government doing to bring dentists to the area?", answer: "power", why: "The minister has responsibility for the sector and the power to spend money and change rules. They are asked about action." },
+      { genre: "Sport", format: "Feature", lead: "Cup final preview: can the underdogs cause an upset?", source: "Former footballer who played in two cup finals", ask: "How should the underdogs set up to stop their opponents’ midfield?", answer: "expertise", why: "A former player can give expert insight into tactics. This is the expertise of achievement and long professional experience." },
+      { genre: "Sport", format: "Feature", lead: "The day I walked out at a cup final", source: "Former footballer who played in two cup finals", ask: "What does it feel like to walk out of the tunnel on final day?", answer: "experience", why: "Same person, different question. Now they describe a first-hand experience rather than analysing tactics." },
+      { genre: "Arts", format: "News", lead: "Campaign launched to save school libraries", source: "Bestselling children’s author with two million followers", ask: "Will you use your platform to call on the government to protect library funding?", answer: "power", why: "An author can be a voice of expertise, but here they are using cultural and mobilisation power to call for action." },
+      { genre: "Community", format: "News", lead: "Parents angry at parking fines outside primary school", source: "Admin of a 12,000-member local parents’ Facebook group", ask: "What concerns are members raising most often?", answer: "rep", why: "A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them." }
+    ]
+  },
+  {
+    title: "Find the blind spot", kind: "gap", pts: 3,
+    brief: "Each story draft already has some sources. Work out which question it still fails to answer, then choose the best person to approach.",
+    how: ["Check which PEER roles the draft already has.", "Ask: does it say what is being done, why it is happening, what it is like, and how people are reacting?", "Watch out for vox pops, friends, family and sources who repeat a role you already have."],
+    items: [
+      { genre: "Health", format: "News", lead: "Pharmacies ration ADHD medication as shortage drags on", have: [{ type: "power", text: "Department of Health spokesperson says supply problems will be resolved by spring." }, { type: "expertise", text: "Pharmacology lecturer explains how manufacturing problems led to the shortage." }], prompt: "The story explains what is being done and why. What is missing?", answer: "b",
+        options: [
+          { id: "a", source: "Shoppers stopped outside a city-centre pharmacy", ask: "What do you think about the medication shortage?", tag: WEAK.vox, note: "Random passers-by have no particular power, expertise or experience of the issue." },
+          { id: "b", source: "Parent whose son has gone three weeks without medication, found through an ADHD charity", ask: "How has the shortage affected your family?", tag: "Best choice: Experience", note: "Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk." },
+          { id: "c", source: "Your flatmate, who has an ADHD diagnosis", ask: "Have you had trouble getting your prescription?", tag: WEAK.friend, note: "A conflict of interest, and you can’t present them independently. Use your contacts to find someone else instead." },
+          { id: "d", source: "A second pharmacology academic at another university", ask: "Why is there a shortage?", tag: WEAK.dup, note: "The draft already has this expertise. A second expert adds little unless they disagree." }
+        ], why: "The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline." },
+      { genre: "Crime", format: "News", lead: "Shoplifting up 30% in the city centre, figures show", have: [{ type: "experience", text: "Shop owner describes being threatened by a shoplifter last month." }, { type: "expertise", text: "Criminologist explains what is driving the rise in retail crime." }], prompt: "The draft has context and colour. What question is left hanging?", answer: "a",
+        options: [
+          { id: "a", source: "Police and crime commissioner", ask: "What resources are being put into tackling retail crime?", tag: "Best choice: Power", note: "The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply." },
+          { id: "b", source: "Shoppers on the high street", ask: "Do you feel safe shopping in town?", tag: WEAK.vox, note: "Opinions from random passers-by don’t answer any of the story’s questions." },
+          { id: "c", source: "Another shop owner on the same street", ask: "Have you been targeted too?", tag: WEAK.dup, note: "A second case study adds colour but doesn’t fill the gap: nobody is being held to account." },
+          { id: "d", source: "Your uncle, a retired police officer", ask: "Why don’t police turn up to shoplifting any more?", tag: WEAK.friend, note: "Family members are not independent sources, and a retired officer has no power over current policy." }
+        ], why: "Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply." },
+      { genre: "Education", format: "News", lead: "Primary school to move to a four-day week amid staff shortages", have: [{ type: "power", text: "Headteacher says the change is the only way to keep classes covered." }, { type: "power", text: "Council confirms it has approved the timetable change." }], prompt: "Two sources of power, both explaining the decision. Who is missing?", answer: "c",
+        options: [
+          { id: "a", source: "Passers-by near the school gates", ask: "Is a four-day week a good idea?", tag: WEAK.vox, note: "People who happen to be walking past may not even have children at the school." },
+          { id: "b", source: "Education secretary", ask: "What is the government doing about teacher recruitment nationally?", tag: WEAK.dup, note: "Another source of power. The story already has two, and none of the affected families have a voice." },
+          { id: "c", source: "Chair of the school’s parent council", ask: "What have parents told you about the change?", tag: "Best choice: Representative", note: "Speaks for parents as a group and can say how widespread concern is. This is the reaction the story lacks." },
+          { id: "d", source: "Your cousin, who teaches at a different school", ask: "Would you want a four-day week?", tag: WEAK.friend, note: "Not independent, and not connected to this school." }
+        ], why: "The draft only has the people who made the decision. A representative provides the reaction that moves the story on, and could give it a new angle." },
+      { genre: "Sport", format: "Feature", lead: "Why are so many girls quitting football at 14?", have: [{ type: "expertise", text: "Researcher at a women’s sport charity explains the drop-off in the figures." }, { type: "experience", text: "A 15-year-old describes why she stopped playing for her club." }], prompt: "The feature explains the problem and shows the impact. What is it missing?", answer: "d",
+        options: [
+          { id: "a", source: "Comments under a club’s Instagram post about girls’ teams", ask: "(Quoting comments directly)", tag: WEAK.unverified, note: "Anonymous comments can’t be verified, and they don’t represent anyone. They might point you to sources, though." },
+          { id: "b", source: "Your younger sister, who gave up last year", ask: "Why did you stop playing?", tag: WEAK.friend, note: "Family members aren’t independent. Find case studies through clubs, charities or forums instead." },
+          { id: "c", source: "A second teenager who quit", ask: "Why did you stop?", tag: WEAK.dup, note: "Useful for colour, but the story already has experience. Nobody is asked what will change." },
+          { id: "d", source: "Head of women’s and girls’ football at the national FA", ask: "What is being done to keep teenage girls playing?", tag: "Best choice: Power", note: "The governing body has power to change rules, funding and facilities. It answers ‘What is being done?’." }
+        ], why: "Even a feature benefits from someone who can say what is being done. Here that is a sports governing body, which has legal and financial power over the game." }
+    ]
+  },
+  {
+    title: "Answer the story’s questions", kind: "slots", pts: 4,
+    brief: "Each story raises several questions. Match a source to each one. Some candidates are weak, and some are good sources in the wrong place.",
+    how: ["Drag a source onto the question it answers, or tap the source then tap the question.", "Tap a filled question to send its source back.", "Every question must be filled, and every match must be right, to score."],
+    items: [
+      { genre: "Crime", format: "News", lead: "Knife crime arrests of under-18s double in two years",
+        slots: [
+          { id: "s1", q: "What is it like for families affected?", type: "experience", answer: "p1" },
+          { id: "s2", q: "Why is this happening?", type: "expertise", answer: "p2" },
+          { id: "s3", q: "What is being done about it?", type: "power", answer: "p3" },
+          { id: "s4", q: "How are young people in the city reacting?", type: "rep", answer: "p4" }
+        ],
+        pool: [
+          { id: "p1", source: "Mother whose son was stabbed, now volunteers with a victims’ charity", ask: "How has your family’s life changed since the attack?" },
+          { id: "p2", source: "Criminologist who studies youth violence", ask: "What explains the rise among under-18s?" },
+          { id: "p3", source: "City mayor, who controls the violence reduction budget", ask: "What will you do to bring the numbers down?" },
+          { id: "p4", source: "Elected chair of the city’s youth council", ask: "What are young people telling you about safety?" },
+          { id: "p5", source: "Teenagers approached outside a shopping centre", ask: "Do you know anyone who carries a knife?", tag: WEAK.vox, note: "Ethically risky with under-18s, and they represent nobody but themselves." },
+          { id: "p6", source: "Crime novelist", ask: "Why do you think young people carry knives?", tag: WEAK.off, note: "Writing crime fiction isn’t expertise in youth violence." },
+          { id: "p7", source: "Your friend’s younger brother, who is at a local school", ask: "Is knife crime a problem at your school?", tag: WEAK.friend, note: "Not independent, and a child you know personally." }
+        ],
+        why: "A full news story needs all four roles here: a family for impact, an expert for context, the mayor for action, and an elected youth body for reaction." },
+      { genre: "Health", format: "Feature", lead: "Living with long Covid, three years on",
+        slots: [
+          { id: "s1", q: "What does daily life look like with long Covid?", type: "experience", answer: "p1" },
+          { id: "s2", q: "What does the latest research say?", type: "expertise", answer: "p2" },
+          { id: "s3", q: "What are patients telling support groups?", type: "rep", answer: "p3" }
+        ],
+        pool: [
+          { id: "p1", source: "Nurse who has been unable to work since 2023, found through a long Covid support group", ask: "Talk me through a typical day." },
+          { id: "p2", source: "Researcher leading a long Covid clinical trial", ask: "What have we learned about recovery?" },
+          { id: "p3", source: "Founder of a national long Covid patient network", ask: "What are the most common problems members raise?" },
+          { id: "p4", source: "Wellness influencer who sells recovery supplements", ask: "How can people recover faster?", tag: WEAK.off, note: "A large following is cultural power, not expertise, and they have a financial interest." },
+          { id: "p5", source: "People in a GP waiting room", ask: "Do you know anyone with long Covid?", tag: WEAK.vox, note: "Second-hand and random. Find people with direct experience." },
+          { id: "p6", source: "Your aunt, who had Covid twice", ask: "Do you still feel tired?", tag: WEAK.friend, note: "Family, and having Covid is not the same as having long Covid." }
+        ],
+        why: "A human-interest feature can leave out power and still work. It leads on experience, with research and a patient network to show this is not just one person’s story." },
+      { genre: "Sport", format: "News", lead: "Premier League club announces 20% rise in ticket prices",
+        slots: [
+          { id: "s1", q: "How have fans reacted?", type: "rep", answer: "p1" },
+          { id: "s2", q: "Why has the club done this? (Right of reply)", type: "power", answer: "p2" },
+          { id: "s3", q: "Can the club justify it financially?", type: "expertise", answer: "p3" },
+          { id: "s4", q: "What does it mean for families who go every week?", type: "experience", answer: "p4" }
+        ],
+        pool: [
+          { id: "p1", source: "Chair of the club’s independent supporters’ trust", ask: "What are your members saying about the rise?" },
+          { id: "p2", source: "Club chief executive", ask: "Why are prices going up, and will you reconsider?" },
+          { id: "p3", source: "Football finance analyst who studies club accounts", ask: "Does the club need the extra revenue?" },
+          { id: "p4", source: "Season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust", ask: "Can you still afford to go?" },
+          { id: "p5", source: "Replies under the club’s announcement on social media", ask: "(Quoting the angriest replies)", tag: WEAK.unverified, note: "Anonymous replies can’t be verified. Use them to find sources, not as quotes." },
+          { id: "p6", source: "Your housemate, who supports a rival club", ask: "What do you make of the price rise?", tag: WEAK.friend, note: "Not affected, not independent." },
+          { id: "p7", source: "Former player turned TV pundit", ask: "Is this bad for the game?", tag: WEAK.off, note: "Cultural power and opinion, but not the supporters’ voice and not financial expertise." }
+        ],
+        why: "The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact." }
+    ]
+  },
+  {
+    title: "Build the interview list", kind: "build", pts: 5,
+    brief: "No more hints about which questions to answer. Read the lead, decide what the story needs, and pick your interview list.",
+    how: ["Decide what type of story it is first. An advice feature needs different voices from a news story.", "Pick exactly the number asked for.", "Your list scores if every pick is strong and you cover the roles the story needs."],
+    items: [
+      { genre: "Money", format: "Feature", lead: "Make your money last until payday: the experts’ guide", pick: 3, need: ["expertise"], only: ["expertise"],
+        pool: [
+          { id: "a", source: "Debt adviser at a money advice charity", ask: "What is the first thing people should cut back on?", type: "expertise", note: "Professional expertise from working with people in debt every day." },
+          { id: "b", source: "Author of a bestselling budgeting book", ask: "What is your simplest budgeting rule?", type: "expertise", note: "Non-academic expertise. Authors are often keen to talk." },
+          { id: "c", source: "Economist who researches household spending", ask: "Where does the average household’s money go?", type: "expertise", note: "Academic expertise adds evidence to the tips." },
+          { id: "d", source: "Blogger who paid off £40,000 of debt and now writes about frugal living", ask: "What habit made the biggest difference?", type: "expertise", note: "Experiential expertise: long, deep experience of the process." },
+          { id: "e", source: "Chancellor of the Exchequer", ask: "What are you doing about the cost of living?", type: "power", note: "Power, but an advice feature isn’t asking what is being done." },
+          { id: "f", source: "Bank chief executive", ask: "Will interest rates come down?", type: "power", note: "Financial power, but not the voice this guide needs." },
+          { id: "g", source: "Shoppers in a supermarket", ask: "How do you save money?", type: null, tag: WEAK.vox, note: "Readers want tips from people who know more than they do." },
+          { id: "h", source: "Your parents, who are good with money", ask: "Any tips?", type: null, tag: WEAK.friend, note: "Not independent, and no credentials to offer readers." }
+        ],
+        why: "Some stories only need one type of source. An experts’ guide is built from a range of expertise: professional, academic, authors and people with long experience." },
+      { genre: "Transport", format: "News", lead: "Rail operator cancels 400 trains in a week over driver shortages", pick: 4, need: ["power", "expertise", ["experience", "rep"]],
+        pool: [
+          { id: "a", source: "Rail operator’s managing director", ask: "Why were so many trains cancelled, and when will it improve?", type: "power", note: "The operator is responsible, so it must get a right of reply." },
+          { id: "b", source: "Transport secretary", ask: "Will you step in over the operator’s performance?", type: "power", note: "Political power to act on the operator’s contract." },
+          { id: "c", source: "Commuter who has received a warning at work for being late, found via a passenger forum", ask: "How have the cancellations affected you?", type: "experience", note: "Shows the impact. Forums are a good place to find people affected." },
+          { id: "d", source: "General secretary of the train drivers’ union", ask: "Why are there not enough drivers?", type: "rep", note: "Speaks for drivers and can explain the shortage from their side." },
+          { id: "e", source: "Head of the independent passenger watchdog", ask: "How many complaints have you received this week?", type: "rep", note: "Represents passengers and can say how widespread the problem is." },
+          { id: "f", source: "Transport academic who studies rail staffing", ask: "Is this shortage a one-off or a long-term trend?", type: "expertise", note: "Independent context on whether things are getting better or worse." },
+          { id: "g", source: "People waiting on the platform", ask: "Are you annoyed?", type: null, tag: WEAK.vox, note: "Of course they are. That tells readers nothing new." },
+          { id: "h", source: "Your dad, who commutes by train", ask: "Has your train been cancelled?", type: null, tag: WEAK.friend, note: "Family members aren’t independent sources." }
+        ],
+        why: "A strong news story here needs someone held to account, independent context, and either a person affected or a group representing them." },
+      { genre: "Education", format: "News", lead: "Exam board error gave 2,000 students the wrong A-level grades", pick: 4, need: ["power", "experience", ["rep", "expertise"]],
+        pool: [
+          { id: "a", source: "The exam board", ask: "How did the error happen and how will students be compensated?", type: "power", note: "Responsible for the error, so they need a right of reply." },
+          { id: "b", source: "Exams regulator", ask: "What action will you take against the exam board?", type: "power", note: "Legal power to enforce rules on exam boards." },
+          { id: "c", source: "Student who lost her university place because of the error, found through her post about it on TikTok", ask: "What happened when you got your results?", type: "experience", note: "Shows the impact. Verify her story with documents before you publish." },
+          { id: "d", source: "Head teachers’ association", ask: "How many schools have been affected?", type: "rep", note: "Speaks for schools and can say how widespread the problem is." },
+          { id: "e", source: "Former chief examiner", ask: "How do marking errors on this scale happen?", type: "expertise", note: "Professional expertise to explain the process." },
+          { id: "f", source: "Celebrity who failed their A-levels and became a millionaire", ask: "Do grades really matter?", type: null, tag: WEAK.off, note: "Cultural power, but irrelevant to whether the board got it wrong." },
+          { id: "g", source: "Students on a university campus", ask: "Do you trust exam results?", type: null, tag: WEAK.vox, note: "Random students who weren’t affected." },
+          { id: "h", source: "Your younger brother, who is in year 12", ask: "Are you worried about next year?", type: null, tag: WEAK.friend, note: "Family, and not affected." }
+        ],
+        why: "The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation." }
+    ]
+  }
+];
+
+class Component extends DCLogic {
+  state = { screen: "start", mode: "teams", startLevel: 0, level: 0, q: 0, items: [], turn: "blue", scores: { blue: 0, red: 0 }, stats: { blue: { r: 0, w: 0 }, red: { r: 0, w: 0 } }, lvStats: { blue: { r: 0, w: 0 }, red: { r: 0, w: 0 } }, choice: null, slots: {}, picks: [], held: null, answered: null, timeLeft: null, dragId: null };
+
+  componentDidMount() {
+    this.tick = setInterval(() => {
+      const s = this.state;
+      if (s.screen !== "q" || s.answered || s.timeLeft == null) return;
+      if (s.timeLeft <= 1) { this.setState({ timeLeft: 0 }); this.submit(true); }
+      else this.setState({ timeLeft: s.timeLeft - 1 });
+    }, 1000);
+  }
+  componentWillUnmount() { clearInterval(this.tick); }
+
+  timer() { const t = parseInt(this.props.timer ?? 0, 10); return t > 0 ? t : null; }
+
+  loadLevel(i) {
+    const sh = this.props.shuffle ?? true;
+    const items = (sh ? shuffle(LEVELS[i].items) : LEVELS[i].items).map(it => {
+      const c = Object.assign({}, it);
+      if (sh && c.options) c.options = shuffle(c.options);
+      if (sh && c.pool) c.pool = shuffle(c.pool);
+      return c;
+    });
+    const z = { blue: { r: 0, w: 0 }, red: { r: 0, w: 0 } };
+    this.setState({ level: i, items, q: 0, screen: "intro", lvStats: z });
+  }
+  resetQ() { return { choice: null, slots: {}, picks: [], held: null, answered: null, timeLeft: this.timer() }; }
+
+  startGame = () => {
+    this.setState({ scores: { blue: 0, red: 0 }, stats: { blue: { r: 0, w: 0 }, red: { r: 0, w: 0 } }, turn: "blue" });
+    this.loadLevel(this.state.startLevel);
+  };
+  beginLevel = () => this.setState(Object.assign({ screen: "q", q: 0 }, this.resetQ()));
+  quit = () => this.setState({ screen: "start", answered: null });
+
+  item() { return this.state.items[this.state.q] || {}; }
+
+  canSubmit() {
+    const s = this.state, k = LEVELS[s.level].kind, it = this.item();
+    if (k === "classify" || k === "gap") return !!s.choice;
+    if (k === "slots") return it.slots.every(sl => s.slots[sl.id]);
+    if (k === "build") return s.picks.length === it.pick;
+    return false;
+  }
+
+  submit = (timeout) => {
+    const s = this.state; if (s.answered) return;
+    if (timeout !== true && !this.canSubmit()) return;
+    const lv = LEVELS[s.level], it = this.item();
+    let correct = false; const issues = [];
+    if (timeout === true) issues.push({ text: "Time’s up." });
+    if (lv.kind === "classify") correct = s.choice === it.answer;
+    if (lv.kind === "gap") correct = s.choice === it.answer;
+    if (lv.kind === "slots") {
+      const wrong = it.slots.filter(sl => s.slots[sl.id] !== sl.answer).length;
+      correct = timeout !== true && wrong === 0;
+      if (wrong && timeout !== true) issues.push({ text: wrong + " of " + it.slots.length + " questions matched to the wrong source." });
+    }
+    if (lv.kind === "build") {
+      const chosen = it.pool.filter(c => s.picks.includes(c.id));
+      const types = new Set(chosen.map(c => c.type).filter(Boolean));
+      const weak = chosen.filter(c => !c.type);
+      const offRole = it.only ? chosen.filter(c => c.type && !it.only.includes(c.type)) : [];
+      const missing = it.need.filter(n => Array.isArray(n) ? !n.some(x => types.has(x)) : !types.has(n));
+      correct = timeout !== true && chosen.length === it.pick && !weak.length && !offRole.length && !missing.length;
+      if (timeout !== true) {
+        if (weak.length) issues.push({ text: "Weak source" + (weak.length > 1 ? "s" : "") + " on your list: " + weak.map(c => c.source).join("; ") + "." });
+        if (offRole.length) issues.push({ text: "Not needed for this kind of story: " + offRole.map(c => c.source).join("; ") + "." });
+        missing.forEach(n => issues.push({ text: "Missing: " + (Array.isArray(n) ? n.map(x => T[x].label).join(" or ") : T[n].label) + "." }));
+      }
+    }
+    const team = s.turn, other = team === "blue" ? "red" : "blue";
+    const scores = Object.assign({}, s.scores), stats = JSON.parse(JSON.stringify(s.stats)), lvStats = JSON.parse(JSON.stringify(s.lvStats));
+    if (correct) { scores[team] += lv.pts; stats[team].r++; lvStats[team].r++; } else { stats[team].w++; lvStats[team].w++; }
+    const switchTurn = !correct && s.mode === "teams";
+    this.setState({ scores, stats, lvStats, held: null, answered: { correct, issues, team, nextTurn: switchTurn ? other : team } });
+  };
+
+  next = () => {
+    const s = this.state;
+    const turn = s.answered ? s.answered.nextTurn : s.turn;
+    if (s.q + 1 >= s.items.length) this.setState({ screen: "levelEnd", turn, answered: null });
+    else this.setState(Object.assign({ q: s.q + 1, turn }, this.resetQ()));
+  };
+  nextLevel = () => this.loadLevel(this.state.level + 1);
+
+  choose(id) { if (!this.state.answered) this.setState({ choice: id }); }
+  place(slotId, srcId) {
+    if (this.state.answered || !srcId) return;
+    const slots = Object.assign({}, this.state.slots);
+    Object.keys(slots).forEach(k => { if (slots[k] === srcId) delete slots[k]; });
+    slots[slotId] = srcId;
+    this.setState({ slots, held: null, dragId: null });
+  }
+  slotClick(sl) {
+    const s = this.state; if (s.answered) return;
+    if (s.held) return this.place(sl.id, s.held);
+    if (s.slots[sl.id]) { const slots = Object.assign({}, s.slots); delete slots[sl.id]; this.setState({ slots }); }
+  }
+  togglePick(id) {
+    const s = this.state; if (s.answered) return;
+    const it = this.item();
+    if (s.picks.includes(id)) this.setState({ picks: s.picks.filter(p => p !== id) });
+    else if (s.picks.length < it.pick) this.setState({ picks: s.picks.concat(id) });
+  }
+  addPick(id) { const s = this.state; if (!s.answered && id && !s.picks.includes(id) && s.picks.length < this.item().pick) this.setState({ picks: s.picks.concat(id), dragId: null }); }
+
+  renderVals() {
+    const s = this.state, lv = LEVELS[s.level], it = this.item(), ans = s.answered;
+    const teams = s.mode === "teams";
+    const teamName = t => t === "blue" ? "Blue team" : "Red team";
+    const teamSolid = t => t === "blue" ? "var(--color-accent-700)" : RED;
+    const inGame = s.screen !== "start";
+    const SEL = "var(--color-accent)", SELRING = "inset 0 0 0 1px var(--color-accent)", SELBG = "var(--color-accent-100)";
+    const dragStart = id => e => { try { e.dataTransfer.setData("text/plain", id); e.dataTransfer.effectAllowed = "move"; } catch (_) {} this.state.dragId = id; };
+    const getDrag = e => { let id = null; try { id = e.dataTransfer.getData("text/plain"); } catch (_) {} return id || this.state.dragId; };
+    const allow = e => e.preventDefault();
+
+    const primer = ORDER.map(k => ({ label: T[k].label, answers: T[k].answers, includes: T[k].includes, icon: icon(k, 22), smallIcon: icon(k, 14) }));
+
+    const typeOpts = ORDER.map(k => {
+      const picked = s.choice === k, isAns = ans && it.answer === k, wrongPick = ans && picked && !isAns;
+      return {
+        label: T[k].label, answers: T[k].answers, icon: icon(k, 20), onClick: () => this.choose(k),
+        border: isAns ? OK : wrongPick ? BAD : picked ? SEL : "var(--color-divider)",
+        ring: isAns ? "inset 0 0 0 1px " + OK : wrongPick ? "inset 0 0 0 1px " + BAD : picked ? SELRING : "none",
+        bg: isAns ? SELBG : picked && !ans ? SELBG : "transparent",
+        hasMark: !!(isAns || wrongPick), mark: isAns ? "Correct role" : "Your answer", markColor: isAns ? OK : BAD
+      };
+    });
+
+    const gapOpts = (it.options || []).map(o => {
+      const picked = s.choice === o.id, isAns = ans && it.answer === o.id, wrongPick = ans && picked && !isAns;
+      return Object.assign({}, o, {
+        onClick: () => this.choose(o.id), reveal: !!ans, markColor: o.id === it.answer ? OK : BAD,
+        border: isAns ? OK : wrongPick ? BAD : picked ? SEL : "var(--color-divider)",
+        ring: isAns ? "inset 0 0 0 1px " + OK : wrongPick ? "inset 0 0 0 1px " + BAD : picked ? SELRING : "none",
+        bg: (picked && !ans) || isAns ? SELBG : "transparent",
+        tag: wrongPick ? "Your answer: " + o.tag : o.tag
+      });
+    });
+    const haveList = (it.have || []).map(h => ({ text: h.text, label: T[h.type].label, icon: icon(h.type, 14) }));
+
+    const placedIds = Object.values(s.slots);
+    const poolById = id => (it.pool || []).find(p => p.id === id);
+    const slotList = (it.slots || []).map(sl => {
+      const pid = s.slots[sl.id], src = poolById(pid), right = ans && pid === sl.answer;
+      return {
+        q: sl.q, reveal: !!ans, icon: icon(sl.type, 14), typeLabel: T[sl.type].label,
+        filled: !!src, empty: !src, placedSource: src ? src.source : "", placedAsk: src ? src.ask : "",
+        emptyText: s.held ? "Tap to place the selected source here" : "Drag a source here",
+        border: ans ? (right ? OK : BAD) : s.held ? SEL : "var(--color-neutral-500)",
+        bg: ans ? (right ? "color-mix(in srgb, var(--color-accent) 8%, transparent)" : RED_T) : s.held ? "color-mix(in srgb, var(--color-accent) 6%, transparent)" : "transparent",
+        verdict: right ? "Correct" : ans ? "Best source: " + poolById(sl.answer).source : "",
+        markColor: right ? OK : BAD,
+        onDragOver: allow, onDrop: e => { e.preventDefault(); this.place(sl.id, getDrag(e)); }, onClick: () => this.slotClick(sl)
+      };
+    });
+    const correctIds = (it.slots || []).map(sl => sl.answer);
+    const poolSource = ans ? (it.pool || []).filter(p => !correctIds.includes(p.id)) : (it.pool || []).filter(p => !placedIds.includes(p.id));
+    const poolList = poolSource.map(p => {
+      const held = s.held === p.id;
+      return {
+        source: p.source, ask: p.ask, reveal: !!ans, tag: p.tag || "", note: p.note || "", markColor: BAD,
+        draggable: ans ? "false" : "true", onDragStart: dragStart(p.id),
+        onClick: () => { if (!ans) this.setState({ held: held ? null : p.id }); },
+        border: held ? SEL : "var(--color-divider)", ring: held ? SELRING : "none", bg: held ? SELBG : "var(--color-bg)"
+      };
+    });
+
+    const buildPool = (lv.kind === "build" ? it.pool : []).map(c => {
+      const picked = s.picks.includes(c.id);
+      const good = c.type && (!it.only || it.only.includes(c.type));
+      return {
+        source: c.source, ask: c.ask, reveal: !!ans,
+        tag: c.type ? T[c.type].label + (good ? "" : ", not needed here") : c.tag, note: c.note, markColor: good ? OK : BAD,
+        checkIcon: picked ? icon("checkCircle", 18) : null,
+        draggable: ans ? "false" : "true", onDragStart: dragStart(c.id), onClick: () => this.togglePick(c.id),
+        border: ans && picked ? (good ? OK : BAD) : picked ? SEL : "var(--color-divider)",
+        ring: picked ? "inset 0 0 0 1px " + (ans ? (good ? OK : BAD) : "var(--color-accent)") : "none",
+        bg: picked ? SELBG : "var(--color-bg)"
+      };
+    });
+    const pickedList = s.picks.map((id, i) => ({ n: i + 1, source: poolById(id) ? poolById(id).source : "", xIcon: ans ? null : icon("x", 14), onClick: () => this.togglePick(id) }));
+
+    const pts = n => n + (n === 1 ? " point" : " points");
+    const levelOpts = LEVELS.map((L, i) => {
+      const on = s.startLevel === i;
+      return { num: String(i + 1).padStart(2, "0"), title: L.title, sub: { classify: "Classify one source", gap: "Fill the gap in a draft", slots: "Drag sources onto questions", build: "Pick a full interview list" }[L.kind], pts: pts(L.pts), onClick: () => this.setState({ startLevel: i }), bg: on ? "var(--color-accent-700)" : "transparent", fg: on ? "var(--color-bg)" : "var(--color-text)" };
+    });
+    const modeOpts = [
+      { id: "teams", label: "Blue v Red", sub: "Two teams take turns" },
+      { id: "solo", label: "Solo", sub: "Play on your own" }
+    ].map(m => { const on = s.mode === m.id; return Object.assign(m, { onClick: () => this.setState({ mode: m.id }), bg: on ? "var(--color-accent-700)" : "transparent", fg: on ? "var(--color-bg)" : "var(--color-text)" }); });
+
+    const correct = ans && ans.correct;
+    let fbTitle = "";
+    if (ans) fbTitle = correct ? (teams ? "Correct. " + pts(lv.pts) + " to " + teamName(ans.team) + "." : "Correct. +" + pts(lv.pts) + ".") : (teams ? "Not quite, " + teamName(ans.team) + "." : "Not quite.");
+    if (ans && !correct && lv.kind === "classify") fbTitle += " This source is " + T[it.answer].label + ".";
+    const lastQ = s.q + 1 >= s.items.length;
+    const lastLevel = s.level >= LEVELS.length - 1;
+
+    const lvs = s.lvStats, st = s.stats;
+    const isFinal = s.screen === "levelEnd" && lastLevel;
+    const src = isFinal ? st : lvs;
+    const endCards = teams
+      ? ["blue", "red"].map(t => ({ name: teamName(t), solid: teamSolid(t), score: s.scores[t], stats: src[t].r + " right, " + src[t].w + " wrong" + (isFinal ? " overall" : " this level"), border: (isFinal && s.scores[t] >= s.scores[t === "blue" ? "red" : "blue"] && s.scores.blue !== s.scores.red) ? teamSolid(t) : "var(--color-divider)" }))
+      : [{ name: "Your score", solid: "var(--color-accent-700)", score: s.scores.blue, stats: src.blue.r + " right, " + src.blue.w + " wrong" + (isFinal ? " overall" : " this level"), border: "var(--color-divider)" }];
+    let endTitle = "Level " + (s.level + 1) + " complete";
+    if (isFinal) endTitle = teams ? (s.scores.blue === s.scores.red ? "It’s a draw" : (s.scores.blue > s.scores.red ? "Blue team" : "Red team") + " wins") : "Game complete";
+
+    return {
+      inGame, teams, teamsInGame: inGame && teams, soloInGame: inGame && !teams,
+      isStart: s.screen === "start", isIntro: s.screen === "intro", isQ: s.screen === "q", isLevelEnd: s.screen === "levelEnd",
+      progressText: "Level " + (s.level + 1) + " of 5" + (s.screen === "q" ? " · Question " + (s.q + 1) + " of " + s.items.length : ""),
+      scoreBlue: s.scores.blue, scoreRed: s.scores.red,
+      blueBorder: s.turn === "blue" && s.screen === "q" ? "var(--color-accent-700)" : "var(--color-divider)", blueBg: s.turn === "blue" && s.screen === "q" ? "var(--color-accent-100)" : "transparent",
+      redBorder: s.turn === "red" && s.screen === "q" ? RED : "var(--color-divider)", redBg: s.turn === "red" && s.screen === "q" ? RED_T : "transparent",
+      quit: this.quit, startGame: this.startGame, beginLevel: this.beginLevel, submit: () => this.submit(), next: this.next, nextLevel: this.nextLevel,
+      primer, modeOpts, levelOpts,
+      modeRule: teams ? "Blue team starts. A right answer scores points and keeps the turn. A wrong answer passes play to the other team." : "Answer every question to build your score. Later levels are worth more.",
+      arrowIcon: icon("arrow", 18), usersIcon: icon("users", 20), clockIcon: icon("clock", 20),
+      lvNum: s.level + 1, lvTitle: lv.title, lvBrief: lv.brief, lvPtsText: pts(lv.pts) + " per correct answer",
+      lvHow: lv.how.map((t, i) => ({ n: String(i + 1).padStart(2, "0"), text: t })),
+      turnName: teamName(s.turn), turnSolid: teamSolid(s.turn),
+      showTimer: s.timeLeft != null && !ans, timeLeft: s.timeLeft, timerColor: s.timeLeft != null && s.timeLeft <= 10 ? BAD : "var(--color-text)",
+      item: it,
+      isClassify: lv.kind === "classify", isGap: lv.kind === "gap", isSlots: lv.kind === "slots", isBuild: lv.kind === "build",
+      typeOpts, gapOpts, haveList, slotList, poolList, buildPool, pickedList,
+      poolHeading: ans ? "Sources you should have left out" : (s.held ? "Source selected. Now tap a question." : "Candidate sources"),
+      pickCount: s.picks.length, noPicks: s.picks.length === 0,
+      listDragOver: allow, listDrop: e => { e.preventDefault(); this.addPick(getDrag(e)); },
+      notAnswered: !ans, isAnswered: !!ans, cantSubmit: !this.canSubmit(),
+      submitHint: this.canSubmit() ? "" : { classify: "Choose a role first.", gap: "Choose a source first.", slots: "Fill every question first.", build: "Pick exactly " + (it.pick || 0) + " sources." }[lv.kind],
+      fbTitle, fbIcon: icon(correct ? "checkCircle" : "xCircle", 28), fbColor: correct ? OK : BAD, fbBorder: correct ? OK : BAD,
+      fbIssues: ans ? ans.issues : [],
+      nextLabel: lastQ ? "Finish level" : "Next question",
+      showHandover: !!(ans && teams), nextTurnSolid: ans ? teamSolid(ans.nextTurn) : "",
+      handoverText: ans ? (ans.nextTurn !== ans.team ? "Over to " + teamName(ans.nextTurn) : teamName(ans.team) + " keeps the turn") : "",
+      showCheat: (this.props.showCheatSheet ?? true) && s.screen === "q",
+      endKicker: isFinal ? "Final score" : "Level " + (s.level + 1) + " of 5 · " + lv.title,
+      endTitle, endCards,
+      endNote: isFinal ? "Next time you report a story, run the PEER checklist: who has the power to act, who can explain it, who has lived it, and who speaks for the people affected?" : "Next up: " + (LEVELS[s.level + 1] ? LEVELS[s.level + 1].title : "") + ". " + (LEVELS[s.level + 1] ? LEVELS[s.level + 1].brief : ""),
+      hasNextLevel: !lastLevel, nextLevelLabel: "Go to level " + (s.level + 2)
+    };
+  }
+}
+</script>
+</body>
+</html>

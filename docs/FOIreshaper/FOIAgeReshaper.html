@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>FOI age reshaper</title>
+<link rel="stylesheet" href="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/styles.css">
+<script src="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/_ds_bundle.js"></script>
+<style>body{margin:0}a{color:var(--color-accent-700)}a:hover{color:var(--color-accent-800)}</style>
+</helmet>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+  <header class="nav" style="flex-wrap:wrap;border-bottom:1px solid var(--color-divider);padding:var(--space-4) var(--space-6)">
+    <div class="nav-brand" style="font-size:22px;letter-spacing:0.01em">FOI age reshaper</div>
+    <label style="display:flex;align-items:center;gap:var(--space-2);font-size:13px">
+      <span style="color:var(--color-neutral-700)">Extracted by</span>
+      <input class="input" style="width:160px;min-height:32px" value="{{ extractedBy }}" onChange="{{ onExtractedBy }}" placeholder="Your name">
+    </label>
+    <button class="btn btn-secondary" onClick="{{ openCombined }}">Combined · {{ combinedCount }} rows</button>
+    <button class="btn btn-primary blueprint" onClick="{{ downloadCombined }}" disabled="{{ noCombined }}"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Download combined CSV</button>
+  </header>
+
+  <div style="display:flex;flex-wrap:wrap;gap:var(--space-6);padding:var(--space-6);align-items:flex-start">
+    <aside style="flex:1 1 220px;max-width:300px;display:flex;flex-direction:column;gap:var(--space-4)">
+      <label class="blueprint" onDragOver="{{ onDragOver }}" onDrop="{{ onDrop }}" style="display:flex;flex-direction:column;gap:var(--space-1);padding:var(--space-6) var(--space-4);cursor:pointer;text-align:center" style-hover="background:var(--color-accent-100)">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <input type="file" multiple accept=".csv,.tsv,.txt,text/csv" onChange="{{ onPick }}" style="display:none">
+        <span style="font-family:var(--font-heading);font-weight:600;font-size:18px">Drop CSV files</span>
+        <span style="font-size:13px;color:var(--color-neutral-700)">or click to choose</span>
+      </label>
+      <sc-if value="{{ hasFiles }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column">
+          <h6 style="margin:0 0 var(--space-2)">Files · {{ fileCount }}</h6>
+          <sc-for list="{{ files }}" as="f" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;gap:var(--space-1);border-bottom:1px solid var(--color-divider);background:{{ f.bg }}">
+              <button onClick="{{ f.open }}" title="{{ f.name }}" style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:var(--space-3) var(--space-2);background:none;border:0;font:inherit;color:inherit;cursor:pointer;text-align:left">
+                <span style="font-size:13px;line-height:1.3;word-break:break-all">{{ f.name }}</span>
+                <span class="tag {{ f.tagClass }}">{{ f.status }}</span>
+              </button>
+              <button class="btn btn-ghost btn-icon" onClick="{{ f.remove }}" title="Remove from list" style="width:30px;height:30px;color:var(--color-neutral-700)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+      <p style="font-size:12px;color:var(--color-neutral-700);margin:0;text-wrap:pretty">Files stay on this computer. Settings for each file name, your age-band edits and the combined table are saved in this browser.</p>
+    </aside>
+
+    <main style="flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:var(--space-8)">
+      <sc-if value="{{ showEmpty }}" hint-placeholder-val="{{ true }}">
+        <div style="padding:var(--space-8) 0;max-width:560px">
+          <h2>Reshape FOI age tables into one format</h2>
+          <p style="color:var(--color-neutral-800);text-wrap:pretty">Add one or more CSV files. For each file the tool works out where the years, age bands and counts are, asks you to confirm, and produces rows in this shape:</p>
+          <code style="display:block;font-size:12px;line-height:1.6;padding:var(--space-3);border:1px solid var(--color-divider);word-break:break-word">force, year, below 18, age from, age to, victim total, victim total min, victim total max, source filename, extracted by, notes, year to date if partial, year from date if partial</code>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showFile }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:var(--space-8)">
+          <div>
+            <h6 style="margin:0;color:var(--color-accent-700)">Current file</h6>
+            <h3 style="margin:0;word-break:break-all">{{ fileName }}</h3>
+          </div>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">01</span><h4 style="margin:0">How many rows are headings?</h4></div>
+            <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Shaded rows are treated as column headings. Files converted from PDF often have several.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-6);align-items:flex-end">
+              <div class="field" style="width:120px"><label>Heading rows</label><input class="input" type="number" min="0" max="20" value="{{ headerRows }}" onChange="{{ onHeaderRows }}"></div>
+              <sc-if value="{{ multiHeader }}" hint-placeholder-val="{{ false }}">
+                <label class="radio" style="padding-bottom:8px"><input type="checkbox" checked="{{ fillMerged }}" onChange="{{ onFillMerged }}" style="width:16px;height:16px;accent-color:var(--color-accent)"> Carry merged headings across to the right</label>
+              </sc-if>
+            </div>
+            <div style="overflow:auto;max-height:380px;border:1px solid var(--color-divider)">
+              <table class="table" style="font-size:12px;white-space:nowrap">
+                <tbody>
+                  <sc-for list="{{ rawRows }}" as="r" hint-placeholder-count="6">
+                    <tr style="background:{{ r.bg }}">
+                      <td style="color:var(--color-neutral-600);font-size:11px">{{ r.n }}</td>
+                      <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="5"><td title="{{ c.full }}">{{ c.v }}</td></sc-for>
+                    </tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+            <span style="font-size:12px;color:var(--color-neutral-700)">{{ rawNote }}</span>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">02</span><h4 style="margin:0">Where are the years and age bands?</h4></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-3)">
+              <sc-for list="{{ shapes }}" as="s" hint-placeholder-count="3">
+                <label style="display:flex;gap:var(--space-3);align-items:flex-start;padding:var(--space-3) var(--space-4);border:1px solid {{ s.border }};background:{{ s.bg }};cursor:pointer">
+                  <input type="radio" name="shape" checked="{{ s.checked }}" onChange="{{ s.pick }}" style="margin-top:4px;accent-color:var(--color-accent)">
+                  <span style="display:flex;flex-direction:column;gap:2px"><span style="font-family:var(--font-heading);font-weight:600;font-size:16px">{{ s.label }}</span><span style="font-size:12px;color:var(--color-neutral-700)">{{ s.desc }}</span></span>
+                </label>
+              </sc-for>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4)">
+              <sc-if value="{{ needsYearCol }}" hint-placeholder-val="{{ false }}">
+                <div class="field"><label>Year column</label><select class="input" value="{{ sel.yearCol }}" onChange="{{ onYearCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              </sc-if>
+              <sc-if value="{{ needsAgeCol }}" hint-placeholder-val="{{ false }}">
+                <div class="field"><label>Age band column</label><select class="input" value="{{ sel.ageCol }}" onChange="{{ onAgeCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              </sc-if>
+              <sc-if value="{{ isLong }}" hint-placeholder-val="{{ false }}">
+                <div class="field"><label>Count column</label><select class="input" value="{{ sel.valueCol }}" onChange="{{ onValueCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              </sc-if>
+            </div>
+            <sc-if value="{{ needsValueCols }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+                <div style="display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap">
+                  <span style="font-size:13px;font-weight:500">{{ valueColsTitle }}</span>
+                  <button class="btn btn-ghost" onClick="{{ selectAllCols }}" style="font-size:13px">All</button>
+                  <button class="btn btn-ghost" onClick="{{ selectNoCols }}" style="font-size:13px">None</button>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">
+                  <sc-for list="{{ valueChecks }}" as="v" hint-placeholder-count="4">
+                    <label style="display:flex;gap:6px;align-items:center;font-size:12px;padding:4px 8px;border:1px solid var(--color-divider);background:{{ v.bg }};cursor:pointer"><input type="checkbox" checked="{{ v.checked }}" onChange="{{ v.toggle }}" style="accent-color:var(--color-accent)">{{ v.label }}</label>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2);padding-top:var(--space-2);border-top:1px solid var(--color-divider)">
+              <div class="field" style="max-width:320px"><label>Leave out rows by the value in this column (optional)</label><select class="input" value="{{ sel.filterCol }}" onChange="{{ onFilterCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              <sc-if value="{{ hasFilter }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">
+                  <sc-for list="{{ filterValues }}" as="v" hint-placeholder-count="3">
+                    <label style="display:flex;gap:6px;align-items:center;font-size:12px;padding:4px 8px;border:1px solid var(--color-divider);background:{{ v.bg }};cursor:pointer"><input type="checkbox" checked="{{ v.checked }}" onChange="{{ v.toggle }}" style="accent-color:var(--color-accent)">{{ v.label }}</label>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">03</span><h4 style="margin:0">Which force, and what should be noted?</h4></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-4)">
+              <div class="field"><label>Force</label><input class="input" list="force-list" value="{{ force }}" onChange="{{ onForce }}" placeholder="e.g. Durham"></div>
+              <div class="field"><label>Notes for every row</label><input class="input" value="{{ notes }}" onChange="{{ onNotes }}" placeholder="optional"></div>
+              <div class="field"><label>Also take notes from column</label><select class="input" value="{{ sel.notesCol }}" onChange="{{ onNotesCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              <div class="field"><label>Take “year from date” from column</label><select class="input" value="{{ sel.yfdCol }}" onChange="{{ onYfdCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+              <div class="field"><label>Take “year to date” from column</label><select class="input" value="{{ sel.ytdCol }}" onChange="{{ onYtdCol }}"><sc-for list="{{ colOptions }}" as="o"><option value="{{ o.v }}">{{ o.label }}</option></sc-for></select></div>
+            </div>
+            <datalist id="force-list"><sc-for list="{{ forceOptions }}" as="fo"><option value="{{ fo.name }}"></option></sc-for></datalist>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">04</span><h4 style="margin:0">Are these the right years?</h4></div>
+            <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Clear a year to leave those values out.</p>
+            <div style="overflow:auto;max-height:340px">
+              <table class="table" style="font-size:13px">
+                <thead><tr><th>Found in file</th><th>Values</th><th style="width:120px">Year</th></tr></thead>
+                <tbody>
+                  <sc-for list="{{ years }}" as="y" hint-placeholder-count="4">
+                    <tr><td style="word-break:break-word">{{ y.label }}</td><td>{{ y.n }}</td><td><input class="input" style="min-height:30px;padding:3px 8px" value="{{ y.year }}" onChange="{{ y.onYear }}"></td></tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+            <sc-if value="{{ hasPartialYears }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+                <span style="font-size:14px;color:var(--color-neutral-800)">If a year only covers part of the period, enter the dates it runs from and to. Leave blank for full years. A column chosen in step 03 takes priority.</span>
+                <table class="table" style="font-size:13px">
+                  <thead><tr><th style="width:90px">Year</th><th>Year from date if partial</th><th>Year to date if partial</th></tr></thead>
+                  <tbody>
+                    <sc-for list="{{ partialYears }}" as="p" hint-placeholder-count="4">
+                      <tr><td>{{ p.year }}</td><td><input class="input" style="min-height:30px;padding:3px 8px" value="{{ p.from }}" onChange="{{ p.onFrom }}" placeholder="e.g. 01/04/2023"></td><td><input class="input" style="min-height:30px;padding:3px 8px" value="{{ p.to }}" onChange="{{ p.onTo }}" placeholder="e.g. 31/08/2026"></td></tr>
+                    </sc-for>
+                  </tbody>
+                </table>
+              </div>
+            </sc-if>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">05</span><h4 style="margin:0">Are the age bands read correctly?</h4></div>
+            <p style="margin:0;font-size:14px;color:var(--color-neutral-800)">Leave “to” empty for open-ended bands like 65+. Leave both empty for unknown ages. Your edits are remembered for the same label in later files.</p>
+            <div style="overflow:auto;max-height:480px">
+              <table class="table" style="font-size:13px">
+                <thead><tr><th>Found in file</th><th>Values</th><th style="width:80px">From</th><th style="width:80px">To</th><th>Under 18</th><th>Include</th><th></th></tr></thead>
+                <tbody>
+                  <sc-for list="{{ ages }}" as="a" hint-placeholder-count="6">
+                    <tr style="opacity:{{ a.opacity }}">
+                      <td style="word-break:break-word">{{ a.label }}</td>
+                      <td>{{ a.n }}</td>
+                      <td><input class="input" style="min-height:30px;padding:3px 8px" value="{{ a.from }}" onChange="{{ a.onFrom }}"></td>
+                      <td><input class="input" style="min-height:30px;padding:3px 8px" value="{{ a.to }}" onChange="{{ a.onTo }}"></td>
+                      <td><input type="checkbox" checked="{{ a.u18 }}" onChange="{{ a.onU18 }}" style="width:16px;height:16px;accent-color:var(--color-accent)"></td>
+                      <td><input type="checkbox" checked="{{ a.include }}" onChange="{{ a.onInclude }}" style="width:16px;height:16px;accent-color:var(--color-accent)"></td>
+                      <td style="white-space:nowrap"><span class="tag {{ a.tagClass }}">{{ a.status }}</span><sc-if value="{{ a.edited }}"><button class="btn btn-ghost" onClick="{{ a.reset }}" style="font-size:12px">Reset</button></sc-if></td>
+                    </tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">06</span><h4 style="margin:0">How should the counts be read?</h4></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6)">
+              <div class="field"><label>Empty cells</label>
+                <div class="seg"><sc-for list="{{ blankOpts }}" as="o"><label class="seg-opt"><input type="radio" name="blank" checked="{{ o.checked }}" onChange="{{ o.pick }}">{{ o.label }}</label></sc-for></div>
+              </div>
+              <div class="field"><label>Rows with the same year and age band</label>
+                <div class="seg"><sc-for list="{{ aggOpts }}" as="o"><label class="seg-opt"><input type="radio" name="agg" checked="{{ o.checked }}" onChange="{{ o.pick }}">{{ o.label }}</label></sc-for></div>
+              </div>
+              <sc-if value="{{ aggregate }}" hint-placeholder-val="{{ false }}">
+                <div class="field"><label>Victim total when a combined row includes suppressed values</label>
+                  <div class="seg"><sc-for list="{{ aggTotalOpts }}" as="o"><label class="seg-opt"><input type="radio" name="aggt" checked="{{ o.checked }}" onChange="{{ o.pick }}">{{ o.label }}</label></sc-for></div>
+                </div>
+              </sc-if>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:var(--space-4);align-items:end">
+              <div class="field"><label>Other suppression markers</label><input class="input" value="{{ markers }}" onChange="{{ onMarkers }}"></div>
+              <div class="field"><label>…stand for at least</label><input class="input" type="number" value="{{ supMin }}" onChange="{{ onSupMin }}"></div>
+              <div class="field"><label>…and at most</label><input class="input" type="number" value="{{ supMax }}" onChange="{{ onSupMax }}"></div>
+            </div>
+            <p style="margin:0;font-size:13px;color:var(--color-neutral-800)">Values like “&lt;5” are read as a range of 0 to 4, leaving victim total empty. {{ statsLine }}</p>
+            <sc-if value="{{ hasBad }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;font-size:13px;color:var(--color-accent-800);padding:var(--space-2) var(--space-3);background:var(--color-accent-100)">Couldn’t read: {{ badExamples }}. These rows are kept with empty counts and a note.</p>
+            </sc-if>
+          </section>
+
+          <section class="blueprint" style="padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4)">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="display:flex;gap:var(--space-3);align-items:baseline;flex-wrap:wrap"><span style="font-family:var(--font-heading);color:var(--color-accent-700)">07</span><h4 style="margin:0">Output · {{ outCount }} rows</h4></div>
+            <div style="overflow:auto;max-height:460px;border:1px solid var(--color-divider)">
+              <table class="table" style="font-size:12px;white-space:nowrap">
+                <thead style="position:sticky;top:0;background:var(--color-bg)"><tr><sc-for list="{{ outCols }}" as="h"><th>{{ h.name }}</th></sc-for></tr></thead>
+                <tbody>
+                  <sc-for list="{{ outRows }}" as="r" hint-placeholder-count="5">
+                    <tr><sc-for list="{{ r.cells }}" as="c"><td title="{{ c.full }}">{{ c.v }}</td></sc-for></tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+            <span style="font-size:12px;color:var(--color-neutral-700)">{{ outMore }}</span>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--space-3)">
+              <button class="btn btn-primary blueprint" onClick="{{ addToCombined }}" disabled="{{ noOut }}"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>{{ addLabel }}</button>
+              <button class="btn btn-secondary" onClick="{{ downloadFile }}" disabled="{{ noOut }}">Download this file’s CSV</button>
+              <sc-if value="{{ hasNext }}"><button class="btn btn-ghost" onClick="{{ goNext }}">Next file →</button></sc-if>
+            </div>
+          </section>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ showCombined }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:var(--space-6)">
+          <div style="display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:flex-end;justify-content:space-between">
+            <div><h6 style="margin:0;color:var(--color-accent-700)">Combined</h6><h3 style="margin:0">{{ combinedCount }} rows from {{ sourceCount }} files</h3></div>
+            <button class="btn btn-secondary" onClick="{{ clearCombined }}" disabled="{{ noCombined }}">Clear combined table</button>
+          </div>
+          <table class="table" style="font-size:13px">
+            <thead><tr><th>Source file</th><th>Force</th><th>Rows</th><th></th></tr></thead>
+            <tbody>
+              <sc-for list="{{ sources }}" as="s" hint-placeholder-count="3">
+                <tr><td style="word-break:break-all">{{ s.source }}</td><td>{{ s.force }}</td><td>{{ s.n }}</td><td style="text-align:right"><button class="btn btn-ghost" onClick="{{ s.remove }}" style="font-size:13px">Remove</button></td></tr>
+              </sc-for>
+            </tbody>
+          </table>
+          <div style="overflow:auto;max-height:520px;border:1px solid var(--color-divider)">
+            <table class="table" style="font-size:12px;white-space:nowrap">
+              <thead style="position:sticky;top:0;background:var(--color-bg)"><tr><sc-for list="{{ outCols }}" as="h"><th>{{ h.name }}</th></sc-for></tr></thead>
+              <tbody>
+                <sc-for list="{{ combinedRows }}" as="r" hint-placeholder-count="5">
+                  <tr><sc-for list="{{ r.cells }}" as="c"><td title="{{ c.full }}">{{ c.v }}</td></sc-for></tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+          <span style="font-size:12px;color:var(--color-neutral-700)">{{ combinedMore }}</span>
+        </div>
+      </sc-if>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;previewRows&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:12,&quot;min&quot;:4,&quot;max&quot;:60,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Preview&quot;},&quot;outputPreviewRows&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:200,&quot;min&quot;:20,&quot;max&quot;:2000,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Preview&quot;}}">
+const LS = 'foiAgeReshaper:';
+const OUT_COLS = ['force','year','below 18','age from','age to','victim total','victim total min','victim total max','source filename','extracted by','notes','year to date if partial','year from date if partial'];
+const FORCES = [
+  ['Avon and Somerset','avonandsomerset','avonsomerset','asp'],['Bedfordshire','bedfordshire','beds'],['Cambridgeshire','cambridgeshire','cambs'],
+  ['Cheshire','cheshire'],['City of London','cityoflondon'],['Cleveland','cleveland'],['Cumbria','cumbria'],['Derbyshire','derbyshire'],
+  ['Devon and Cornwall','devonandcornwall','devoncornwall'],['Dorset','dorset'],['Durham','durham'],['Dyfed-Powys','dyfedpowys'],['Essex','essex'],
+  ['Gloucestershire','gloucestershire','glos'],['Greater Manchester','greatermanchester','gmp'],['Gwent','gwent'],['Hampshire','hampshire','hants'],
+  ['Hertfordshire','hertfordshire','herts'],['Humberside','humberside'],['Kent','kentpolice','kent'],['Lancashire','lancashire','lancs'],
+  ['Leicestershire','leicestershire','leics'],['Lincolnshire','lincolnshire','lincs'],['Merseyside','merseyside'],['Metropolitan','metropolitan','metpolice'],
+  ['Norfolk','norfolk'],['North Wales','northwales'],['North Yorkshire','northyorkshire','northyorks'],['Northamptonshire','northamptonshire','northants'],
+  ['Northumbria','northumbria'],['Nottinghamshire','nottinghamshire','notts'],['South Wales','southwales'],['South Yorkshire','southyorkshire','southyorks'],
+  ['Staffordshire','staffordshire','staffs'],['Suffolk','suffolk'],['Surrey','surrey'],['Sussex','sussex'],['Thames Valley','thamesvalley','tvp'],
+  ['Warwickshire','warwickshire'],['West Mercia','westmercia'],['West Midlands','westmidlands','wmp'],['West Yorkshire','westyorkshire','westyorks','wyp'],
+  ['Wiltshire','wiltshire'],['British Transport Police','britishtransport','btp'],['Police Scotland','policescotland'],['PSNI','psni','northernireland']
+];
+const ALIASES = FORCES.flatMap(f => f.slice(1).map(a => [a, f[0]])).sort((a, b) => b[0].length - a[0].length);
+
+function load(k, d) { try { const v = localStorage.getItem(LS + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+function save(k, v) { try { localStorage.setItem(LS + k, JSON.stringify(v)); } catch (e) {} }
+function str(v) { return String(v ?? '').trim(); }
+function norm(v) { return str(v).toLowerCase().replace(/\s+/g, ' '); }
+function parseYear(s) { const m = str(s).match(/(19|20)\d{2}/); return m ? m[0] : ''; }
+function guessForce(name) { const n = name.toLowerCase().replace(/[^a-z]/g, ''); for (const [a, f] of ALIASES) if (n.includes(a)) return f; return ''; }
+
+function parseCSV(t) {
+  t = t.replace(/^\uFEFF/, '');
+  const first = t.split(/\r?\n/)[0] || '';
+  const cnt = ch => first.split(ch).length - 1;
+  const d = cnt('\t') > cnt(',') ? '\t' : cnt(';') > cnt(',') ? ';' : ',';
+  const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (q) { if (c === '"') { if (t[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+    else if (c === '"') q = true;
+    else if (c === d) { row.push(f); f = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && t[i + 1] === '\n') i++; row.push(f); rows.push(row); row = []; f = ''; }
+    else f += c;
+  }
+  if (f !== '' || row.length) { row.push(f); rows.push(row); }
+  return rows.filter(r => r.some(c => str(c) !== ''));
+}
+
+function parseAge(label) {
+  let s = norm(label).replace(/^aged?\s*/, '').replace(/\b(years?|yrs?)\b/g, '').replace(/\s+/g, ' ').trim();
+  const mk = (from, to, kind, include = true) => ({ from: from === '' ? '' : String(from), to: to === '' ? '' : String(to), u18: to !== '' && Number(to) <= 17, include, kind });
+  if (!s) return mk('', '', 'unknown');
+  if (/total/.test(s)) return mk('', '', 'total', false);
+  if (/unknown|not (recorded|stated|known|given)|unrecorded|uncertain|other|^n\/?k$|blank|missing|unspecified|^-$/.test(s)) return mk('', '', 'unknown');
+  if (/^(zero|0)$/.test(s)) return mk(0, 0, 'single');
+  let m = s.match(/(under|below|less than|younger than|up to|<)\s*(\d+)/);
+  if (m) { const n = +m[2]; return mk(0, m[1] === 'up to' ? n : n - 1, 'under'); }
+  m = s.match(/(\d+)\s*(\+|and over|and above|or over|or above|plus|or older|and older)/) || s.match(/(?:over|above|older than)\s*(\d+)/);
+  if (m) return mk(+m[1], '', 'over');
+  m = s.match(/(\d+)\s*(?:-|–|—|to)\s*(\d+)/);
+  if (m) return mk(+m[1], +m[2], 'range');
+  m = s.match(/^(\d+)$/);
+  if (m) return mk(+m[1], +m[1], 'single');
+  return mk('', '', 'unrecognised');
+}
+
+function parseVal(raw, cfg) {
+  const s = str(raw);
+  if (!s || /^[-–—]$/.test(s)) return { blank: true };
+  const n = s.replace(/,/g, '');
+  if (/^-?\d+(\.\d+)?$/.test(n)) { const v = Number(n); return { total: v, min: v, max: v }; }
+  let m = s.match(/^(?:<|less than|fewer than|under)\s*(\d+)$/i);
+  if (m) return { total: '', min: 0, max: +m[1] - 1, supp: true };
+  m = s.match(/^(\d+)\s*(?:-|–|to)\s*(\d+)$/);
+  if (m) return { total: '', min: +m[1], max: +m[2], supp: true };
+  const markers = String(cfg.markers || '').split(',').map(x => x.trim().toLowerCase()).filter(Boolean);
+  if (markers.includes(s.toLowerCase())) return { total: '', min: Number(cfg.supMin) || 0, max: Number(cfg.supMax) || 0, supp: true };
+  return { bad: true };
+}
+
+function guessHeaderRows(rows) {
+  for (let i = 1; i < Math.min(12, rows.length); i++) {
+    const cells = rows[i].slice(1).filter(c => str(c) !== '');
+    if (cells.length && cells.filter(c => /^\s*(<\s*)?\d/.test(c)).length / cells.length >= 0.5) return i;
+  }
+  return 1;
+}
+
+function headerLabels(rows, cfg) {
+  const nCols = rows.reduce((m, r) => Math.max(m, r.length), 0);
+  const h = Math.max(0, Math.min(cfg.headerRows, rows.length));
+  const grid = rows.slice(0, h).map((r, ri) => {
+    const out = []; let last = '';
+    for (let i = 0; i < nCols; i++) {
+      const v = str(r[i]);
+      if (v) last = v;
+      out.push(v || (cfg.fillMerged && h > 1 && ri < h - 1 ? last : ''));
+    }
+    return out;
+  });
+  const labels = [];
+  for (let i = 0; i < nCols; i++) {
+    const parts = grid.map(r => r[i]).filter(Boolean);
+    labels.push(parts.length ? parts.join(' · ') : `Column ${i + 1}`);
+  }
+  return labels;
+}
+
+function detect(rows, name) {
+  const cfg = { headerRows: guessHeaderRows(rows), fillMerged: true, shape: 'long', yearCol: -1, ageCol: -1, valueCol: -1, valueCols: [],
+    notesCol: -1, ytdCol: -1, yfdCol: -1, partial: {}, filterCol: -1, filterExcluded: [], force: guessForce(name), notes: '', ytdText: '',
+    yearMap: {}, blank: 'skip', aggregate: false, aggTotal: 'mid', markers: '*, x, c, [c], [x], s', supMin: 0, supMax: 4 };
+  const labels = headerLabels(rows, cfg);
+  const data = rows.slice(cfg.headerRows);
+  const isYearLabel = l => /^\s*(fy\s*)?(19|20)\d{2}/i.test(l);
+  const yearIdx = labels.map((l, i) => isYearLabel(l) ? i : -1).filter(i => i >= 0);
+  const ageScore = i => { const v = data.map(r => r[i]).filter(c => str(c)); return v.length ? v.filter(c => ['range', 'under', 'over'].includes(parseAge(c).kind)).length / v.length : 0; };
+  const numScore = i => { const v = data.map(r => r[i]).filter(c => str(c)); return v.length ? v.filter(c => /^\s*(<\s*)?[\d,]+\s*$/.test(c)).length / v.length : 0; };
+  labels.forEach((l, i) => { if (/note/i.test(l)) cfg.notesCol = i; if (/year ending|ytd|to date|period end|end date|date to/i.test(l)) cfg.ytdCol = i; else if (/year start|from date|period start|start date|date from/i.test(l)) cfg.yfdCol = i; });
+  if (yearIdx.length >= 2) {
+    cfg.shape = 'yearsCols'; cfg.valueCols = yearIdx;
+    cfg.ageCol = labels.findIndex((l, i) => !yearIdx.includes(i));
+    return cfg;
+  }
+  let yc = labels.findIndex(l => /^\s*(year|yr|period|financial year|calendar year)\s*$/i.test(l));
+  if (yc < 0) yc = labels.findIndex((l, i) => /year/i.test(l) && i !== cfg.ytdCol);
+  const ageHeaderIdx = labels.map((l, i) => i !== yc && ['range', 'under', 'over'].includes(parseAge(l).kind) ? i : -1).filter(i => i >= 0);
+  if (yc >= 0 && ageHeaderIdx.length >= 2) {
+    cfg.shape = 'agesCols'; cfg.yearCol = yc;
+    cfg.valueCols = labels.map((l, i) => i).filter(i => i !== yc && !/total/i.test(labels[i]) && i !== cfg.notesCol && i !== cfg.ytdCol && i !== cfg.yfdCol);
+    return cfg;
+  }
+  cfg.yearCol = yc >= 0 ? yc : 0;
+  let best = -1, bs = 0;
+  labels.forEach((l, i) => { if (i === cfg.yearCol) return; const s = ageScore(i) + (/\bage/i.test(l) ? 0.5 : 0); if (s > bs) { bs = s; best = i; } });
+  cfg.ageCol = best;
+  let vc = labels.findIndex((l, i) => i !== cfg.yearCol && i !== cfg.ageCol && /^(value|values|count|total|number|n|victims?|offences|recorded)$/i.test(str(l)));
+  if (vc < 0) { let b = 0; labels.forEach((l, i) => { if (i === cfg.yearCol || i === cfg.ageCol) return; const s = numScore(i); if (s > b) { b = s; vc = i; } }); }
+  cfg.valueCol = vc;
+  return cfg;
+}
+
+function csvCell(v) { const s = String(v ?? ''); return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+function toCSV(rows) { return [OUT_COLS.map(csvCell).join(',')].concat(rows.map(r => OUT_COLS.map(c => csvCell(r[c])).join(','))).join('\r\n'); }
+function download(name, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: 'text/csv;charset=utf-8' }));
+  const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+function trunc(v, n) { const s = String(v ?? ''); return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+
+class Component extends DCLogic {
+  state = { files: [], activeId: null, view: 'file', cfgs: load('cfgs', {}), ageMap: load('ageMap', {}), combined: load('combined', []), extractedBy: load('extractedBy', '') || 'vibe-coded app' };
+
+  active() { return this.state.files.find(f => f.id === this.state.activeId); }
+  cfgFor(f) { return this.state.cfgs[f.name] || detect(f.rows, f.name); }
+  setCfg(patch) {
+    const f = this.active(); if (!f) return;
+    this.setState(s => { const cfgs = { ...s.cfgs, [f.name]: { ...this.cfgFor(f), ...patch } }; save('cfgs', cfgs); return { cfgs }; });
+  }
+  setAge(label, patch) {
+    const k = norm(label);
+    this.setState(s => { const cur = s.ageMap[k] || (({ from, to, u18, include }) => ({ from, to, u18, include }))(parseAge(label)); const ageMap = { ...s.ageMap, [k]: { ...cur, ...patch } }; save('ageMap', ageMap); return { ageMap }; });
+  }
+  resetAge(label) { const k = norm(label); this.setState(s => { const ageMap = { ...s.ageMap }; delete ageMap[k]; save('ageMap', ageMap); return { ageMap }; }); }
+  ageOf(label) { const p = parseAge(label); const e = this.state.ageMap[norm(label)]; return e ? { ...p, ...e, edited: true } : p; }
+
+  addFiles(list) {
+    const arr = Array.from(list || []); if (!arr.length) return;
+    Promise.all(arr.map(file => file.text().then(text => ({ id: file.name + ':' + Math.random().toString(36).slice(2, 7), name: file.name, rows: parseCSV(text) })))).then(nf => {
+      this.setState(s => {
+        const cfgs = { ...s.cfgs };
+        nf.forEach(f => { if (!cfgs[f.name]) cfgs[f.name] = detect(f.rows, f.name); });
+        save('cfgs', cfgs);
+        const files = s.files.filter(f => !nf.some(n => n.name === f.name)).concat(nf);
+        return { files, cfgs, activeId: nf[0].id, view: 'file' };
+      });
+    });
+  }
+
+  compute(f, cfg) {
+    const labels = headerLabels(f.rows, cfg);
+    const data = f.rows.slice(cfg.headerRows);
+    const fex = new Set(cfg.filterExcluded || []);
+    const items = [];
+    data.forEach(r => {
+      if (cfg.filterCol >= 0 && fex.has(str(r[cfg.filterCol]))) return;
+      if (cfg.shape === 'long') items.push({ yl: r[cfg.yearCol], al: r[cfg.ageCol], raw: r[cfg.valueCol], r });
+      else if (cfg.shape === 'yearsCols') cfg.valueCols.forEach(c => items.push({ yl: labels[c], al: r[cfg.ageCol], raw: r[c], r }));
+      else cfg.valueCols.forEach(c => items.push({ yl: r[cfg.yearCol], al: labels[c], raw: r[c], r }));
+    });
+    const yearCounts = new Map(), ageCounts = new Map();
+    const stats = { exact: 0, supp: 0, blank: 0, bad: 0 }; const bad = new Set();
+    let out = [];
+    items.forEach(it => {
+      const yl = str(it.yl), al = str(it.al);
+      yearCounts.set(yl, (yearCounts.get(yl) || 0) + 1);
+      const year = yl in (cfg.yearMap || {}) ? str(cfg.yearMap[yl]) : parseYear(yl);
+      if (!year) return;
+      ageCounts.set(al, (ageCounts.get(al) || 0) + 1);
+      const age = this.ageOf(al);
+      if (!age.include) return;
+      let v = parseVal(it.raw, cfg);
+      if (v.blank) { if (cfg.blank === 'zero') v = { total: 0, min: 0, max: 0 }; else { stats.blank++; return; } }
+      const notes = [];
+      if (v.bad) { stats.bad++; bad.add(str(it.raw)); notes.push(`Unreadable value "${str(it.raw)}"`); v = { total: '', min: '', max: '', bad: true }; }
+      else if (v.supp) stats.supp++; else stats.exact++;
+      if (cfg.notesCol >= 0 && str(it.r[cfg.notesCol])) notes.unshift(str(it.r[cfg.notesCol]));
+      out.push({ year, al, age, v, notes, ytd: cfg.ytdCol >= 0 ? str(it.r[cfg.ytdCol]) : '', yfd: cfg.yfdCol >= 0 ? str(it.r[cfg.yfdCol]) : '' });
+    });
+    if (cfg.aggregate) {
+      const g = new Map();
+      out.forEach(o => {
+        const k = o.year + '|' + norm(o.al);
+        if (!g.has(k)) g.set(k, { ...o, notes: [...o.notes], vs: [] });
+        const e = g.get(k); e.vs.push(o.v); o.notes.forEach(n => { if (!e.notes.includes(n)) e.notes.push(n); }); if (!e.ytd) e.ytd = o.ytd; if (!e.yfd) e.yfd = o.yfd;
+      });
+      out = [...g.values()].map(e => {
+        const ok = e.vs.filter(v => !v.bad);
+        const min = ok.reduce((a, v) => a + v.min, 0), max = ok.reduce((a, v) => a + v.max, 0);
+        const exact = ok.every(v => !v.supp) && ok.length === e.vs.length;
+        const total = exact ? min : (cfg.aggTotal === 'mid' && ok.length ? Math.round((min + max) / 2) : '');
+        return { ...e, v: { total, min: ok.length ? min : '', max: ok.length ? max : '' } };
+      });
+    }
+    out = out.map((o, i) => ({ o, i })).sort((a, b) => (a.o.year > b.o.year ? 1 : a.o.year < b.o.year ? -1 : a.i - b.i)).map(x => x.o);
+    const maxYear = out.reduce((m, o) => (o.year > m ? o.year : m), '');
+    const by = this.state.extractedBy || 'vibe-coded app'; const part = cfg.partial || {};
+    const rows = out.map(o => {
+      const notes = [str(cfg.notes), ...o.notes].filter(Boolean).join('; ');
+      return { 'force': cfg.force, 'year': o.year, 'below 18': o.age.u18 ? 'TRUE' : 'FALSE', 'age from': o.age.from, 'age to': o.age.to,
+        'victim total': o.v.total, 'victim total min': o.v.min, 'victim total max': o.v.max, 'source filename': f.name, 'extracted by': by,
+        'notes': notes, 'year to date if partial': o.ytd || str((part[o.year] || {}).to), 'year from date if partial': o.yfd || str((part[o.year] || {}).from) };
+    });
+    return { labels, rows, yearCounts, ageCounts, stats, bad: [...bad], maxYear, years: [...new Set(out.map(o => o.year))].sort() };
+  }
+
+  tableRows(rows, limit) { return rows.slice(0, limit).map(r => ({ cells: OUT_COLS.map(c => ({ v: trunc(r[c], 48), full: String(r[c] ?? '') })) })); }
+
+  renderVals() {
+    const s = this.state, previewRows = this.props.previewRows ?? 12, outLimit = this.props.outputPreviewRows ?? 200;
+    const f = this.active();
+    const combinedSources = [...new Set(s.combined.map(r => r['source filename']))];
+    const base = {
+      extractedBy: s.extractedBy || 'vibe-coded app',
+      onExtractedBy: e => { const v = e.target.value; save('extractedBy', v); this.setState({ extractedBy: v }); },
+      combinedCount: s.combined.length, noCombined: !s.combined.length, sourceCount: combinedSources.length,
+      openCombined: () => this.setState({ view: 'combined' }),
+      downloadCombined: () => download(`foi-age-combined-${new Date().toISOString().slice(0, 10)}.csv`, toCSV(s.combined)),
+      onDragOver: e => e.preventDefault(),
+      onDrop: e => { e.preventDefault(); this.addFiles(e.dataTransfer.files); },
+      onPick: e => { this.addFiles(e.target.files); e.target.value = ''; },
+      hasFiles: s.files.length > 0, fileCount: s.files.length,
+      files: s.files.map(file => {
+        const n = s.combined.filter(r => r['source filename'] === file.name).length;
+        const isActive = s.view === 'file' && file.id === s.activeId;
+        return { name: file.name, status: n ? `In combined · ${n} rows` : 'Not added yet', tagClass: n ? 'tag-accent' : 'tag-outline',
+          bg: isActive ? 'var(--color-accent-100)' : 'transparent',
+          open: () => this.setState({ activeId: file.id, view: 'file' }),
+          remove: () => this.setState(st => { const files = st.files.filter(x => x.id !== file.id); return { files, activeId: st.activeId === file.id ? (files[0] || {}).id || null : st.activeId }; }) };
+      }),
+      showEmpty: s.view === 'file' && !f, showFile: s.view === 'file' && !!f, showCombined: s.view === 'combined',
+      outCols: OUT_COLS.map(name => ({ name })),
+      sources: combinedSources.map(src => { const rs = s.combined.filter(r => r['source filename'] === src); return { source: src, force: rs[0]['force'], n: rs.length,
+        remove: () => this.setState(st => { const combined = st.combined.filter(r => r['source filename'] !== src); save('combined', combined); return { combined }; }) }; }),
+      combinedRows: this.tableRows(s.combined, 300),
+      combinedMore: s.combined.length > 300 ? `Showing first 300 of ${s.combined.length} rows.` : '',
+      clearCombined: () => { if (confirm('Remove all rows from the combined table?')) { save('combined', []); this.setState({ combined: [] }); } },
+      forceOptions: FORCES.map(x => ({ name: x[0] }))
+    };
+    if (!f) return base;
+
+    const cfg = this.cfgFor(f);
+    const res = this.compute(f, cfg);
+    const labels = res.labels, nCols = labels.length;
+    const colOptions = [{ v: '-1', label: '— none —' }].concat(labels.map((l, i) => ({ v: String(i), label: `${i + 1}. ${trunc(l, 60)}` })));
+    const data = f.rows.slice(cfg.headerRows);
+    const setShape = shape => {
+      const isYearLabel = l => /^\s*(fy\s*)?(19|20)\d{2}/i.test(l);
+      const patch = { shape };
+      if (shape === 'yearsCols') { patch.valueCols = labels.map((l, i) => isYearLabel(l) ? i : -1).filter(i => i >= 0); if (cfg.ageCol < 0) patch.ageCol = 0; }
+      if (shape === 'agesCols') { const yc = cfg.yearCol >= 0 ? cfg.yearCol : 0; patch.yearCol = yc; patch.valueCols = labels.map((l, i) => i).filter(i => i !== yc && !/total|note/i.test(labels[i]) && i !== cfg.ytdCol); }
+      this.setCfg(patch);
+    };
+    const shapeDefs = [
+      ['long', 'Years down a column', 'One row per count, with columns for year and age band'],
+      ['yearsCols', 'Years across the top', 'Age bands down the side, one column per year'],
+      ['agesCols', 'Age bands across the top', 'Years down the side, one column per age band']
+    ];
+    const pickCol = key => e => this.setCfg({ [key]: parseInt(e.target.value, 10) });
+    const filterVals = cfg.filterCol >= 0 ? [...new Set(data.map(r => str(r[cfg.filterCol])))].slice(0, 80) : [];
+    const fex = new Set(cfg.filterExcluded || []);
+    const valueCandidates = labels.map((l, i) => i).filter(i => cfg.shape === 'yearsCols' ? i !== cfg.ageCol : i !== cfg.yearCol);
+    const st = res.stats;
+    return {
+      ...base,
+      fileName: f.name,
+      headerRows: String(cfg.headerRows),
+      onHeaderRows: e => { const v = Math.max(0, parseInt(e.target.value, 10) || 0); this.setCfg({ headerRows: v }); },
+      multiHeader: cfg.headerRows > 1, fillMerged: !!cfg.fillMerged, onFillMerged: e => this.setCfg({ fillMerged: e.target.checked }),
+      rawRows: f.rows.slice(0, Math.max(previewRows, cfg.headerRows + 4)).map((r, ri) => ({ n: ri + 1, bg: ri < cfg.headerRows ? 'var(--color-accent-100)' : 'transparent',
+        cells: Array.from({ length: nCols }, (_, i) => ({ v: trunc(r[i], 28), full: String(r[i] ?? '') })) })),
+      rawNote: `${f.rows.length} rows × ${nCols} columns in file`,
+      shapes: shapeDefs.map(([k, label, desc]) => ({ label, desc, checked: cfg.shape === k, pick: () => setShape(k),
+        border: cfg.shape === k ? 'var(--color-accent)' : 'var(--color-divider)', bg: cfg.shape === k ? 'var(--color-accent-100)' : 'transparent' })),
+      isLong: cfg.shape === 'long', needsYearCol: cfg.shape !== 'yearsCols', needsAgeCol: cfg.shape !== 'agesCols', needsValueCols: cfg.shape !== 'long',
+      colOptions,
+      sel: { yearCol: String(cfg.yearCol), ageCol: String(cfg.ageCol), valueCol: String(cfg.valueCol), notesCol: String(cfg.notesCol), ytdCol: String(cfg.ytdCol ?? -1), yfdCol: String(cfg.yfdCol ?? -1), filterCol: String(cfg.filterCol) },
+      onYearCol: pickCol('yearCol'), onAgeCol: pickCol('ageCol'), onValueCol: pickCol('valueCol'), onNotesCol: pickCol('notesCol'), onYtdCol: pickCol('ytdCol'), onYfdCol: pickCol('yfdCol'),
+      onFilterCol: e => this.setCfg({ filterCol: parseInt(e.target.value, 10), filterExcluded: [] }),
+      valueColsTitle: cfg.shape === 'yearsCols' ? 'Which columns hold counts for a year?' : 'Which columns hold counts for an age band?',
+      valueChecks: valueCandidates.map(i => { const on = cfg.valueCols.includes(i); return { label: trunc(labels[i], 50), checked: on, bg: on ? 'var(--color-accent-100)' : 'transparent',
+        toggle: () => this.setCfg({ valueCols: on ? cfg.valueCols.filter(x => x !== i) : [...cfg.valueCols, i].sort((a, b) => a - b) }) }; }),
+      selectAllCols: () => this.setCfg({ valueCols: valueCandidates }), selectNoCols: () => this.setCfg({ valueCols: [] }),
+      hasFilter: cfg.filterCol >= 0,
+      filterValues: filterVals.map(v => { const keep = !fex.has(v); return { label: v || '(empty)', checked: keep, bg: keep ? 'var(--color-accent-100)' : 'transparent',
+        toggle: () => this.setCfg({ filterExcluded: keep ? [...fex, v] : [...fex].filter(x => x !== v) }) }; }),
+      force: cfg.force, onForce: e => this.setCfg({ force: e.target.value }),
+      notes: cfg.notes, onNotes: e => this.setCfg({ notes: e.target.value }),
+      partialYears: res.years.map(y => { const p = (cfg.partial || {})[y] || {}; const setP = k => e => this.setCfg({ partial: { ...(cfg.partial || {}), [y]: { ...p, [k]: e.target.value } } });
+        return { year: y, from: p.from || '', to: p.to || '', onFrom: setP('from'), onTo: setP('to') }; }),
+      hasPartialYears: res.years.length > 0,
+      years: [...res.yearCounts.entries()].map(([label, n]) => ({ label: label || '(empty)', n,
+        year: label in (cfg.yearMap || {}) ? cfg.yearMap[label] : parseYear(label),
+        onYear: e => this.setCfg({ yearMap: { ...(cfg.yearMap || {}), [label]: e.target.value } }) })),
+      ages: [...res.ageCounts.entries()].map(([label, n]) => {
+        const a = this.ageOf(label);
+        const status = a.edited ? 'Edited' : a.kind === 'unrecognised' ? 'Check' : a.kind === 'total' ? 'Total row' : a.kind === 'unknown' ? 'Unknown age' : 'Auto';
+        return { label: label || '(empty)', n, from: a.from, to: a.to, u18: !!a.u18, include: !!a.include, edited: !!a.edited, status,
+          tagClass: a.kind === 'unrecognised' && !a.edited ? 'tag-accent' : 'tag-neutral', opacity: a.include ? 1 : 0.5,
+          onFrom: e => this.setAge(label, { from: e.target.value.trim() }),
+          onTo: e => { const to = e.target.value.trim(); this.setAge(label, { to, u18: to !== '' && Number(to) <= 17 }); },
+          onU18: e => this.setAge(label, { u18: e.target.checked }),
+          onInclude: e => this.setAge(label, { include: e.target.checked }),
+          reset: () => this.resetAge(label) };
+      }),
+      blankOpts: [['skip', 'Leave out'], ['zero', 'Count as 0']].map(([k, label]) => ({ label, checked: cfg.blank === k, pick: () => this.setCfg({ blank: k }) })),
+      aggOpts: [[false, 'Keep separate'], [true, 'Add together']].map(([k, label]) => ({ label, checked: !!cfg.aggregate === k, pick: () => this.setCfg({ aggregate: k }) })),
+      aggregate: !!cfg.aggregate,
+      aggTotalOpts: [['mid', 'Midpoint of range'], ['blank', 'Leave empty']].map(([k, label]) => ({ label, checked: cfg.aggTotal === k, pick: () => this.setCfg({ aggTotal: k }) })),
+      markers: cfg.markers, onMarkers: e => this.setCfg({ markers: e.target.value }),
+      supMin: String(cfg.supMin), supMax: String(cfg.supMax),
+      onSupMin: e => this.setCfg({ supMin: e.target.value }), onSupMax: e => this.setCfg({ supMax: e.target.value }),
+      statsLine: `This file: ${st.exact} exact, ${st.supp} suppressed, ${st.blank} empty left out${st.bad ? `, ${st.bad} unreadable` : ''}.`,
+      hasBad: st.bad > 0, badExamples: res.bad.slice(0, 8).map(b => `“${b}”`).join(', ') + (res.bad.length > 8 ? '…' : ''),
+      outCount: res.rows.length, noOut: !res.rows.length,
+      outRows: this.tableRows(res.rows, outLimit),
+      outMore: res.rows.length > outLimit ? `Showing first ${outLimit} of ${res.rows.length} rows.` : '',
+      addLabel: s.combined.some(r => r['source filename'] === f.name) ? 'Replace in combined table' : 'Add to combined table',
+      addToCombined: () => this.setState(st2 => { const combined = st2.combined.filter(r => r['source filename'] !== f.name).concat(res.rows); save('combined', combined); return { combined }; }),
+      downloadFile: () => download(`${(str(cfg.force) || f.name.replace(/\.[^.]+$/, '')).replace(/[\\/:*?"<>|]+/g, '-')}-reshaped.csv`, toCSV(res.rows)),
+      hasNext: s.files.findIndex(x => x.id === f.id) < s.files.length - 1,
+      goNext: () => { const i = s.files.findIndex(x => x.id === f.id); if (s.files[i + 1]) this.setState({ activeId: s.files[i + 1].id }); window.scrollTo(0, 0); }
+    };
+  }
+}
+</script>
+</body>
+</html>

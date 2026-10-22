@@ -21,6 +21,46 @@
       "includes": "Unions, professional bodies, charities, community leaders, group admins, elected representatives."
     }
   },
+  "resources": [
+    {
+      "label": "Diverse experts directories",
+      "href": "https://researchguides.journalism.cuny.edu/findingexperts/diverse-experts",
+      "note": "A guide to directories of experts from under-represented groups."
+    },
+    {
+      "label": "Disabled Police Association",
+      "href": "https://www.joiningthepolice.co.uk/supporting-diversity/support-organisations/disabled-police-association",
+      "note": "One example of a representative body inside a profession."
+    },
+    {
+      "label": "Society of Black Academics",
+      "href": "https://societyofblackacademics.com/",
+      "note": "A network of Black academics across disciplines."
+    },
+    {
+      "label": "Inclusion and Diversity in the Voluntary Sector conference",
+      "href": "https://www.governmentevents.co.uk/event/the-inclusion-and-diversity-in-the-voluntary-sector-conference/#overview",
+      "note": "Initiatives and conferences list speakers you can approach."
+    },
+    {
+      "label": "Queer in Academia speaker event",
+      "href": "https://www.kcl.ac.uk/events/queer-in-academia-speaker-event-2023",
+      "note": "Events are another way to find researchers."
+    },
+    {
+      "label": "LinkedIn",
+      "note": "Profiles may give details of education and membership."
+    },
+    {
+      "label": "People who have written about the lack of diversity in their field",
+      "note": "They often know who to recommend."
+    },
+    {
+      "label": "Everybody In (free ebook)",
+      "href": "https://www.media-diversity.org/additional-files/Everybody_In_Book.pdf",
+      "note": "A guide to inclusive journalism."
+    }
+  ],
   "levels": [
     {
       "title": "Know your PEER",
@@ -37,7 +77,7 @@
           "genre": "Crime",
           "format": "News",
           "lead": "Spate of catalytic converter thefts hits market town",
-          "source": "Chief inspector, local police",
+          "source": "Chief Inspector Nadia Rahman, local police",
           "ask": "What are officers doing to catch those responsible?",
           "answer": "power",
           "why": "Police hold legal power: they enforce the law. Asking what is being done about a problem is a question for a source of power."
@@ -46,7 +86,7 @@
           "genre": "Health",
           "format": "News",
           "lead": "A&E waiting times hit a record high this winter",
-          "source": "Professor of health policy who studies NHS performance data",
+          "source": "Professor Grace Mensah, who studies NHS performance data",
           "ask": "Why are waits getting longer, and how does this winter compare with previous years?",
           "answer": "expertise",
           "why": "Academic expertise answers the ‘why’ and ‘how’ questions and puts the figures in context: is it getting better or worse?"
@@ -55,7 +95,7 @@
           "genre": "Education",
           "format": "Feature",
           "lead": "What it’s like to start university as a care leaver",
-          "source": "A second-year student who grew up in foster care",
+          "source": "Kai, a second-year student who grew up in foster care",
           "ask": "What was your first term like?",
           "answer": "experience",
           "why": "Someone affected by the issue can put a human face to it and answer ‘What is it like?’. These sources are often the hardest to find."
@@ -64,7 +104,7 @@
           "genre": "Transport",
           "format": "News",
           "lead": "Bus company cuts evening services across the region",
-          "source": "Regional secretary of the transport workers’ union",
+          "source": "Siobhan Kelly, regional secretary of the transport workers’ union",
           "ask": "How do drivers feel about the changes to their shifts?",
           "answer": "rep",
           "why": "A union can speak formally on behalf of its members, and its leaders are elected. They give the reaction of a whole group, not one person."
@@ -73,7 +113,7 @@
           "genre": "Environment",
           "format": "News",
           "lead": "River declared unsafe for swimming after sewage spill",
-          "source": "Paddleboard instructor who was on the water when the discharge started",
+          "source": "Tunde Afolabi, adaptive paddleboard instructor who was on the water when the discharge started",
           "ask": "What did you see and smell that morning?",
           "answer": "experience",
           "why": "An eyewitness describes what happened first hand. Witnesses are almost always quoted on details of description."
@@ -82,7 +122,7 @@
           "genre": "Sport",
           "format": "News",
           "lead": "Abuse of referees in grassroots football reaches new high",
-          "source": "County football association",
+          "source": "Priya Shah, head of discipline at the county football association",
           "ask": "What sanctions will clubs face if their players or fans abuse officials?",
           "answer": "power",
           "why": "Sports governing bodies have legal power: they make and enforce the rules. Power is not only political."
@@ -91,7 +131,7 @@
           "genre": "Housing",
           "format": "News",
           "lead": "Tenants report black mould across council estate",
-          "source": "Chair of the estate’s residents’ association",
+          "source": "Winston Clarke, chair of the estate’s residents’ association",
           "ask": "How many households have come to you with damp or mould problems?",
           "answer": "rep",
           "why": "The residents’ association speaks for a wider group and can tell you how widespread the problem is, which one tenant cannot."
@@ -113,7 +153,7 @@
           "genre": "Politics",
           "format": "News",
           "lead": "Council to close three branch libraries",
-          "source": "The local MP",
+          "source": "Rina Kapoor, the local MP",
           "ask": "How many constituents have contacted you about the closures?",
           "answer": "rep",
           "why": "Here the MP is the voice of their constituents and has an ‘ear to the ground’. The council holds the power to close or save the libraries."
@@ -122,7 +162,7 @@
           "genre": "Politics",
           "format": "Feature",
           "lead": "MPs speak out about the online abuse they receive",
-          "source": "An MP",
+          "source": "Josh Bennett, an MP",
           "ask": "What kind of messages have you received, and how has it affected you?",
           "answer": "experience",
           "why": "In this story the MP is someone affected by the issue. They are asked what it is like, not what they will do about it."
@@ -131,7 +171,7 @@
           "genre": "Politics",
           "format": "Feature",
           "lead": "Survival guide for the new intake of MPs",
-          "source": "Former chief whip who served 20 years in Parliament",
+          "source": "Margaret Doyle, former chief whip who served 20 years in Parliament",
           "ask": "What do new MPs most often get wrong in their first year?",
           "answer": "expertise",
           "why": "Two decades in a senior role gives professional expertise in how Parliament works. They are offering insight, not taking action."
@@ -140,7 +180,7 @@
           "genre": "Health",
           "format": "News",
           "lead": "Town left without a single NHS dentist taking new patients",
-          "source": "Health minister",
+          "source": "Imran Siddiqui, health minister",
           "ask": "What is the government doing to bring dentists to the area?",
           "answer": "power",
           "why": "The minister has responsibility for the sector and the power to spend money and change rules. They are asked about action."
@@ -149,7 +189,7 @@
           "genre": "Sport",
           "format": "Feature",
           "lead": "Cup final preview: can the underdogs cause an upset?",
-          "source": "Former footballer who played in two cup finals",
+          "source": "Mel Duggan, former footballer who played in two cup finals",
           "ask": "How should the underdogs set up to stop their opponents’ midfield?",
           "answer": "expertise",
           "why": "A former player can give expert insight into tactics. This is the expertise of achievement and long professional experience."
@@ -158,16 +198,16 @@
           "genre": "Sport",
           "format": "Feature",
           "lead": "The day I walked out at a cup final",
-          "source": "Former footballer who played in two cup finals",
+          "source": "Mel Duggan, former footballer who played in two cup finals",
           "ask": "What does it feel like to walk out of the tunnel on final day?",
           "answer": "experience",
-          "why": "Same person, different question. Now they describe a first-hand experience rather than analysing tactics."
+          "why": "Same person, different question. Now she describes a first-hand experience rather than analysing tactics."
         },
         {
           "genre": "Arts",
           "format": "News",
           "lead": "Campaign launched to save school libraries",
-          "source": "Bestselling children’s author with two million followers",
+          "source": "Femi Adeyemi, bestselling children’s author with two million followers",
           "ask": "Will you use your platform to call on the government to protect library funding?",
           "answer": "power",
           "why": "An author can be a voice of expertise, but here they are using cultural and mobilisation power to call for action."
@@ -176,7 +216,7 @@
           "genre": "Community",
           "format": "News",
           "lead": "Parents angry at parking fines outside primary school",
-          "source": "Admin of a 12,000-member local parents’ Facebook group",
+          "source": "Gareth Price, admin of a 12,000-member local parents’ Facebook group",
           "ask": "What concerns are members raising most often?",
           "answer": "rep",
           "why": "A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them."
@@ -220,7 +260,7 @@
             },
             {
               "id": "b",
-              "source": "Parent whose son has gone three weeks without medication, found through an ADHD charity",
+              "source": "Ash Patel, whose son has gone three weeks without medication, found through an ADHD charity",
               "ask": "How has the shortage affected your family?",
               "tag": "Best choice: Experience",
               "note": "Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk."
@@ -240,7 +280,8 @@
               "note": "The draft already has this expertise. A second expert adds little unless they disagree."
             }
           ],
-          "why": "The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline."
+          "why": "The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline.",
+          "widen": "Stories about children’s health often default to mothers. Fathers, other carers, and adults with ADHD themselves are affected too, and a charity can help you reach them."
         },
         {
           "genre": "Crime",
@@ -249,7 +290,7 @@
           "have": [
             {
               "type": "experience",
-              "text": "Shop owner describes being threatened by a shoplifter last month."
+              "text": "Owner of an independent record shop describes being threatened by a shoplifter last month."
             },
             {
               "type": "expertise",
@@ -261,7 +302,7 @@
           "options": [
             {
               "id": "a",
-              "source": "Police and crime commissioner",
+              "source": "Harjit Singh Gill, police and crime commissioner",
               "ask": "What resources are being put into tackling retail crime?",
               "tag": "Best choice: Power",
               "note": "The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply."
@@ -288,7 +329,8 @@
               "note": "Family members are not independent sources, and a retired officer has no power over current policy."
             }
           ],
-          "why": "Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply."
+          "why": "Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply.",
+          "widen": "Retail crime isn’t only an urban story. If every source is in the city centre, check whether village shops and farm shops in the force area are seeing the same thing."
         },
         {
           "genre": "Education",
@@ -323,7 +365,7 @@
             },
             {
               "id": "c",
-              "source": "Chair of the school’s parent council",
+              "source": "Ryan Murphy, chair of the school’s parent council",
               "ask": "What have parents told you about the change?",
               "tag": "Best choice: Representative",
               "note": "Speaks for parents as a group and can say how widespread concern is. This is the reaction the story lacks."
@@ -336,7 +378,8 @@
               "note": "Not independent, and not connected to this school."
             }
           ],
-          "why": "The draft only has the people who made the decision. A representative provides the reaction that moves the story on, and could give it a new angle."
+          "why": "The draft only has the people who made the decision. A representative provides the reaction that moves the story on, and could give it a new angle.",
+          "widen": "Parent councils don’t always reflect every family. Ask about parents who work shifts, who don’t speak English as a first language, or whose children have additional needs, and how the school is reaching them."
         },
         {
           "genre": "Sport",
@@ -384,7 +427,247 @@
               "note": "The governing body has power to change rules, funding and facilities. It answers ‘What is being done?’."
             }
           ],
-          "why": "Even a feature benefits from someone who can say what is being done. Here that is a sports governing body, which has legal and financial power over the game."
+          "why": "Even a feature benefits from someone who can say what is being done. Here that is a sports governing body, which has legal and financial power over the game.",
+          "widen": "Drop-off may not be the same for every group of girls. Ask the researcher whether the figures can be broken down by ethnicity, disability, class or region, and whether that points to other voices the feature needs."
+        }
+      ]
+    },
+    {
+      "title": "Widen the net",
+      "kind": "strategy",
+      "pts": 3,
+      "brief": "Some groups are under-represented among experts, officials and leaders, so the easiest sources to find tend to be the same kinds of people. In this level you decide how to widen your search, and how to treat the sources you find.",
+      "how": [
+        "Read the situation and the facts about who tends to get heard in that field.",
+        "Choose the best next step.",
+        "Widening the net never lowers the bar: you still need the right source for the role, asked the right question."
+      ],
+      "resources": true,
+      "items": [
+        {
+          "genre": "Education",
+          "format": "News",
+          "lead": "Universities warn tuition fee freeze will force course closures",
+          "scenario": "You need an independent expert on university finances. Your first search turns up three professors. All three are white men who are regularly quoted in the media.",
+          "scene": [
+            {
+              "cap": "Result 1"
+            },
+            {
+              "cap": "Result 2"
+            },
+            {
+              "cap": "Result 3"
+            }
+          ],
+          "fact": "In the UK, out of 164 university vice-chancellors, only two are Black. There are 165 Black professors in the UK, out of 23,515. Only 61 UK professors are Black women.",
+          "prompt": "What should you do next?",
+          "answer": "b",
+          "options": [
+            {
+              "id": "a",
+              "text": "Go with the first result. He’s the most experienced.",
+              "tag": "Default choice",
+              "note": "He may be a good source, but defaulting to the most-quoted expert means the same voices are heard every time."
+            },
+            {
+              "id": "b",
+              "text": "Search diverse experts directories and the Society of Black Academics for researchers who work on university finance.",
+              "tag": "Best choice",
+              "note": "Directories and representative networks exist to surface expertise that default searches miss."
+            },
+            {
+              "id": "c",
+              "text": "Replace the expert with a Black student on your course, to make the story more diverse.",
+              "tag": "Tokenism",
+              "note": "A student isn’t an expert on university finance. The aim is to find under-represented experts, not to swap expertise for identity."
+            },
+            {
+              "id": "d",
+              "text": "Interview all three professors to be thorough.",
+              "tag": "Same voices",
+              "note": "Three similar sources answer the same question from the same position."
+            }
+          ],
+          "why": "Under-representation at the top of a field means the easiest experts to find are rarely the only ones. A wider search still finds expertise, and often a fresher angle."
+        },
+        {
+          "genre": "Crime",
+          "format": "Feature",
+          "lead": "A night on the beat: policing the city after dark",
+          "scenario": "The force press office offers to arrange interviews with officers. Your last three police stories all quoted non-disabled male officers.",
+          "scene": [
+            {
+              "cap": "Story 1"
+            },
+            {
+              "cap": "Story 2"
+            },
+            {
+              "cap": "Story 3"
+            }
+          ],
+          "fact": "Figures from 2014 show that just 1.9% of police officers had declared a disability.",
+          "prompt": "How can you hear from a wider range of officers?",
+          "answer": "b",
+          "options": [
+            {
+              "id": "a",
+              "text": "Accept whoever the press office offers.",
+              "tag": "Default choice",
+              "note": "Press offices tend to put forward the same experienced spokespeople."
+            },
+            {
+              "id": "b",
+              "text": "Ask the press office, and also contact staff networks such as the Disabled Police Association for officers willing to talk about their shifts.",
+              "tag": "Best choice",
+              "note": "Representative bodies inside a profession can connect you with people whose experience of the job is rarely heard."
+            },
+            {
+              "id": "c",
+              "text": "Ask a disabled friend what they think of the police.",
+              "tag": "Friend, wrong role",
+              "note": "Not independent, and they can’t describe a night on the beat."
+            },
+            {
+              "id": "d",
+              "text": "Interview a disabled officer, but only ask about their disability.",
+              "tag": "Identity, not experience of the job",
+              "note": "The feature is about the job. Ask them about their shift as you would any officer. Disability may come up, but it shouldn’t be the only thing you ask."
+            }
+          ],
+          "why": "A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story."
+        },
+        {
+          "genre": "Society",
+          "format": "News",
+          "lead": "Charities warn demand for food banks has doubled",
+          "scenario": "You want a charity leader to speak for the sector. Your contacts book has three chief executives of large national charities.",
+          "scene": [
+            {
+              "cap": "Chief executive 1"
+            },
+            {
+              "cap": "Chief executive 2"
+            },
+            {
+              "cap": "Chief executive 3"
+            }
+          ],
+          "fact": "According to the Association of Chief Executives of Voluntary Organisations (ACEVO), more than a sixth of British charity bosses have been privately educated, compared to around 7% of the wider UK population.",
+          "prompt": "How can you check whether your sector voices are representative, and find others?",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "text": "Check LinkedIn for details of their education and memberships, and look through speakers at sector initiatives such as diversity and inclusion conferences for other leaders.",
+              "tag": "Best choice",
+              "note": "Background details help you see patterns in your contacts, and sector events list leaders you might not otherwise find."
+            },
+            {
+              "id": "b",
+              "text": "Assume charity leaders reflect the people their charities serve.",
+              "tag": "Assumption",
+              "note": "The ACEVO figures suggest that isn’t safe, particularly on class."
+            },
+            {
+              "id": "c",
+              "text": "Skip charity leaders and quote food bank users only.",
+              "tag": "Wrong role",
+              "note": "Users bring experience, but the story still needs a representative who can speak to the scale of demand. Ideally have both."
+            },
+            {
+              "id": "d",
+              "text": "Pick the biggest charity: it’s the most authoritative.",
+              "tag": "Default choice",
+              "note": "Size isn’t the same as representativeness. Smaller, local or user-led organisations may be closer to the people affected."
+            }
+          ],
+          "why": "Diversity isn’t only about what people look like. Class and education shape who leads organisations, and so who gets quoted as speaking for others."
+        },
+        {
+          "genre": "Money",
+          "format": "News",
+          "lead": "Interest rates rise again: what it means for mortgage holders",
+          "scenario": "You found Dr Funmi Adebayo, a housing economist, through a diverse experts directory. She has agreed to an interview.",
+          "scene": [
+            {
+              "cap": "Dr Funmi Adebayo, housing economist"
+            }
+          ],
+          "prompt": "What should you ask her?",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "text": "“How much more will a typical mortgage cost, and who will be hit hardest?”",
+              "tag": "Best choice: Expertise",
+              "note": "She’s in the story for her expertise, so ask about it."
+            },
+            {
+              "id": "b",
+              "text": "“What’s it like to be a Black woman in economics?”",
+              "tag": "Identity, not expertise",
+              "note": "That could be a good question for a different story. In this one she is your expert."
+            },
+            {
+              "id": "c",
+              "text": "“Do you have a mortgage yourself, and how will you cope?”",
+              "tag": "Wrong role",
+              "note": "This turns your expert into a case study. Find a mortgage holder for that."
+            },
+            {
+              "id": "d",
+              "text": "“Can you suggest a more senior colleague for us to speak to?”",
+              "tag": "Second-guessing",
+              "note": "You found the expertise you needed. There’s no reason to look past it."
+            }
+          ],
+          "why": "Experts from under-represented groups are often asked only about being under-represented. Treat them as you would any other expert: the question decides the role they play."
+        },
+        {
+          "genre": "Science",
+          "format": "Feature",
+          "lead": "Meet the next generation of climate scientists",
+          "scenario": "You want to interview early-career researchers. The university press office suggests two PhD students from the same lab.",
+          "scene": [
+            {
+              "cap": "PhD student 1"
+            },
+            {
+              "cap": "PhD student 2"
+            }
+          ],
+          "fact": "In the three academic years from 2016-17 to 2018-19, UK research councils granted 19,868 funded PhD studentships, but only 245 were allocated to students of Black and mixed-Black heritage.",
+          "prompt": "Where else could you look?",
+          "answer": "a",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask people who have written about the lack of diversity in science for recommendations, and look at researcher networks and events such as Queer in Academia.",
+              "tag": "Best choice",
+              "note": "People who have written about the problem often know who to recommend, and events list speakers you can approach."
+            },
+            {
+              "id": "b",
+              "text": "Stick with the press office: they know the university best.",
+              "tag": "Default choice",
+              "note": "Press offices are useful, but they tend to suggest the same few people."
+            },
+            {
+              "id": "c",
+              "text": "Post on social media asking for ‘diverse scientists’.",
+              "tag": "Too vague",
+              "note": "A vague callout can feel tokenistic. Be specific about the expertise you need and use targeted networks."
+            },
+            {
+              "id": "d",
+              "text": "Interview the lab’s professor instead. Students don’t count as experts.",
+              "tag": "Wrong source",
+              "note": "Early-career researchers are the story here. Their research gives them expertise, and their experience is what the feature is about."
+            }
+          ],
+          "why": "Under-representation in PhD funding feeds through to who becomes an expert later. Looking beyond the usual channels now helps you find the voices that will otherwise stay unheard."
         }
       ]
     },
@@ -432,12 +715,12 @@
           "pool": [
             {
               "id": "p1",
-              "source": "Mother whose son was stabbed, now volunteers with a victims’ charity",
+              "source": "Kevin Doyle, whose son was stabbed, and who now volunteers with a victims’ charity",
               "ask": "How has your family’s life changed since the attack?"
             },
             {
               "id": "p2",
-              "source": "Criminologist who studies youth violence",
+              "source": "Dr Anjali Rao, criminologist who studies youth violence",
               "ask": "What explains the rise among under-18s?"
             },
             {
@@ -447,7 +730,7 @@
             },
             {
               "id": "p4",
-              "source": "Elected chair of the city’s youth council",
+              "source": "Sam Okoro, elected chair of the city’s youth council",
               "ask": "What are young people telling you about safety?"
             },
             {
@@ -472,7 +755,8 @@
               "note": "Not independent, and a child you know personally."
             }
           ],
-          "why": "A full news story needs all four roles here: a family for impact, an expert for context, the mayor for action, and an elected youth body for reaction."
+          "why": "A full news story needs all four roles here: a family for impact, an expert for context, the mayor for action, and an elected youth body for reaction.",
+          "widen": "Knife crime coverage has often focused on some communities more than others. Check that your choice of case studies and experts reflects what the figures show, rather than reinforcing a stereotype."
         },
         {
           "genre": "Health",
@@ -501,12 +785,12 @@
           "pool": [
             {
               "id": "p1",
-              "source": "Nurse who has been unable to work since 2023, found through a long Covid support group",
+              "source": "Marcus Bell, a nurse who has been unable to work since 2023, found through a long Covid support group",
               "ask": "Talk me through a typical day."
             },
             {
               "id": "p2",
-              "source": "Researcher leading a long Covid clinical trial",
+              "source": "Dr Leila Haddad, who leads a long Covid clinical trial",
               "ask": "What have we learned about recovery?"
             },
             {
@@ -536,7 +820,8 @@
               "note": "Family, and having Covid is not the same as having long Covid."
             }
           ],
-          "why": "A human-interest feature can leave out power and still work. It leads on experience, with research and a patient network to show this is not just one person’s story."
+          "why": "A human-interest feature can leave out power and still work. It leads on experience, with research and a patient network to show this is not just one person’s story.",
+          "widen": "Ask the patient network who is coming to them and who isn’t. People in insecure or frontline jobs may be less able to join support groups, and less likely to be heard."
         },
         {
           "genre": "Sport",
@@ -586,7 +871,7 @@
             },
             {
               "id": "p4",
-              "source": "Season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust",
+              "source": "Beverley Grant, season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust",
               "ask": "Can you still afford to go?"
             },
             {
@@ -611,7 +896,8 @@
               "note": "Cultural power and opinion, but not the supporters’ voice and not financial expertise."
             }
           ],
-          "why": "The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact."
+          "why": "The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact.",
+          "widen": "A supporters’ trust isn’t the only fan group. Disabled supporters’ associations and LGBTQ+ supporters’ groups may have different concerns about price and access."
         }
       ]
     },
@@ -697,7 +983,8 @@
               "note": "Not independent, and no credentials to offer readers."
             }
           ],
-          "why": "Some stories only need one type of source. An experts’ guide is built from a range of expertise: professional, academic, authors and people with long experience."
+          "why": "Some stories only need one type of source. An experts’ guide is built from a range of expertise: professional, academic, authors and people with long experience.",
+          "widen": "Money advice often assumes readers have savings, a car or easy access to big supermarkets. Experts who work with people on low incomes, or in rural areas, can make the guide useful to more readers."
         },
         {
           "genre": "Transport",
@@ -772,7 +1059,8 @@
               "note": "Family members aren’t independent sources."
             }
           ],
-          "why": "A strong news story here needs someone held to account, independent context, and either a person affected or a group representing them."
+          "why": "A strong news story here needs someone held to account, independent context, and either a person affected or a group representing them.",
+          "widen": "Cancellations hit some passengers harder. Disabled passengers who book assistance, and rural commuters with one train an hour, may have a different story from city commuters."
         },
         {
           "genre": "Education",
@@ -848,7 +1136,8 @@
               "note": "Family, and not affected."
             }
           ],
-          "why": "The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation."
+          "why": "The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation.",
+          "widen": "Errors like this can hit students differently. A lost university place may be harder to recover for students without family support or private tutors. Ask the head teachers’ association whether some schools were hit harder than others."
         }
       ]
     }

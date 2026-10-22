@@ -4,7 +4,7 @@
 
 ### 1.1 Spate of catalytic converter thefts hits market town (Crime, News)
 
-- Source: Chief inspector, local police
+- Source: Chief Inspector Nadia Rahman, local police
 - Ask: "What are officers doing to catch those responsible?"
 - **Answer: Power**
 
@@ -12,7 +12,7 @@ Explanation: Police hold legal power: they enforce the law. Asking what is being
 
 ### 1.2 A&E waiting times hit a record high this winter (Health, News)
 
-- Source: Professor of health policy who studies NHS performance data
+- Source: Professor Grace Mensah, who studies NHS performance data
 - Ask: "Why are waits getting longer, and how does this winter compare with previous years?"
 - **Answer: Expertise**
 
@@ -20,7 +20,7 @@ Explanation: Academic expertise answers the ‘why’ and ‘how’ questions an
 
 ### 1.3 What it’s like to start university as a care leaver (Education, Feature)
 
-- Source: A second-year student who grew up in foster care
+- Source: Kai, a second-year student who grew up in foster care
 - Ask: "What was your first term like?"
 - **Answer: Experience**
 
@@ -28,7 +28,7 @@ Explanation: Someone affected by the issue can put a human face to it and answer
 
 ### 1.4 Bus company cuts evening services across the region (Transport, News)
 
-- Source: Regional secretary of the transport workers’ union
+- Source: Siobhan Kelly, regional secretary of the transport workers’ union
 - Ask: "How do drivers feel about the changes to their shifts?"
 - **Answer: Representative**
 
@@ -36,7 +36,7 @@ Explanation: A union can speak formally on behalf of its members, and its leader
 
 ### 1.5 River declared unsafe for swimming after sewage spill (Environment, News)
 
-- Source: Paddleboard instructor who was on the water when the discharge started
+- Source: Tunde Afolabi, adaptive paddleboard instructor who was on the water when the discharge started
 - Ask: "What did you see and smell that morning?"
 - **Answer: Experience**
 
@@ -44,7 +44,7 @@ Explanation: An eyewitness describes what happened first hand. Witnesses are alm
 
 ### 1.6 Abuse of referees in grassroots football reaches new high (Sport, News)
 
-- Source: County football association
+- Source: Priya Shah, head of discipline at the county football association
 - Ask: "What sanctions will clubs face if their players or fans abuse officials?"
 - **Answer: Power**
 
@@ -52,7 +52,7 @@ Explanation: Sports governing bodies have legal power: they make and enforce the
 
 ### 1.7 Tenants report black mould across council estate (Housing, News)
 
-- Source: Chair of the estate’s residents’ association
+- Source: Winston Clarke, chair of the estate’s residents’ association
 - Ask: "How many households have come to you with damp or mould problems?"
 - **Answer: Representative**
 
@@ -62,7 +62,7 @@ Explanation: The residents’ association speaks for a wider group and can tell 
 
 ### 2.1 Council to close three branch libraries (Politics, News)
 
-- Source: The local MP
+- Source: Rina Kapoor, the local MP
 - Ask: "How many constituents have contacted you about the closures?"
 - **Answer: Representative**
 
@@ -70,7 +70,7 @@ Explanation: Here the MP is the voice of their constituents and has an ‘ear to
 
 ### 2.2 MPs speak out about the online abuse they receive (Politics, Feature)
 
-- Source: An MP
+- Source: Josh Bennett, an MP
 - Ask: "What kind of messages have you received, and how has it affected you?"
 - **Answer: Experience**
 
@@ -78,7 +78,7 @@ Explanation: In this story the MP is someone affected by the issue. They are ask
 
 ### 2.3 Survival guide for the new intake of MPs (Politics, Feature)
 
-- Source: Former chief whip who served 20 years in Parliament
+- Source: Margaret Doyle, former chief whip who served 20 years in Parliament
 - Ask: "What do new MPs most often get wrong in their first year?"
 - **Answer: Expertise**
 
@@ -86,7 +86,7 @@ Explanation: Two decades in a senior role gives professional expertise in how Pa
 
 ### 2.4 Town left without a single NHS dentist taking new patients (Health, News)
 
-- Source: Health minister
+- Source: Imran Siddiqui, health minister
 - Ask: "What is the government doing to bring dentists to the area?"
 - **Answer: Power**
 
@@ -94,7 +94,7 @@ Explanation: The minister has responsibility for the sector and the power to spe
 
 ### 2.5 Cup final preview: can the underdogs cause an upset? (Sport, Feature)
 
-- Source: Former footballer who played in two cup finals
+- Source: Mel Duggan, former footballer who played in two cup finals
 - Ask: "How should the underdogs set up to stop their opponents’ midfield?"
 - **Answer: Expertise**
 
@@ -102,15 +102,15 @@ Explanation: A former player can give expert insight into tactics. This is the e
 
 ### 2.6 The day I walked out at a cup final (Sport, Feature)
 
-- Source: Former footballer who played in two cup finals
+- Source: Mel Duggan, former footballer who played in two cup finals
 - Ask: "What does it feel like to walk out of the tunnel on final day?"
 - **Answer: Experience**
 
-Explanation: Same person, different question. Now they describe a first-hand experience rather than analysing tactics.
+Explanation: Same person, different question. Now she describes a first-hand experience rather than analysing tactics.
 
 ### 2.7 Campaign launched to save school libraries (Arts, News)
 
-- Source: Bestselling children’s author with two million followers
+- Source: Femi Adeyemi, bestselling children’s author with two million followers
 - Ask: "Will you use your platform to call on the government to protect library funding?"
 - **Answer: Power**
 
@@ -118,7 +118,7 @@ Explanation: An author can be a voice of expertise, but here they are using cult
 
 ### 2.8 Parents angry at parking fines outside primary school (Community, News)
 
-- Source: Admin of a 12,000-member local parents’ Facebook group
+- Source: Gareth Price, admin of a 12,000-member local parents’ Facebook group
 - Ask: "What concerns are members raising most often?"
 - **Answer: Representative**
 
@@ -136,27 +136,31 @@ Prompt: The story explains what is being done and why. What is missing?
 
 Options:
 - Shoppers stopped outside a city-centre pharmacy. Ask: "What do you think about the medication shortage?" (Vox pop: Random passers-by have no particular power, expertise or experience of the issue.)
-- **[CORRECT]** Parent whose son has gone three weeks without medication, found through an ADHD charity. Ask: "How has the shortage affected your family?" (Best choice: Experience: Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk.)
+- **[CORRECT]** Ash Patel, whose son has gone three weeks without medication, found through an ADHD charity. Ask: "How has the shortage affected your family?" (Best choice: Experience: Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk.)
 - Your flatmate, who has an ADHD diagnosis. Ask: "Have you had trouble getting your prescription?" (Friend or family: A conflict of interest, and you can’t present them independently. Use your contacts to find someone else instead.)
 - A second pharmacology academic at another university. Ask: "Why is there a shortage?" (Role already covered: The draft already has this expertise. A second expert adds little unless they disagree.)
 
 Explanation: The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline.
 
+Widen the net: Stories about children’s health often default to mothers. Fathers, other carers, and adults with ADHD themselves are affected too, and a charity can help you reach them.
+
 ### 3.2 Shoplifting up 30% in the city centre, figures show (Crime, News)
 
 Already in draft:
-- Experience: Shop owner describes being threatened by a shoplifter last month.
+- Experience: Owner of an independent record shop describes being threatened by a shoplifter last month.
 - Expertise: Criminologist explains what is driving the rise in retail crime.
 
 Prompt: The draft has context and colour. What question is left hanging?
 
 Options:
-- **[CORRECT]** Police and crime commissioner. Ask: "What resources are being put into tackling retail crime?" (Best choice: Power: The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply.)
+- **[CORRECT]** Harjit Singh Gill, police and crime commissioner. Ask: "What resources are being put into tackling retail crime?" (Best choice: Power: The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply.)
 - Shoppers on the high street. Ask: "Do you feel safe shopping in town?" (Vox pop: Opinions from random passers-by don’t answer any of the story’s questions.)
 - Another shop owner on the same street. Ask: "Have you been targeted too?" (Role already covered: A second case study adds colour but doesn’t fill the gap: nobody is being held to account.)
 - Your uncle, a retired police officer. Ask: "Why don’t police turn up to shoplifting any more?" (Friend or family: Family members are not independent sources, and a retired officer has no power over current policy.)
 
 Explanation: Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply.
+
+Widen the net: Retail crime isn’t only an urban story. If every source is in the city centre, check whether village shops and farm shops in the force area are seeing the same thing.
 
 ### 3.3 Primary school to move to a four-day week amid staff shortages (Education, News)
 
@@ -169,10 +173,12 @@ Prompt: Two sources of power, both explaining the decision. Who is missing?
 Options:
 - Passers-by near the school gates. Ask: "Is a four-day week a good idea?" (Vox pop: People who happen to be walking past may not even have children at the school.)
 - Education secretary. Ask: "What is the government doing about teacher recruitment nationally?" (Role already covered: Another source of power. The story already has two, and none of the affected families have a voice.)
-- **[CORRECT]** Chair of the school’s parent council. Ask: "What have parents told you about the change?" (Best choice: Representative: Speaks for parents as a group and can say how widespread concern is. This is the reaction the story lacks.)
+- **[CORRECT]** Ryan Murphy, chair of the school’s parent council. Ask: "What have parents told you about the change?" (Best choice: Representative: Speaks for parents as a group and can say how widespread concern is. This is the reaction the story lacks.)
 - Your cousin, who teaches at a different school. Ask: "Would you want a four-day week?" (Friend or family: Not independent, and not connected to this school.)
 
 Explanation: The draft only has the people who made the decision. A representative provides the reaction that moves the story on, and could give it a new angle.
+
+Widen the net: Parent councils don’t always reflect every family. Ask about parents who work shifts, who don’t speak English as a first language, or whose children have additional needs, and how the school is reaching them.
 
 ### 3.4 Why are so many girls quitting football at 14? (Sport, Feature)
 
@@ -190,15 +196,97 @@ Options:
 
 Explanation: Even a feature benefits from someone who can say what is being done. Here that is a sports governing body, which has legal and financial power over the game.
 
-## Level 4: Answer the story’s questions (4 pts each)
+Widen the net: Drop-off may not be the same for every group of girls. Ask the researcher whether the figures can be broken down by ethnicity, disability, class or region, and whether that points to other voices the feature needs.
 
-### 4.1 Knife crime arrests of under-18s double in two years (Crime, News)
+## Level 4: Widen the net (3 pts each)
+
+### 4.1 Universities warn tuition fee freeze will force course closures (Education, News)
+
+Situation: You need an independent expert on university finances. Your first search turns up three professors. All three are white men who are regularly quoted in the media.
+
+Fact: In the UK, out of 164 university vice-chancellors, only two are Black. There are 165 Black professors in the UK, out of 23,515. Only 61 UK professors are Black women.
+
+Prompt: What should you do next?
+
+Options:
+- Go with the first result. He’s the most experienced. (Default choice: He may be a good source, but defaulting to the most-quoted expert means the same voices are heard every time.)
+- **[CORRECT]** Search diverse experts directories and the Society of Black Academics for researchers who work on university finance. (Best choice: Directories and representative networks exist to surface expertise that default searches miss.)
+- Replace the expert with a Black student on your course, to make the story more diverse. (Tokenism: A student isn’t an expert on university finance. The aim is to find under-represented experts, not to swap expertise for identity.)
+- Interview all three professors to be thorough. (Same voices: Three similar sources answer the same question from the same position.)
+
+Explanation: Under-representation at the top of a field means the easiest experts to find are rarely the only ones. A wider search still finds expertise, and often a fresher angle.
+
+### 4.2 A night on the beat: policing the city after dark (Crime, Feature)
+
+Situation: The force press office offers to arrange interviews with officers. Your last three police stories all quoted non-disabled male officers.
+
+Fact: Figures from 2014 show that just 1.9% of police officers had declared a disability.
+
+Prompt: How can you hear from a wider range of officers?
+
+Options:
+- Accept whoever the press office offers. (Default choice: Press offices tend to put forward the same experienced spokespeople.)
+- **[CORRECT]** Ask the press office, and also contact staff networks such as the Disabled Police Association for officers willing to talk about their shifts. (Best choice: Representative bodies inside a profession can connect you with people whose experience of the job is rarely heard.)
+- Ask a disabled friend what they think of the police. (Friend, wrong role: Not independent, and they can’t describe a night on the beat.)
+- Interview a disabled officer, but only ask about their disability. (Identity, not experience of the job: The feature is about the job. Ask them about their shift as you would any officer. Disability may come up, but it shouldn’t be the only thing you ask.)
+
+Explanation: A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story.
+
+### 4.3 Charities warn demand for food banks has doubled (Society, News)
+
+Situation: You want a charity leader to speak for the sector. Your contacts book has three chief executives of large national charities.
+
+Fact: According to the Association of Chief Executives of Voluntary Organisations (ACEVO), more than a sixth of British charity bosses have been privately educated, compared to around 7% of the wider UK population.
+
+Prompt: How can you check whether your sector voices are representative, and find others?
+
+Options:
+- **[CORRECT]** Check LinkedIn for details of their education and memberships, and look through speakers at sector initiatives such as diversity and inclusion conferences for other leaders. (Best choice: Background details help you see patterns in your contacts, and sector events list leaders you might not otherwise find.)
+- Assume charity leaders reflect the people their charities serve. (Assumption: The ACEVO figures suggest that isn’t safe, particularly on class.)
+- Skip charity leaders and quote food bank users only. (Wrong role: Users bring experience, but the story still needs a representative who can speak to the scale of demand. Ideally have both.)
+- Pick the biggest charity: it’s the most authoritative. (Default choice: Size isn’t the same as representativeness. Smaller, local or user-led organisations may be closer to the people affected.)
+
+Explanation: Diversity isn’t only about what people look like. Class and education shape who leads organisations, and so who gets quoted as speaking for others.
+
+### 4.4 Interest rates rise again: what it means for mortgage holders (Money, News)
+
+Situation: You found Dr Funmi Adebayo, a housing economist, through a diverse experts directory. She has agreed to an interview.
+
+Prompt: What should you ask her?
+
+Options:
+- **[CORRECT]** “How much more will a typical mortgage cost, and who will be hit hardest?” (Best choice: Expertise: She’s in the story for her expertise, so ask about it.)
+- “What’s it like to be a Black woman in economics?” (Identity, not expertise: That could be a good question for a different story. In this one she is your expert.)
+- “Do you have a mortgage yourself, and how will you cope?” (Wrong role: This turns your expert into a case study. Find a mortgage holder for that.)
+- “Can you suggest a more senior colleague for us to speak to?” (Second-guessing: You found the expertise you needed. There’s no reason to look past it.)
+
+Explanation: Experts from under-represented groups are often asked only about being under-represented. Treat them as you would any other expert: the question decides the role they play.
+
+### 4.5 Meet the next generation of climate scientists (Science, Feature)
+
+Situation: You want to interview early-career researchers. The university press office suggests two PhD students from the same lab.
+
+Fact: In the three academic years from 2016-17 to 2018-19, UK research councils granted 19,868 funded PhD studentships, but only 245 were allocated to students of Black and mixed-Black heritage.
+
+Prompt: Where else could you look?
+
+Options:
+- **[CORRECT]** Ask people who have written about the lack of diversity in science for recommendations, and look at researcher networks and events such as Queer in Academia. (Best choice: People who have written about the problem often know who to recommend, and events list speakers you can approach.)
+- Stick with the press office: they know the university best. (Default choice: Press offices are useful, but they tend to suggest the same few people.)
+- Post on social media asking for ‘diverse scientists’. (Too vague: A vague callout can feel tokenistic. Be specific about the expertise you need and use targeted networks.)
+- Interview the lab’s professor instead. Students don’t count as experts. (Wrong source: Early-career researchers are the story here. Their research gives them expertise, and their experience is what the feature is about.)
+
+Explanation: Under-representation in PhD funding feeds through to who becomes an expert later. Looking beyond the usual channels now helps you find the voices that will otherwise stay unheard.
+
+## Level 5: Answer the story’s questions (4 pts each)
+
+### 5.1 Knife crime arrests of under-18s double in two years (Crime, News)
 
 Questions and correct source:
-- What is it like for families affected? [Experience] → **Mother whose son was stabbed, now volunteers with a victims’ charity** (Ask: "How has your family’s life changed since the attack?")
-- Why is this happening? [Expertise] → **Criminologist who studies youth violence** (Ask: "What explains the rise among under-18s?")
+- What is it like for families affected? [Experience] → **Kevin Doyle, whose son was stabbed, and who now volunteers with a victims’ charity** (Ask: "How has your family’s life changed since the attack?")
+- Why is this happening? [Expertise] → **Dr Anjali Rao, criminologist who studies youth violence** (Ask: "What explains the rise among under-18s?")
 - What is being done about it? [Power] → **City mayor, who controls the violence reduction budget** (Ask: "What will you do to bring the numbers down?")
-- How are young people in the city reacting? [Representative] → **Elected chair of the city’s youth council** (Ask: "What are young people telling you about safety?")
+- How are young people in the city reacting? [Representative] → **Sam Okoro, elected chair of the city’s youth council** (Ask: "What are young people telling you about safety?")
 
 Distractors:
 - Teenagers approached outside a shopping centre. Ask: "Do you know anyone who carries a knife?" (Vox pop: Ethically risky with under-18s, and they represent nobody but themselves.)
@@ -207,11 +295,13 @@ Distractors:
 
 Explanation: A full news story needs all four roles here: a family for impact, an expert for context, the mayor for action, and an elected youth body for reaction.
 
-### 4.2 Living with long Covid, three years on (Health, Feature)
+Widen the net: Knife crime coverage has often focused on some communities more than others. Check that your choice of case studies and experts reflects what the figures show, rather than reinforcing a stereotype.
+
+### 5.2 Living with long Covid, three years on (Health, Feature)
 
 Questions and correct source:
-- What does daily life look like with long Covid? [Experience] → **Nurse who has been unable to work since 2023, found through a long Covid support group** (Ask: "Talk me through a typical day.")
-- What does the latest research say? [Expertise] → **Researcher leading a long Covid clinical trial** (Ask: "What have we learned about recovery?")
+- What does daily life look like with long Covid? [Experience] → **Marcus Bell, a nurse who has been unable to work since 2023, found through a long Covid support group** (Ask: "Talk me through a typical day.")
+- What does the latest research say? [Expertise] → **Dr Leila Haddad, who leads a long Covid clinical trial** (Ask: "What have we learned about recovery?")
 - What are patients telling support groups? [Representative] → **Founder of a national long Covid patient network** (Ask: "What are the most common problems members raise?")
 
 Distractors:
@@ -221,13 +311,15 @@ Distractors:
 
 Explanation: A human-interest feature can leave out power and still work. It leads on experience, with research and a patient network to show this is not just one person’s story.
 
-### 4.3 Premier League club announces 20% rise in ticket prices (Sport, News)
+Widen the net: Ask the patient network who is coming to them and who isn’t. People in insecure or frontline jobs may be less able to join support groups, and less likely to be heard.
+
+### 5.3 Premier League club announces 20% rise in ticket prices (Sport, News)
 
 Questions and correct source:
 - How have fans reacted? [Representative] → **Chair of the club’s independent supporters’ trust** (Ask: "What are your members saying about the rise?")
 - Why has the club done this? (Right of reply) [Power] → **Club chief executive** (Ask: "Why are prices going up, and will you reconsider?")
 - Can the club justify it financially? [Expertise] → **Football finance analyst who studies club accounts** (Ask: "Does the club need the extra revenue?")
-- What does it mean for families who go every week? [Experience] → **Season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust** (Ask: "Can you still afford to go?")
+- What does it mean for families who go every week? [Experience] → **Beverley Grant, season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust** (Ask: "Can you still afford to go?")
 
 Distractors:
 - Replies under the club’s announcement on social media. Ask: "(Quoting the angriest replies)" (Unverified: Anonymous replies can’t be verified. Use them to find sources, not as quotes.)
@@ -236,9 +328,11 @@ Distractors:
 
 Explanation: The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact.
 
-## Level 5: Build the interview list (5 pts each)
+Widen the net: A supporters’ trust isn’t the only fan group. Disabled supporters’ associations and LGBTQ+ supporters’ groups may have different concerns about price and access.
 
-### 5.1 Make your money last until payday: the experts’ guide (Money, Feature)
+## Level 6: Build the interview list (5 pts each)
+
+### 6.1 Make your money last until payday: the experts’ guide (Money, Feature)
 
 Pick 3. Must cover: Expertise (only Expertise allowed). Any weak source fails the list.
 
@@ -253,7 +347,9 @@ Pick 3. Must cover: Expertise (only Expertise allowed). Any weak source fails th
 
 Explanation: Some stories only need one type of source. An experts’ guide is built from a range of expertise: professional, academic, authors and people with long experience.
 
-### 5.2 Rail operator cancels 400 trains in a week over driver shortages (Transport, News)
+Widen the net: Money advice often assumes readers have savings, a car or easy access to big supermarkets. Experts who work with people on low incomes, or in rural areas, can make the guide useful to more readers.
+
+### 6.2 Rail operator cancels 400 trains in a week over driver shortages (Transport, News)
 
 Pick 4. Must cover: Power + Expertise + Experience or Representative. Any weak source fails the list.
 
@@ -268,7 +364,9 @@ Pick 4. Must cover: Power + Expertise + Experience or Representative. Any weak s
 
 Explanation: A strong news story here needs someone held to account, independent context, and either a person affected or a group representing them.
 
-### 5.3 Exam board error gave 2,000 students the wrong A-level grades (Education, News)
+Widen the net: Cancellations hit some passengers harder. Disabled passengers who book assistance, and rural commuters with one train an hour, may have a different story from city commuters.
+
+### 6.3 Exam board error gave 2,000 students the wrong A-level grades (Education, News)
 
 Pick 4. Must cover: Power + Experience + Representative or Expertise. Any weak source fails the list.
 
@@ -283,3 +381,15 @@ Pick 4. Must cover: Power + Experience + Representative or Expertise. Any weak s
 
 Explanation: The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation.
 
+Widen the net: Errors like this can hit students differently. A lost university place may be harder to recover for students without family support or private tutors. Ask the head teachers’ association whether some schools were hit harder than others.
+
+## Resources shown in the game
+
+- Diverse experts directories (https://researchguides.journalism.cuny.edu/findingexperts/diverse-experts): A guide to directories of experts from under-represented groups.
+- Disabled Police Association (https://www.joiningthepolice.co.uk/supporting-diversity/support-organisations/disabled-police-association): One example of a representative body inside a profession.
+- Society of Black Academics (https://societyofblackacademics.com/): A network of Black academics across disciplines.
+- Inclusion and Diversity in the Voluntary Sector conference (https://www.governmentevents.co.uk/event/the-inclusion-and-diversity-in-the-voluntary-sector-conference/#overview): Initiatives and conferences list speakers you can approach.
+- Queer in Academia speaker event (https://www.kcl.ac.uk/events/queer-in-academia-speaker-event-2023): Events are another way to find researchers.
+- LinkedIn: Profiles may give details of education and membership.
+- People who have written about the lack of diversity in their field: They often know who to recommend.
+- Everybody In (free ebook) (https://www.media-diversity.org/additional-files/Everybody_In_Book.pdf): A guide to inclusive journalism.

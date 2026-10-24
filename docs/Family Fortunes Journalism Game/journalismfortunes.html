@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #05102a; }
+  * { box-sizing: border-box; }
+  a { color: #f0c04a; }
+  a:hover { color: #ffd979; }
+  input { font-family: inherit; }
+  @keyframes pop { 0% { transform: scale(0.94); } 60% { transform: scale(1.03); } 100% { transform: scale(1); } }
+  @keyframes shake { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); } }
+  @keyframes neon { 0%,100% { text-shadow: 0 0 6px rgba(255,214,120,0.9), 0 0 22px rgba(255,77,190,0.7), 0 4px 0 #7a4a00; } 50% { text-shadow: 0 0 10px rgba(255,214,120,1), 0 0 34px rgba(255,77,190,0.9), 0 4px 0 #7a4a00; } }
+  @keyframes scroll-grid { from { background-position: 0 0, 0 0; } to { background-position: 0 60px, 60px 0; } }
+</style>
+</helmet>
+<div style="position: relative; min-height: 100vh; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; color: #fff; background: radial-gradient(ellipse at 50% -10%, #2a1a6b 0%, #14235c 40%, #05102a 100%); padding: clamp(16px, 2.2vw, 34px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px); overflow: hidden;">
+  <div style="position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,77,190,0.16) 1px, transparent 1px), linear-gradient(90deg, rgba(57,183,255,0.16) 1px, transparent 1px); background-size: 60px 60px, 60px 60px; mask-image: linear-gradient(to bottom, transparent 30%, #000 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 30%, #000 100%); animation: scroll-grid 6s linear infinite;"></div>
+  <div style="position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(rgba(0,0,0,0.22) 0 1px, transparent 1px 4px); opacity: 0.5; mix-blend-mode: multiply;"></div>
+  <div style="position: absolute; left: 0; right: 0; top: 34%; height: 2px; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255,77,190,0.55), rgba(57,183,255,0.55), transparent);"></div>
+
+  <div style="position: relative; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; border-bottom: 3px solid #f0c04a; box-shadow: 0 3px 16px rgba(255,77,190,0.35); padding-bottom: clamp(10px, 1.2vw, 18px);">
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <div style="font-family: Anton, Impact, sans-serif; font-size: clamp(30px, 3.8vw, 66px); line-height: 0.95; letter-spacing: 0.04em; text-transform: uppercase; color: #ffe08a; animation: neon 2.6s ease-in-out infinite;">Journalism Fortunes</div>
+      <div style="font-size: clamp(15px, 1.15vw, 22px); letter-spacing: 0.22em; text-transform: uppercase; color: #ff7ad1;">We surveyed the industry: the top challenges facing journalism</div>
+      <div style="font-size: clamp(13px, 0.95vw, 18px); color: #7fa6d8; letter-spacing: 0.1em; text-transform: uppercase;">Source: Reuters Institute 2026 State of the Media Report</div>
+    </div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button onClick="{{ toggleSound }}" style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(14px, 1vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #cfdcf5; background: rgba(255,255,255,0.06); border: 2px solid rgba(240,192,74,0.45); border-radius: 4px; padding: 9px 16px; cursor: pointer;" style-hover="background: rgba(240,192,74,0.18);">{{ soundLabel }}</button>
+      <button onClick="{{ goFullscreen }}" style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(14px, 1vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #cfdcf5; background: rgba(255,255,255,0.06); border: 2px solid rgba(240,192,74,0.45); border-radius: 4px; padding: 9px 16px; cursor: pointer;" style-hover="background: rgba(240,192,74,0.18);">Full screen</button>
+      <button onClick="{{ revealAll }}" style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(14px, 1vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #07142f; background: #f0c04a; border: 2px solid #f0c04a; border-radius: 4px; padding: 9px 16px; cursor: pointer;" style-hover="background: #ffd979;">Reveal all</button>
+      <button onClick="{{ resetBoard }}" style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(14px, 1vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #9fb4e0; background: transparent; border: 2px solid rgba(159,180,224,0.35); border-radius: 4px; padding: 9px 16px; cursor: pointer;" style-hover="color: #fff; border-color: #9fb4e0;">Reset</button>
+    </div>
+  </div>
+
+  <div style="position: relative; display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(260px, 0.85fr); gap: clamp(14px, 1.6vw, 26px); align-items: start;">
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(8px, 0.9vw, 14px);">
+      <sc-for list="{{ tiles }}" as="tile" hint-placeholder-count="7">
+        <div style="border-radius: 6px; padding: 3px; background: linear-gradient(#f4d179, #a8791f); box-shadow: 0 6px 0 rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.6);">
+          <div style="background: {{ tile.face }}; border-radius: 4px; padding: clamp(10px, 1vw, 16px) clamp(12px, 1.1vw, 20px); min-height: clamp(72px, 6.8vw, 104px); display: flex; align-items: center; gap: 14px; animation: {{ tile.anim }}; box-shadow: inset 0 2px 0 rgba(255,255,255,0.14), inset 0 -3px 10px rgba(0,0,0,0.45);">
+            <div style="font-family: Anton, Impact, sans-serif; font-size: clamp(26px, 2.5vw, 44px); line-height: 1; color: #f0c04a; min-width: 1.4em; text-align: center; opacity: 0.95;">{{ tile.rank }}</div>
+            <sc-if value="{{ tile.revealed }}" hint-placeholder-val="{{ true }}">
+              <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px;">
+                <div style="font-size: clamp(26px, 2.5vw, 46px); font-weight: 700; line-height: 1; text-transform: uppercase; letter-spacing: 0.01em; text-wrap: pretty;">{{ tile.name }}</div>
+                <div style="font-size: clamp(13px, 0.95vw, 17px); color: #a8bde6; line-height: 1.25; text-wrap: pretty;">{{ tile.note }}</div>
+              </div>
+              <div style="font-family: Anton, Impact, sans-serif; font-size: clamp(30px, 2.9vw, 52px); line-height: 1; color: #fff; text-shadow: 0 2px 0 rgba(0,0,0,0.5);">{{ tile.pct }}</div>
+            </sc-if>
+            <sc-if value="{{ tile.hidden }}" hint-placeholder-val="{{ false }}">
+              <div style="flex: 1; display: flex; gap: 10px; align-items: center;">
+                <div style="height: 8px; flex: 1; border-radius: 4px; background: repeating-linear-gradient(90deg, rgba(240,192,74,0.5) 0 18px, transparent 18px 36px);"></div>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: clamp(10px, 1.1vw, 16px);">
+
+      <sc-if value="{{ over }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; border: 3px solid {{ winnerColor }}; border-radius: 6px; padding: clamp(14px, 1.4vw, 22px); background: rgba(0,0,0,0.35); animation: pop 400ms ease-out;">
+          <div style="font-size: clamp(13px, 0.95vw, 17px); letter-spacing: 0.2em; text-transform: uppercase; color: #ff7ad1;">Game over</div>
+          <div style="font-family: Anton, Impact, sans-serif; font-size: clamp(32px, 3.2vw, 56px); line-height: 1; text-transform: uppercase; color: {{ winnerColor }}; text-shadow: 0 0 18px {{ winnerColor }};">{{ winnerText }}</div>
+          <div style="font-size: clamp(16px, 1.2vw, 22px); font-weight: 600; letter-spacing: 0.08em; color: #cfdcf5;">{{ finalScore }}</div>
+        </div>
+      </sc-if>
+      <form onSubmit="{{ submit }}" style="display: flex; flex-direction: column; gap: 10px; background: rgba(255,255,255,0.05); border: 2px solid rgba(240,192,74,0.45); border-radius: 6px; padding: clamp(12px, 1.1vw, 18px);">
+        <label for="guess" style="font-size: clamp(13px, 0.95vw, 17px); letter-spacing: 0.18em; text-transform: uppercase; color: {{ turnColor }};">{{ turnLabel }} — type an answer</label>
+        <input id="guess" ref="{{ inputRef }}" placeholder="e.g. goblins" autocomplete="off" style="font-size: clamp(20px, 1.8vw, 30px); font-weight: 600; font-family: 'Barlow Condensed', sans-serif; color: #07142f; background: #f3f5fb; border: none; border-radius: 4px; padding: 10px 14px; outline: none; width: 100%;" />
+        <button type="submit" style="font-family: Anton, Impact, sans-serif; font-size: clamp(17px, 1.3vw, 24px); letter-spacing: 0.06em; text-transform: uppercase; color: #07142f; background: #f0c04a; border: none; border-radius: 4px; padding: 11px 16px; cursor: pointer;" style-hover="background: #ffd979;">Lock it in</button>
+        <div style="min-height: 2.6em; font-size: clamp(15px, 1.15vw, 21px); font-weight: 600; line-height: 1.2; color: {{ msgColor }}; animation: {{ msgAnim }};">{{ msg }}</div>
+      </form>
+
+      <div style="display: flex; gap: 10px; justify-content: center; background: rgba(0,0,0,0.25); border-radius: 6px; padding: clamp(10px, 1vw, 16px);">
+        <sc-for list="{{ strikeMarks }}" as="mark" hint-placeholder-count="3">
+          <div style="width: clamp(44px, 4vw, 66px); height: clamp(44px, 4vw, 66px); border: 4px solid {{ mark.color }}; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: Anton, Impact, sans-serif; font-size: clamp(26px, 2.4vw, 40px); color: {{ mark.color }};">X</div>
+        </sc-for>
+      </div>
+
+      <sc-for list="{{ teams }}" as="team" hint-placeholder-count="2">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 3px solid {{ team.border }}; background: {{ team.bg }}; box-shadow: {{ team.shadow }}; border-radius: 6px; padding: clamp(10px, 1vw, 16px) clamp(12px, 1.1vw, 18px);">
+          <div style="display: flex; flex-direction: column;">
+            <div style="font-size: clamp(16px, 1.25vw, 23px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: {{ team.label }};">{{ team.name }}</div>
+            <div style="font-size: clamp(12px, 0.9vw, 15px); letter-spacing: 0.14em; text-transform: uppercase; color: #8ea4d2;">{{ team.state }}</div>
+          </div>
+          <div style="font-family: Anton, Impact, sans-serif; font-size: clamp(30px, 2.8vw, 50px); line-height: 1; color: #fff;">{{ team.score }}</div>
+        </div>
+      </sc-for>
+
+      <button onClick="{{ passTurn }}" style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(14px, 1vw, 18px); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #9fb4e0; background: transparent; border: 2px solid rgba(159,180,224,0.35); border-radius: 4px; padding: 10px 14px; cursor: pointer;" style-hover="color: #fff; border-color: #9fb4e0;">Pass to other team</button>
+
+      <div style="font-size: clamp(12px, 0.9vw, 16px); color: #6f86b6; line-height: 1.35;">Close spellings and common synonyms count. Three strikes passes the turn. Points equal the survey percentage.</div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1600,&quot;height&quot;:950}}">
+const DATA = [
+  { name: "Accuracy", pct: 50,
+    note: "Misinformation, accuracy, factchecking and verification",
+    aliases: ["misinformation","misinfo","disinformation","disinfo","fake news","false information","falsehoods","inaccuracy","accuracy","inaccurate reporting","fact checking","factchecking","fact check","factcheck","factchecks","verification","verifying","lies","untruths","propaganda","hoaxes","conspiracy theories","truth","getting it wrong","errors","misleading information"] },
+  { name: "Resources", pct: 49,
+    note: "Resource constraints: budgets, staff cuts, workload",
+    aliases: ["resources","resource constraints","lack of resources","budget","budgets","budget cuts","funding","lack of funding","money","lack of money","no money","cuts","staff cuts","staffing","understaffed","short staffed","layoffs","redundancies","job cuts","job losses","sackings","workload","overwork","too much work","burnout","time","lack of time","fewer journalists","newsroom cuts","costs","pay","low pay","capacity"] },
+  { name: "AI", pct: 43,
+    note: "AI impacts on production, search referrals and trust",
+    aliases: ["ai","a i","artificial intelligence","generative ai","gen ai","genai","chatgpt","chat gpt","llms","llm","large language models","automation","bots","chatbots","ai slop","machine learning","ai taking jobs","ai content","deepfakes","deep fakes"] },
+  { name: "Audiences", pct: 42,
+    note: "Audience behaviour, consumption changes, news avoidance",
+    aliases: ["audience","audiences","audience behaviour","audience behavior","audience habits","changing habits","habits","consumption","news consumption","how people consume news","news avoidance","avoidance","switching off","declining readership","readership","falling audiences","losing readers","attention","attention spans","engagement","young people","younger audiences","gen z","reaching people","short form video","apathy","disinterest","subscriptions"] },
+  { name: "Competition", pct: 28,
+    note: "Competition from non-journalists eg creators and influencers",
+    aliases: ["competition","competition from creators","creators","content creators","creator economy","influencers","influencer","youtubers","tiktokers","podcasters","substack","newsletters","bloggers","citizen journalists","non journalists","nonjournalists","amateurs","everyone is a journalist","social media stars","commentators","pundits"] },
+  { name: "Commercial pressure", pct: 27,
+    note: "Commercial pressures, SEO, algorithms, sponsored content",
+    aliases: ["commercial pressure","commercial pressures","commercial","business model","business models","revenue","monetisation","monetization","advertising","adverts","ads","ad revenue","seo","search engine optimisation","search engine optimization","search","google","algorithms","algorithm","the algorithm","platforms","platform dependency","clickbait","clicks","traffic","metrics","kpis","sponsored content","advertorial","native advertising","branded content","advertiser influence","paywalls","chasing clicks"] },
+  { name: "Press freedom", pct: 24,
+    note: "Press freedom, censorship and safety",
+    aliases: ["press freedom","freedom of the press","media freedom","censorship","censored","being censored","state control","government interference","political interference","safety","journalist safety","danger","dangerous","attacks on journalists","violence","killings","journalists killed","imprisonment","jailed journalists","arrests","threats","legal threats","slapps","lawsuits","intimidation","harassment","trolling","abuse","surveillance","impunity","authoritarianism"] }
+];
+
+const norm = (s) => (s || "").toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+
+function lev(a, b) {
+  if (a === b) return 0;
+  const m = a.length, n = b.length;
+  if (!m || !n) return m || n;
+  let prev = Array.from({ length: n + 1 }, (_, i) => i);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[n];
+}
+
+const NORMED = DATA.map(a => a.aliases.map(norm).concat([norm(a.name)]));
+
+class Component extends DCLogic {
+  state = { over: false, revealed: [], strikes: [0, 0], team: 0, scores: [0, 0], msg: "", msgKind: "", tick: 0, sound: true };
+
+  inputRef = React.createRef();
+
+  componentDidMount() { if (this.inputRef.current) this.inputRef.current.focus(); }
+
+  tone(freqs, dur, type) {
+    if (!this.state.sound) return;
+    try {
+      this.ac = this.ac || new (window.AudioContext || window.webkitAudioContext)();
+      const ac = this.ac;
+      freqs.forEach((f, i) => {
+        const o = ac.createOscillator(), g = ac.createGain();
+        o.type = type || "square";
+        o.frequency.value = f;
+        const t0 = ac.currentTime + i * dur * 0.8;
+        g.gain.setValueAtTime(0.0001, t0);
+        g.gain.exponentialRampToValueAtTime(0.18, t0 + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+        o.connect(g).connect(ac.destination);
+        o.start(t0); o.stop(t0 + dur + 0.05);
+      });
+    } catch (e) {}
+  }
+
+  findMatch(raw) {
+    const n = norm(raw);
+    if (!n) return -1;
+    for (let i = 0; i < NORMED.length; i++) {
+      for (const a of NORMED[i]) {
+        if (n === a) return i;
+        if (a.length >= 4 && n.includes(a)) return i;
+        if (n.length >= 5 && a.includes(n)) return i;
+      }
+    }
+    for (let i = 0; i < NORMED.length; i++) {
+      for (const a of NORMED[i]) {
+        if (Math.abs(a.length - n.length) > 4) continue;
+        const tol = a.length >= 12 ? 3 : a.length >= 7 ? 2 : 1;
+        if (lev(n, a) <= tol) return i;
+      }
+    }
+    return -1;
+  }
+
+  submit = (e) => {
+    e.preventDefault();
+    const el = this.inputRef.current;
+    const raw = el ? el.value : "";
+    if (this.state.over || !norm(raw)) return;
+    if (el) el.value = "";
+    const i = this.findMatch(raw);
+    if (i >= 0 && this.state.revealed.includes(i)) {
+      this.tone([330], 0.12, "triangle");
+      this.setState(s => ({ msg: "Already on the board — try another.", msgKind: "warn", tick: s.tick + 1 }));
+      return;
+    }
+    if (i >= 0) {
+      this.tone([523, 659, 880], 0.14, "square");
+      this.setState(s => {
+        const scores = s.scores.slice();
+        scores[s.team] += DATA[i].pct;
+        return { revealed: s.revealed.concat([i]), scores, msg: "On the board — " + DATA[i].pct + " points.", msgKind: "good", tick: s.tick + 1 };
+      });
+    } else {
+      this.tone([160, 120], 0.22, "sawtooth");
+      this.setState(s => {
+        const strikes = s.strikes.slice();
+        strikes[s.team] = Math.min(3, strikes[s.team] + 1);
+        if (strikes[0] >= 3 && strikes[1] >= 3) {
+          return { strikes, over: true, revealed: DATA.map((_, k) => k), msg: "Both teams out. Game over.", msgKind: "bad", tick: s.tick + 1 };
+        }
+        if (strikes[s.team] >= 3) {
+          return { strikes, team: s.team === 0 ? 1 : 0, msg: "Three strikes. Over to the other team.", msgKind: "bad", tick: s.tick + 1 };
+        }
+        return { strikes, msg: "Not on the board.", msgKind: "bad", tick: s.tick + 1 };
+      });
+    }
+    if (el) el.focus();
+  };
+
+  passTurn = () => this.setState(s => ({ team: s.team === 0 ? 1 : 0, msg: "", msgKind: "" }));
+
+  revealAll = () => this.setState({ revealed: DATA.map((_, i) => i), msg: "Full board revealed.", msgKind: "good" });
+
+  resetBoard = () => this.setState({ over: false, revealed: [], strikes: [0, 0], team: 0, scores: [0, 0], msg: "", msgKind: "" });
+
+  toggleSound = () => this.setState(s => ({ sound: !s.sound }));
+
+  goFullscreen = () => {
+    const d = document;
+    if (d.fullscreenElement) { d.exitFullscreen && d.exitFullscreen(); return; }
+    const el = d.documentElement;
+    (el.requestFullscreen || el.webkitRequestFullscreen || function () {}).call(el);
+  };
+
+  renderVals() {
+    const { revealed, strikes, team, scores, msg, msgKind, tick, sound } = this.state;
+    const tiles = DATA.map((a, i) => {
+      const on = revealed.includes(i);
+      return {
+        rank: i + 1,
+        revealed: on,
+        hidden: !on,
+        name: a.name,
+        note: a.note,
+        pct: a.pct,
+        face: on ? "linear-gradient(#1e46a0, #142f6e)" : "linear-gradient(#10224e, #0a1738)",
+        anim: on ? "pop 260ms ease-out" : "none"
+      };
+    });
+    const marks = [0, 1, 2].map(i => ({ color: i < strikes[team] ? "#e0483c" : "rgba(255,255,255,0.13)" }));
+    const TEAMS = [
+      { name: "Blue Team", hue: "#39b7ff", glow: "rgba(57,183,255,0.5)", tint: "rgba(57,183,255,0.16)" },
+      { name: "Red Team", hue: "#ff4d6d", glow: "rgba(255,77,109,0.5)", tint: "rgba(255,77,109,0.16)" }
+    ];
+    const teams = [0, 1].map(i => ({
+      name: TEAMS[i].name,
+      score: scores[i],
+      state: i === team ? "At the podium" : "Waiting",
+      border: i === team ? TEAMS[i].hue : "rgba(159,180,224,0.22)",
+      bg: i === team ? TEAMS[i].tint : "rgba(255,255,255,0.04)",
+      label: i === team ? TEAMS[i].hue : "#cfdcf5",
+      shadow: i === team ? "0 0 22px " + TEAMS[i].glow + ", inset 0 0 22px " + TEAMS[i].tint : "none"
+    }));
+    return {
+      tiles, teams, strikeMarks: marks,
+      inputRef: this.inputRef,
+      submit: this.submit,
+      passTurn: this.passTurn,
+      revealAll: this.revealAll,
+      resetBoard: this.resetBoard,
+      toggleSound: this.toggleSound,
+      goFullscreen: this.goFullscreen,
+      soundLabel: sound ? "Sound on" : "Sound off",
+      over: this.state.over,
+      winnerText: scores[0] === scores[1] ? "It's a draw" : (scores[0] > scores[1] ? "Blue Team wins" : "Red Team wins"),
+      winnerColor: scores[0] === scores[1] ? "#ffe08a" : (scores[0] > scores[1] ? "#39b7ff" : "#ff4d6d"),
+      finalScore: "Blue " + scores[0] + "  ·  Red " + scores[1],
+      turnLabel: team === 0 ? "Blue Team" : "Red Team",
+      turnColor: team === 0 ? "#39b7ff" : "#ff4d6d",
+      msg,
+      msgColor: msgKind === "good" ? "#7ee08f" : msgKind === "bad" ? "#ff8e83" : msgKind === "warn" ? "#f0c04a" : "#8ea4d2",
+      msgAnim: msgKind === "bad" && tick % 2 === 1 ? "shake 320ms ease-out" : msgKind === "bad" ? "shake 320ms ease-out 1ms" : "none"
+    };
+  }
+}
+
+</script>
+</body>
+</html>

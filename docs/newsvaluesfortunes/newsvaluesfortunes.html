@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+html{font-size:clamp(13px,1.05vw,30px)}
+body{margin:0;background:#0b0930;color:#fff;font-family:'Barlow Condensed',sans-serif;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:#f0c04a}a:hover{color:#ff4fd8}
+input::placeholder{color:#7d86b8}
+@keyframes gridMove{from{background-position:0 0,0 0}to{background-position:0 4rem,0 0}}
+@keyframes titleGlow{0%,100%{text-shadow:0 0 .4rem rgba(240,192,74,.7),0 0 1.4rem rgba(255,79,216,.55),.28rem .28rem 0 #3a0f5c}50%{text-shadow:0 0 .7rem rgba(240,192,74,1),0 0 2.6rem rgba(255,79,216,.9),.28rem .28rem 0 #3a0f5c}}
+@keyframes tilePop{0%{transform:scale(.85) rotateX(80deg);opacity:.3}60%{transform:scale(1.06) rotateX(-8deg);opacity:1}100%{transform:scale(1) rotateX(0)}}
+@keyframes shakeA{0%,100%{transform:translateX(0)}20%{transform:translateX(-.6rem)}40%{transform:translateX(.6rem)}60%{transform:translateX(-.4rem)}80%{transform:translateX(.4rem)}}
+@keyframes shakeB{0%,100%{transform:translateX(0)}20%{transform:translateX(-.6rem)}40%{transform:translateX(.6rem)}60%{transform:translateX(-.4rem)}80%{transform:translateX(.4rem)}}
+@keyframes xPop{0%{transform:scale(1.8);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes overlayIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;background:radial-gradient(ellipse 90% 55% at 50% 0%,#3b2a9e 0%,#1a1466 35%,#0b0930 75%);overflow:hidden">
+  <div style="position:absolute;left:-50%;right:-50%;bottom:0;height:55vh;pointer-events:none;perspective:22rem;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 70%);mask-image:linear-gradient(to bottom,transparent,#000 70%);opacity:.55">
+    <div style="position:absolute;inset:0;transform-origin:50% 0;transform:rotateX(62deg);background-image:linear-gradient(to bottom,rgba(255,79,216,.9) 2px,transparent 2px),linear-gradient(to right,rgba(57,230,255,.8) 2px,transparent 2px);background-size:100% 4rem,4rem 100%;animation:gridMove 1.6s linear infinite"></div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:55vh;height:2px;background:linear-gradient(90deg,transparent,#ff4fd8 20%,#39e6ff 80%,transparent);box-shadow:0 0 1rem #ff4fd8;opacity:.8;pointer-events:none"></div>
+
+  <div style="position:relative;z-index:1;max-width:120rem;margin:0 auto;padding:1.6rem 2rem 1.4rem;display:flex;flex-direction:column;gap:1.4rem">
+    <header style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:1rem">
+      <div style="display:flex;flex-direction:column;gap:.5rem;min-width:0">
+        <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,5.2vw,6rem);line-height:.95;color:#ffe9a8;letter-spacing:.03em;animation:titleGlow 2.4s ease-in-out infinite">News Values Fortunes</h1>
+        <div style="color:#ff5fb8;text-transform:uppercase;letter-spacing:.22em;font-weight:700;font-size:1.25rem;text-wrap:pretty;max-width:60rem">We analysed the 25 most-shared stories on Facebook and Twitter in 2014: which news values did they contain?</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.6rem">
+        <button onClick="{{ toggleSound }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#dfe5ff;background:rgba(20,18,80,.7);border:2px solid #4a4fb0;border-radius:.4rem;padding:.45rem .9rem;cursor:pointer" style-hover="border-color:#f0c04a;color:#f0c04a">{{ soundLabel }}</button>
+        <button onClick="{{ fullscreen }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#dfe5ff;background:rgba(20,18,80,.7);border:2px solid #4a4fb0;border-radius:.4rem;padding:.45rem .9rem;cursor:pointer" style-hover="border-color:#f0c04a;color:#f0c04a">Full screen</button>
+        <button onClick="{{ revealAll }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#dfe5ff;background:rgba(20,18,80,.7);border:2px solid #4a4fb0;border-radius:.4rem;padding:.45rem .9rem;cursor:pointer" style-hover="border-color:#f0c04a;color:#f0c04a">Reveal all</button>
+        <button onClick="{{ reset }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#dfe5ff;background:rgba(20,18,80,.7);border:2px solid #4a4fb0;border-radius:.4rem;padding:.45rem .9rem;cursor:pointer" style-hover="border-color:#ff4d6d;color:#ff4d6d">Reset</button>
+      </div>
+    </header>
+
+    <main style="display:flex;flex-wrap:wrap;gap:1.6rem;align-items:flex-start">
+      <section style="flex:2.3 1 40rem;min-width:0;display:flex;flex-wrap:wrap;gap:.9rem">
+        <sc-for list="{{ columns }}" as="col" hint-placeholder-count="2">
+          <div style="flex:1 1 24rem;min-width:0;display:flex;flex-direction:column;gap:.9rem">
+            <sc-for list="{{ col }}" as="t" hint-placeholder-count="5">
+              <div style="perspective:40rem">
+                <div style="padding:.32rem;border-radius:.7rem;background:linear-gradient(180deg,#fff1b8 0%,#f0c04a 30%,#b9831c 70%,#ffe08a 100%);box-shadow:0 .4rem 0 #6b4308,0 .7rem 1.4rem rgba(0,0,0,.55)">
+                  <div style="display:flex;align-items:stretch;min-height:5.6rem;border-radius:.45rem;background:linear-gradient(180deg,#3d6fe0 0%,#1c3aa6 45%,#12257a 100%);box-shadow:inset 0 .25rem 0 rgba(255,255,255,.25),inset 0 -.35rem 0 rgba(0,0,0,.35);overflow:hidden">
+                    <div style="flex:0 0 4.4rem;display:flex;align-items:center;justify-content:center;font-family:Anton,sans-serif;font-size:2.4rem;color:#ffe9a8;background:linear-gradient(180deg,#0f1f6a,#0a1450);border-right:.2rem solid rgba(240,192,74,.6);text-shadow:.12rem .12rem 0 #000">{{ t.rank }}</div>
+                    <sc-if value="{{ t.hidden }}" hint-placeholder-val="{{ true }}">
+                      <div style="flex:1;display:flex;align-items:center;padding:0 1.4rem">
+                        <div style="width:100%;height:1.1rem;border:.2rem dashed rgba(240,192,74,.75);border-radius:.3rem;background:rgba(240,192,74,.08)"></div>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ t.revealed }}">
+                      <div style="flex:1;display:flex;align-items:center;gap:1rem;padding:.5rem 1rem .5rem 1.2rem;animation:tilePop .55s ease-out;min-width:0">
+                        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:.15rem">
+                          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:2.1rem;line-height:1;letter-spacing:.03em;color:{{ t.labelColor }};text-shadow:.12rem .12rem 0 rgba(0,0,0,.5)">{{ t.label }}</div>
+                          <div style="font-weight:500;font-size:1.05rem;line-height:1.15;color:#c9d6ff;text-wrap:pretty">{{ t.full }}</div>
+                        </div>
+                        <div style="flex:0 0 auto;display:flex;align-items:baseline;gap:.1rem;font-family:Anton,sans-serif;font-size:2.8rem;line-height:1;color:{{ t.pctColor }};text-shadow:.15rem .15rem 0 #000">{{ t.pct }}<span style="font-size:1.4rem">%</span></div>
+                      </div>
+                    </sc-if>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </section>
+
+      <aside style="flex:1 1 20rem;min-width:0;display:flex;flex-direction:column;gap:1.1rem;padding:1.3rem;border-radius:.9rem;background:rgba(12,10,52,.78);border:2px solid rgba(240,192,74,.45);box-shadow:0 0 2rem rgba(57,183,255,.12),inset 0 0 1.5rem rgba(0,0,0,.4)">
+        <div style="display:flex;flex-direction:column;gap:.55rem">
+          <label for="guess" style="text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:1rem;color:#aab3e6">{{ activeName }}, your guess</label>
+          <input id="guess" ref="{{ inputRef }}" value="{{ guess }}" onChange="{{ onGuess }}" onKeyDown="{{ onKey }}" disabled="{{ gameOver }}" placeholder="e.g. goblins" autocomplete="off" style="width:100%;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.9rem;padding:.55rem .9rem;border-radius:.5rem;border:.18rem solid {{ activeColor }};background:#070625;color:#fff;outline:none;box-shadow:0 0 1rem {{ activeGlow }}">
+          <button onClick="{{ submit }}" disabled="{{ gameOver }}" style="font-family:Anton,sans-serif;font-size:1.7rem;text-transform:uppercase;letter-spacing:.06em;padding:.55rem 1rem;border:none;border-radius:.5rem;cursor:pointer;color:#06061c;background:{{ activeColor }};box-shadow:0 .3rem 0 rgba(0,0,0,.45),0 0 1.2rem {{ activeGlow }}">Lock it in: {{ activeName }}</button>
+        </div>
+
+        <div style="min-height:2.4rem;font-weight:800;font-size:1.5rem;text-transform:uppercase;letter-spacing:.04em;color:{{ fbColor }};animation:{{ fbAnim }};text-wrap:pretty">{{ fbText }}</div>
+
+        <div style="display:flex;flex-direction:column;gap:.45rem">
+          <div style="text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:.95rem;color:#aab3e6">{{ activeName }} strikes</div>
+          <div style="display:flex;gap:.6rem">
+            <sc-for list="{{ xBoxes }}" as="x" hint-placeholder-count="3">
+              <div style="flex:1;aspect-ratio:1;max-height:5.2rem;display:flex;align-items:center;justify-content:center;border-radius:.5rem;border:.2rem solid {{ x.border }};background:#070625;font-family:Anton,sans-serif;font-size:3.4rem;line-height:1;color:#e0483c;text-shadow:0 0 1rem rgba(224,72,60,.9)">
+                <sc-if value="{{ x.on }}"><span style="animation:xPop .3s ease-out">X</span></sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:.8rem">
+          <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:.2rem;padding:.8rem 1rem;border-radius:.6rem;background:rgba(57,183,255,.1);border:.2rem solid {{ blueBorder }};box-shadow:{{ blueGlow }}">
+            <div style="font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:1.2rem;color:#39b7ff">Blue Team</div>
+            <div style="font-family:Anton,sans-serif;font-size:3.2rem;line-height:1;color:#fff">{{ blueScore }}</div>
+            <div style="font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.9rem;color:#aab3e6">{{ blueStatus }}</div>
+          </div>
+          <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:.2rem;padding:.8rem 1rem;border-radius:.6rem;background:rgba(255,77,109,.1);border:.2rem solid {{ redBorder }};box-shadow:{{ redGlow }}">
+            <div style="font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:1.2rem;color:#ff4d6d">Red Team</div>
+            <div style="font-family:Anton,sans-serif;font-size:3.2rem;line-height:1;color:#fff">{{ redScore }}</div>
+            <div style="font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.9rem;color:#aab3e6">{{ redStatus }}</div>
+          </div>
+        </div>
+
+        <button onClick="{{ pass }}" disabled="{{ gameOver }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.1em;padding:.55rem;border-radius:.5rem;border:.18rem solid #f0c04a;background:transparent;color:#f0c04a;cursor:pointer" style-hover="background:rgba(240,192,74,.15)">Pass to {{ otherName }}</button>
+
+        <div style="font-weight:500;font-size:1rem;line-height:1.3;color:#aab3e6;text-wrap:pretty">Correct answers score their %. Three Xs and the turn passes over. Game ends when both teams have three Xs.</div>
+      </aside>
+    </main>
+
+    <footer style="font-weight:600;font-size:1rem;letter-spacing:.06em;color:#8e97cc;text-wrap:pretty">Source: Tony Harcup &amp; Deirdre O'Neill, "What is News?", Journalism Studies (2016). Percentage of the top 25 stories shared on Facebook and Twitter in 2014 containing each news value.</footer>
+  </div>
+
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:5;background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) 2px,rgba(0,0,0,.18) 3px,rgba(0,0,0,0) 4px)"></div>
+
+  <sc-if value="{{ showOver }}">
+    <div style="position:fixed;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;padding:2rem;background:rgba(5,4,25,.72)">
+      <div style="animation:overlayIn .4s ease-out;display:flex;flex-direction:column;align-items:center;gap:1rem;padding:2.2rem 3rem;border-radius:1rem;background:linear-gradient(180deg,#1c1670,#0b0930);border:.3rem solid #f0c04a;box-shadow:0 0 3rem rgba(255,79,216,.5);text-align:center;max-width:44rem">
+        <div style="font-family:Anton,sans-serif;font-size:4.4rem;line-height:1;text-transform:uppercase;color:#ffe9a8;animation:titleGlow 2.4s ease-in-out infinite">Game over</div>
+        <div style="font-weight:800;font-size:2.2rem;text-transform:uppercase;letter-spacing:.06em;color:{{ winnerColor }}">{{ winnerText }}</div>
+        <div style="display:flex;gap:2.4rem;font-family:Anton,sans-serif;font-size:2.4rem">
+          <div style="color:#39b7ff">Blue {{ blueScore }}</div>
+          <div style="color:#ff4d6d">Red {{ redScore }}</div>
+        </div>
+        <div style="display:flex;gap:.8rem">
+          <button onClick="{{ closeOver }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase;letter-spacing:.1em;padding:.5rem 1.2rem;border-radius:.5rem;border:.18rem solid #f0c04a;background:transparent;color:#f0c04a;cursor:pointer">See the board</button>
+          <button onClick="{{ reset }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase;letter-spacing:.1em;padding:.5rem 1.2rem;border-radius:.5rem;border:none;background:#f0c04a;color:#06061c;cursor:pointer">Play again</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const ANSWERS = [
+  { label: 'Entertainment', full: 'Soft stories: showbusiness, sport, sex, animals, humour, lighter human interest', pct: 68,
+    aliases: ['entertaining','entertain','fun','funny','humour','humor','humorous','comedy','jokes','showbiz','show business','showbusiness','sport','sports','sex','animals','pets','cute animals','cats','dogs','human interest','light','lighthearted','light hearted','soft news','soft stories','wordplay','puns','viral','memes','gossip','music','films','movies','tv','television','quirky animals'] },
+  { label: 'Surprise', full: 'Stories with an element of surprise, contrast or the unusual', pct: 64,
+    aliases: ['surprising','surprises','unexpected','unusual','shock','shocking','shock value','novelty','novel','weird','strange','odd','oddity','quirky','contrast','bizarre','unpredictable','out of the ordinary','man bites dog','rare','rarity','curiosity','amazing','twist','unexpectedness','astonishing'] },
+  { label: 'Bad news', full: 'Negative overtones: death, injury, defeat, loss, tragedy', pct: 56,
+    aliases: ['negativity','negative','negative news','bad','tragedy','tragic','death','deaths','disaster','disasters','injury','defeat','loss','crime','violence','accident','accidents','sad','sad news','misery','doom','doom and gloom','gloom','crisis','catastrophe','murder','suffering','grief','bad things'] },
+  { label: 'Follow-up', full: 'Stories about subjects already in the news', pct: 36,
+    aliases: ['follow up','followup','follow ups','followups','follow on','continuity','ongoing','ongoing story','already in the news','developing story','development','update','updates','sequel','continuing','continuing story','running story','second day','familiarity','existing story','story so far'] },
+  { label: 'Relevance', full: 'Issues, groups and nations perceived as relevant to the audience', pct: 32,
+    aliases: ['relevant','relatable','relatability','proximity','local','local news','closeness','close to home','cultural proximity','affects me','affects us','personal relevance','meaningful','meaningfulness','identification','audience relevance','people like us','relevancy','nearness','geographic proximity','home news'] },
+  { label: 'Magnitude', full: 'Significant numbers of people or potential impact, or extreme behaviour', pct: 28,
+    aliases: ['scale','size','big','impact','significance','significant','numbers','extreme','extremes','large scale','scope','reach','how many people','threshold','importance','important','major','huge','massive','severity','consequence','consequences','big numbers','large numbers','big story'] },
+  { label: 'Celebrity', full: 'Stories about people who are already famous', pct: 20,
+    aliases: ['celebrities','celeb','celebs','celebrity news','famous','fame','famous people','stars','star','a list','film stars','pop stars','royals','royal family','royalty','influencers','public figures','household names','hollywood','kardashians','footballers','icons','personalities','the famous'] },
+  { label: 'Good news', full: 'Positive overtones: recoveries, breakthroughs, cures, wins, celebrations', pct: 20,
+    aliases: ['positive','positivity','positive news','good','happy','happy news','heartwarming','heart warming','feel good','feelgood','uplifting','success','breakthrough','breakthroughs','rescue','rescues','cure','cures','recovery','win','wins','victory','celebration','celebrations','hope','hopeful','inspiring','inspirational','wholesome','happy ending'] },
+  { label: 'Power elite', full: 'Powerful individuals, organisations, institutions or corporations', pct: 12,
+    aliases: ['power','powerful','the powerful','elite','elites','elite people','elite nations','powerful people','politicians','politics','government','leaders','world leaders','institutions','corporations','big business','authority','authorities','establishment','president','prime minister','officials','ceo','ceos','billionaires','the rich','powerful organisations'] },
+  { label: 'Newspaper agenda', full: "Stories that set or fit the news organisation's own agenda", pct: 8,
+    aliases: ['news agenda','agenda','editorial agenda','the agenda','agenda setting','editorial line','editorial policy','editorial stance','bias','political bias','paper agenda','newspaper','own agenda','campaign','campaigns','campaigning','owners agenda','partisan','news organisation agenda','fits the agenda','media agenda','house agenda'] },
+];
+
+const TEAMS = { blue: { name: 'Blue Team', color: '#39b7ff', glow: 'rgba(57,183,255,.45)' }, red: { name: 'Red Team', color: '#ff4d6d', glow: 'rgba(255,77,109,.45)' } };
+
+const norm = s => String(s).toLowerCase().replace(/['’`]/g, '').replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
+
+function lev(a, b) {
+  const m = a.length, n = b.length;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[n];
+}
+
+const INDEX = ANSWERS.map(a => Array.from(new Set([a.label, ...a.aliases].map(norm))));
+
+function match(raw) {
+  const g = norm(raw);
+  if (!g) return -1;
+  for (let i = 0; i < INDEX.length; i++) if (INDEX[i].includes(g)) return i;
+  let best = -1, bestLen = 0;
+  INDEX.forEach((al, i) => al.forEach(a => {
+    if ((a.length >= 4 && g.includes(a)) || (g.length >= 5 && a.includes(g))) {
+      if (a.length > bestLen) { best = i; bestLen = a.length; }
+    }
+  }));
+  if (best >= 0) return best;
+  let bestD = Infinity;
+  INDEX.forEach((al, i) => al.forEach(a => {
+    if (Math.abs(a.length - g.length) > 4) return;
+    const tol = a.length < 7 ? 1 : a.length <= 11 ? 2 : 3;
+    const d = lev(g, a);
+    if (d <= tol && d < bestD) { bestD = d; best = i; }
+  }));
+  return best;
+}
+
+const fresh = () => ({ revealed: {}, scores: { blue: 0, red: 0 }, xs: { blue: 0, red: 0 }, active: 'blue', guess: '', fb: { text: '', type: '', n: 0 }, gameOver: false, overOpen: false });
+
+class Component extends DCLogic {
+  state = { ...fresh(), sound: true };
+  inputRef = React.createRef();
+
+  tone(kind) {
+    if (!this.state.sound) return;
+    try {
+      this.ctx = this.ctx || new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = this.ctx, t = ctx.currentTime;
+      const note = (f, start, dur, type, vol, f2) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = type; o.frequency.setValueAtTime(f, t + start);
+        if (f2) o.frequency.linearRampToValueAtTime(f2, t + start + dur);
+        g.gain.setValueAtTime(0.0001, t + start);
+        g.gain.exponentialRampToValueAtTime(vol, t + start + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + start + dur);
+        o.connect(g); g.connect(ctx.destination); o.start(t + start); o.stop(t + start + dur + 0.05);
+      };
+      if (kind === 'correct') [523, 659, 784, 1047].forEach((f, i) => note(f, i * 0.09, 0.35, 'triangle', 0.25));
+      else if (kind === 'wrong') { note(110, 0, 0.7, 'sawtooth', 0.3, 90); note(116, 0, 0.7, 'square', 0.12, 95); }
+      else note(880, 0, 0.15, 'sine', 0.15);
+    } catch (e) {}
+  }
+
+  focus() { setTimeout(() => this.inputRef.current && this.inputRef.current.focus(), 0); }
+
+  endGame(s) {
+    const revealed = { ...s.revealed };
+    ANSWERS.forEach((_, i) => { if (!revealed[i]) revealed[i] = 'missed'; });
+    return { revealed, gameOver: true, overOpen: true };
+  }
+
+  submit = () => {
+    const s = this.state;
+    if (s.gameOver || !norm(s.guess)) return;
+    const idx = match(s.guess);
+    const team = TEAMS[s.active].name;
+    const n = s.fb.n + 1;
+    if (idx >= 0 && s.revealed[idx]) {
+      this.tone('blip');
+      this.setState({ guess: '', fb: { text: `${ANSWERS[idx].label} is already on the board`, type: 'already', n } });
+    } else if (idx >= 0) {
+      this.tone('correct');
+      const revealed = { ...s.revealed, [idx]: s.active };
+      const scores = { ...s.scores, [s.active]: s.scores[s.active] + ANSWERS[idx].pct };
+      let next = { revealed, scores, guess: '', fb: { text: `Yes! ${ANSWERS[idx].label}: ${ANSWERS[idx].pct} points to ${team}`, type: 'correct', n } };
+      if (Object.keys(revealed).length === ANSWERS.length) next = { ...next, gameOver: true, overOpen: true };
+      this.setState(next);
+    } else {
+      this.tone('wrong');
+      const xs = { ...s.xs, [s.active]: Math.min(3, s.xs[s.active] + 1) };
+      const other = s.active === 'blue' ? 'red' : 'blue';
+      let next = { xs, guess: '', fb: { text: `"${s.guess.trim()}" isn't up there`, type: 'wrong', n } };
+      if (xs.blue >= 3 && xs.red >= 3) next = { ...next, ...this.endGame(s) };
+      else if (xs[s.active] >= 3) next = { ...next, active: other, fb: { text: `Three Xs! Over to ${TEAMS[other].name}`, type: 'wrong', n } };
+      this.setState(next);
+    }
+    this.focus();
+  };
+
+  renderVals() {
+    const s = this.state;
+    const act = TEAMS[s.active], oth = TEAMS[s.active === 'blue' ? 'red' : 'blue'];
+    const tiles = ANSWERS.map((a, i) => {
+      const r = s.revealed[i];
+      return { rank: i + 1, label: a.label, full: a.full, pct: a.pct, revealed: !!r, hidden: !r,
+        labelColor: r === 'missed' ? '#b7c3ea' : '#ffffff', pctColor: r === 'missed' ? '#b7c3ea' : '#ffe9a8' };
+    });
+    const fbColors = { correct: '#5dff8f', wrong: '#ff5a4d', already: '#f0c04a' };
+    const xCount = s.xs[s.active];
+    const card = t => s.active === t && !s.gameOver
+      ? { border: TEAMS[t].color, glow: `0 0 1.6rem ${TEAMS[t].glow}, inset 0 0 1rem ${TEAMS[t].glow}`, status: 'At the podium' }
+      : { border: 'rgba(170,179,230,.25)', glow: 'none', status: s.gameOver ? 'Final score' : 'Waiting' };
+    const b = card('blue'), r = card('red');
+    const winner = s.scores.blue === s.scores.red ? null : s.scores.blue > s.scores.red ? 'blue' : 'red';
+    return {
+      columns: [tiles.slice(0, 5), tiles.slice(5)],
+      guess: s.guess, gameOver: s.gameOver, inputRef: this.inputRef,
+      onGuess: e => this.setState({ guess: e.target.value }),
+      onKey: e => { if (e.key === 'Enter') this.submit(); },
+      submit: this.submit,
+      activeName: act.name, otherName: oth.name, activeColor: act.color, activeGlow: act.glow,
+      fbText: s.fb.text, fbColor: fbColors[s.fb.type] || '#fff',
+      fbAnim: s.fb.type === 'wrong' ? (s.fb.n % 2 ? 'shakeA .45s' : 'shakeB .45s') : 'none',
+      xBoxes: [0, 1, 2].map(i => ({ on: i < xCount, border: i < xCount ? '#e0483c' : 'rgba(224,72,60,.35)' })),
+      blueScore: s.scores.blue, redScore: s.scores.red,
+      blueBorder: b.border, blueGlow: b.glow, blueStatus: b.status,
+      redBorder: r.border, redGlow: r.glow, redStatus: r.status,
+      pass: () => { if (!s.gameOver) { this.setState({ active: s.active === 'blue' ? 'red' : 'blue', fb: { text: `Over to ${oth.name}`, type: 'already', n: s.fb.n + 1 } }); this.focus(); } },
+      soundLabel: s.sound ? 'Sound: on' : 'Sound: off',
+      toggleSound: () => this.setState({ sound: !s.sound }),
+      fullscreen: () => { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); },
+      revealAll: () => { const revealed = { ...s.revealed }; ANSWERS.forEach((_, i) => { if (!revealed[i]) revealed[i] = 'missed'; }); this.setState({ revealed }); },
+      reset: () => { this.setState({ ...fresh() }); this.focus(); },
+      showOver: s.gameOver && s.overOpen,
+      closeOver: () => this.setState({ overOpen: false }),
+      winnerText: winner ? `${TEAMS[winner].name} wins!` : "It's a draw!",
+      winnerColor: winner ? TEAMS[winner].color : '#f0c04a',
+    };
+  }
+}
+</script>
+</body>
+</html>

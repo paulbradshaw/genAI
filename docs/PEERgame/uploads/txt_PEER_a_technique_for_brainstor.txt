@@ -1,0 +1,90 @@
+
+One way to ensure you generate a wide range of potential sources for a story — or for potential story leads — is to use a checklist. The PEER framework is just that: four categories to help journalists generate more names on any given story — and think more creatively about whose voices might add something to that story.
+PEER is a mnemonic (based on a previous post) for remembering the following four types of source:
+💪 Power
+🧠 Expertise
+👁️‍🗨️ Experience
+🗣️ Representative
+Each type of source brings something different to the story: voices of power primarily (but not solely) answer questions about action: what was or is being done, what should or would be done about a particular issue. These are easily the most commonly quoted sources in news reporting.
+People with expertise can answer the “why” and “how” questions — and are often more likely to speak to journalists — while those with experience can verify or validate (put a human face to) events. Representatives can speak to the wider impact or significance of an issue, or represent community sentiment about it.
+Making each type of source explicit allows us to think about what those roles really mean — and identify less obvious ideas for sources with power, expertise, experience or representative qualities.
+Power isn’t just political
+Celebrities have power too: the actor quoted in this story is using her power to call for action. An ice rink operator — which has the power to change rules — is also quoted. 
+The most obvious examples of sources with power are politicians. Their power comes primarily from the ability to make and shape laws and other rules, to spend money, and cut budgets. But by thinking about power in general, you can break power down into at least five sub-categories of source:
+Political power more broadly: not just those in government and opposition, but local government, police and crime commissioners, mayors and other elected and unelected officials
+Legal power: police, regulators, sports governing bodies and professional membership bodies all have the power to enforce rules
+Financial power: company bosses, investors, etc.
+Cultural power: celebrities, high profile experts, pundits, authors, former sportspeople, editors and media bosses, and anyone with a large following
+Mobilisation power: those able to mobilise large numbers of people include unions, the armed forces, campaign groups and charities, the media and influential individuals
+With that list, you can start to think of a much wider range of potential people to approach on a story than the usual suspects. 
+Expertise isn’t just academic
+This Guardian feature draws on a wide range of different types of expertise
+The same applies to experts: while universities might be the most obvious place to look for expertise, it’s just one option:
+Academic expertise: those who research and teach in the field
+Non-academic research expertise: those who research topics outside of academia, such as statisticians, charity researchers and analysts, and authors. 
+Professional expertise: those who hold authority on the basis of working in the field at a senior level, often for a long time
+The expertise of achievement: those who have won awards and/or broken records in the field (for example, an award-winning barista or former sportsperson)
+Experiential expertise: those with extensive experience of a process or issue (for example someone who has patented dozens of inventions)
+The Guardian feature The best £20 you’ll ever spend: 16 affordable essentials the experts swear by provides a good example of the diversity of expertise journalists draw on. Writing in the newspaper’s Inside Saturday newsletter, Daisy Schofield explained how she identified sources for the piece:
+“When it came to fashion, I immediately thought of Chioma Nnadi, British Vogue’s head of editorial content, who has impeccable taste. My pet-related expert had to be the dog behaviourist Louise Glazebrook. Her book, The Book Your Dog Wishes You Would Read, was a lifeline when I got my puppy.
+“Kelly Holmes was another obvious choice. The double Olympic champion has recently turned her attention to home fitness – including for beginners – so I knew she would be able to advise on work-out equipment for the exercise-averse.”
+Other sources included founders or CEOs of companies, more authors, and a prominent menswear designer.
+Representatives are not always elected
+Unions are classic sources of stories. This story also quotes a group representing parents, alongside sources of power including local government and a local MP.
+Representatives take two broad forms: those who act as a voice for a wider group of people, and those who have an ‘ear to the ground’ and can summarise what is being said. Examples include:
+Unions
+Professional associations (not to be confused with regulators)
+Industry bodies and networks (e.g. Chambers of Commerce)
+Charities, campaign groups and pressure groups
+Owners, moderators and founders of groups and forums on social media and offline, and some specialist media
+Religious leaders, community leaders (the two are not the same thing)
+Elected representatives
+There are subtle and importance differences between different types of representatives: a union, for example, can negotiate formally on behalf of its members, and union leaders are elected to their positions. 
+A Facebook group owner is in a very different position: they can give an indication of what members’ main concerns appear to be — but do not speak on their behalf. In some cases they may play more of the role of ‘expert’ on those concerns rather than that of formal representative, but this remains a useful alternative when a group has no formal representation at all.
+Experience is hard to find
+This BBC story leads on interviews with those affected by a news event. It also quotes sources in positions of power, but no experts or representatives
+The hardest type of source for journalists to find is the person with some experience of the issue they are reporting on. These sources often answer one of two key questions in a story: “What happened (or what happens)?” and “What is it like to be affected by this issue?” 
+They include:
+Eye witnesses to a news event (e.g. an accident, natural disaster, attack, etc.)
+People affected by an issue (e.g. a medical condition, cuts, addiction, bereavement, etc.)
+People who have experienced something similar in the past (e.g. competing in a competition, a crime, etc.)
+This requires some empathy both to imagine the types of people who might be affected, and how they might be reached. 
+A common strategy, for example, is to imagine organisations a person might come into contact with and approach those instead, asking if they can put you in touch with a case study. 
+Journalists will often approach charities that represent people in certain situations, or with particular medical conditions, for example; or they might speak to campaign groups and lawyers who specialise in particular types of cases or laws.
+A more direct strategy is to find sources by looking on social media, specialist forums and groups, or crowdfunding pages. In this approach you are trying to imagine spaces where those people might share their experiences, gather to coordinate action, access support, raise money, or keep in touch with former colleagues. 
+More tips on finding people and making approaches can be found in How to Tell the Stories of People Behind Data Points.
+Sources can occupy more than one category — but their role shouldn’t
+You’ll notice that some individuals can appear in more than one category: 
+An author can be the voice of expertise, or exercise cultural power (campaigning for change for example). 
+A former footballer can describe what it is like to walk out at a cup final, or they can provide expert insights on the tactics of the finalists. 
+A politician might be quoted because they have responsibility for a sector, or in their capacity as a representative of their constituency. They might be asked to give expert insights into a political process, or share their experiences of being abused on social media.
+It is important, then, to clarify what role a source is playing in your story, and shape your questions accordingly. A politician can be the voice of power, or the voice of their constituents, for example, but it would probably feel confusing or lazy — or both — for them to asked questions that mean they play both roles within the same story.
+You should obviously also consider the reliability of sources, and how they relate to each other: make sure to identify and seek out independent voices and sources that disagree with each other to improve the accuracy and objectivity of the story overall. 
+Audit your sources: PEER’D?
+This audit was generated by pasting this post into Claude (Sonnet 4.6) and attaching a list of URLs, then asking it to classify the sources in the linked stories
+Once classified in this way, you can also use the PEER framework to audit the sources you tend to seek out when reporting, or quote. 
+Do you tend to mostly think of, or quote, people in positions of power, for example? Are representatives and case studies more of a blind spot?
+More specifically, you might use an audit to identify what voices of power (political, cultural, financial, etc.) are loudest in your reporting, or what categories of expertise you have a habit of seeking out.
+Are there types of sources you could seek out more which would improve your reporting or give you a wider range of story options? Sources you need to quote less often?
+It is worth measuring the diversity of those sources in your audit, too (if it works for you, make the acronym PEER’D) — the 50:50 project, for example, already provides a way to “help production teams improve the range of their on-screen contributors in terms of gender, disability and ethnicity”, and could be integrated into this to identify if there is a particular lack of diversity when generating ideas for certain types of sources. 
+However you approach it, having a clear understanding of the types of sources you tend to draw on most can help you widen your range of sources, generate more story ideas, have a more diverse range of voices in your reporting, and make your journalism more original.
+You can read more about the different roles that those sources play in Here’s a framework to help fill the ‘human gap’ in your story.
+Here’s a framework to help fill the ‘human gap’ in your story
+Share this:
+ Share on X (Opens in new window)
+ X
+ Email a link to a friend (Opens in new window)
+ Email
+ Share on Facebook (Opens in new window)
+ Facebook
+ Share on Reddit (Opens in new window)
+ Reddit
+ Share on Tumblr (Opens in new window)
+ Tumblr
+ Share on LinkedIn (Opens in new window)
+ LinkedIn
+ Print (Opens in new window)
+ Print
+ Customize buttonsLike Loading...
+ Related
+ 

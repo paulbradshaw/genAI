@@ -220,7 +220,7 @@ Explanation: Under-representation at the top of a field means the easiest expert
 
 Situation: The force press office offers to arrange interviews with officers. Your last three police stories all quoted non-disabled male officers.
 
-Fact: Figures from 2014 show that just 1.9% of police officers had declared a disability.
+Fact: Figures from 2014 show that just 1.9% of police officers had declared a disability. Across the UK, there are more than 6.9 million disabled people of working age, 19% of the working population (Disabled Living Foundation, cited in Everybody In).
 
 Prompt: How can you hear from a wider range of officers?
 
@@ -230,7 +230,7 @@ Options:
 - Ask a disabled friend what they think of the police. (Friend, wrong role: Not independent, and they can’t describe a night on the beat.)
 - Interview a disabled officer, but only ask about their disability. (Identity, not experience of the job: The feature is about the job. Ask them about their shift as you would any officer. Disability may come up, but it shouldn’t be the only thing you ask.)
 
-Explanation: A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story.
+Explanation: A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story. As a disabled journalist puts it in Everybody In, disabled people are ‘spoken about, but not often listened to’.
 
 ### 4.3 Charities warn demand for food banks has doubled (Society, News)
 
@@ -248,19 +248,21 @@ Options:
 
 Explanation: Diversity isn’t only about what people look like. Class and education shape who leads organisations, and so who gets quoted as speaking for others.
 
-### 4.4 Interest rates rise again: what it means for mortgage holders (Money, News)
+### 4.4 Factory closure: what next for the town’s economy? (Business, News)
 
-Situation: You found Dr Funmi Adebayo, a housing economist, through a diverse experts directory. She has agreed to an interview.
+Situation: You ask a business school press office for an economist. They put forward the same male professor they always offer. Every expert you have quoted this week has been a man.
 
-Prompt: What should you ask her?
+Fact: Monitoring by students at City University London found that male experts outnumbered women on flagship UK news and current affairs programmes by four to one. A campaign brought it nearer three to one. In law, expert witnesses, cabinet politics and academia, men outnumber women by about 2.5 to one (Everybody In).
+
+Prompt: What should you do?
 
 Options:
-- **[CORRECT]** “How much more will a typical mortgage cost, and who will be hit hardest?” (Best choice: Expertise: She’s in the story for her expertise, so ask about it.)
-- “What’s it like to be a Black woman in economics?” (Identity, not expertise: That could be a good question for a different story. In this one she is your expert.)
-- “Do you have a mortgage yourself, and how will you cope?” (Wrong role: This turns your expert into a case study. Find a mortgage holder for that.)
-- “Can you suggest a more senior colleague for us to speak to?” (Second-guessing: You found the expertise you needed. There’s no reason to look past it.)
+- Use him. There aren’t enough women economists to choose from. (Assumption: The figures suggest women are under-represented on air more than they are in the professions themselves.)
+- **[CORRECT]** Ask the press office whether a woman economist could comment, and be ready to explain why the interview matters if she hasn’t done one before. (Best choice: Everybody In recommends asking for a woman if one isn’t put forward. Some women experts need persuading: over 10% in City research said they worried about seeming ‘pushy’.)
+- Keep him as the expert, and balance the story with a vox pop of women shoppers. (Vox pops don’t count: Gender balance matters among experts and main protagonists, not just in vox pops.)
+- Drop the expert, since you can’t get balance. (Losing the role: The story still needs expertise. The aim is to look more widely, not go without.)
 
-Explanation: Experts from under-represented groups are often asked only about being under-represented. Treat them as you would any other expert: the question decides the role they play.
+Explanation: If the gap on air is wider than the gap in the professions, part of the cause is how journalists choose and book experts. Asking for a woman takes extra effort, and it is a habit you can build into every booking.
 
 ### 4.5 Meet the next generation of climate scientists (Science, Feature)
 
@@ -278,9 +280,153 @@ Options:
 
 Explanation: Under-representation in PhD funding feeds through to who becomes an expert later. Looking beyond the usual channels now helps you find the voices that will otherwise stay unheard.
 
-## Level 5: Answer the story’s questions (4 pts each)
+### 4.6 Black Caribbean pupils excluded from school at higher rates, figures show (Education, News)
 
-### 5.1 Knife crime arrests of under-18s double in two years (Crime, News)
+Situation: Your newsroom’s cuttings show the same community spokesman quoted on school exclusions, on policing, and on a housing row.
+
+Fact: Everybody In cites a figure that 94% of UK journalists are white (Clive Lewis MP, 2016). It says Black contributors tend to fall into three groups: whoever happened to be available, the ‘Rent-A-Quote’, and the rare contributor who is spot on, who then gets asked about every issue.
+
+Prompt: How should you source this story?
+
+Options:
+- Call him again. He’s reliable and always available. (Rent-a-quote: One person can’t speak for a community that is far from one homogenous group, and he may have no expertise in exclusions.)
+- **[CORRECT]** Look for the people closest to the story: parents’ and community groups (via social media, community centres or the council’s directory), plus researchers who study exclusions. (Best choice: Community groups are run by people active in their communities, who can introduce you to others. Researchers add independent expertise.)
+- Ask the newsroom’s only Black reporter to find someone. (Tokenism: Everybody In describes editors pulling non-white journalists onto these stories. Building contacts is everyone’s job.)
+- Use the Department for Education statement and the figures. (Power only: That says what is being done, but nobody affected or representing families is heard.)
+
+Explanation: Relying on one spokesman reduces a community to one voice. Building contacts with community groups takes time, but the book notes it builds trust and can lead to exclusive stories.
+
+## Level 5: Check your habits (3 pts each)
+
+### 5.1 Interest rates rise again: what it means for mortgage holders (Money, News)
+
+Situation: You found Dr Funmi Adebayo, a housing economist, through a diverse experts directory. She has agreed to an interview.
+
+Prompt: What should you ask her?
+
+Options:
+- **[CORRECT]** “How much more will a typical mortgage cost, and who will be hit hardest?” (Best choice: Expertise: She’s in the story for her expertise, so ask about it.)
+- “What’s it like to be a Black woman in economics?” (Identity, not expertise: That could be a good question for a different story. In this one she is your expert.)
+- “Do you have a mortgage yourself, and how will you cope?” (Wrong role: This turns your expert into a case study. Find a mortgage holder for that.)
+- “Can you suggest a more senior colleague for us to speak to?” (Second-guessing: You found the expertise you needed. There’s no reason to look past it.)
+
+Explanation: Experts from under-represented groups are often asked only about being under-represented. Treat them as you would any other expert: the question decides the role they play.
+
+### 5.2 Care homes say they can’t fill night shifts (Health, News)
+
+Situation: You pre-interview Kerry Walsh, who has managed a care home for 15 years. She knows the sector inside out. A colleague says she has a strong regional accent and might not ‘sound authoritative’ on air.
+
+Fact: In 2006 the Sutton Trust found that more than half of the UK’s top 100 journalists had been privately educated, up from 49% in 1986 to 54%. Private schools educate around 7% of pupils. Everybody In asks journalists: ‘Are you equating accent or manner with expertise?’
+
+Prompt: What do you do?
+
+Options:
+- **[CORRECT]** Book her. Judge her on what she knows, not how she sounds. (Best choice: Expertise: Fifteen years running a care home is professional expertise. Her accent tells you nothing about it.)
+- Find a professor of social care instead. (Accent bias: An academic could add context, but replacing a strong source because of how she speaks is the bias the book warns about.)
+- Use her as a case study about her own working life, and find someone else to explain the sector. (Wrong role: This turns an expert into an experience source because of her accent.)
+- Ask her to speak more ‘neutrally’ for the interview. (Accent bias: There is nothing wrong with how she speaks. The problem is the assumption.)
+
+Explanation: When many journalists share similar backgrounds, it is easy to treat their own accent and manner as the sound of authority. Everybody In suggests counting how often you hear working-class people in the news apart from in vox pops.
+
+### 5.3 Gene therapy trial offers hope for children with rare muscle disease (Science, News)
+
+Situation: Your draft quotes four scientists, all men, on what the trial results mean. The only woman in the story is the mother of a child on the trial, talking about her hopes.
+
+Fact: When science writer Ed Yong reviewed his 2016 stories, 24% of quoted sources were women and 35% of stories had no women at all. One gene-editing story quoted six men for their expertise and one woman, about her experience as a mother. Two of the technique’s pioneers are women (The Atlantic).
+
+Prompt: What is the problem with this draft?
+
+Options:
+- There isn’t one. There’s a woman in the story, so it’s balanced. (Counting heads: Balance is about roles too. Here, men explain and the only woman feels.)
+- **[CORRECT]** Women only appear as experience. Find women researchers in the field through databases such as Request a Woman Scientist or Diverse Sources, and keep the mother’s story. (Best choice: The parent is a strong experience source. The gap is in who gets to be the expert.)
+- Cut the mother so the story stays focused on the science. (Losing a role: That removes the human impact and leaves the story all-male.)
+- Lift a quote from a woman scientist’s interview with another outlet. (Second-hand: You can’t check the context or ask your own questions.)
+
+Explanation: Diversity is about the roles people play as well as who appears. If women and minority sources are only heard as case studies while experts and officials are all men, the story still reinforces a stereotype.
+
+### 5.4 Your editor asks: how diverse are the sources in your stories? (Newsroom, Practice)
+
+Situation: You care about diversity and think your sources are fairly balanced. You have never counted them.
+
+Fact: The Global Media Monitoring Project found in 2020 that women were just 24% of news subjects and sources. Ed Yong tracked his sources in a spreadsheet: within four months women were 50% of the voices in his stories, and it stayed between 42% and 61%. He estimates it adds about 15 minutes per piece.
+
+Prompt: What should you do?
+
+Options:
+- Trust your instincts. You know you care about equality. (Passive concern: Yong assumed this too, until he counted and found 24%.)
+- **[CORRECT]** Keep a simple record of who you contact and who you quote, and review it regularly. (Best choice: Yong calls tracking ‘a vaccine against self-delusion’. Reporters in a 2026 newsroom study said a review could ‘show me my patterns’.)
+- Aim for 50/50 in your vox pops, where it’s easiest. (Vox pops don’t count: Balance matters most among experts and main voices, which is where it is usually missing.)
+- Leave it to the newsroom’s diversity lead. (Passing it on: In the 2026 study, reporters said diverse sourcing often came down to individual choice because the newsroom ‘doesn’t always push for it’.)
+
+Explanation: You can’t fix a pattern you can’t see. Counting is simplest for gender, but the same record can track ethnicity, disability, age, region and the type of source: official, expert or affected.
+
+### 5.5 App company fined for leaking users’ health data (Technology, News)
+
+Situation: You emailed four experts on data protection law: three men and one woman. All three men replied, the woman didn’t, and your story now has three male experts.
+
+Fact: Early on, women were only 30% of the people Ed Yong contacted. He needed to contact about 1.3 men for each male quote, and about 1.6 women for each female quote. Washington Post reporter Anna Fifield found the women experts she contacted were ‘immediately available’ (CJR).
+
+Prompt: What went wrong?
+
+Options:
+- Nothing. Women don’t reply as often, so it can’t be helped. (Excuse: The imbalance started before anyone replied.)
+- **[CORRECT]** Too few women were contacted to begin with. Start from a balanced list, using databases such as SheSource or Informed Opinions, and contact a few more people than you need. (Best choice: If the list is unbalanced, the replies will be too.)
+- Run the story and add a line saying no women were available. (Excuse: One unanswered email isn’t evidence that no women were available.)
+- Quote the woman’s LinkedIn post about the case instead. (Unverified: A post isn’t an interview. You can’t ask your own questions or check what she meant.)
+
+Explanation: Women in fields where they are a minority may get lots of requests, and Yong suspected some decline because they assume they aren’t the right fit. Contacting more women, and explaining why they are right for the story, closes the gap.
+
+### 5.6 Man dies after police restraint in city flat (Crime, News)
+
+Situation: It’s 4pm and the story is due at 6. You have a police statement and a quote from the police and crime commissioner. A colleague says calling official spokespeople is quicker than going out to the community.
+
+Fact: In a 2026 study of a Canadian newsroom, reporters named time pressure, routine reliance on official sources, problems of access and a lack of newsroom emphasis as barriers to diverse sourcing. Police reports often start a story and set the terms in which it is understood (Adamson et al.).
+
+Prompt: What is the best approach?
+
+Options:
+- Run with the official sources tonight and add others tomorrow. (Official framing: The first version sets the story’s framing, and here only the police are heard.)
+- **[CORRECT]** Contact the family’s representative and local community groups now, and an independent expert on restraint. Keep building those contacts after the story. (Best choice: This adds experience, representatives and expertise. Contacts built in advance make the next deadline easier.)
+- Ask people in the street near the flat what they think. (Vox pop: Random passers-by can’t tell you what happened or speak for the community.)
+- Ask a colleague who shares the man’s ethnic background to make the calls. (Burden: Reporters in the study warned against relying on minority colleagues and sources to be ‘educators’. Building contacts is everyone’s job.)
+
+Explanation: Trust with communities takes time, so it has to be built before a deadline, not during one. As one reporter in the study put it, the aim is to call ‘the people actually affected, not just the people in power’.
+
+### 5.7 Government tightens visa rules for overseas care workers (Politics, News)
+
+Situation: Your 400-word story quotes the immigration minister and an opposition MP. Your editor says care workers and employers can go in a separate piece next week.
+
+Fact: A study of immigration coverage in Belgium, Germany, Italy and the UK (2013–14) found about half of articles gave voice to only one type of actor, and two-thirds presented only one viewpoint. Newspapers covered a wider range over time, and longer articles included more voices (Masini et al.).
+
+Prompt: What should you do?
+
+Options:
+- Agree. Balance across the paper’s coverage is enough. (Spread too thin: Most readers see one article, not the whole run of coverage.)
+- **[CORRECT]** Make room for a care worker on a visa, found through a union or migrant workers’ group, and a representative of care employers. (Best choice: Adds experience and representatives to a story that only has power.)
+- Add a third politician from another party. (Same type of actor: Three politicians disagreeing is still one kind of voice.)
+- Add a vox pop on immigration from the high street. (Vox pop: Opinions from passers-by don’t include the people affected by the policy.)
+
+Explanation: Two politicians disagreeing can look balanced, but they are the same type of source. The people most affected by immigration policy are often the least heard in immigration news.
+
+### 5.8 The women breaking into the building trades (Business, Feature)
+
+Situation: A women in construction network puts you in touch with three tradeswomen. All three are white and in their thirties.
+
+Fact: Kimberlé Crenshaw coined ‘intersectionality’ to describe how disadvantages overlap. She notes African American girls in the US are six times more likely to be suspended than white girls, a problem of both race and gender (IJNet).
+
+Prompt: How can you make the feature more inclusive?
+
+Options:
+- **[CORRECT]** Look for tradeswomen of different ages, ethnicities and backgrounds, including through social media hashtags, and ask every interviewee how they want to be described, including pronouns. (Best choice: Searching more widely reaches women on the margins, and asking avoids misgendering or misdescribing anyone.)
+- Use the word ‘womxn’ throughout to be inclusive. (Assumed language: Inclusive labels can still misrepresent people. Ask your sources how they identify.)
+- Three is enough. The network chose them for you. (Default choice: Networks are a good start, but they may put forward their most visible members.)
+- Ask each woman only about sexism on site. (Narrow framing: That’s one part of the story. Ask about their skills and work as well.)
+
+Explanation: ‘More women’ can still mean the same kind of woman. Thinking intersectionally, across race, class, age, disability and sexuality, helps you find the voices that are missing even from a story about under-representation.
+
+## Level 6: Answer the story’s questions (4 pts each)
+
+### 6.1 Knife crime arrests of under-18s double in two years (Crime, News)
 
 Questions and correct source:
 - What is it like for families affected? [Experience] → **Kevin Doyle, whose son was stabbed, and who now volunteers with a victims’ charity** (Ask: "How has your family’s life changed since the attack?")
@@ -297,7 +443,7 @@ Explanation: A full news story needs all four roles here: a family for impact, a
 
 Widen the net: Knife crime coverage has often focused on some communities more than others. Check that your choice of case studies and experts reflects what the figures show, rather than reinforcing a stereotype.
 
-### 5.2 Living with long Covid, three years on (Health, Feature)
+### 6.2 Living with long Covid, three years on (Health, Feature)
 
 Questions and correct source:
 - What does daily life look like with long Covid? [Experience] → **Marcus Bell, a nurse who has been unable to work since 2023, found through a long Covid support group** (Ask: "Talk me through a typical day.")
@@ -313,7 +459,7 @@ Explanation: A human-interest feature can leave out power and still work. It lea
 
 Widen the net: Ask the patient network who is coming to them and who isn’t. People in insecure or frontline jobs may be less able to join support groups, and less likely to be heard.
 
-### 5.3 Premier League club announces 20% rise in ticket prices (Sport, News)
+### 6.3 Premier League club announces 20% rise in ticket prices (Sport, News)
 
 Questions and correct source:
 - How have fans reacted? [Representative] → **Chair of the club’s independent supporters’ trust** (Ask: "What are your members saying about the rise?")
@@ -330,9 +476,9 @@ Explanation: The supporters’ trust gives reaction, the chief executive gives a
 
 Widen the net: A supporters’ trust isn’t the only fan group. Disabled supporters’ associations and LGBTQ+ supporters’ groups may have different concerns about price and access.
 
-## Level 6: Build the interview list (5 pts each)
+## Level 7: Build the interview list (5 pts each)
 
-### 6.1 Make your money last until payday: the experts’ guide (Money, Feature)
+### 7.1 Make your money last until payday: the experts’ guide (Money, Feature)
 
 Pick 3. Must cover: Expertise (only Expertise allowed). Any weak source fails the list.
 
@@ -349,7 +495,7 @@ Explanation: Some stories only need one type of source. An experts’ guide is b
 
 Widen the net: Money advice often assumes readers have savings, a car or easy access to big supermarkets. Experts who work with people on low incomes, or in rural areas, can make the guide useful to more readers.
 
-### 6.2 Rail operator cancels 400 trains in a week over driver shortages (Transport, News)
+### 7.2 Rail operator cancels 400 trains in a week over driver shortages (Transport, News)
 
 Pick 4. Must cover: Power + Expertise + Experience or Representative. Any weak source fails the list.
 
@@ -366,7 +512,7 @@ Explanation: A strong news story here needs someone held to account, independent
 
 Widen the net: Cancellations hit some passengers harder. Disabled passengers who book assistance, and rural commuters with one train an hour, may have a different story from city commuters.
 
-### 6.3 Exam board error gave 2,000 students the wrong A-level grades (Education, News)
+### 7.3 Exam board error gave 2,000 students the wrong A-level grades (Education, News)
 
 Pick 4. Must cover: Power + Experience + Representative or Expertise. Any weak source fails the list.
 
@@ -386,10 +532,25 @@ Widen the net: Errors like this can hit students differently. A lost university 
 ## Resources shown in the game
 
 - Diverse experts directories (https://researchguides.journalism.cuny.edu/findingexperts/diverse-experts): A guide to directories of experts from under-represented groups.
+- SheSource (https://womensmediacenter.com/shesource): Women’s Media Center database of women experts.
+- Informed Opinions (https://informedopinions.org/): Database of women and gender-diverse experts.
+- Quote This Woman+ (https://quotethiswoman.org.za/): Women experts, focused on Africa.
+- Request a Woman Scientist (https://500womenscientists.org/request-a-scientist/): 500 Women Scientists’ searchable database.
+- Diverse Sources (https://diversesources.org/): Under-represented experts in science.
+- Track your sources: Keep a simple record of who you contact and quote. Ed Yong estimates it adds about 15 minutes per story.
 - Disabled Police Association (https://www.joiningthepolice.co.uk/supporting-diversity/support-organisations/disabled-police-association): One example of a representative body inside a profession.
 - Society of Black Academics (https://societyofblackacademics.com/): A network of Black academics across disciplines.
 - Inclusion and Diversity in the Voluntary Sector conference (https://www.governmentevents.co.uk/event/the-inclusion-and-diversity-in-the-voluntary-sector-conference/#overview): Initiatives and conferences list speakers you can approach.
 - Queer in Academia speaker event (https://www.kcl.ac.uk/events/queer-in-academia-speaker-event-2023): Events are another way to find researchers.
 - LinkedIn: Profiles may give details of education and membership.
 - People who have written about the lack of diversity in their field: They often know who to recommend.
-- Everybody In (free ebook) (https://www.media-diversity.org/additional-files/Everybody_In_Book.pdf): A guide to inclusive journalism.
+- Everybody In (free ebook) (https://www.media-diversity.org/additional-files/Everybody_In_Book.pdf): A guide to inclusive reporting for journalism students, with chapters on class, disability, ethnicity, gender, immigration, older people, poverty, region, religion, sexuality and young people.
+
+## Sources for the research boxes
+
+- Calver, Kemp and Ryder (2017), Everybody In
+- Ed Yong, "I Spent Two Years Trying to Fix the Gender Imbalance in My Stories", The Atlantic
+- Alexandria Neason, "You're probably not quoting enough women", Columbia Journalism Review
+- Nazlee Arbee, "Tips to enhance the diversity of women in your reporting", IJNet
+- Adamson, Malik, Okeke and Bayley-Hay (2026), "This is how journalism has always been done": White neutrality, newsroom norms, and an AI intervention in source diversification
+- Masini et al., "Measuring and Explaining the Diversity of Voices and Viewpoints in the News", Journalism Studies

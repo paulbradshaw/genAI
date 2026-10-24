@@ -1,0 +1,2001 @@
+
+
+-- 1 of 66 --
+
+Everybody In: A Journalist’s Guide To Inclusive
+Reporting For Journalism Students
+Bob Calver, Diane Kemp, Marcus Ryder and supported by
+Birmingham City University School of Media
+This book is for sale at http://leanpub.com/everybodyinbook
+This version was published on 2017-03-22
+This is a Leanpub book. Leanpub empowers authors and publishers with the Lean
+Publishing process. Lean Publishing is the act of publishing an in-progress ebook
+using lightweight tools and many iterations to get reader feedback, pivot until you
+have the right book and build traction once you do.
+© 2017 Bob Calver, Diane Kemp, Marcus Ryder and supported by Birmingham City
+University School of Media
+
+-- 2 of 66 --
+
+Contents
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . i
+Unconscious Bias . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+1. Class . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2. Disability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+3. Ethnicity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+4. Gender . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5. Immigration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+6. Islamophobia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+7. Older People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+8. Poverty . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+9. Regionalism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+10. Religion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+11. Sexuality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+12. “Sport now…” . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+13. Young People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+14. Acknowledgements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+
+-- 3 of 66 --
+
+Introduction
+It is a dispiriting fact that our profession remains unrepresentative of the UK
+population. We’re still overwhelmingly male, white and from mid to upper class
+backgrounds (1)
+This is a real problem for us in terms of doing our job properly. With the best will
+in the world, it’s hard seeing the relevance of some stories, getting particular con-
+tacts and avoiding unintended stereotypes if we work in monocultural newsrooms.
+It becomes unenviably easy to fall prey to ‘group think’ (2)
+So this ebook is an attempt to help us, as student journalists and trainers, from
+falling into some of those traps.
+If we just talk about diversity we can fall into ‘doing diversity’ stories. These,
+as any story, should be part of what we cover, but a better approach surely is to
+seek to be inclusive in all our news coverage: to reflect the interest and voices of
+our audience, wherever we are based. Any town, city or region offers us a diverse
+audience. That diversity might be in terms of social class, economic status, gender
+and age as much as religion, ethnicity or disability. So in this ebook we are looking to
+question our attitudes and assumptions about a range of issues and then offer some
+ideas for embedding a wider world view into that staple for BJTC courses, newsdays.
+We wanted to make this a practical guide for our vocational students who’re
+already packing a lot into each day on the course. So the sections are short and
+written by current and former journalists to show the relevance of these issues to
+their working lives. We asked them to write a short opinion piece on a topic which
+affects them, personally or through professional interest. These form the starting
+points for a discussion in class, to be followed up by working through some of the
+suggestions in the ‘everybody in’ section; developing contacts and doing newsdays
+from a different angle.
+As some of our employers are keen to introduce their newsrooms to an un-
+derstanding of ‘unconscious bias’ we’ve started this ebook with that topic, so
+individuals can do a quick audit to have a sense of where their, and our, own biases
+lie.
+This isn’t by any means being presented as a definitive publication. We are
+looking forward to updating and expanding the subject sections and we’d also like
+to include more ideas for greater inclusion in newsdays. So please get in touch
+and share your own practice and suggestions for supporting journalism to include
+‘everybody in’.
+Bob Calver Diane Kemp Marcus Ryder
+(1) www.suttontrust.com
+www.theguardian.com
+(2) Janis, Irving L. (1972). Victims of Groupthink. New York: Houghton Mifflin
+
+-- 4 of 66 --
+
+Unconscious Bias
+Robin Britton, Head of News at ITV News Meridian, made a presentation Uncon-
+scious Bias the main event of the ITV News Diversity Conference in 2015. He had
+seen the presentation at another diversity event and was so impressed with the
+message it conveyed that he took the decision to make it the keynote session of ITV
+News’ annual conference.
+”The ITV News Diversity Conference is attended by more than 80 senior colleagues from
+across ITV News, Good Morning Britain, our nations and regions newsrooms from around
+the country and our online ITV News team. The session grabbed the audience from the start.
+Most of the room hadn’t heard of unconscious bias - but very quickly it gave everyone in the
+room an incredible insight into the behaviour we all adopt - unintentionally - as we grow
+up and from the range of influences around us, in the home and outside of it.”
+”All newsrooms know that if an effort isn’t made to be consciously unbiased then those
+making the decisions that set the news agenda or are involved in recruitment, can fall into a
+pattern of behaviour that replicates what we have always done, meaning we interview the
+same people as experts or invite them to be contributors, and by doing so run the risk of not
+reflecting change across society - our audiences - so we can become less engaging and less
+relevant.”
+The presentation Robin referred to was by Femi Otitoju who’s written this
+introduction to Unconscious Bias for ‘Everybody In’.
+Check your bias!
+As a diversity consultant I have always worked to encourage people to dump phrases
+like, “I don’t see skin colour; I just see people” or “I treat everyone the same.” I
+know that most of us would like to believe these things about ourselves but the
+first statement is not true and the second, even if it were true is undesirable.
+Experiments have shown that the brain categorises people by race in less than
+100 milliseconds, about 50 milliseconds before determining sex and once we have
+noticed the differences we often have a very real physiological response.
+The fact is our unconscious biases affect all of us all the time. Unconscious
+biases are the default associations that we make about people on the basis of their
+individual attributes or circumstances. These associations are mostly shaped by our
+previous experiences with people like them or the messages we have received from
+all sorts of sources including – yes, broadcast news. They shape our thinking and
+affect which stories we choose to tell, who we decide to interview and even who we
+choose to work with.
+The impact is often stark; research conducted by The Colour of Change 2015 found
+that there was a distorted representation of black people as perpetrators of crime
+when compared to NYPD statistics. The bias is evident, but I would bet large amounts
+of money that if you asked any of the journalists or editors responsible for writing
+or selecting those crime reports none of them would willingly admit that racial bias
+affected their decisions.
+
+-- 5 of 66 --
+
+Unconscious Bias iii
+More recently, as demonstrated in reports following the horrific mass shooting
+of 50 LGBTQ revellers at the Pulse nightclub in Orlando, the rush to name Islam by
+mainstream media as the motivation behind gunman Oman Madeen’s killing spree
+has meant many journalists have missed one of the most reliable indicators of a
+propensity for mass murder – – a history of domestic abuse.
+You can learn about your unconscious biases by taking an implicit association
+test at implicit.harvard.edu It was displeasure with my own implicit association
+test results that made me want to explore ways of minimising unconscious bias,
+in the hope of getting rid of some of mine altogether. It was also the beginning
+of my work on unconscious bias that I have been using in diversity training with
+a diverse range of organisations across the country to ensure that unconscious bias
+does not affect recruitment and …. while total eradication is unlikely, the evidence
+is for example, that working closely with people different from ourselves can help
+to override biases.
+If you are resolving to check out your unconscious bias right now, allow me to
+offer two pieces of advice, 1. Do it on your own, when you have a bit of space as the
+test will not give you a result if you get distracted and take too long to complete it.
+2. Don’t tell anyone you are doing an unconscious bias test, then, if you don’t like
+the results, you can start working on aspects which need some attention with no
+pressure.’
+www.challcon.com (@challcon)
+by Femi Otitoju
+
+-- 6 of 66 --
+
+Unconscious Bias iv
+
+-- 7 of 66 --
+
+1. Class
+The Journalist’s view:
+Class Act……
+It was a depressingly all-too familiar scene. The same old do-gooders hunkered
+down in the trenches sparring about diversity in the media.
+Then it suddenly got exciting. “What about class,” piped up someone clearly
+bored. “Do you mean working class?” came the incredulous retort. “We don’t talk
+about class anymore – it’s social mobility”, chipped in the smart one. “What the
+hell does that mean?” we all sneered.
+And what the hell does it mean? That’s the crux of the issue. What is class these
+days?
+And even more perplexing how do you measure it?
+Those same “right-on” diversity die-hards tried to determine how you would
+ascertain if someone was working class.
+“Would they know how to use a knife and fork?” Stifled snigger…..
+“Do they shop in Argos?” More of a chortle……
+“Would they go up in flames because they wear too much crimplene (crimplene!)
+and man-made fibres.” Unrestrained hysterics….
+Now remember these were the flag-waving diversity champions. But it was ok to
+insult the working class in a way you wouldn’t dream of ridiculing others.
+That was about eight years ago. Sadly, I don’t think we’ve progressed that far.
+However, social mobility is mobile; it’s higher up the agenda.
+There have been some well-meaning attempts to measure the class or back-
+ground of new entrants trying to break into our industry. They are asked questions
+such as “Did you have free school meals?” “Was your family on benefits?”
+If you asked my proudly working class mum if she’d ever taken a penny in
+benefits or fed her children free school meals you’d get a working class earful!
+My Dad was a builder and then retrained to be a social worker. My mum was a
+dinner lady and cleaner. And still is in her 70s. We holidayed at Pontins (maybe that
+would be a more accurate measure!) And we were brought up on a council estate.
+(But Mum, a single mother, worked hard enough to buy our house.)
+I didn’t go to uni. I was desperate to start work – I’d always wanted to be a
+journalist. I started in local newspapers with the three year NCTJ - I suppose the
+apprenticeship of its day. I got my break in TV working on That’s Life with Esther
+on her major campaigns. I suspect I got the job because I was a “wonderful piece of
+rough” who could bluff her way undercover into the blue collar jobs. I was different.
+I celebrated and exploited my difference.
+Problem is 30 years on, I’m still different. The only chav in the village!
+But it’s no joke. Breaking into our wonderful, vibrant industry has never been
+harder. It’s still those with the contacts who make it. Still those who can blag the
+work experience. Still those with mates in London where there is always a spare
+room. Still those who can afford to pass their driving test. And still those who can
+go months living off the Bank of Mum and Dad doing unpaid internship after unpaid
+internship.
+
+-- 8 of 66 --
+
+Class 2
+Why is class such an important part of the diversity debate? Because we are
+missing voices. Missing critical stories. Missing killer new shows.
+We need all perspectives on our hospitals, immigration, consumer affairs.
+We must open the invite to all.
+Trust me the working classes do have bookshelves as well as mega TVs. We do
+know the difference between salad cream and mayo. And we won’t go up in flames.
+Promise.
+We don’t need daft and offensive questions. We are immensely proud of our
+working class backgrounds. We love telling our stories. But maybe for some it
+doesn’t feel safe to reveal our upbringing in case we don’t get membership to the
+exclusive club.
+So when you’re casting, looking for stories, experts and contributors, cast your
+net wide. Challenge assumptions. You will reach the widest audience by listening
+and speaking to the widest audience. Diversity – in all its forms – is your day job.
+And it is your job. It’s not optional and it’s not an add-on.
+Listen to the working class, seek them out – on air and in your teams. They will
+tell you their stories and they will work really hard. The clue is in the label…..
+by Donna Taberer
+
+-- 9 of 66 --
+
+Class 3
+‘Ordinary’ people
+I don’t want to hear from press officers, spokespeople and MPs when covering a
+breaking news story. Yes they have their uses and can fill graphic scripts and give
+you a quick and easy soundbite. But what about the people involved? Who was there?
+Who saw the event? Why could it have happened? These answers won’t come from a
+press release. They will come from the people on the ground “Real people” and when
+scrambling with the pack to cover a news story, these people are often harder to find
+before the news bulletin and when people are too busy delivering live broadcasts
+with lines that everyone has – are not found at all. You will never find me with the
+press pack who descend en masse to cover breaking news stories. You will find me
+knocking every door on that street, getting information first hand and going on from
+there. I will leave the local spokesperson and the “community voice” to someone
+else. I want to speak to the subject of the story’s family, if that’s too raw, extended
+family, if that’s too raw, neighbours, colleagues, people who knew them, recently.
+I worked for nearly 10 years at ITV News working from the newsdesk up to UK
+Producer, working on some of the highest profile stories of the last decade. From
+the hacking scandal, Woolwich terrorist attacks to the effect of ISIS in the UK I have
+witnessed journalists arriving at an “estate” or with hostile communities – and they
+stop dead in their tracks, or have to knock doors together which is the biggest turn
+off to people when they answer the door.
+It’s the quiet conversation with the neighbour, or the person at the end of the
+street, or the next street over. Gleaning information in this way is so important and
+first hand information is key. This is where you get all of the background, pictures,
+video and so on that go beyond a police press release.
+This is how I have beaten the opposition working on breaking news, during my
+time working on Home Affairs which is one of the most picture-challenged and
+difficult briefs where no one wants to talk to you – I have often won by being the
+person who goes back a few days later after the press pack has gone and the national
+media don’t care about the story until the next diarised update.
+I have planned my door knocking strategically around when people might be in,
+when they are most likely not to be annoyed, I use local information to find out the
+sensitivities around my door knocks.
+I have won 4 RTS awards and been part of a team who won a BAFTA for home
+news coverage, I sometimes look back on it and wonder how I got here, from being
+a girl from Cov, with Indian Heritage.
+What I say to future generations is never be afraid of where you are from. If
+you have the qualities to communicate with people from all backgrounds, from any
+location in the UK, you will go far, not everyone in the journalism game can do that,
+and that in itself is depressing, but for people like me it has become my biggest
+power.
+by Sandi Sidhu
+
+-- 10 of 66 --
+
+Class 4
+
+-- 11 of 66 --
+
+Class 5
+Problem of privilege
+It may already seem like distant political history, but it was one of the defining
+moments of modern British politics. In May 2010 the newly installed Prime Minister
+David Cameron and Deputy Prime Minister Nick Clegg stood side by side in the sun-
+lit rose garden of Number 10. The two politicians exuded all the effortless charm
+that their exclusive education had equipped them with. Their privileged upbring-
+ings (Eton, Oxford and Westminster, Cambridge respectively) however immediately
+prompted suggestions that their rise to power reflected the country’s low social
+mobility levels and the failure of state schools to produce people who make it to
+the very top of society.
+Yet for me the bigger problem was highlighted when the TV camera lenses
+momentarily swiveled around towards the audience greeting the leaders of the
+newly formed Coalition Government. Seated in neat rows were the country’s elite
+ranks of newspaper and broadcast journalists. If you ever wanted a parade of alumni
+representing all the country’s most exclusive private schools then this was it.
+Forget fanciful past notions of being a ‘trade’; news journalism is a profession
+of highly privileged elites, dominated by graduates from exclusive universities and
+prestigious public schools.
+We know this because of several studies produced by the Sutton Trust. In 2006
+when still a journalist, I authored a study on the educational backgrounds of news
+journalists. The findings were highly revealing. More than half the UK’s top 100
+journalists had been educated at private schools, despite these schools making up
+only 7 per cent of the country’s school population. A further 33% went to grammar
+schools and just 14% to state comprehensives.
+The proportion of privately educated journalists had risen since 1986 from 49% to
+54%. More than half of those with degrees had been to Oxbridge. The report pointed
+to a systematic bias towards those from privileged backgrounds at the crucial entry
+stage into the industry. The problem was that those from richer backgrounds who
+are based in or near London are simply more likely to cope with the low pay and
+high insecurity endemic at junior levels. The informal nature of recruitment also
+led some to suggest that nepotism was often at play.
+Tellingly, the report was ignored by many national newspapers: it seemed that
+journalists were reluctant to shine a light on their own workplace. Subsequent stud-
+ies in 2012 and 2016 produced similar findings: just over half of today’s journalists
+were privately educated.
+Why should all this matter? Well for one it suggests that we are missing out on a
+huge pool of potential journalistic talent in the 93% of the population not fortunate
+enough to afford private school fees. It also means that newsrooms are dominated
+by those from a tiny slice of society: sharing the same backgrounds, experiences and
+preferences. The crucial decisions about what makes the news are made from this
+very narrow perspective.
+Seven years later on from the rose garden love-in both Cameron and Clegg have
+been ejected from power, amid accusations that their political elite were increas-
+ingly detached from the people they were intended to serve. That’s how democracy
+works. Yet there will be no such rude awakening for the privileged journalists who we
+entrust with providing us with news that is relevant to the majority of the population
+outside the Westminster bubble. If anything I fear that the profession will become
+even more privileged, not less so. And news journalism will be poorer for it.
+
+-- 12 of 66 --
+
+Class 6
+by Lee Elliot Major
+
+-- 13 of 66 --
+
+Class 7
+The Newsday – Bringing ‘Everybody in’
+Look at the demographics for your city/county. Get the facts about the proportion
+of the population you’re considering. Also look at the information about where
+working people tend to live and work in your area. You could base a newsday in
+one of those areas, reporting bulletins and producing a current affairs programme
+for that audience.
+If there’s a community station or hyperlocal new site set up there already, offer to
+run a newsday for them.
+Travel on public transport (particularly buses) and listen to what people are talking
+about/what concerns them. How is that reflected in the news prospects meeting?
+Talk to each other. Make good use of the diversity in your own newsroom/course.
+What contacts do you have which will broaden the news agenda?
+Are all suggestions for news angles given equal weight in morning meetings? Are
+you making assumptions about what’s important based on your background?
+Spend a day working up your contacts book to reflect people with concerns,
+expertise and strong views who come from a different class to you.
+Look at the day’s news output online, radio or TV. Count the times you hear and
+see working class people (apart from during vox pops). Of course there are issues
+here about stereotyping, but begin to become aware of how often the same accents,
+assumptions etc take centre stage. Does that match with your demographics
+research?
+Actively seek out different sources for news which broaden the range and possibly
+take you to unfamiliar places.
+Double check your own assumptions when speaking to possible interviewees on
+the phone. Are you equating accent or manner with expertise?
+
+-- 14 of 66 --
+
+2. Disability
+The Journalist’s view:
+Charming ignorance
+“My word! How long have you been in that for!?” The opening words of the MP upon
+meeting me for the first time.
+Having pre-interviewed the MP at length over the phone before inviting him onto
+the programme, it had never occurred to me to mention I use a wheelchair to get
+around, and why should it have? However, in the ten minutes from the time I greeted
+the MP in reception, up until the time he went on air, the subject of our conversation
+was my disability. To be clear at this point, I was at no point offended by anything
+that was said, it was all very charming ignorance. But it did get me thinking. Could
+it be that a prominent MP and activist had most likely never spoken to, or possibly
+even seen a disabled journalist before? To be fair, even I’d only ever seen one or two
+disabled journalists, but there is no way it should be such a ‘shock’ to see a person
+with a disability working on a news programme.
+While I waited to escort him into the studio, I thought he may want to ask
+about the on-air discussion he was about to take part in. “Do you have any ques-
+tions?…“Yes, what happened to you?”, “how fast does your chair go?”, “how often
+do you charge the battery?”…not the type of questions I was expecting or hoping
+to answer. He wasn’t nervous or worried about going on air in five minutes, he was
+well versed in appearing on the news, he was more interested in me. How flattering.
+I’ve grown used to people staring or taking ‘pity’ on me or the occasional verbal or
+physical abuse that comes as standard for many people with a visible disability. But
+this was different, this was at work, this was my career and livelihood. On the phone
+I was a journalist, but when we met in person I became someone ‘interesting in a
+wheelchair.’
+I noticed that when I looked around the newsroom, I couldn’t see anyone that
+looked like me. It was not something that bothered me in the past. I thrived on
+my originality. I’d never seen myself a disabled journalist, rather a journalist who
+has a disability. Representation of disabled people in the news and in the newsroom
+needs to increase massively. Editors need to make sure every news department and
+newsroom has someone with a disability.
+News should, most importantly, include people with disabilities in the news
+without always focusing on the disabilities. In terms of news reporting, we need to
+get away from the ‘inspirational porn’ of disability. We are not heroes or pity cases.
+We wake up, we eat, we pay the mortgage, we participate in community and working
+life, just like anyone else, in our own way. This should be the focus of how the
+newsroom and the audience see disability. Though when it comes to news, disabled
+people are spoken about, but not often listened to.
+by Saad Bashir
+
+-- 15 of 66 --
+
+Disability 9
+
+-- 16 of 66 --
+
+Disability 10
+The Newsday – Bringing ‘Everybody In’
+How many times have you seen or heard disabled people commenting on news
+stories that are not about their disability?
+If you are sent out to record a vox pop would you consider approaching someone
+using a wheelchair, or a person with a guide dog or white cane? And what about
+those people whose disabilities are not instantly visible?
+As with most of the areas covered in this book the key is to take the time to
+be aware of your audience. Statistics from the Disabled Living Foundation offer
+an idea of just how many of your listeners and viewers might have a disability.
+[www.dlf.org.uk] (http://www.dlf.org.uk/)
+There are more than 6.9 million disabled people of working age. That’s 19 % of the
+working population. Of the more than 10 million disabled people in Britain half
+are over state pension age. There are just over three quarters of a million under 16s
+who have a disability.
+Much of the discomfort people feel about disability may stem from a lack of
+understanding.
+Scope, the charity which says it ‘exists to make this country a place where disabled
+people have the same opportunities as everyone else’ pointed in a 2014 report on
+attitudes to people with disability to a lack of understanding.
+“Not enough people know a disabled person – nearly half (43%) of the British
+public say they do not know anyone who is disabled – and many are concerned
+that they will do or say the wrong thing when talking to disabled people or
+about disability. Our research shows that both the general public and disabled
+people believe that more everyday interactions and greater public education about
+disability will increase understanding and acceptance of disabled people.”
+Remember as a journalist you need to have as diverse a contacts book as possible
+and to use that in your everyday reporting as well as in covering topics directly
+affecting any one group.
+Saad Bashir has some useful words of advice on how to ensure that disabled people
+are not pigeonholed as brave battlers or victims: “Disabled people need to be
+listened to and the best way, in my opinion, to do this is to have disabled voices
+included in non-disability related stories. This could be done through a higher
+representation of voxes/case studies/commentators.”
+Take that idea forward in your own stories to include people with disabilities.
+Disabled people certainly need to be seen and heard talking about stories that
+are about disability. Again, Saad has some important pointers: “The most impor-
+tant thing for me is humanising the subject through language. ‘The man in the
+wheelchair’ is a father, accountant, brother, football fan, who uses a wheelchair.
+The ‘blind woman’ is a mother, wife, lawyer who happens to be blind.”
+Saad adds: “Even today I will hear older editors using out of date terms like
+‘wheelchair bound’, ‘suffering from’ ‘battling with’.
+So when you write a script, make sure your writing avoids any language like that.
+www.disabilityrightsuk.org All this will pay off in terms greater access to a range
+of contributors. In Saad’s words: “This would give disabled people a sense of
+togetherness through shared experiences with the majority non-disabled public.
+This type of inclusion could combat alienation many disabled people face and
+
+-- 17 of 66 --
+
+Disability 11
+also encourage disabled people to be more forthcoming when it comes to being
+approached by journalists.
+After each newsday review the stories you’ve covered and the people you’ve spoke
+to and ask how these reflect people of all abilities.
+
+-- 18 of 66 --
+
+3. Ethnicity
+The Journalist’s view:
+‘Who you know is what you know’.
+When black guests appears on current affairs programmes, nine times out of ten
+they’re there to discuss a “black issue”, which is a problem in itself. And when it
+happens, I imagine the majority of the show’s black viewers are watching with tight
+mouths watering in anticipation of that familiar sour taste of disappointment. Why?
+Because producers so often get these stories wrong from contributors to the way
+the story itself is framed and an anchor ill-equipped to moderate any meaningful
+discussion. It leads to issues that matter to black communities being trivialised
+on a public platform with damaging consequences, such as reinforcing negative
+stereotypes or dumbing down the level of debate.
+Diversity done badly is worse than none at all. The now-infamous segment
+involving the rapper Dizzee Rascal who appeared on Newsnight alongside Baroness
+Amos to discuss Barack Obama’s historic election victory in 2008 is one example.
+(This piece by journalist Jasmine Dotiwala sheds light on yet another Newsnight
+disaster.) Pairing the voice of a young musician with someone like Amos, the first
+black woman to hold a cabinet position, might have seemed like a good idea at the
+morning news meeting where I’m quite confident there was no person of colour
+to suggest otherwise. During the segment, Dizzee, though clearly a fish out of
+water, was jovial and genuine enough, but left many critics wondering why he –
+out of hundreds of thousands of young black voices – was chosen to speak on this
+particular topic. Was his inclusion an innocent miscalculation or a symptom of an
+out-of-touch media outfit that doesn’t understand or even respect the topics they
+attempt to tackle? Viewers were left frustrated by host Jeremy Paxman’s at- times
+patronising and irrelevant questioning – referring to the musician as “Mr Rascal”
+before asking him, like a slap in the face, if he “felt British”.
+Whether we’re talking about newspapers, TV, or radio, black contributors always
+seem to fall into one of three categories: the completely left-field person who hap-
+pened to be available, the Rent-A-Quote who is wheeled out to discuss [insert any
+black issue here], and the rare contributor who is bang on the money. Sometimes,
+their performance is so on point they become the unofficial spokesman on every
+issue to do with black people ever whether it’s their area of expertise or not and
+then we’re right back to square one: a handful of gatekeepers trying to speak for a
+community that is far from being one homogenous group.
+Until newsrooms become less white and middle class, journalists on tight dead-
+lines with scant knowledge of different communities will continue casting too small
+and too shallow a net when it comes to telling stories that reflect Britain in its
+entirety. They can’t land bigger or different fish because they don’t know who they
+are or, worse, that they even exist. The people closest to the story who can add
+something beyond entertainment value or box-ticking simply don’t work by their
+sides, aren’t on their radar, and so nothing beyond the surface is scratched. Good
+stories are incomplete or missed altogether. A range of voices are left speaking into
+the wilderness on topics from education, economics to the EU.
+
+-- 19 of 66 --
+
+Ethnicity 13
+There’s a line I recycle whenever I’m asked to give career advice, and is relevant
+particularly on the topic of diversity: in journalism, who you know is what you know.
+That doesn’t always bode well for a level playing field, but it means journalists
+are either limited or strengthened by their range of contacts. Who you know is
+often who you hire, who you commission, who gets a seat at the table, and who
+holds you to account. Who you know is who gives you information or access to
+an exclusive. Who you know is whose stories you tell and how; who you include
+in your reports; and who you book on your shows. Who you know is often whose
+work you read and, therefore, what you learn. Who you know is (who you engage)
+[https://storify.com/symeonbrown/turns-out-young]. We will never get or give the
+full picture by relying on the same people doing the same things. Britain is a society
+of different ethnicities and cultures. You’re failing your audience, in fact you fail as
+a journalist, until you make conscious steps to get to know them.
+by Elizabeth Pears
+The Journalist’s view:
+TRUST is at the heart of Newsroom Diversity
+The statistics are screamingly obviously when it comes to a distinct lack of colour in
+British newsrooms today. According to a recent survey carried out by City University
+London, the UK’s journalism industry is 94% male and 55% white, with almost all
+ethnic groups significantly under-represented (*)
+So how on earth do we solve a problem like diversity when news agendas are being
+set and stories are conceived and told - in the main - by white males?
+Of course, it’s bonkers to imply that because of these figures, all white men don’t
+recognise or understand the importance of having a newsroom of staff which looks
+more like Britain, with a fairer representation of ethnicity, race and faith. Not at all.
+That would be crass. And during my career every white news editor I’ve worked with
+has always been fair to me. However, as well as experiencing a few oddities during
+my career as a journalist, I’ve also listened to peculiar tales from black journalist
+friends of mine which you couldn’t make up if you tried. The consistent threads
+being that they’ve been ignored and undervalued by white bosses in newsrooms,
+and overlooked when it came to secondments or promotions.
+From my very first job I was cloaked in a shroud of low expectation. But I shrugged
+it off the minute it tried to drag me down. Whenever I delivered my work – whether it
+was a two-way from a courtroom or inquest verdict for a bulletin, a pre-rec package
+for drivetime, or a live for the News Channel, I was always greeted afterwards
+
+-- 20 of 66 --
+
+Ethnicity 14
+with a ‘WOW’. A big open-mouthed ‘WOW, Marv’. Almost like they didn’t expect
+me to deliver. Yet I truly never felt like I was over-delivering, or doing anything
+exceptional. I was just being a bloody good journalist. Giving my news ed what he
+wanted, on time. No mess, no fuss. And I wasn’t breaking sweat over it.
+My experience isn’t uncommon. And neither is the stench of conspiracy in the
+air, whenever an unknown BAME journalist walks into a newsroom. Speculation
+over whether or not that person deserves to be there and if they’re even qualified
+for the job begins. It’s palpable and it needs to be eradicated. I know darn well
+the attitude exists, because I’ve been within earshot of accusatory mutterings in
+the canteen like ‘Who is she? Why is she here? Has she ever done this before?’ So
+goodness knows what was said behind my back when I landed in my first job. Me
+with my BA Hons and my PgDip in Broadcast Journalism. With plenty of media work
+experience under my belt. The audacity of it.
+As a BAME journalist it seems you’re on the backfoot before you even start. So my
+advice is this. TRUST US. All this bad attitude needs to be thrown in the trash where
+it belongs. And it needs to stay there. We need to get this industry to a stage where
+it’s being acknowledged as one which embraces the vast mix of people and their
+experiences and stories, which is what makes Britain great. How do we do that? A
+culture shift needs to happen. From the top down. From news editors and the hirers
+and firers to the support teams. Fast. The shift needs to stream down the hill like a
+runaway cheese being chased down Cooper’s Hill. Plus I believe that entire swathes
+of journalistic staff need to upskill and get Unconscious Bias training. We all need
+to be aware of our prejudices so we can put them in check, and we must get genned
+up on cultural differences so we can understand each other better. We must have
+faith in diversity, that it will increase audiences, reach more people and promote
+inclusivity.
+And media outlets need to widen their search for journalists – not everyone who
+has the journalist’s nose is going to head to a university to study it as a BA, MA or
+PgDip. Stronger, more meaningful and long-term relationships need to be forged
+with state schools and colleges, across regions, in working class and urban areas.
+But then the onus is not just on the media orgs. It’s on the journalist too. I’ve
+been mentoring aspiring journalists and broadcasters for a decade now. And there
+are gems I tell them that are essential to helping you get on, wherever you end up.
+The show isn’t over once you get the job. The show has only just begun. You’ve got
+to find the lie of the land, and then get involved. Swiftly. There is a way of handling
+yourself in a newsroom which is unique to every business. You must have tenacity,
+resilience, the ability to temper your sensitivity, and that all important, very meaty
+book of contacts and original stories which you can deliver at any given moment.
+Anyone armed with this little lot, plus a healthy dose of chutzpah and self-belief,
+will thrive.
+(*) www.journalism.co.uk
+by Marverine Cole
+
+-- 21 of 66 --
+
+Ethnicity 15
+
+-- 22 of 66 --
+
+Ethnicity 16
+The Journalist’s view:
+Being part of the solution
+I moved into sports journalism in 2007, having spent nearly the best part of a decade
+as an anti-racism campaigner in football. I never thought I would get a chance to
+report on sport, mainly because I never saw any black journalists or presenters who
+weren’t former athletes. If you don’t see people like you represented, you hardly feel
+you are welcome to be part of something.
+So when I stepped into the BBC I was buzzing, but still slightly sceptical about
+how far I could go. Nevertheless, I had a foot in the door - and I was not going to let
+this opportunity pass me by.
+One of the initial challenges I faced was moving from campaigner to storyteller.
+But, as I found, the instinct to agitate for change never really leaves you. So it wasn’t
+long before I found myself monitoring all of our output - constantly. Why were we
+only speaking to male sports fans for voxes about an issue that day? How come we
+weren’t covering the West Indies or Pakistan victory in the cricket? Who decided
+the clip we were running in the bulletins was most relevant to all of our audiences? It
+became an obsession. The good news was the bosses I had at the time were excellent
+- they welcomed input and were open to feedback. We were a progressive team.
+That instinct to monitor, question and at times challenge, unintentionally helped
+me to make my on screen TV debut and - more importantly - make history on the
+BBC News Channel. The coverage of the USA presidential elections in 2008 drove me
+up the wall. It wasn’t the quality of the reports, but the delivery appeared to be from
+one position. How on earth could we have a black candidate of mixed race running
+and have so few reporters involved from BAME backgrounds? And why oh why had
+no one - in the trillion different angles examined - dared to look at his mixed roots
+and what he meant for the millions and millions with this shared identity?
+So I took the plunge and dropped the Head of BBC News an email. I read that
+email back a lot before pressing send. I wanted to be proactive - but equally had to
+share my dismay… anger. The reply came swiftly. “Let’s have a chat about this”,
+the big boss responded. So we did. He said his bit. I respectfully said mine. Then he
+asked me to be part of the solution. I went away and found some answers.
+What followed was a VT fronted by myself for the BBC News at 1 on being mixed
+race in the UK. It was entirely relevant to our audiences, as mixed race was the fastest
+growing ethnic minority group in the UK - and what better angle than Barack Obama
+becoming US President. And there was more, I produced a ‘mixed race’ day of live
+discussion on the BBC News Channel. While I certainly wouldn’t say this ‘solved’ the
+problem, it showed me that you are often in a position as a journalist where you can
+be a catalyst for change. So my advice to any journalist is always to think audience,
+never be scared to challenge respectfully, and to try and have a solution to every
+problem you identify.
+by Leon Mann
+
+-- 23 of 66 --
+
+Ethnicity 17
+
+-- 24 of 66 --
+
+Ethnicity 18
+The Newsday - Bringing ‘Everybody in’
+What exactly is ‘ethnicity’?
+‘The fact or state of belonging to a social group that has a common national or
+cultural tradition’ www.oxforddictionaries.com
+Do you know what different ethnicities are represented among your audience?
+Don’t assume from your own perspective or people you know. Look at the demo-
+graphics – via your local council or similar – to check. You might be surprised to
+discover the variety of countries represented or cultures who are all part of your
+potential audience and all sources of stories.
+Broaden your horizons into what stories would be of interest to an ethnically
+diverse audience. People with links to other countries usually have great contacts
+and insight to international stories enabling you to get local angles/voices on
+otherwise hard to cover news. Research where different communities meet, both
+in real life and on social media and get in touch.
+Take time to cultivate your contacts – make it a project. You will not only build
+trust but access exclusive stories.
+On a newsday, look for a broad range of views when taking soundings. This might
+mean doing vox pops in different parts of the city/town. City/town centre high
+streets aren’t always representative.
+Many ethnically diverse community groups run social media news sites or radio
+stations. Contact them and get to know the editor. Offering to run a newsday for
+and with them is often a great way to gain valuable experience and insight into
+different concerns and views of the world. This also pays dividends in terms of
+developing contacts for stories at a later date.
+One of the most effective means of making contacts within hard to reach commu-
+nities is through community groups. These are often run on a voluntary basis and
+are self-funded. The people who organise and run them are generally very active
+in their communities so are amazing contacts to introduce you to the community
+as a whole. Find them via social media or posters in local community centres.
+Contact the Police Community Liaison group. They generally meet regularly with
+community activists who are also great contacts to reach the wider community.
+Often local authorities will have a directory of community groups too. If you’re
+not from that community, and invariably you will not be, you need to spend time
+getting to know them as, in general, they may not trust the media.
+Be aware of this lack of diversity in our newsrooms.
+According to Clive Lewis MP at the NUJ’s 2016 Claudia Jones lecture, ‘94 per cent
+of all UK journalists were white.’
+There’s useful guidance on reporting: [www.nuj.org.uk/racereportingguidelines]
+(https://www.nuj.org.uk/documents/nuj-race-reporting-guidelines-may-2014/)
+
+-- 25 of 66 --
+
+4. Gender
+The Journalist’s view:
+Making new rules
+Over the last five years as BBC Hague correspondent I’ve covered some of the biggest
+stories in Europe - the refugee crisis, the shooting down of flight MH17, the Paris
+attacks, the Belgian bombings… and not once during this time have I ever felt
+disadvantaged by being a woman.
+Of course I’ve been big footed by more senior journalists but that’s standard for
+the territory. So I approached impending motherhood with (naive) optimism. After
+an emergency c-section I started working within minutes of leaving hospital. My
+newborn daughter sleeping by my side in the back of the car, I started recording a
+radio feature about the Dutch maternity system. Overnight the drugs wore off and
+a reality dawned. I needed to learn the basics about how to care for a baby before I
+could try to juggle. I never felt under pressure to return to work.
+I’m contracted as a BBC freelance foreign correspondent, as such I faced choices
+others may not. I could take time away from work - unpaid, I could find a crèche or
+nanny prepared to care for my newborn or I could try to do both myself. I didn’t want
+to give up either my career or my baby.
+Within a few weeks of my sharing photos on social media (Sharon Stone kissing
+my daughter’s head, the ICC prosecutor grinning at her, a judge in robes clutching
+her outside the Peace Palace) and doing a couple of BBC radio interviews about this
+subject, my editor got in touch. There were no BBC rules about what I was doing
+because it hadn’t been done before. So they had to come up with some. After a few
+weeks of discussions involving lawyers, health and safety teams, editors, they came
+up with a new policy. It permits me to take my baby to work providing her presence
+doesn’t jeopardize the job, interfere with the interviewees or put her life in danger.
+For purely physical reasons there are some things I can’t do. Like take a baby to
+unpredictable places like the Calais Jungle - last time I was there protesters hurled
+rocks, police fired back with tear gas. We were in the middle.
+Suffice to say things are different for male colleagues embarking upon parent-
+hood. One of my friends had a baby a couple of months after me. A few weeks later
+he was back on the frontline.
+I find it frustrating I can’t be deployed anywhere at a moments notice anymore -
+I won’t bore you with the logistics of breastfeeding.
+I’m still trying to figure out a solution for the future. A traveling nanny perhaps?
+There is a definite presumption that it’s the woman’s ‘problem’. My husband hasn’t
+once been asked if he’s made arrangements for the baby.
+To avoid compounding these attitudes I’d suggest student journalists consider
+the language they use and, it may sound obvious, forget the old gender roles.
+Women’s bodies might have the superpower to give and then nurture life, but
+in newsrooms we must be equal. If women feel they’re being pushed aside or
+patronized the whole operation risks losing a vital perspective.
+I read an article once about a woman’s decision not to have a baby. One of the
+reasons she gave was that she liked to travel. I don’t think having a baby should
+
+-- 26 of 66 --
+
+Gender 20
+have to stop you doing the things you love. You just have to work a bit harder.
+At six months old my daughter recently embarked on her eighth flight. We were
+recording a radio documentary in Denmark. I used to always be the last to the gate,
+now I leave an extra hour before flights for feeding and changing. Motherhood on
+the job forces you to be organized and efficient.
+It’s a lifetime away but I hope when my daughter grows up she’ll feel I made the
+right choices for us, hopefully by then it won’t be such a novel concept.
+by Anna Holligan
+Why women experts need you!
+Monitoring done over the last five years by students at City University London
+has shown that until recently, male experts dominated on the flagship news and
+current affairs programmes in the UK, by a ratio of four men to every woman. A
+relentless campaign to improve the ratio now means it is nearer three to one. But
+some programmes, like the big national ten o’clock news programmes, still drag
+behind. The first realistic question for a journalist is not, should you be aiming to
+change this for ideological reasons, but should you be aiming to change this because
+it’s not a proper reflection of society. The answer to the question is definitely – yes!
+Over the past few years journalists have countered the complaint about lack of
+women experts by saying it’s not their job to be social engineers, and that men
+have more authority in society, so tough. But a quick look at the facts shows that
+they are actually under-representing women experts. We could have a long debate
+about what constitutes authority – but for the sake of this article let’s just accept
+that by authority and expertise we mean having a respected opinion, or being in
+a position of power. How do we measure this? Well in a nutshell, if you look at
+the law, at expert witnesses in courts, at female politicians at cabinet level (a bit
+hard to measure as I write this in 2016!) and at academics, we find that men still
+dominate but at a rate of 2.5 to one, not the 4 to 1 of the flagship news programmes.
+Of course journalists say that they are hampered by the fact that if they have to,
+for example, interview the Pope, they have no option, but to interview a man. Good
+point – or is it? Broadcasters are also obliged to provide balance. Why not then, if the
+occasion demands a response, interview a female theologian or female campaigner,
+to balance the Pope?
+But what about women experts themselves? Journalists frequently allege that
+they “play hard to get”. Why? Well, survey research done by City shows that even
+women who call themselves experts, are hesitant about appearing on air. A high
+proportion (over 10%) volunteered that they were anxious about seeming ‘pushy’.
+
+-- 27 of 66 --
+
+Gender 21
+Academic research (Watson, C., & Hoffman, L. R. (2004). The Role of Task-Related
+Behavior in the Emergence of Leaders: The dilemma of the informed woman. Group
+& Organization Management 29 (6): 659-685.) has shown that women who take on
+leadership, however competent they are, are more likely to be disliked than men.
+So no wonder women don’t want to be seen to be in authority. Who wants to be
+disliked? In fact over 50% of a wide range of young entry level journalists from all
+sorts or programmes, said that women were more difficult to get on air. Maybe this
+is why.
+Despite all this broadcasters are now realising that under-representation of
+women is wrong and that more women have to appear. And when it comes down
+to that individual booking – it’s up to you. And it’s not easy. There’s evidence that
+some senior journalists pay lip service to getting women on air, but that really, they
+like their male sparring partners and their reliable old contacts. So you have to be
+able to argue the toss. You have to have the guts to say – let’s try someone different?
+You have to explain that it might take you longer, and broadcast management has
+to go with this. And then you have to go to your woman expert and persuade her to
+do it. Sigh. A young broadcaster’s life is not an easy one! But if you persevere, you
+will be assured you are doing the right thing. And the really good news is that the
+programmes with more women experts have seen ratings rise. Far be it from me to
+think it might be cause and effect – but it certainly doesn’t seem to be doing any
+harm.
+by Professor Lis Howell
+
+-- 28 of 66 --
+
+Gender 22
+The Newsday - Bringing ‘Everybody in’
+Challenge yourself with the ‘unconscious bias’ test at the beginning of this e-book.
+Most of us know very well that engineers, company bosses and police-officers are
+also women, but we probably don’t picture them when we think of the role. Once
+you’ve challenged yourself, you’ll start to notice women’s absence on discussion
+programmes and in key interviews.
+Listen to BBC Radio 4’s Woman’s Hour. It’s been going for nearly 70 years and
+covers every topic (what would be a ‘woman’s issue’ anyway?), it just favours
+women interviewees. You don’t have to love the programme, but you can hear the
+way in which women experts are just treated as experts.
+On a newsday, listen for the sound/watch the images in a bulletin. To what extent
+is there a balance of women and men in terms of experts (not vox pops) or the main
+protagonist in a story?
+On a newsday, set out to balance the ratio of women to men you contact/fix for
+interview. This may take some extra effort: asking a press office for a woman to
+comment if one is not put forward, having to persuade a woman expert to take
+part if she hasn’t been interviewed before, etc.
+Listen back to the sound of a mix of voices and opinions which greater gender
+balance gives. What did it take to achieve that? Do you need to spend some time
+updating contacts to get a better mix of genders? Do you need practice asking for a
+female contributor and do you have a rationale to give if you’re challenged?
+On newsdays, double check who is covering which stories. Evidence demonstrates
+that while women journalists are more likely to get published in digital media, even
+there they’re still likely to be covering one of the 4 ‘F’s - family, food, furniture and
+fashion www.newstatesman.com. So if you’re a woman, go for the finance stories,
+the political ones or anything else which is outside your comfort zone.
+Double check your writing or story angles for any clichés about women and women’s
+roles or attitudes. As in the section on sport, you’ll find plenty of examples of how
+lazy writing will be pilloried on social media and elsewhere: www.theguardian.com.
+Reading this could act as a useful early warning.
+
+-- 29 of 66 --
+
+5. Immigration
+The Journalist’s view:
+It’s hard to pinpoint exactly when “Immigration” became an offensive concept.
+Clues in my own family suggested it was a reality long before I was born. I always
+knew that my grandfather, a refugee from Jewish Berlin in the 1930s, had changed
+his name from “Hans” to “John” in an attempt to divert attention. But it was years
+later I discovered just how hostile a country he was entering. “The way stateless
+Jews from Germany are pouring in from every port of this country is becoming an
+outrage”, a magistrate said the year my grandfather arrived, fleeing for his life.
+The sentiment was already decades old. “So-called refugees”, wrote the Daily Mail,
+repulsed at Jewish immigrants at the turn of the century, “hid their gold and fawned
+and whined, in broken English”.
+Where the press has led, political rhetoric has followed. In the mass of EU
+Referendum hysteria it is easy to forget the climate 15 years ago, when Labour
+Home Secretary David Blunkett proposed that the children of asylum seekers should
+attend special schools to prevent them “swamping” local ones. news.bbc.co.uk It
+was during that period that the first immigration detention centre opened at Yarl’s
+Wood, at the time the largest in Europe, still the subject of almost continuous
+protest.
+Immigration is the incendiary political topic of our time. When a group cam-
+paigning for Britain to leave the EU produced a poster implying 76 million Turks
+would be heading for the UK and threatening security, www.theguardian.com the
+ensuing row boiled down to one, stubborn question: is anti-immigration sentiment
+inherently racist?
+As a journalist, reporting these fault-lines with balance and nuance is crucial.
+Even the police have voiced their concern about the role of the press, warning that
+“ill-informed, adverse media coverage has contributed to heightened local tensions
+and resentment of asylum seekers”. www.theguardian.com Fear over immigration
+has led to the creation of new parties and fundamentally changed the orientation
+of existing ones. New laws have been enacted to realise very real restrictions on
+immigrants’ rights. www.migrantsrights.org.uk
+The press is cause as well as effect, and in playing my part, the fact that I, as one of
+the few non-white journalists in my newsroom, have a family story of immigration,
+should be neither here nor there. Of course it triggers an inner emotional repulsion
+
+-- 30 of 66 --
+
+Immigration 24
+when I hear “immigrants” described as vermin, but the best way to deal with that
+and all other extreme views is to stay focused on the integrity and balance of my
+reporting.
+Yet… if only it were that simple. I might want to keep my personal views out of
+the story, but editors often have different ideas. When the time comes to conduct
+a delicate interview on immigration, they find the pull towards the non-white
+journalist in the newsroom irresistible. Such a person can “approach the subject
+with sensitivity, or construct long-form news features that “include a personal
+anecdote to powerfully punctuate the point”.
+It’s an ironic case in point - as a nation we are reluctant to embrace immigrants,
+but depend on them once they’re here. Newsrooms are no different, but given their
+role shaping the public mood on an issue so fundamental to our political, social and
+economic identity, the stakes are exceptionally high.
+by Afua Hirsch
+
+-- 31 of 66 --
+
+Immigration 25
+The Newsday – Bringing ‘Everybody in’
+Are there accurate figures for immigrants in your area? Do you know what they are?
+Check you’re clear about definitions as these words become used interchangeably
+when they’re not: refugees, asylum-seekers, immigrants.
+Discuss the image you have of who is an ‘immigrant’? Is that borne out by the facts
+from your area? Check out the Office for National Statistics, among other sources.
+Do you know any immigrants (maybe you are one)? Ask around, you may be
+surprised to know how many people of your acquaintance are immigrants, or have
+migrated elsewhere and become immigrants in other places. For example, the UK
+has more citizens living overseas than any other European nation – 4.9 million
+British people live in other countries around the world. (World Economic Forum
+2016)
+Spend some time getting to know immigrants from a variety of backgrounds/-
+countries of origin. Interview some of them to broaden your (and your audience’s)
+knowledge, sharing them with the rest of the newsroom.
+Who speaks for immigrants when there’s a ‘bad news’ story? Who would you
+turn to for a rebuttal? If you haven’t already got links with groups who support
+immigrants, make contact now. Double check they’re not representing a charity
+or campaign which would further repeat a stereotype, unless that’s the subject of
+the story.
+Challenge clichés in thinking, writing or interviews when you hear ‘what we all
+know about immigrants’. Ask who here is the ‘we all’?
+
+-- 32 of 66 --
+
+6. Islamophobia
+The Journalist’s view:
+Treading the delicate path
+“So, what do you think of that then?” said an editor as he turned to me in the
+newsroom with a look of suspicion. It was in relation to an undercover documentary
+looking at radical preachers in mosques. He wanted to know what I thought about
+what the preachers said. I suddenly felt all in the room’s eyes on me, along with an
+uncomfortable feeling of people waiting in judgement.
+I was the sole Muslim present, so I guessed they wanted to know what kind of
+Muslim I was. I didn’t go for drinks with colleagues after work, so this was a chance
+to verify if I was the good kind or the bad kind. That was in a newsroom, somewhere
+I hoped my work would speak for itself. Where I had gained a space on the merits of
+the stories I had brought in, particularly the array of exclusives I delivered.
+After that incident I began to question my role in the organisation and eventually
+decided to leave. I had managers celebrating me as a diversity success, patting
+themselves on the back. I was south-Asian, Muslim, working class, or maybe just
+another non-white face in their ranks. I did also have some colleagues believing
+I was only there because of diversity, a tokenistic gesture at representation and
+nothing to do with journalistic ability.
+Then there’s the reporting on Muslim communities: 4% of the UK population,
+2.7 million Muslims, 1.6 billion globally. I knew the challenges; I sometimes have
+to remind colleagues that my opinions and views are not necessarily representative
+of the entire Muslim populace. We are not one homogenous body, but many com-
+munities. We often tend to discuss Muslims as the ‘other’, or through Eurocentric
+and orientalist paradigms – there’s ‘us’ and then there’s ‘them’. For those groups
+we don’t actually know about, a lack of knowledge enables the ability to project our
+selected narrative onto them.
+There exists a tendency for white upper middle-class people to recruit people of
+colour exactly like themselves in terms of class – but diversity is more than that. It’s
+more than just a brown or black face; it’s entails a diversity of background, approach
+and outlook.
+Sometimes I don’t want to do the ‘Muslim stories’. I get tired of doing them. I’d
+simply like to do something on health or Brexit. It’s far too easy for editors to think
+Muslims as journalists can or should only, report on one issue.
+But you’re dragged into it. You see the headlines, one in five British Muslims
+sympathise with ISIS. See misreporting about communities where you grew up.
+Coverage of areas where your family still live that you know to be grossly untrue.
+Try and stay impartial and objective as the press slate people like your mother
+for not being able to speak English (she doesn’t), or accuse the people in your
+neighbourhood of not integrating or self-segregating.
+Then there’s accountability. If I get it wrong, people in my community tell me
+on the street, from Coventry road in Birmingham or Whitechapel in London. I also
+understand the impact that my presence on screen has on communities that see me
+as one of their own – I’m supposed to get it right when the headlines get it wrong –
+
+-- 33 of 66 --
+
+Islamophobia 27
+it’s a delicate path to tread.
+I recognise, however, I’m in an incredibly privileged position - people share sto-
+ries with me that they wouldn’t otherwise. I’m granted exclusive access to people,
+and I tell their stories in a way that I feel is different from how other journalists
+would.
+by Assed Baig
+www.assedbaig.com
+The Journalist’s view:
+“If diversity isn’t on your agenda, you’re not doing your job.”
+In the often-polarised world we live in right now; ‘diversity’ and ‘inclusion’ are
+sometimes seen as hollow buzz words or worse still, as sticks used by do-gooders
+with which to beat others. These words are too often seen as an impractical burden.
+Diversity may now be a referenced term but it has in fact always been an essential
+part of journalism. A good journalist uses diverse sources, distills diverse informa-
+tion and incorporates diverse views into their output.
+In my work, diversity has meant a multitude of things:
+In ‘Webcam Boys’ (1 x 60 for BBC Three) a doc about British men who make money
+from performing sex shows online, it meant telling the story of a straight man from
+Telford who ended up having sexual encounters with other men because, in his
+words “It helps me pay for my girlfriend and the baby we’re having.” Exploring this
+narrative allowed the audience to understand the role Britain’s economic climate
+plays in the rise of webcamming. It also allowed an exploration of class, income and
+often complex definitions of sexuality.
+In ‘Hazara’s, Hatred and Pakistan’ (1 x 30 for BBC Radio 4) it meant telling the
+story of the Hazara Shi’a community in Quetta. The community has been persecuted
+widely because they are a religious and ethnic minority.
+In ‘Muslims Like Us’ ( 2 x 60 for BBC Two) a documentary series about the
+British Muslim experience, it meant getting access to great contributors amongst
+communities that often shun media attention because they feel they are unfairly
+scrutinised. This was only possible through assembling a casting team that was
+diverse in age, gender, sexual orientation, class and geographic location.
+In all these examples, diversity is not an add on. It’s central to the objective
+of each project. It’s reflected in the teams that contributed to bringing a project
+to fruition, in the voices that are provided with a platform and in regards to how
+
+-- 34 of 66 --
+
+Islamophobia 28
+stories are told. Without diversity, these stories wouldn’t have the same richness.
+They would have fewer layers. They would serve the audience to a lesser extent.
+It’s a privilege, not a chore
+There can be a culture of cynicism amongst journalists. This can manifest in an
+unwillingness to accept that journalists individually, and our industry collectively,
+can be better.
+In our industry, white people are over-represented in senior roles and the in-
+dustry remains predominantly middle class. Anecdotally, I know of many British
+Asians who have established careers as journalists and programme makers. Many
+of them have done so with the support of their families who have bridged the
+funding gap that comes from unpaid internships. Some have benefited from private
+school educations. Increasing racial diversity is great but it’s not good enough if the
+majority of people making it in the industry are middle class.
+Public service broadcasting is important. British journalistic institutions are
+respected and envied around the world. This is precisely because public service
+broadcasting allows for and encourages broad perspectives and stories to be ex-
+plored in a fair way. In this context, diversity is a tool which brings us closer to
+fulfilling our duty and our potential as journalists. Diversity in our stories, our
+contributors and in our journalism allows us to more adequately represent the world
+in which we live. That opportunity should be cherished.
+by Mobeen Azhar
+
+-- 35 of 66 --
+
+Islamophobia 29
+The Newsday – Bringing ‘Everybody in’
+As with most of the suggestions in this ebook, start by doing some basic research.
+How many people identifying as Muslims are in your patch? Are they Sunni or
+Shia? Assed Baig writes: ‘knowing Sunni and Shia is fine, but let’s add Salafi,
+Deobandi, Sufi. These are sub Sunni groups and make up large numbers in the UK.
+For example, Sufis have the largest numbers in terms of people but Deobandis have
+more institutes’. Would you know the difference? www.mcb.org,uk The more you
+find out about anything you’re not part of (religions, different age groups, etc) the
+more you realise that talking about ‘them’ as a homogenous group, isn’t accurate.
+Assed Baig suggests that when covering stories which relate to Muslim communi-
+ties in the UK: ‘treat Muslims as individuals and recognise that there is a great deal
+of diversity within the many communities. Muslim communities are not exempt
+from the class struggle or any other issues. Being Muslim is very politicised even
+within Muslim communities.’
+Two recent documentaries on BBC2 ‘Muslims Like Us’ are well worth time seeing
+for pointing out just these differences: www.bbc.co.uk by Mobeen Azhar. Also see
+What’s life like for British Muslims? www.youtu.be. Assed also warns against un-
+questioning use of quotes from community leaders: ‘what their so-called leaders
+say is usually not representative of what people actually feel. Always best to get
+real and raw voices rather than approach the first Muslim with a website.’
+Make contact with different organisations where you might find Muslims in your
+patch. Maybe local mosques, but also community centres, community media,
+sports clubs and arts centre, as well as charitable associations. Arrange to go down
+and meet people, conduct some interviews to get different perspectives on what
+your audience is concerned and interested in.There are a great many stories and
+angles you will get on a newsday by having contacts and networks from across your
+audience. As with most of our valued contacts, these will take time to develop, to
+build trust, but they are then more likely to take your call when you’re looking
+for a clip or some background on a fast-moving newsday. There’s also much
+information already out there if you’re looking for strong stories to tell. A> For
+example: www.tellmamauk.org is often a good source for academically researched
+articles. Also the Islamic Human Rights Commission: www.ihrc.org.uk
+British Muslims for Secular Democracy www.bmsd.org.uk offer yet another set of
+perspectives.
+See how many diverse views you can find in just an hour’s research, from this one
+section of society: Muslims.
+
+-- 36 of 66 --
+
+7. Older People
+The Journalist’s view:
+I am a grandfather and every month I get a pension payment from a previous
+employer. I’m also a university teacher, Norwich City supporter (no sympathy,
+please), a regular Parkrunner, the owner of a second home in France and more
+besides. Each of those is part of what I am but not one of them defines me.
+That said, I’m prepared to bet that if I find myself in the news tomorrow, next
+week or next year I will be described as a pensioner or a granddad. In fact, if a quick
+trawl through some recent news stories is a guide, I’m more likely to be labelled
+‘granddad’ in a good news item and ‘pensioner’ when I’m some kind of victim.
+These aren’t just the rambling thoughts of some old codger. The National Union
+of Journalists in ‘Change the Record’, its guidelines on reporting issues of age
+www.nuj.org.uk is quite clear that words matter. The guide says: “Language can be
+a powerful tool in shaping our views and reflecting public attitudes and perceptions
+- both of which can form barriers that prevent people of every age from integration
+and participation in society.” To emphasis the point it adds: “Old itself is loaded
+with assumptions of neediness and ineptness that terrify the young and undermine
+the old, robbing them of self-respect, damaging their health and welfare.”
+So, just as we would refer to someone’s race in a news story only when it was
+absolutely relevant – would you mention race if the person was white? – ask yourself
+whether the fact that someone is a grandparent is directly relevant to the story at
+hand. Imagine a headline that said ‘Middle-aged woman to the rescue’……doesn’t
+work really does it?
+Of course someone’s age is a fact that can add detail to a story whether they are
+27 or 72 but it’s the damaging impact of the labelling that goes with the latter that
+we need to guard against.
+There has been a subtle change in reporting older people, not least all those
+claims that 60 is the new 40. Some of us, it seems, still look good – especially from
+behind www.dailymail.co.uk.
+But the changes are not all positive. Roy Jones, an NUJ member of honour (now
+there’s a great way of saying he’s not a youngster) wrote in November 2015: “In the
+past, older people were treated somewhat patronisingly by the media, ‘reaching for
+their slippers’, for example, but generally in a kindly way. Nowadays, the following
+comment is more typical: ‘The young tax-paying population has to fund, to its
+detriment, an ageing society,’.”
+In March 2015 Dr Ros Altman, then the Pensions Minister, produced ‘A new
+vision for older workers: retain, retrain, recruit’. It contained recommendations
+specifically for the media, including action to promote positive language, stories and
+updated images of older workers and making greater use of older presenters.
+Much of the debate about age and media has centred on that point about presen-
+ters and discrimination on screen against older women in particular. That’s a dis-
+cussion for another day, for now I’ll settle for less reaching for the lazy stereotypes
+before I reach for the slippers.
+by Bob Calver
+
+-- 37 of 66 --
+
+Older People 31
+
+-- 38 of 66 --
+
+Older People 32
+The Newsday - Bringing ‘Everybody In’
+Among the many divisions in our society thrown up by the EU referendum result
+was the gap between older and young voters. One snappy post-Brexit Tweet alluded
+to older voters loving their country more than they did their grandchildren.
+Leaving aside the analysis of which groups voted which way, the debate underlines
+one of the ‘fault lines’ that lay beneath the surface of our public life and one of
+which journalists need to be aware.
+Like all issues of diversity it affects us all but is, perhaps, most keenly felt in the
+profession where many of you will take your first steps in local radio. That’s fine
+if you work for a commercial station where the target audience may be made up of
+people a bit like you – but what it you get your big break in a BBC station? The latest
+version of the Service Licence issued to the Corporation’s 39 stations is clear:
+The target audience should be listeners aged 50 and over, who are not well- served
+elsewhere, although the service may appeal to all those interested in local issues.
+There should be a strong emphasis on interactivity and audience involvement.
+For that reason alone, then, you need to think about how you reach that audience.
+There are some questions you need to ask yourself – and they are equally relevant
+wherever you are working. A report from the Reuters Institute for the Study of
+Journalism into media consumption concluded last year that older people make
+up more of the TV news audience.
+So here are some questions to be going on with.
+What comes into your head when you think of an older person?
+Consider the fact that you are probably wrong. If we are talking about people in
+their 50s they’ll be a lot like your mum and dad. Move to the 70 + age group and
+they’ll be pretty much the same as your grandparents.
+Given that people in their 50s, 60s and probably even their 70s have broadly the
+same concerns and interests as those in their 30s and 40s the next question should
+be:
+What issues are of specific concern to older people?
+Your parents, for instance, are probably more concerned than you are about the
+rate of return on their savings. That means a rise in interest rates, which is bad
+news for a young person buying a home, maybe better news for your older audience
+members even though a significant number of them will still have mortgages to
+pay off.
+What about health, fitness and ‘lifestyle’ stories?
+Look at the starting line-up for the London Marathon, the Great North Run, the
+Great Manchester 10k and a host of similar events round the country and you’ll
+see lots of older (even really old) people raring to go. Statistics show we are living
+longer and part of that is a desire to go on being fit and looking good. That was
+underlined by Channel 4’s Fabulous Fashionistas documentary about six women –
+average age 80 – determined to go on looking wonderful and redefining ‘old age’
+along the way,
+There are, of course genuine health issues that come with aging but we need to
+take care, here, too, not to paint a picture of victimhood. Older people are also as
+likely to be carers – for spouses, partners or parents – as they are to be cared for.
+
+-- 39 of 66 --
+
+Older People 33
+Where can I find older people to talk to?
+Don’t forget the majority of people in their mid to late 50s, through their 60s and
+even into their 70s are likely to be in work (there is no such thing as ‘the retirement
+age’, these days we talk about the State Pension Age) so you’ll find them alongside
+their younger colleagues. If you’re looking for those not at work a few minutes on
+the web will point you at scores of lunch clubs, good neighbour sessions, drop in
+centres and over-60’s keep fit classes in your area.
+How do I make my story relevant to ‘them’?
+Every story you report on and write should always be produced with the audience
+in mind. But think about the words you choose and use, think of the images you
+are shooting and showing and think of the voices in your piece.
+None of the above will have come as a surprise to you but the challenge – as with
+all the areas covered in this book – is to have this kind of thinking in your everyday
+practice.
+So here’s something you can try. The next time you are taking part in a newsday
+or you are asked to find a story or an interviewee look deliberately for a story that
+will resonate with an older audience (you can always bounce an idea off a family
+member) and search out someone from that 50+ target audience.
+Or – perhaps with some fellow students – produce a short programme designed
+with that audience in mind. It doesn’t mean every item has to feature older people
+but every second should be of interest to them.
+One final test, when you play back your efforts if anything sounds condescending
+or like you are trying really hard to reach out to an alien group or if any part of it
+is open to a charge of pandering to a stereotype then ditch it and come up with
+something else.
+Your audience may be old but your ideas must be new.
+
+-- 40 of 66 --
+
+8. Poverty
+The Journalist’s view:
+Reporting on poverty
+As we navigate the unhappy turmoil of post-referendum Britain, there’s a critical
+lesson to be learned for journalists. The balance of media attention has to shift
+decisively from what’s happening in Westminster to what’s happening everywhere
+else.
+A lack of consistent, reliable reporting from around the country feeds into a sense
+that a metropolitan elite – both political and journalistic - has lost touch with the
+rest of the country.
+When this balance is wrong, then the focus of reporting is on abstract arguments
+over immigration targets and not on the experience of changed immigration pat-
+terns in the parts of the country most affected; attention gets fixed onto the script
+of belt-tightening budget announcements made in parliament and not on the long
+fall-out of six years of austerity measures on the country’s most marginalised.
+The way news organisations are structured can make this difficult. Regional
+newspapers and television bureaux are closing, pulling the centre of gravity back
+to London. More challenging is that the kind of reporting that explains the impact
+of government policies and global economic trends on Britain’s residents can rarely
+be sold as headline news. It’s the opposite of news – it’s a daily state of being.
+When politicians in Westminster are arguing about the “bloated” state of the
+welfare system, about the need for poverty to be redefined as something less
+exclusively about money and more about unwise behaviour and begin dismissing
+the phenomenon of food banks as the natural consequence of a decline in cookery
+skills, we need journalists to turn in the other direction and report on reality. When
+a narrative of scrounging and shirking becomes mainstream, and we’re told that
+“hard-working people” are losing out from a welfare system that rewards those
+who “do the wrong thing”, we need reporting that reminds readers that much of
+the welfare budget is paid out to people who are in work, on low wages, getting up
+every morning and doing the right thing.
+On a practical level, the way to force this subject on to the news agenda is to
+make sure that the coverage is interesting, and not just worthy. People have to want
+to engage with the subject, otherwise your efforts are wasted. This might mean
+seizing an extreme example, the death of a vulnerable man after his benefits were
+sanctioned, to explain the broader problems of sanctioning. www.theguardian.com
+Or it could mean finding one person ready to explain how policy decisions on
+tackling poverty have shaped their life www.theguardian.com. Sometimes we’ve
+experimented with radically different forms to explore the issue – see this microplay
+on food banks. www.theguardian.com
+Reporting on poverty, when people are experiencing profound difficulties with
+housing and just getting by, isn’t always easy. Think about whether you would want
+details of your spending budget in the newspaper, and photographs of your empty
+fridge in the paper. If it’s easier for people to talk anonymously about their situation,
+that doesn’t necessarily make it less powerful. Some people are so enraged at the
+
+-- 41 of 66 --
+
+Poverty 35
+situation they find themselves in that they positively want a platform to explain
+why something has gone wrong.
+Both the Joseph Rowntree Foundation and Church Action on Poverty have pub-
+lished helpful reports on reporting in this area. They recoil from the notion of
+case studies served up to illustrate a point, human experiences packaged up and
+summarised for a three-paragraph sidebar. Ideally, reporting in this area should
+take the audience in deeper, to help build a world view that isn’t based on the tropes
+peddled in Westminster.
+www.church-poverty.org.uk www.jrf.org.uk
+A call to shift the balance of media attention to the rest of the country shouldn’t
+be viewed as an unpalatable, heavy responsibility. We ignore what is happening
+in the UK’s marginalised communities at our peril, but in any case, life is more
+interesting beyond Parliament Square.
+by Amelia Gentleman
+
+-- 42 of 66 --
+
+Poverty 36
+The Newsday – Bringing ‘Everybody in’
+We know there are issues of underrepresentation in newsrooms and one of them
+is allied to the issue of money, or lack of it. This can sometimes lead to a lack of
+understanding when reporting a story where poverty is at its root.
+As with all things, our starting point is to get clued up. Firstly to the fact that
+poverty doesn’t always look like the Dickensian imagery of people starving and
+destitute.
+According to Professor Peter Townsend, a leading authority on UK poverty, relative
+poverty is when someone’s “resources are so seriously below those commanded
+by the average individual or family that they are, in effect, excluded from ordinary
+living patterns, customs and activities” www.jrf.org.uk
+In the BBC report by Justin Parkinson about the newly coined ‘just about man-
+aging (JAM)’ he quotes figures of six million working-age households on low to
+middle incomes. They are spread across “areas as diverse as Pendle in Lancashire,
+Sandwell in the Midlands and North Devon”. Jam households have at least one
+person in work, but are half as likely to have a degree as the rest of the population.
+www.bbc.co.uk
+The Guardian quotes Shelter as saying ‘more than one in three families in England
+are a monthly pay packet away from losing their homes’ www.theguardian.com
+So on newsdays we need to think about the demographics of our audience when
+covering, say, the opening of a new shopping centre, to avoid the assumption that
+everyone could afford to go there or even travel to it in the first place in the way
+we write about it.
+As with other sections of this book, think about going to areas of the town/city
+which typically are lower income and find stories which have a meaning there.
+If you spend time getting local contacts you will undoubtedly get material which
+reflects different opinions and voices, not to mention uncover concerns which
+perhaps aren’t ones you’ve thought of.
+Back in the newsroom, think about those concerns when weighing up stories for
+inclusion on the bulletin and how they’re written up, to ensure they don’t only
+reflect a more privileged lifestyle.
+In interviews or getting clips, challenge assumptions experts and others make
+about ‘us’ and what ‘we all agree about’. Who are they talking about or for? Do a
+feature on the local foodbank and see the range of people who are using it. Ask how
+councils will ensure access to books or the Arts if libraries close or free museums
+have to charge.
+
+-- 43 of 66 --
+
+9. Regionalism
+The Journalist’s view:
+Northern exposure
+I’d like to apologise to viewers in the North. It must be awful for you. Imagine the
+scene. It’s January, 2010. Children are crawling on their hands and knees to get to
+school, because the roads and pavements are too icy to stand upright.
+This has come about because of a rare weather phenomenon where lying snow
+and ice has begun to melt, then frozen suddenly as temperatures drop sharply. You’d
+think it would be a huge story for journalists - pictures! Human interest! Once in a
+lifetime event! Did I say pictures?
+But it hardly got a mention outside West Yorkshire, because it happened in
+Holmfirth. Not Holborn. For a while the BBC website marked the unseasonal weather
+with a picturesque shot of a snow-flecked red London bus passing by the tower of
+Big Ben. That’s unusual. Winter just happens in the North.
+It’s a classic example of regional discrimination, in its own way as bad as sex or
+race discrimination, where a story which happens “in the regions” is perceived as
+less important than one which affects the capital. It comes about less, in the main,
+from metropolitan conceit than from something more human.
+Journalism is an art as well as a craft. Beyond objective news criteria we apply
+values to stories on the “ooh gosh” scale of pure, visceral gut feeling. It’s what
+(for now) differentiates the living journalist from an algorithm. That gut feeling is
+informed by my daily lived experience. The price I pay for milk, the ethnic origin of
+people I mix with, the frequency of public transport, the films showing in the cinema
+are all unconsciously internalised as the norm. Even when they’re at odds with the
+lived experience of a majority of my audience.
+I have an idea of what “the elsewhere” is like, of course - I’ve never been to
+Inverness, but I’ve been to Scotland so I apply my internal Scottish template to
+a story there and I probably won’t be far wrong. The problem arises when places
+become stereotypes. Like my home patch of Bradford.
+I remember the day I took a phone call in the newsroom at Pennine Radio from
+a TV film crew. “Hello, I’m looking for poverty”. So how could I help? “Can’t find
+any. Where should I go?” Resisting the first reply that came to mind I asked if he was
+looking for visuals - stray dogs, bricks in the road, that kind of thing? “That’s right
+- been driving for hours all round Bradford - can’t find shots anywhere”. They’d
+chosen their location because Bradford, to them, was synonymous with deprivation.
+Likewise a documentary that chose to illustrate the prosperity of the South East with
+pictures filmed inside a very ordinary Arndale Centre - the twin of which exists in,
+you’ve guessed it, Bradford.
+This isn’t just a “London versus the North” issue. Far from it.
+My own station was based in Bradford, but covered the neighbouring towns of
+Huddersfield and Halifax. The same issues applied - we were more likely to do a vox
+pop yards from the studio in Bradford because it was easier than driving half an hour
+to Halifax to do it. Guests from the Alhambra Theatre or City Hall were convenient,
+those from the Huddersfield Choral Society or Calderdale Council required more
+
+-- 44 of 66 --
+
+Regionalism 38
+effort. It was Drury Lane and the Westminster bubble in microcosm.
+The message from all this is that it’s important to be genuinely inclusive of
+people and stories throughout the editorial area we serve, whether that be local,
+regional or national. That takes effort. Effort to avoid stereotypes, lazy assumptions
+and tokenism (it’s almost worse to include news of little merit to meet some quota
+of “stories from the sticks”). Effort to apply the same tests we routinely use when
+deciding if a story is racist or sexist.
+A bit like the effort the kids and teachers had to apply to get to school that
+winter’s day in Holmfirth, West Yorkshire.
+www.dailymail.co.uk www.youtube.com
+by Richard Horsman
+RichardHorsman.com @leedsjourno
+
+-- 45 of 66 --
+
+Regionalism 39
+The Newsday - Bringing ‘Everybody In’
+Anyone who has ever worked for a regional daily newspaper will be well versed in
+looking at national (and international) stories from a closer-to home-perspective.
+“Get us the north angle on that,” was a phrase in daily use by one news desk we
+know.
+Regional and local broadcast newsrooms will also recognise the technique. The
+problem comes not in regional journalists putting stories in context for their
+audiences but in news about any region being reported from elsewhere.
+To the long list of attributes required of aspiring journalists we would like to add
+another – a good knowledge of the geography of the British Isles. Test yourself by
+taking an outline of the counties of England, for example, and seeing how many
+you can identify.
+Knowing where places are is a first step in getting to learn more about them and it
+certainly avoids that irritating attitude of ‘well it’s all the north to me.’
+You need, too, to have a detailed knowledge of your own editorial area. Not every
+part of it will look and feel the same as every other part. This is the UK so even the
+weather can vary within a relatively small area. Again you can test yourself with
+an outline of your area to see how many communities within it you can name and
+place correctly.
+Don’t assume that because you live and work in the main centre of population
+that people in other towns or more rural areas will automatically be interested in
+everything that happens there. It’s the equivalent of the metropolitan thinking
+that sees everywhere outside the south east as being either ‘up north’ or ‘the
+sticks’.
+The BBC’s Public Purposes set out its aims clearly. ”Across the range of its network
+output, the BBC should portray and celebrate the range of cultures and communities across
+the UK at national, regional and local level.”
+For your next news day do some research to enable you to suggest stories that
+‘portray and celebrate’ different parts of your area.
+When you are reviewing how your news day has gone think about how much of
+your area has been included in your output. If a significant area is missing then
+ask yourself why that is.
+When you are looking for local reactions to a story, ask yourself if there is just
+one view which you need to reflect or are different parts of your area likely to
+see a development or announcement differently. One local person may object to
+a planning scheme as an intrusion into her space while another may welcomed it
+as bringing new jobs.
+Remember, too, that the local/regional reaction you get should become your story.
+So, for example, if you are pursuing a local view on a Government initiative that
+local voice is most likely to be your top line.
+
+-- 46 of 66 --
+
+10. Religion
+The Journalist’s view:
+A matter of life and death
+Pedantry is often boring, but it’s almost as often necessary. For journalists it can
+be a positive virtue, and that’s why I used to get quite worked up with viewers
+and listeners (and especially with colleagues) who called me “the BBC’s religious
+correspondent”. That suggested that I was there to cover religion itself, and it was
+why I’d get earnest letters and ‘phone calls from people who were convinced they
+had found the secret of eternal truth and wanted me to pass it on to the BBC’s
+audiences.
+I’d point out to them (patiently and politely, I hope, but probably not) that I was
+the BBC’s religious ‘‘affairs’’ correspondent, which meant primarily that my job was
+to cover religion when it got into the news bulletins, and at no other time. I wasn’t
+there to publicise any religion, or even to argue that religion was a good (or a bad)
+thing in itself.
+Religion can be a marvellously news-packed subject. It looks at the moment
+likely to be one of the defining forces of the early 21st century, as though we did
+not already have plenty of ways of defining ourselves and rejecting the definitions
+other people choose for themselves.
+Mind you, the religious affairs correspondent anxious to make a reputation in
+the newsroom will have to accept definitions which may help to build a career but
+which actually do little to enlighten audiences. Twenty years ago, I would sometimes
+suggest to the newsdesk that there was an important story to be reported about
+the shifts in power - and survival prospects - between some of the old-established
+religions in the Middle East. “Oh, Islam, you mean”, replied one output editor.
+“That’s boring. Have you got any dirty vicar stories instead?” (Dirty vicar stories
+were sad accounts of some religious figure who had been found committing acts
+judged sexually wrong, perhaps by one or other religious group, perhaps by the law.
+Some were serious offences, some weren’t offences at all. Their stories were almost
+invariably depressing. But they got you near the top of the news agenda for days on
+end.)
+Sometimes the religious affairs correspondent would be brought out to perform
+on big state occasions, often royal funerals. They were a sure-fire way of getting a
+prime spot in the news bulletins. But prominence came at a price: there was often
+very little to report, and there are only so many ways of saying nothing in suitably
+hushed and polished tones.
+Yet I enjoyed my stint covering religion, for two reasons. I found that, unlike
+so many other subjects where news entrusted coverage to specialists, this was an
+area where colleagues were much less likely to try to tell you that they knew better
+than any specialist (this may have been because they had learned that religion is a
+horribly easy subject to get wrong). And it is an intensely human subject: it’s almost
+impossible to cover religion without talking about people’s lives and deaths, their
+hopes, dreads and resignation, their losses and - sometimes - their fulfilment.
+I remember interviewing a prominent humanist for a radio package. I asked him
+
+-- 47 of 66 --
+
+Religion 41
+what he thought religion was. “It’s something that makes bad people worse”, he
+replied, “and good people better.” People motivated by religion can create hell on
+Earth, and they can sacrifice everything for the sake of a stranger. There are stories
+clamouring to be told, stories which meet the most rigorous definitions of secular
+news values. And you don’t even need to have any religious faith of your own to cover
+it - in fact, it’s quite likely easier if you’re an atheist.
+I’ve known a number of journalists who became religious affairs correspondents
+with a lively faith of their own, and finally left the job as atheists. The physicist
+Albert Einstein once said: “Remember your humanity, and forget the rest.” That’s
+not a bad definition of what you need to be a journalist. At least it should make sure
+that you’re filled with curiosity. And a journalist who can’t be bothered to be curious
+is a threat to all of us.
+by Alex Kirby.
+The Vicar knows…
+“If you want to know what’s going on in your local community, ask the vicar.” The
+trainee reporters to whom I gave this advice over a decade ago in Birmingham looked
+a little bemused and slightly incredulous at this advice. I was asked to justify my
+view.
+Wherever you live in England you are in a parish of the Church of England. You
+don’t have to find yourself in or be attached to any of its 16,000 buildings - although
+with more outlets than Tescos, Sainsburys and Waitrose combined, you’re never far
+away from a church building. Rather it’s because the job on the church’s 12,000 or so
+clergy is to have “the cure of souls” for every person in their parish. In other words
+their job isn’t to look after those who come in on Sunday it’s to look out for all the
+people in the parish, whoever they may be. That duty is enshrined in law and is an
+oath undertaken by every vicar of a church when they take up their job. It’s part of
+the contract that comes with being the established Church. So in communities of
+economic deprivation where all those with the means to do so have left sometimes
+the only professional resident in the community is the vicar. Whilst doctors, social
+workers, police officers and teachers may all commute in and out to do their work,
+the vicar remains embedded within the parish. And in those rural villages where the
+post office has gone, the pub has closed down and bank has long gone, the church
+remains as a place of gathering and meeting for those of all faiths and none who may
+come for the church’s convening role even if not for its liturgical splendour.
+That means that when tragedy strikes, it is the vicar who often becomes the focal
+point of a community and its reactions. The example I gave 12 years ago was that
+
+-- 48 of 66 --
+
+Religion 42
+of the Rev Tim Alban Jones, described by the Cambridge News as “the vicar who
+united Soham after the murders of schoolgirls Holly Wells and Jessica Chapman”
+www.cambridge-news.co.uk
+A year later I was working with John Sentamu, the then Bishop of Birmingham,
+who spoke for a city and its loss after the murder of Charlene Ellis and Letisha Shake-
+speare leading a vigil for their memory and calling out for justice. www.bbc.co.uk
+These examples of the church playing out its role as convenor of hope or lament
+during times of tragedy or crisis mean that in its most local manifestation it remains
+the one of the most basic units of community in England.
+This role was seen most recently with the murder of Jo Cox MP. On the day she
+was killed people gathered at St Peter’s Church in Birstall for a vigil led by the local
+vicar Paul Knight and Bishop of Huddersfield, Jonathan Gibbs. The 400 people who
+packed in ot the church that night were not all regular worshippers, They were not
+all Christian or even CofE. But they came together under a common roof, open to all
+in the heart of its community. www.theguardian.com
+by Rev Arun Arora.
+
+-- 49 of 66 --
+
+Religion 43
+The Newsday – Bringing ‘Everybody in’
+As far as journalists are concerned that old saw that advises that we never talk
+about politics or religion is clearly nonsense. But what do we know about different
+faiths and within them their different denominations?
+Perhaps we don’t know very much, largely because – like most of the population
+– we have little direct contact with churches and religious groups although in the
+2011 Census only a quarter of us indicated we had no religion. A further 7% declined
+to answer the question about religion, which was the only voluntary element of the
+census.
+Journalists, though, are not ‘like most of the population’ and we do need to know
+about all the organisations, movements and pressure groups that are involved
+in the society our stories are supposed to reflect. Just over half the population
+call themselves Christian. What’s this, you may ask, got to do with diversity or
+inclusive reporting? In short the answer is that religious groups vary widely from
+one another – even within the same faith or denomination – and being aware of
+that is just as important as understanding more about all the groups in this book.
+The Church of England is unique in being part of the fabric of state. It is the
+Established Church – that’s why we have Bishops sitting in the House of Lords.
+The Church of Scotland and the Church in Wales are not established, so at the very
+least you should have a sense of what that means.
+So, check out the details of the faith groups in your area – and find out what they
+are up to. Churches – or groups of churches – run food banks as well as drop in
+centres for homeless or older people which can be useful places to get in touch
+with those people.
+In 2015 it was reported that faith based groups, Christians, Muslims, Sikhs, Jews,
+etc, were giving the equivalent of £3 billion worth of time to social projects and
+were helping fill the gap left by funding cuts. Of course. Many secular groups are
+doing equally valuable work but new can’t afford to ignore a potentially rich source
+of stories
+Remember ‘the church’ doesn’t exist. There are lots of them and just because one
+group isobjecting to a new night club it doesn’t mean that ‘the church’ is against
+the development.
+Make sure your contacts include people from a range of active groups – and don’t
+forget that each of the areas (dioceses) into which the C of E is divided will have a
+press officer. Similar posts exits within all the denominations.
+Don’t get hung up on titles. It doesn’t matter if someone is Venerable or Very
+Reverend, least of all to the man or woman involved. They will be happy to be
+reported by name alone.
+Other religions are also available!
+
+-- 50 of 66 --
+
+11. Sexuality
+The Journalist’s view:
+Changing perceptions
+“This guy, however he dresses up his bigotry and hatred, is someone who hates gays.
+If he went in to a synagogue and murdered Jewish people, we’d call it out for what it
+is”.
+The openly gay columnist Owen Jones became increasingly exasperated during a Sky
+Newspaper review when the clearly homophobic motivations of Omar Mateen to kill
+49 LGBT people in an Orlando night club were conspicuously absent from early news
+reports. www.youtube.com
+Sky News anchor Mark Longhurst told an incredulous Jones it was an attack on all
+human beings. Right wing commentator Julia Hartley Brewer questioned whether it
+was a solely homophobic attack and claimed Mateen would be just as angry at her
+for “being a gobby woman”.
+BBC News, on the night after the massacre, barely mentioned the homophobic
+overtones. Even President Obama called it an attack on all Americans. Only the huge
+LGBT vigils across the world coerced media outlets in to refocussing the story on to
+those people who it had struck at the heart of.
+I think Jones was right to say that attacks on other minority groups would be
+– and have been – called out for what they were, not presented as a footnote and
+touched upon days later.
+In a media landscape full of openly LGBT journalists, this seems odd. But atti-
+tudes towards LGBT people are, I think, still the last taboo of acceptable prejudice.
+It’s still acceptable to flippantly describe something as “a little bit gay”. You
+couldn’t use the word black, Muslim or Jewish in the same way.
+Nor do you often see a gay couple presented in news reports merely as a couple,
+regardless of their gender or sexuality. It has to be a “gay” thing. Gay adoption. Gay
+marriage. Gay rights.
+49 years since homosexuality was legalised in this country, there is still a way to
+go before LGBT people are treated fairly in all walks of life, let alone the media. But
+it’s understandable; the LGBT community is changing before all of our eyes, and our
+understanding of it is struggling to keep up.
+Half of 18-24 year olds questioned last year by YouGov said they weren’t 100%
+heterosexual. yougov.co.uk LGBT has added two new initials recently – Q for Queer
+and I for Intersex. Many young people are identifying as “non-binary” or “gender-
+fluid”. The Queer subculture almost transcends sexuality.
+And therein lies another minefield; should we separate issues of sexuality from
+issues of gender? A transsexual isn’t necessarily gay, for example. As a relatively
+young gay man, understanding these intricacies is tough enough. For the public,
+and media, at large, it’s even harder.
+Political correctness will dictate that media coverage of these issues will continue
+to be at times retrograde. It isn’t necessarily indicative of homophobia or even
+ignorance of gay issues. But as those more liberated 18-24 year olds grow up to be
+our correspondents and news producers of the future, attitudes will change. Media
+
+-- 51 of 66 --
+
+Sexuality 45
+coverage of “gay issues” will no longer seem as significant.
+by James Bovill
+
+-- 52 of 66 --
+
+Sexuality 46
+The Newsday - Bringing ‘Everybody in’
+Check you understand the different terminologies. As James says, they’re chang-
+ing all the time and even if the media tends to be slightly more cautious in using
+new words, we as journalists should know what they mean. Stonewall has useful
+information along these lines
+www.stonewall.org
+According to research Stonewall and YouGov carried out in 2012 into society’s
+attitudes, three quarters of people (77 per cent) think the media still rely heavily
+on clichéd stereotypes of lesbian, gay and bisexual people.
+On one of your newsdays, double check assumptions you make about your audience
+or interviewees when writing copy/ thinking through questions. Gay, lesbian and
+bisexual people comprise 3.7 million of the UK population and one in five of us
+in Britain (19 per cent) say we have relatives who are lesbian, gay or bisexual
+(Stonewall 2012). That includes your audience and your newsroom. So for example,
+do you need to write ‘husband and wife’ in a piece about marriage or family if it’s
+not the topic of the story?
+Most large cities have a gay quarter, or similar. Why not ensure you always do some
+of your vox pops there, as well as in general shopping streets, to counter the sense
+that gay people are only ever asked to comment on ‘gay issues’.
+If you are covering a story such as a Pride march, check whether you’re falling into
+easy stereotypes with whom you pick to interview or film. For every “flamboyant”
+character, there will be 1,000 ordinary LGBTQI people going about their business. A
+drag queen is about as representative of all gay people as Tony Blair is of all Labour
+supporters. It’s a broad church; reflect it.
+Be careful of lumping everyone who isn’t straight under one umbrella. LGBTQI is
+such a catch all term that can never accurately represent everyone it describes. One
+size most definitely doesn’t fit all, so think carefully about the terminology you’re
+using and what is most appropriate.
+Non-heterosexual people are not one big homogenous group with the same beliefs
+and values and shouldn’t be grouped together as such. You would never run copy
+describing the “straight community”. Instead of saying “in the gay community”,
+use something like “amongst gay people”.
+Media too often describe issues involving gay people as controversial. Controversy
+is in the eye of the beholder. The fight for gay men to receive PrEP on the NHS
+was somehow controversial solely because it was seen as promoting promiscuity;
+another lazy stereotype. Would a campaign for sexually active straight women to
+get a pill to prevent chlamydia have been subject to the same frenzy?
+
+-- 53 of 66 --
+
+12. “Sport now…”
+The Journalist’s view:
+Are you with him?
+1987 I have achieved my childhood dream and become a sports reporter on a morning
+newspaper. I’m paid to watch rugby, football and tennis, but this also involves
+being pointed at for being the only woman in the press box, putting up with smutty
+comments from rugby players, dealing with obnoxious football managers and stupid
+questions from media colleagues: “Oh. I thought you were someone’s girlfriend.”
+Fortunately, I have a big mouth and can stand up for myself. Over the course of four
+or five years, I don’t meet any other women covering sport.
+2012 I’m invited to attend a racism in sport conference. I get chatting to a black
+female football reporter in her 20s. She says that sexism is still prevalent and far
+more of an issue for her than racism. I’m depressed that so little has changed in 25
+years.
+Don’t get blasé at seeing former women sports stars in our press boxes. They’re
+not sports journalists – they’re pundits at best and cheerleaders for their mates at
+worst. Perhaps it’s best not to get me started on this issue, particularly after the BBC
+employed Sally Gunnell as a ‘reporter’ – and the 400m hurdler (a fabulous athlete
+if not much cop as an interviewer) complained she hadn’t been trained properly. I
+fancy being a brain surgeon – can I turn up at the General on Monday and demand
+training before wielding my scalpel?
+Pundits have a key analytical role, but they’ll never replace the trained journalist
+who can interview skilfully and spot a story at 20 paces. It’s not that women don’t
+want to be sports journalists – university journalism degrees can put paid to that
+misapprehension. You don’t have to have played sport at a high level to report on it
+with authority. Rugby players used to find it amusing to grill me on the laws of the
+game – they soon got bored when it became clear I knew them at least as well, if not
+better, than they did.
+And why on earth do female sports reporters have to put up with the most
+ludicrous comments? Jacqui Oatley, the first woman commentator on Match of the
+Day, had to put up with a barrage of abuse. Honestly, not all women cricketers
+are lesbians (and why would it matter if they were?) West Indies cricketer Chris
+Gayle has past form for making toe-curling comments to women journalists. And TV
+presenter John Inverdale inexplicably blamed hay fever after he made sexist remarks
+about French tennis player Marion Bartoli’s looks.
+We’re slowly seeing a wider range of women’s sports on TV and in newspaper
+sports pages. But only one national paper sports editor is a woman – Alison Kervin
+of the Mail on Sunday was appointed in 2013. Suzanne Franks speculates on why
+there are so few women in sports journalism. But one thing we have to get past –
+and quickly – is the idea that women can only report on women’s sports. Otherwise,
+all we have is men talking about men.
+by Sharon Wheeler
+
+-- 54 of 66 --
+
+“Sport now…” 48
+www.crimereview.co.uk
+
+-- 55 of 66 --
+
+“Sport now…” 49
+Blazing a trail
+We are having the diversity conversation too often these days. So often, even I, - a
+black British, female sports journalist - am getting bored with it.
+Unfortunately we still live in a world where the gender or ethnicity of a sports
+reporter is often more important than the top line.
+I went to a friend’s book launch and it got me thinking. She had written ‘thanks
+for being one of the trailblazers’, when she signed it for me. It was weird because I
+don’t see myself that way, that’s how I see the people who came before me. But then
+it clicked, we’re all still blazing a trail because our role within our profession is still
+considered a novelty. Only by some admittedly, but still by too many.
+The notion itself sounds ridiculous, but nowhere is that more true than in the
+world of sport. While we watch tech and science professionals encourage a more
+healthy diversity split, the world of sports - media, and otherwise - still fight it.
+Remember the kid who always held onto the ball at school, regardless of his right
+to do so? Well, he never let go, and he probably works in sport!
+As we plummet towards a strange land where political correctness is God, is sport
+the last bastion for the archetypal man?
+It certainly seems to be.
+Sports webpages are littered with semi-clad women who happen to date sports
+stars, professional athletes are belittled with very little recourse and female em-
+ployees are often treated with a disregard that their male colleagues rarely suffer.
+It’s harmless they tell us, because sports is a man’s world. Except it’s not, not
+any more. Nor has it been for a long time.
+We can rule countries, fly planes and drive tanks; but people get their pants in a
+twist if we read out the football results. And not because they’re being read wrongly,
+just because the person reading them isn’t a tenor.
+The silliness of it fits sports media down to a tee.
+Has no one reminded them that boxers weigh themselves in their pants to fight
+a man over a belt, while also winning a purse?
+I’m not sure it could get less masculine.
+But all jokes aside, the fact that I’m still considered a trailblazer in 2016 isn’t
+lost on me. Or any of the other women who work in sports media. In fact, it keeps
+us strong and ensures we don’t give anyone the chance to blame our gender. In the
+same way we try not to blame theirs.
+Because despite what the dinosaurs tell you, we are good enough and we won’t
+let them forget it.
+So what if they don’t want us in their gang, we’ll just create our own. We all have
+the ability to be trailblazers, and it’s vital we don’t forget that. We all need reminding
+that sport isn’t just there for them, it’s here for us all.
+And if me blazing a trail makes life easier for you, then pass me a match.
+by Natasha Henry
+
+-- 56 of 66 --
+
+“Sport now…” 50
+
+-- 57 of 66 --
+
+“Sport now…” 51
+The Newsday - Bringing ‘Everybody in’
+There are twin challenges in sport in terms of diversity. One is the diversity
+of the sports reporter and the other is the range of sports covered and their
+coverage. In the Rio 2016 Olympics, there were many examples of comments
+made about what women reporters wore www.mirror.co.uk and under-reporting
+of sportswomen’s success www.huffingtonpost.com This led to some ‘helpful’
+advice in The Guardian’s Comment is Free pages: www.theguardian.com
+So on a sports newsday, check your writing of women’s sports against an earlier
+bulletin copy covering (for example) men’s football. Is the language similar? Is any
+comment about the professionalism, the strength, the flow of the game? If not,
+why?
+Do some research into what sports are played in your area. You’ll find a greater
+variety than you might have thought. Step away from football, cricket and rugby,
+what else is there? Check out the numbers of participants to see how popular they
+are. Quite apart from widening the range, they will be played by people of dif-
+ferent ages and genders, different abilities or ethnicities [www.sportengland.org]
+(http://www.sportengland.org/)
+On your sports newsday, cover as a wide a range of sports as possible. Go and spend
+time at some local clubs to do short features on them. Investigate the rules if you
+don’t know them, commentate on the atmosphere, speak to the players.
+Discover the variety first and then add in the main spectator sports towards the
+end of the day. Be aware of slipping into clichés and assumptions in your coverage
+as you do so.
+Ensure that everyone in the newsroom does some sports reporting. Notice how
+‘non’ sports fans will often approach the stories in the same way as any other news
+item. Question what’s useful in that (anything that gets us to rethink our writing
+is an opportunity to improve).
+Double check that the same people aren’t always getting the ‘popular’ sports to
+report on. That’s often about conferring value and worth to the reporter as well as
+the team and can lead to missing better angles to stories if the relationship gets
+too cosy.
+
+-- 58 of 66 --
+
+13. Young People
+The Journalist’s view:
+Lack of positive portrayal of young people in the media
+Before joining the BBC I taught for four years in a secondary school through the
+Teach First programme. I was focused on how to help young people from disad-
+vantaged backgrounds realise their potential. But when I started working as a TV
+journalist, it dawned on me that teachers have got an uphill struggle in helping
+young people feel positive about themselves. A lot of the stories in mainstream
+media are about young people doing bad things. As the Home Affairs producer for
+BBC London, I regularly produced stories about teenagers committing crimes. A
+gang murder by sixth form college students at Victoria Station; the shooting of a 5-
+year-old by three young black men and the London Riots, were typical of the stories
+we regularly covered. www.bbc.co.uk
+But some groups of young people have even more of an image problem than
+others. The other day, a video went viral showing what comes up in a google
+search result if you type in “three black teenagers” compared with “three white
+teenagers”. Can you guess? Lots of mugshots of young black criminals compared
+with lots of generic happy smiley shots of white teenagers. www.theguardian.com
+Now, obviously as a BBC London journalist, I had a responsibility to report on
+crimes that had taken place in my local area. Viewers have a right to know about
+court cases going on. But couldn’t journalists also report more on positive stories
+about young people? The reaction of many journalists is - good news isn’t news.
+Why? Because it’s not unusual enough. Or it doesn’t make such great headlines.
+This isn’t fair. First, because it’s not an accurate portrayal of all that young people
+are about. And second, it reinforces negative ideas about young people, particularly
+those from poor or ethnic minority backgrounds.
+But actually, I think things are slowly changing. Research shows that people are
+more inclined to share positive news stories on social media. “BuzzFeed editors have
+found that people do still read negative or critical stories, they just aren’t the posts
+they share with their friends. And those shareable posts are the ones that news-
+rooms increasingly prize.” [ideas.time.com] (http://ideas.time.com/2013/08/21/how-
+the-news-got-less-mean/)
+The BBC is also working hard to make sure that audiences - especially young and
+diverse audiences - get want they want from our content. Serving them better is one
+of our main objectives. The BBC’s even set up a panel of staff who are under 30, who
+will feed into the big bosses making decisions on the editorial board. www.bbc.co.uk
+I’m now working on a new bulletin called BBC Minute. It’s sixty seconds of the
+world’s most shareable news, updated every half an hour 24/7, aimed at young
+people. Because we reflect what’s being talked about on social media, we inevitably
+report on more positive news stories. Like Rihanna starting a university scholarship
+scheme; the three year old who solved a Rubik’s cube in less than a minute, and
+Malala becoming the youngest ever Nobel Prize laureate. [www.bbc.com/minute]
+(http://www.bbc.co.uk/programmes/p03q8kd9)
+So things are moving in the right direction. And when, in a few years’ time,
+
+-- 59 of 66 --
+
+Young People 53
+young journalists who have grown up with social media - who have worked at
+the likes of Buzzfeed or those parts of the BBC aimed at young audiences - when
+they start holding senior editorial positions on mainstream news programmes and
+newspapers, I reckon we might notice a fairer portrayal of young people in the
+media.
+by Victoria Laurie. Senior Broadcast Journalist on BBC Minute.
+
+-- 60 of 66 --
+
+Young People 54
+The Newsday - Bringing ‘Everybody In’
+With all the groups referred to in this e-book the task of a broadcast journalist is
+to ensure he/she understands as much as possible about the group and the stories
+which relate to it but equally importantly to ensure members of the group are heard
+and seen talking about all stories.
+Nowhere is that challenge more starkly seen, perhaps, than in talking about young
+people. Older audiences will have strong opinions about ‘youths’ and vice versa.
+The notion of a gap in understanding between young people and ‘their elders’ is
+nothing new. As far back as 20 BC Horace wrote in ‘Odes III; ‘Our sires’ age was
+worse than our grandsires’. We, their sons, are more worthless than they; so in
+our turn we shall give the world a progeny yet more corrupt.” Fast forward to 1965
+and The Who were singing about their generation - ‘People try to put us down just
+because we get around.’
+To underline that the rift remains, we need only look at the reaction to the Brexit
+vote and claims that older voters had betrayed the young countered by reports that
+young voters had failed to turn out. More evidence of a lack of understanding came
+with the social media reaction to Teen Vogue running a political story after Donald
+Trump’s election.
+A BBC Newsbeat online article began: “It’s hard to decide whether people are more
+surprised that Teen Vogue published a piece on politics, or that teenage girls might
+have read it.”
+It went on to explain that those teenage girls are better educated than their
+grandparents and more socially and racially diverse. The story goes on to add:
+“There were a lot of conflicting statistics around young people’s voting
+habits during this year’s EU referendum, but a report by the London
+School of Economics revealed that 64% of young people registered to
+vote, did actually vote. That’s the highest turnout in two decades.”
+Having been involved with the Speak For Yourself project working with young
+people across the West Midlands we can vouch for the fact that 13 to 19 year olds
+from a range of backgrounds have worthwhile opinions on all areas of politics,
+social policy, the media, their home areas and much more besides. Not only that
+but they really want opportunities to air those opinions.
+For broadcast journalists the task of involving young people is complicated further
+by working to a given audience. So if your listeners are 55 plus where do under 20s
+fit into your news coverage?
+So just as in the chapter on older people, here are some questions to think about.
+What comes into your head when you think of young(er) people?
+Just because you’re in your early 20s, don’t assume they are all like you or care
+about the topics which interest you.
+Are there subjects which don’t work for a younger audience?
+The short answer is ‘no’.
+Just consider the current crop of stories about the collapse of the care system.
+It would be easy to dismiss them as irrelevant to an 18-year-old but they have
+
+-- 61 of 66 --
+
+Young People 55
+grandparents who are directly affected. More broadly young people care about
+social justice and fairness.
+After all you wouldn’t think twice about interviewing an older person about an
+issue in education.
+*Where can I find younger people to talk to?
+Allowing for guidelines on approaching and working with younger people, the key
+may be to think what kind of interviewees you are looking for. You’ll find different
+opinions and responses outside a school or college to those you might get at a skate
+park or local football pitch
+Social media is an invaluable tool for learning what issues are engaging younger
+people – and for contacting them.
+The next time you are taking part in a newsday or you are asked to find a story or an
+interviewee look deliberately for a story that will resonate with a younger audience
+Or think how you can use younger faces and voices in a story which might not seem
+directly relevant to them.
+Remember, too, when you play back your efforts if anything sounds condescending
+or like you are straining to reach out to an alien group then ditch it and come up
+with something else.
+
+-- 62 of 66 --
+
+14. Acknowledgements
+Grateful thanks go first and foremost to the busy journalists who kindly said yes to
+us when asked to contribute an article.
+Thanks too to our other contributors who were equally generous with their time
+and knowledge. Special thanks are due to Evadney Campbell and Paul Bradshaw for
+valuable advice.
+Thanks to the Birmingham School of Media for giving us time to put this together
+and Birmingham City University colleague David Osbaldestin who enabled us to use
+the services of talented BA Design graduate Taylor Lantelli.
+Thanks go also to news organisations and others whose articles and research are
+used in the links offered in this book.
+
+-- 63 of 66 --
+
+Acknowledgements 57
+About the Editors:
+bob.calver@bcu.ac.uk
+diane.kemp@bcu.ac.uk
+
+-- 64 of 66 --
+
+Acknowledgements 58
+About BCU/BJTC
+Birmingham City University
+With more than 24,000 students from 80 countries, Birmingham City University
+is a large, diverse and increasingly popular place to study situated in the heart of
+Britain’s second city. Its early history can be traced back to its five individual colleges
+including the Birmingham Government School of Design opened in 1843, which
+would be brought together as The City of Birmingham Polytechnic in 1971.
+The University has four faculties. One of which, Arts, Design and Media, houses
+the Birmingham School of Media.
+www.bcu.ac.uk
+Birmingham City University recently appointed Sir Lenny Henry as Chancellor.
+He has said of the appointment:
+‘Exporting ideas of diversity, equality and creativity is a concept very close to my
+heart, and the deciding factor for me, when accepting this post, is that Birmingham
+City University share those ideas.’
+Broadcast Journalism Training Council
+The Broadcast Journalism Training Council (BJTC) works in partnership with
+leading media employers in the UK broadcast industry; BBC, ITV, ITN, Associated
+Press, Sky News, Channel 4 News, National Union of Journalists, Thomson Reuters
+and Radiocentre.
+www.bjtc.org.uk
+‘Our primary responsibility is to accredit UK journalism courses. Our Council
+members are all experienced employers and trainers who participate in forum
+meetings to discuss the development of training programmes, to improve the skills
+and knowledge across the Broadcast Journalism industry. Together they set the
+criteria for accrediting courses, then teams of professional journalists and tutors
+advise and review the courses. Our accreditation standards are based on direct and
+practical experience and all accredited courses are valued by teachers and students,
+employers and employees, as they are relevant and responsive to the operational
+demands of the multiplatform media industry’.
+
+-- 65 of 66 --
+
+Acknowledgements 59
+Further reading
+We would like to encourage people to share resources in the field of inclusive
+reporting.
+Please email the authors if you have links to examples, good practice guides and
+exercises.
+In the meantime, there are various useful websites and resources to use, some of
+which have already been referred to earlier in this publication:
+www.implicit.Harvard.edu
+www.nuj.org.uk
+www.suttontrust.com
+www.dlf.org.uk
+www.disabilityrightsuk.org
+www.equalityhumanrights.com
+www.bbc.co.uk
+www.ons.gov.uk
+www.jrf.org.uk
+www.migrantsrights.ord.uk
+Channel 4 – 360
+www.stonewall.org.uk
+www.creativediversitynewtwork.com
+www.leonmann.co.uk
+www.media-diversity.org
+www.coe.int
+www.coe.int
+www.youtu.be
+www.youtu.be
+
+-- 66 of 66 --
+

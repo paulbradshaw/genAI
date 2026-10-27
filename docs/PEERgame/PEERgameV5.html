@@ -503,8 +503,8 @@ const LEVELS = [
       { genre: "Sport", format: "Feature", lead: "The day I walked out at a cup final", source: "Mel Duggan, former footballer who played in two cup finals", av: "s2 ponytail h=brown kit c=red", ask: "What does it feel like to walk out of the tunnel on final day?", answer: "experience", why: "Same person, different question. Now she describes a first-hand experience rather than analysing tactics." },
       { genre: "Arts", format: "News", lead: "Campaign launched to save school libraries", source: "Femi Adeyemi, bestselling children’s author with two million followers", av: "s5 locs h=black jumper c=mustard glasses", ask: "Will you use your platform to call on the government to protect library funding?", answer: "power", why: "An author can be a voice of expertise, but here they are using cultural and mobilisation power to call for action." },
       { genre: "Community", format: "News", lead: "Parents angry at parking fines outside primary school", source: "Gareth Price, admin of a 12,000-member local parents’ Facebook group", av: "s1 short h=brown hoodie c=navy stubble", ask: "What concerns are members raising most often?", answer: "rep", why: "A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them." },
-      { genre: "Health", format: "News", lead: "Nurses at the city hospital vote on strike action", source: "Marites Santos, nurse and union steward at the city hospital", av: "s3 bun h=black scrubs c=navy earrings", ask: "How do your members feel about the latest pay offer?", answer: "rep", why: "As an elected steward she speaks for union members on her site. She is a nurse, but the question is about members’ views, not her own." },
-      { genre: "Health", format: "Feature", lead: "Leaving home to nurse in the NHS: the international recruits keeping wards open", source: "Marites Santos, nurse and union steward at the city hospital", av: "s3 bun h=black scrubs c=navy earrings", ask: "What was your first winter on the ward like after arriving from the Philippines?", answer: "experience", why: "Same person, different question. Now she is describing her own experience of moving to the UK to work, so she is an experience source." }
+      { genre: "Transport", format: "News", lead: "Road bridge closed after cracks found in supporting pier", source: "Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers", av: "s3 bun h=black hivis earrings", ask: "What can cause cracks like these, and how serious could they be?", answer: "expertise", why: "She has no responsibility for this bridge, so she can give independent expert insight into what the cracks might mean. The council that owns the bridge is the source of power." },
+      { genre: "Business", format: "News", lead: "Engineering firms struggle to recruit graduates", source: "Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers", av: "s3 bun h=black hivis earrings", ask: "What are members across the region telling you about recruitment?", answer: "rep", why: "Same person, different question. As regional chair of a professional body she is speaking for its members, so here she is a representative." }
     ]
   },
   {
@@ -524,7 +524,7 @@ const LEVELS = [
         options: [
           { id: "a", source: "Harry Singh Gill, police and crime commissioner", av: "s4 turban h=navy suit c=navy beard", ask: "What resources are being put into tackling retail crime across the county, including in rural areas?", tag: "Best choice: Power", note: "The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply." },
           { id: "b", source: "Shoppers on the high street", av: CROWD, ask: "Do you feel safe shopping in town?", tag: WEAK.vox, note: "Opinions from random passers-by don’t answer any of the story’s questions." },
-          { id: "c", source: "Linh Nguyen, who runs a nail salon in the same village", av: "s2 long h=black tshirt c=pink", ask: "Have you been targeted too?", tag: WEAK.dup, note: "A second case study adds colour but doesn’t fill the gap: nobody is being held to account." },
+          { id: "c", source: "Linh Nguyen, who runs the bakery in the same village", av: "s2 long h=black tshirt c=mustard", ask: "Have you been targeted too?", tag: WEAK.dup, note: "A second case study adds colour but doesn’t fill the gap: nobody is being held to account." },
           { id: "d", source: "Your uncle, a retired police officer", av: "s1 bald h=grey jumper c=navy moustache lines", ask: "Why don’t police turn up to shoplifting any more?", tag: WEAK.friend, note: "Family members are not independent sources, and a retired officer has no power over current policy." }
         ], why: "Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply.",
         widen: "Crime coverage tends to focus on cities. Ask the commissioner how the figures compare for rural and urban areas, and whether police response times differ." },
@@ -840,7 +840,7 @@ const LEVELS = [
           { id: "c", source: "Commuter with ME who books passenger assistance, found via a passenger forum", av: "s3 hijab h=teal tshirt c=navy", ask: "What happens when your train is cancelled at short notice?", type: "experience", note: "Shows the impact. For passengers who book assistance, a cancellation can mean missed help and long waits, not just lateness. Forums are a good place to find people affected." },
           { id: "d", source: "General secretary of the train drivers’ union", av: "s1 bald h=grey hivis beard lines", ask: "Why are there not enough drivers?", type: "rep", note: "Speaks for drivers and can explain the shortage from their side." },
           { id: "e", source: "Head of the independent passenger watchdog", av: "s4 long h=black blazer c=plum hearing", ask: "How many complaints have you received this week?", type: "rep", note: "Represents passengers and can say how widespread the problem is." },
-          { id: "f", source: "Transport academic who studies rail staffing", av: "s1 curly h=auburn jumper c=teal freckles", ask: "Is this shortage a one-off or a long-term trend?", type: "expertise", note: "Independent context on whether things are getting better or worse." },
+          { id: "f", source: "Dr Anh Tran, transport academic who studies rail staffing", av: "s2 bob h=black jumper c=teal glasses", ask: "Is this shortage a one-off or a long-term trend?", type: "expertise", note: "Independent context on whether things are getting better or worse." },
           { id: "g", source: "People waiting on the platform", av: CROWD, ask: "Are you annoyed?", type: null, tag: WEAK.vox, note: "Of course they are. That tells readers nothing new." },
           { id: "h", source: "Your dad, who commutes by train", av: "s5 bald h=grey jumper c=grey moustache lines", ask: "Has your train been cancelled?", type: null, tag: WEAK.friend, note: "Family members aren’t independent sources." }
         ],
@@ -891,14 +891,12 @@ const WHO = {
   "s2 ponytail h=brown kit c=red": "Woman|30–44|White|White British|None shown|Not shown||",
   "s5 locs h=black jumper c=mustard glasses": "Man|30–44|Black|Black African (Nigerian)|None shown|Not shown||",
   "s1 short h=brown hoodie c=navy stubble": "Man|30–44|White|White British|None shown|Not shown||",
-  "s3 bun h=black scrubs c=navy earrings": "Woman|30–44|Asian|Filipino|None shown|Not shown||",
   "s3 short h=black tshirt c=grey": "Man|30–44|Asian|Indian|Yes, hidden (ADHD)|Not shown||",
   "s2 curly h=auburn tshirt c=lilac": "Woman|18–29|White|White British|Yes, hidden (ADHD)|Not shown||",
   "s6 buzz h=black jumper c=teal glasses": "Man|30–44|Black|Black British|None shown|Not shown||",
   "s2 bob h=blonde blazer c=navy": "Woman|30–44|White|White British|None shown|Not shown||",
   "s4 curly h=black shirt c=sky": "Woman|30–44|Mixed|White and Black Caribbean|None shown|Not shown||",
   "s4 turban h=navy suit c=navy beard": "Man|30–44|Asian|Indian (Sikh)|None shown|Not shown|Sikh|",
-  "s2 long h=black tshirt c=pink": "Woman|30–44|Asian|Vietnamese|None shown|Not shown||",
   "s1 bald h=grey jumper c=navy moustache lines": "Man|65+|White|White British|None shown|Not shown||",
   "s5 afro h=black blazer c=rust glasses": "Man|30–44|Black|Black British|None shown|Not shown||",
   "s1 bob h=blonde suit c=navy notie": "Woman|30–44|White|White British|None shown|Not shown||",
@@ -973,7 +971,6 @@ const WHO = {
   "s3 hijab h=teal tshirt c=navy": "Woman|30–44|Asian|Pakistani|Yes, hidden (ME)|Not shown|Muslim|",
   "s1 bald h=grey hivis beard lines": "Man|45–64|White|White British|None shown|Not shown||",
   "s4 long h=black blazer c=plum hearing": "Woman|30–44|Asian|South Asian|Yes, visible (hearing aid)|Not shown||",
-  "s1 curly h=auburn jumper c=teal freckles": "Woman|30–44|White|White British|None shown|Not shown||",
   "s5 bald h=grey jumper c=grey moustache lines": "Man|45–64|Black|Black British|None shown|Not shown||",
   "s1 short h=blonde blazer c=navy": "Woman|30–44|White|White British|None shown|Not shown||",
   "s6 braids h=black blazer c=green glasses": "Woman|30–44|Black|Black British|None shown|Not shown||",
@@ -995,7 +992,10 @@ const WHO = {
   "s4 curly h=black hoodie c=teal pride": "Man|18–29|Mixed|White and Asian|None shown|Yes||",
   "s3 bob h=black blazer c=green glasses": "Woman|30–44|Asian|Indian|None shown|Not shown||",
   "s1 short h=brown shirt c=teal beard pride": "Man|30–44|White|White British|None shown|Yes||",
-  "s1 quiff h=brown tshirt c=red pride": "Man|18–29|White|White British|None shown|Yes||"
+  "s1 quiff h=brown tshirt c=red pride": "Man|18–29|White|White British|None shown|Yes||",
+  "s2 long h=black tshirt c=mustard": "Woman|30–44|Asian|Vietnamese|None shown|Not shown||",
+  "s3 bun h=black hivis earrings": "Woman|30–44|Asian|Filipino|None shown|Not shown||",
+  "s2 bob h=black jumper c=teal glasses": "Woman|30–44|Asian|Vietnamese|None shown|Not shown||"
 };
 /*END DATA*/
 

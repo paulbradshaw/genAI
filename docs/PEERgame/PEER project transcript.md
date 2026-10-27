@@ -128,4 +128,68 @@ I've fixed the glasses on the pixel characters. They looked like a solid black b
 
 ### Response 6
 
-Created this file, `PEER project transcript.md`.
+The transcript is ready to download. All your prompts appear word for word. My first two replies are summaries rather than exact text, as their original wording is no longer available, and the file marks where that applies. The later replies match what I wrote in chat.
+
+---
+
+## Prompt 7
+
+> Here's the book Everybody In. This should flesh out the bare facts I provided about the lack of diversity in various professions. Update the new level to reflect the expanded information you now have.
+
+*(Attachment: Everybody In, Calver, Kemp and Ryder, 2017)*
+
+### Response 7
+
+I've updated level 4, "Widen the net", using Everybody In. It now has 8 questions instead of 5.
+
+**Three new questions:**
+- **Gender:** a business school press office offers the same male economist again. The fact box gives the City University monitoring (male experts outnumbered women on flagship news by 4 to 1, later nearer 3 to 1) and the wider ratio of about 2.5 to 1 in law, academia and cabinet. The best choice is asking for a woman and being ready to persuade her. Two wrong answers are "balance it with a vox pop of women" and dropping the expert.
+- **Class and accent:** a care home manager with 15 years' experience has a strong regional accent. The fact box gives the Sutton Trust figures on privately educated journalists and the book's question "Are you equating accent or manner with expertise?". Wrong answers include treating her as a case study because of her accent.
+- **Ethnicity:** the same community spokesman is quoted on exclusions, policing and housing. The fact box gives the 94% white journalists figure and the book's "Rent-A-Quote" point. The best choice is community and parents' groups plus researchers. Wrong answers include relying on the newsroom's only Black reporter to find someone.
+
+**Other changes:**
+- The policing question now adds the book's figure of 6.9 million working-age disabled people (19% of the working population), set against the police figure of 1.9%. It also quotes the line that disabled people are "spoken about, but not often listened to".
+- The level intro now credits the book, and its entry in the resource list describes the chapters.
+- The answer key and JSON are updated to match.
+
+The book was published in 2017, so its figures are dated. For example, the Sutton Trust study is from 2006 and the 94% figure is from 2016. The fact boxes give these dates, but you may want newer data. For the exclusions story lead, I relied on my general knowledge of UK exclusion figures; the book doesn't cover it, so that one needs checking too.
+
+---
+
+## Prompt 8
+
+> Here is some more material on diversity and sourcing. Incorporate this into the game design.
+
+*(Attachments: Ed Yong, "I Spent Two Years Trying to Fix the Gender Imbalance in My Stories", The Atlantic; "You're probably not quoting enough women. Let us help you.", Columbia Journalism Review; "Tips to enhance the diversity of women in your reporting", IJNet; Adamson, Malik, Okeke and Bayley-Hay (2026), "This is how journalism has always been done": White neutrality, newsroom norms, and an AI intervention in source diversification; Masini et al., "Measuring and Explaining the Diversity of Voices and Viewpoints in the News", Journalism Studies; plus the earlier PEER blog posts)*
+
+### Response 8
+
+I've added the new articles to the game as **level 5, "Check your habits"**, so there are now seven levels.
+
+**Level changes:**
+- **Level 4, "Widen the net"**, now has 6 questions about where to look for sources.
+- **Level 5, "Check your habits"**, has 8 questions about habits that narrow who gets heard, at 3 points each. The interest rates and accent questions moved here from level 4.
+
+**Six new questions in level 5:**
+- **Roles, not just numbers:** a gene therapy story where the experts are all men and the only woman is a parent. This is based on Ed Yong's gene-editing story.
+- **Track your sources:** Yong's spreadsheet figures (24% women rising to 50%, about 15 minutes per piece) and the Global Media Monitoring Project's 24% figure.
+- **Who you contact:** only the men replied. This uses Yong's 1.3 v 1.6 contact rates and Anna Fifield's experience from the CJR piece.
+- **Deadline defaults:** a death after police restraint, based on the 2026 Adamson et al. newsroom study. It covers official framing and not making minority colleagues the "educators".
+- **One type of actor:** a visa story with two politicians, based on Masini et al.'s finding that about half of immigration articles quote only one type of actor.
+- **Intersectionality and language:** tradeswomen who are all white and in their thirties. This covers asking about pronouns and the "womxn" problem, from the IJNet piece.
+
+**Other changes:**
+- The resource list now includes SheSource, Informed Opinions, Quote This Woman+, Request a Woman Scientist and Diverse Sources, plus a tip about tracking your sources. The links come from the articles.
+- The answer key and JSON are updated, and the answer key now lists the sources behind each research box.
+
+The research boxes mix countries: the Adamson study is Canadian, and the Fifield example and Crenshaw's suspension figure are from the US. You may want to point this out to students or swap in UK data.
+
+---
+
+## Prompt 9
+
+> Generate a new transcript of the prompts and responses so far
+
+### Response 9
+
+Updated this file, `PEER project transcript.md`, to include prompts 7 to 9.

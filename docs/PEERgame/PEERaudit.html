@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>PEER: source diversity audit</title>
+<link rel="stylesheet" href="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/styles.css">
+<script src="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/_ds_bundle.js"></script>
+<script src="peer-audit.js"></script>
+<style>body{margin:0;background:var(--color-bg)} a{color:var(--color-accent-700)} a:hover{color:var(--color-accent-800)} button{font:inherit;color:inherit}</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;background-color:var(--color-bg);color:var(--color-text);font-family:var(--font-body);background-image:linear-gradient(color-mix(in srgb, var(--color-text) 4%, transparent) 1px, transparent 1px),linear-gradient(90deg, color-mix(in srgb, var(--color-text) 4%, transparent) 1px, transparent 1px);background-size:40px 40px;">
+  <header class="nav" style="border-bottom:1px solid var(--color-divider);background:var(--color-bg);padding:12px 24px;flex-wrap:wrap;gap:16px;">
+    <div class="nav-brand" style="display:flex;align-items:baseline;gap:12px;font-size:24px;letter-spacing:0.04em;">PEER<span style="font-family:var(--font-body);font-weight:400;font-size:13px;letter-spacing:0;color:var(--color-neutral-700);white-space:nowrap;">Source diversity audit</span></div>
+    <a href="./PEER%20Source%20Game%20v2.dc.html" class="btn btn-ghost" style="text-decoration:none;">Play again</a>
+  </header>
+
+  <main style="flex:1;width:100%;max-width:1200px;margin:0 auto;padding:32px 24px 64px;display:flex;flex-direction:column;gap:36px;box-sizing:border-box;">
+    <section data-screen-label="Intro" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px;align-items:end;">
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">Practice: track your sources</div>
+        <h1 style="font-size:60px;line-height:0.95;margin:0;text-wrap:balance;">Who is in this game?</h1>
+        <p style="font-size:17px;margin:0;max-width:60ch;text-wrap:pretty;">The game tells reporters to keep a record of who they contact and quote, and to review it. This page does the same for the game itself. Every character who appears as a source is listed below with the characteristics they were cast with, then counted.</p>
+        <p style="font-size:14px;margin:0;max-width:62ch;color:var(--color-neutral-700);text-wrap:pretty;">These are the characteristics the designer gave each character. With real sources, don’t guess: record what people tell you about themselves, or what is on the public record, and only where it is relevant and they are comfortable with it.</p>
+      </div>
+      <div class="card blueprint" style="padding:20px;gap:14px;">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display:flex;gap:28px;flex-wrap:wrap;">
+          <div style="display:flex;flex-direction:column;"><span style="font-family:var(--font-heading);font-weight:600;font-size:48px;line-height:1;">{{ peopleCount }}</span><span style="font-size:13px;color:var(--color-neutral-700);">people counted</span></div>
+          <div style="display:flex;flex-direction:column;"><span style="font-family:var(--font-heading);font-weight:600;font-size:48px;line-height:1;">{{ rowCount }}</span><span style="font-size:13px;color:var(--color-neutral-700);">appearances</span></div>
+        </div>
+        <label style="display:flex;gap:10px;align-items:center;font-size:14px;cursor:pointer;">
+          <input type="checkbox" checked="{{ includeScenes }}" onChange="{{ toggleScenes }}" style="width:18px;height:18px;accent-color:var(--color-accent-700);">
+          <span>Include scenario figures (levels 4 and 5). These are deliberately similar, to show a problem.</span>
+        </label>
+        <button class="btn btn-primary blueprint" onClick="{{ downloadCsv }}" style="padding:12px 18px;font-size:16px;justify-content:center;">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          Download the audit as CSV
+        </button>
+      </div>
+    </section>
+
+    <sc-if value="{{ loading }}" hint-placeholder-val="{{ false }}">
+      <div style="font-size:15px;color:var(--color-neutral-700);">Loading sources from the game…</div>
+    </sc-if>
+    <sc-if value="{{ loadError }}" hint-placeholder-val="{{ false }}">
+      <div style="font-size:15px;color:oklch(0.5 0.13 25);">{{ loadError }}</div>
+    </sc-if>
+
+    <section data-screen-label="Breakdown" style="display:flex;flex-direction:column;gap:16px;">
+      <h2 style="margin:0;font-size:36px;">Breakdown</h2>
+      <div style="font-size:13px;color:var(--color-neutral-700);">Each bar counts people, not appearances. The marker shows the share of the population in England and Wales, where a comparison is available.</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px;">
+        <sc-for list="{{ dims }}" as="d" hint-placeholder-count="6">
+          <div class="card blueprint" style="padding:18px;gap:12px;">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <h4 style="margin:0;">{{ d.title }}</h4>
+            <sc-for list="{{ d.rows }}" as="r" hint-placeholder-count="4">
+              <div style="display:flex;flex-direction:column;gap:4px;">
+                <div style="display:flex;justify-content:space-between;gap:8px;font-size:13px;"><span>{{ r.label }}</span><span style="font-weight:600;">{{ r.count }} · {{ r.pct }}</span></div>
+                <div style="position:relative;height:10px;border:1px solid var(--color-divider);">
+                  <div style="position:absolute;left:0;top:0;bottom:0;width:{{ r.width }};background:var(--color-accent-500);"></div>
+                  <sc-if value="{{ r.hasBench }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-3px;bottom:-3px;width:2px;left:{{ r.benchLeft }};background:var(--color-text);"></div></sc-if>
+                </div>
+                <sc-if value="{{ r.hasBench }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;color:var(--color-neutral-700);">Population: {{ r.bench }}</span></sc-if>
+              </div>
+            </sc-for>
+            <span style="font-size:11px;color:var(--color-neutral-600);">{{ d.source }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-screen-label="Findings" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:28px;align-items:start;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-size:36px;">What the audit shows</h2>
+        <sc-for list="{{ findings }}" as="f" hint-placeholder-count="5">
+          <div style="display:flex;gap:12px;font-size:15px;padding:10px 0;border-bottom:1px solid var(--color-divider);">
+            <span style="font-family:var(--font-heading);font-weight:600;color:var(--color-accent-700);">{{ f.n }}</span>
+            <span style="text-wrap:pretty;">{{ f.text }}</span>
+          </div>
+        </sc-for>
+        <div style="font-size:12px;color:var(--color-neutral-700);">Findings exclude scenario figures and were written for the current set of questions.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-size:36px;">Who gets which role</h2>
+        <div style="font-size:13px;color:var(--color-neutral-700);">Appearances as a good source only (best answers, good choices, draft sources and named sources in scenarios), counted by PEER role. Weak options are counted separately.</div>
+        <sc-for list="{{ crossTabs }}" as="ct" hint-placeholder-count="2">
+          <table class="table" style="width:100%;font-size:13px;">
+            <thead><tr>
+              <th style="text-align:left;">{{ ct.title }}</th>
+              <sc-for list="{{ ct.cols }}" as="c" hint-placeholder-count="5"><th style="text-align:right;">{{ c.label }}</th></sc-for>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ ct.rows }}" as="r" hint-placeholder-count="3">
+                <tr><td>{{ r.label }}</td><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="5"><td style="text-align:right;font-weight:{{ c.weight }};">{{ c.v }}</td></sc-for></tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-screen-label="All sources" style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;">
+        <h2 style="margin:0;font-size:36px;">All sources</h2>
+        <div style="display:flex;border:1px solid var(--color-divider);">
+          <sc-for list="{{ filterOpts }}" as="o" hint-placeholder-count="4">
+            <button onClick="{{ o.onClick }}" style="border:0;padding:8px 12px;cursor:pointer;font-size:13px;background:{{ o.bg }};color:{{ o.fg }};">{{ o.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="overflow-x:auto;border:1px solid var(--color-divider);background:var(--color-bg);">
+        <table class="table" style="width:100%;min-width:980px;font-size:13px;">
+          <thead><tr>
+            <th style="text-align:left;width:64px;"></th>
+            <th style="text-align:left;">Source</th>
+            <th style="text-align:left;">Appears in</th>
+            <th style="text-align:left;">Gender</th>
+            <th style="text-align:left;">Age</th>
+            <th style="text-align:left;">Ethnicity</th>
+            <th style="text-align:left;">Disability</th>
+            <th style="text-align:left;">LGBTQ+</th>
+            <th style="text-align:left;">Faith shown</th>
+            <th style="text-align:left;">Rural</th>
+          </tr></thead>
+          <tbody>
+            <sc-for list="{{ peopleRows }}" as="p" hint-placeholder-count="8">
+              <tr>
+                <td style="vertical-align:top;">{{ p.avatar }}</td>
+                <td style="vertical-align:top;max-width:260px;"><div style="display:flex;flex-direction:column;gap:2px;"><span style="font-weight:600;">{{ p.name }}</span><span style="font-size:11px;color:var(--color-neutral-600);">{{ p.id }}</span></div></td>
+                <td style="vertical-align:top;max-width:300px;">
+                  <div style="display:flex;flex-direction:column;gap:6px;">
+                    <sc-for list="{{ p.apps }}" as="ap" hint-placeholder-count="1">
+                      <div style="display:flex;flex-direction:column;gap:1px;"><span><b>{{ ap.q }}</b> {{ ap.appears }}{{ ap.roleText }}</span><span style="font-size:11px;color:var(--color-neutral-700);">{{ ap.lead }}</span></div>
+                    </sc-for>
+                  </div>
+                </td>
+                <td style="vertical-align:top;">{{ p.gender }}</td>
+                <td style="vertical-align:top;white-space:nowrap;">{{ p.age }}</td>
+                <td style="vertical-align:top;">{{ p.eth }}</td>
+                <td style="vertical-align:top;">{{ p.disability }}</td>
+                <td style="vertical-align:top;">{{ p.lgbtq }}</td>
+                <td style="vertical-align:top;">{{ p.faith }}</td>
+                <td style="vertical-align:top;">{{ p.rural }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:12px;color:var(--color-neutral-700);max-width:80ch;">Not counted: anonymous vox pops and social media posts. Class, religion (beyond visible dress), sexuality (beyond a visible badge), rural or urban background and many disabilities can’t be seen. The audit only records them where the story says so, which is part of what it shows.</div>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const BENCH = {
+  gender: { Woman: 51.0 },
+  ethnicity: { White: 81.7, Asian: 9.3, Black: 4.0, Mixed: 2.9, Other: 2.1 },
+  disability: { "Disabled": 17.8 },
+  lgbtq: { "LGBTQ+ shown": 3.2 },
+  age: { "65+": 18.6 },
+  rural: { "Rural or small town": 17 }
+};
+const DIMS = [
+  { key: "gender", title: "Gender", order: ["Woman", "Man", "Non-binary"], source: "Population: Census 2021, England and Wales (ONS)." },
+  { key: "ethnicity", title: "Ethnicity", order: ["White", "Asian", "Black", "Mixed", "Other"], source: "Population: Census 2021, England and Wales (ONS). Asian includes Chinese, Filipino, Korean and Vietnamese. Other includes Arab." },
+  { key: "age", title: "Age", order: ["Under 18", "18–29", "30–44", "45–64", "65+"], source: "Population (65+): Census 2021, England and Wales (ONS)." },
+  { key: "disability", title: "Disability", map: v => v.indexOf("Yes") === 0 ? "Disabled" : "None shown", order: ["Disabled", "None shown"], source: "Population: Census 2021, England and Wales (ONS), disabled under the Equality Act." },
+  { key: "lgbtq", title: "LGBTQ+", map: v => v === "Yes" ? "LGBTQ+ shown" : "Not shown", order: ["LGBTQ+ shown", "Not shown"], source: "Population: Census 2021, England and Wales (ONS), 3.2% of people aged 16+ identify as LGB+." },
+  { key: "rural", title: "Rural or small town", map: v => v === "Yes" ? "Rural or small town" : "Not stated", order: ["Rural or small town", "Not stated"], source: "Population: about 17% of people in England live in rural areas (Defra)." }
+];
+const FINDINGS = [
+  "The cast is not dominated by white men. Without scenario figures, 44 of 86 people are women, 2 are non-binary, and 46 are from minority ethnic groups. Minority groups are over-represented compared with the population, which is a deliberate choice for a game about under-represented voices.",
+  "Power and expertise are shared out. Women hold 9 of the 16 power appearances and 15 of the 20 expertise appearances. Black and Asian sources hold 12 power appearances and 9 expertise appearances.",
+  "Friends and family are mostly white: 9 of the 12 ‘friend or family’ characters. Journalists and journalism students are disproportionately white, so the people they know personally are likely to be too. Unlike experts, this is a group reporters can’t widen with the strategies in the game, which is another reason not to rely on it.",
+  "Disability is still under-represented: 10 of 86 people (12%), against 17.8% of the population. Half of these disabilities are hidden (ADHD, autism, long Covid, ME) and half are visible (wheelchairs, hearing aids).",
+  "Rural voices are thin: 4 of 86 people (5%), against about 17% of England’s population. LGBTQ+ people are 9 of 86 (10%), above the population figure, mostly because of the Pride and supporters’ group questions. Class isn’t recorded at all, because it rarely shows unless the story mentions it. A real source audit has the same problem: you can only count what you know.",
+  "Ages cluster in the middle: 51 of 86 people are 30–44. Older people (65+) appear 9 times and younger adults (18–29) 8 times."
+];
+
+class Component extends DCLogic {
+  state = { data: null, error: null, includeScenes: false, filter: "all" };
+  componentDidMount() {
+    fetch("./PEER%20Source%20Game%20v2.dc.html").then(r => r.text()).then(h => {
+      const a = h.indexOf("const T = {"), b = h.indexOf("class Component");
+      const D = new Function("React", h.slice(a, b) + "; return {T, LEVELS, WHO, CROWD, avatar};")(React);
+      const audit = window.PEERAudit.build(D.LEVELS, D.T, D.WHO, D.CROWD);
+      this.setState({ data: Object.assign({ avatar: D.avatar }, audit) });
+    }).catch(e => this.setState({ error: "Couldn’t load sources from the game: " + e.message }));
+  }
+  renderVals() {
+    const s = this.state, d = s.data;
+    const rowsAll = d ? d.rows : [];
+    const rows = s.includeScenes ? rowsAll : rowsAll.filter(r => r.appears !== "Scenario figure");
+    const ids = []; rows.forEach(r => { if (!ids.includes(r.id)) ids.push(r.id); });
+    const people = ids.map(id => ({ id, rows: rows.filter(r => r.id === id) }));
+    const first = people.map(p => p.rows[0]);
+    const n = first.length || 1;
+    const pct = c => Math.round((c / n) * 100) + "%";
+    const dims = DIMS.map(D => {
+      const counts = {};
+      first.forEach(r => { const v = D.map ? D.map(r[D.key]) : r[D.key]; counts[v] = (counts[v] || 0) + 1; });
+      const order = D.order.filter(k => counts[k] || (BENCH[D.key] && BENCH[D.key][k] != null));
+      return {
+        title: D.title, source: D.source,
+        rows: order.map(k => {
+          const b = BENCH[D.key] && BENCH[D.key][k];
+          return { label: k, count: counts[k] || 0, pct: pct(counts[k] || 0), width: ((counts[k] || 0) / n * 100) + "%", hasBench: b != null, bench: b != null ? b + "%" : "", benchLeft: b != null ? "calc(" + b + "% - 1px)" : "0" };
+        })
+      };
+    });
+    const good = rowsAll.filter(r => ["Best answer", "Good choice", "Draft source", "Scenario source"].includes(r.appears));
+    const ROLES = ["Power", "Expertise", "Experience", "Representative"];
+    const tab = (title, key, order) => {
+      const cols = ROLES.concat(["Weak option"]);
+      const weak = rowsAll.filter(r => r.appears === "Weak option");
+      const rowsT = order.map(g => {
+        const cells = ROLES.map(R => good.filter(r => r[key] === g && r.role === R).length).concat([weak.filter(r => r[key] === g).length]);
+        const max = Math.max.apply(null, cells.slice(0, 4));
+        return { label: g, cells: cells.map((v, i) => ({ v, weight: i < 4 && v === max && v > 0 ? 700 : 400 })) };
+      }).filter(r => r.cells.some(c => c.v));
+      return { title, cols: cols.map(c => ({ label: c === "Representative" ? "Rep." : c })), rows: rowsT };
+    };
+    const FILTERS = [["all", "All"], ["named", "Named"], ["minority", "Minority ethnic"], ["disabled", "Disabled"]];
+    const filtered = people.filter(p => {
+      const r = p.rows[0];
+      if (s.filter === "named") return /^[A-Z][a-z]+ [A-Z]|^(Dr|Professor|Chief) /.test(r.source) && !/^(The |Your |A |An )/.test(r.source);
+      if (s.filter === "minority") return r.ethnicity !== "White";
+      if (s.filter === "disabled") return r.disability.indexOf("Yes") === 0;
+      return true;
+    });
+    const csvRows = rows;
+    return {
+      loading: !d && !s.error, loadError: s.error || "",
+      peopleCount: first.length, rowCount: rows.length,
+      includeScenes: s.includeScenes, toggleScenes: () => this.setState({ includeScenes: !s.includeScenes }),
+      downloadCsv: () => {
+        if (!d) return;
+        const blob = new Blob(["\ufeff" + window.PEERAudit.csv(csvRows)], { type: "text/csv;charset=utf-8" });
+        const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "PEER source diversity audit.csv"; document.body.appendChild(a); a.click(); a.remove();
+      },
+      dims,
+      findings: FINDINGS.map((t, i) => ({ n: String(i + 1).padStart(2, "0"), text: t })),
+      crossTabs: [tab("Gender", "gender", ["Woman", "Man", "Non-binary"]), tab("Ethnicity", "ethnicity", ["White", "Asian", "Black", "Mixed", "Other"])],
+      filterOpts: FILTERS.map(f => ({ label: f[1], onClick: () => this.setState({ filter: f[0] }), bg: s.filter === f[0] ? "var(--color-accent-700)" : "transparent", fg: s.filter === f[0] ? "var(--color-bg)" : "var(--color-text)" })),
+      peopleRows: filtered.map(p => {
+        const r = p.rows[0];
+        return {
+          id: p.id, name: r.source, avatar: d ? d.avatar(r.spec, 48) : null,
+          apps: p.rows.map(x => ({ q: x.q, appears: x.appears, roleText: x.role ? ": " + x.role : (x.note ? ": " + x.note : ""), lead: x.lead })),
+          gender: r.gender, age: r.age, eth: r.ethnicityDetail === r.ethnicity ? r.ethnicity : r.ethnicity + ": " + r.ethnicityDetail,
+          disability: r.disability, lgbtq: r.lgbtq, faith: r.faith || "–", rural: r.rural || "–"
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

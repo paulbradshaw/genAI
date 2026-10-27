@@ -28,11 +28,11 @@ Explanation: Someone affected by the issue can put a human face to it and answer
 
 ### 1.4 Bus company cuts evening services across the region (Transport, News)
 
-- Source: Siobhan Kelly, regional secretary of the transport workers’ union
-- Ask: "How do drivers feel about the changes to their shifts?"
+- Source: Gwen Pritchard, chair of the parish council in a village losing its last evening bus
+- Ask: "How many residents have told you they can no longer get to work or appointments?"
 - **Answer: Representative**
 
-Explanation: A union can speak formally on behalf of its members, and its leaders are elected. They give the reaction of a whole group, not one person.
+Explanation: A parish council is elected to speak for its village, so it can say how widespread the problem is. Bus cuts can hit rural areas hardest, where there may be no alternative, and those residents are easy to miss from a city newsroom.
 
 ### 1.5 River declared unsafe for swimming after sewage spill (Environment, News)
 
@@ -58,11 +58,19 @@ Explanation: Sports governing bodies have legal power: they make and enforce the
 
 Explanation: The residents’ association speaks for a wider group and can tell you how widespread the problem is, which one tenant cannot.
 
+### 1.8 Patients in rural villages wait three weeks for a GP appointment (Health, News)
+
+- Source: Dr Kevin Lam, GP and chair of the county’s local medical committee, which represents GPs
+- Ask: "What are GPs across the county telling you about their workload?"
+- **Answer: Representative**
+
+Explanation: Local medical committees are elected to speak for GPs in their area. Dr Lam is a GP, but here he is asked about the experience of GPs as a group, not his own practice.
+
 ## Level 2: Same face, different role (2 pts each)
 
 ### 2.1 Council to close three branch libraries (Politics, News)
 
-- Source: Rina Kapoor, the local MP
+- Source: Lucy Kapoor, the local MP
 - Ask: "How many constituents have contacted you about the closures?"
 - **Answer: Representative**
 
@@ -124,6 +132,22 @@ Explanation: An author can be a voice of expertise, but here they are using cult
 
 Explanation: A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them.
 
+### 2.9 Nurses at the city hospital vote on strike action (Health, News)
+
+- Source: Marites Santos, nurse and union steward at the city hospital
+- Ask: "How do your members feel about the latest pay offer?"
+- **Answer: Representative**
+
+Explanation: As an elected steward she speaks for union members on her site. She is a nurse, but the question is about members’ views, not her own.
+
+### 2.10 Leaving home to nurse in the NHS: the international recruits keeping wards open (Health, Feature)
+
+- Source: Marites Santos, nurse and union steward at the city hospital
+- Ask: "What was your first winter on the ward like after arriving from the Philippines?"
+- **Answer: Experience**
+
+Explanation: Same person, different question. Now she is describing her own experience of moving to the UK to work, so she is an experience source.
+
 ## Level 3: Find the blind spot (3 pts each)
 
 ### 3.1 Pharmacies ration ADHD medication as shortage drags on (Health, News)
@@ -136,31 +160,31 @@ Prompt: The story explains what is being done and why. What is missing?
 
 Options:
 - Shoppers stopped outside a city-centre pharmacy. Ask: "What do you think about the medication shortage?" (Vox pop: Random passers-by have no particular power, expertise or experience of the issue.)
-- **[CORRECT]** Ash Patel, whose son has gone three weeks without medication, found through an ADHD charity. Ask: "How has the shortage affected your family?" (Best choice: Experience: Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk.)
+- **[CORRECT]** Ash Patel, who was diagnosed with ADHD at 34 and has gone three weeks without medication, found through an ADHD charity. Ask: "How has the shortage affected you?" (Best choice: Experience: Shows the human impact and answers ‘Why does this matter?’. Charities can often put you in touch with people willing to talk.)
 - Your flatmate, who has an ADHD diagnosis. Ask: "Have you had trouble getting your prescription?" (Friend or family: A conflict of interest, and you can’t present them independently. Use your contacts to find someone else instead.)
 - A second pharmacology academic at another university. Ask: "Why is there a shortage?" (Role already covered: The draft already has this expertise. A second expert adds little unless they disagree.)
 
 Explanation: The draft has power and expertise but nobody affected. An experience source makes the story matter to readers, and a strong quote from them could become the headline.
 
-Widen the net: Stories about children’s health often default to mothers. Fathers, other carers, and adults with ADHD themselves are affected too, and a charity can help you reach them.
+Widen the net: Stories about ADHD often quote parents talking about their children. Adults with ADHD can speak for themselves, and many are diagnosed later in life. A charity or support group can help you reach them.
 
-### 3.2 Shoplifting up 30% in the city centre, figures show (Crime, News)
+### 3.2 Shoplifting up 30% across the county, figures show (Crime, News)
 
 Already in draft:
-- Experience: Owner of an independent record shop describes being threatened by a shoplifter last month.
+- Experience: Owner of a village shop and post office describes being threatened by a shoplifter last month.
 - Expertise: Criminologist explains what is driving the rise in retail crime.
 
 Prompt: The draft has context and colour. What question is left hanging?
 
 Options:
-- **[CORRECT]** Harjit Singh Gill, police and crime commissioner. Ask: "What resources are being put into tackling retail crime?" (Best choice: Power: The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply.)
+- **[CORRECT]** Harry Singh Gill, police and crime commissioner. Ask: "What resources are being put into tackling retail crime across the county, including in rural areas?" (Best choice: Power: The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply.)
 - Shoppers on the high street. Ask: "Do you feel safe shopping in town?" (Vox pop: Opinions from random passers-by don’t answer any of the story’s questions.)
-- Another shop owner on the same street. Ask: "Have you been targeted too?" (Role already covered: A second case study adds colour but doesn’t fill the gap: nobody is being held to account.)
+- Linh Nguyen, who runs a nail salon in the same village. Ask: "Have you been targeted too?" (Role already covered: A second case study adds colour but doesn’t fill the gap: nobody is being held to account.)
 - Your uncle, a retired police officer. Ask: "Why don’t police turn up to shoplifting any more?" (Friend or family: Family members are not independent sources, and a retired officer has no power over current policy.)
 
 Explanation: Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply.
 
-Widen the net: Retail crime isn’t only an urban story. If every source is in the city centre, check whether village shops and farm shops in the force area are seeing the same thing.
+Widen the net: Crime coverage tends to focus on cities. Ask the commissioner how the figures compare for rural and urban areas, and whether police response times differ.
 
 ### 3.3 Primary school to move to a four-day week amid staff shortages (Education, News)
 
@@ -220,7 +244,7 @@ Explanation: Under-representation at the top of a field means the easiest expert
 
 Situation: The force press office offers to arrange interviews with officers. Your last three police stories all quoted non-disabled male officers.
 
-Fact: Figures from 2014 show that just 1.9% of police officers had declared a disability. Across the UK, there are more than 6.9 million disabled people of working age, 19% of the working population (Disabled Living Foundation, cited in Everybody In).
+Fact: Figures from 2014 show that just 1.9% of police officers had declared a disability. Across the UK, there are more than 6.9 million disabled people of working age, 19% of the working population (Disabled Living Foundation, cited in Everybody In). Many disabilities can’t be seen, and not everyone chooses to declare one.
 
 Prompt: How can you hear from a wider range of officers?
 
@@ -230,7 +254,7 @@ Options:
 - Ask a disabled friend what they think of the police. (Friend, wrong role: Not independent, and they can’t describe a night on the beat.)
 - Interview a disabled officer, but only ask about their disability. (Identity, not experience of the job: The feature is about the job. Ask them about their shift as you would any officer. Disability may come up, but it shouldn’t be the only thing you ask.)
 
-Explanation: A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story. As a disabled journalist puts it in Everybody In, disabled people are ‘spoken about, but not often listened to’.
+Explanation: A small group within a profession is easy to miss through official channels alone. Representative bodies are a route to those voices, and the question still has to fit the story. As a disabled journalist puts it in Everybody In, disabled people are ‘spoken about, but not often listened to’. Most disabilities can’t be seen: an officer with Crohn’s disease, diabetes or hearing loss may work the same shifts as everyone else. A staff network can reach officers you could never pick out yourself.
 
 ### 4.3 Charities warn demand for food banks has doubled (Society, News)
 
@@ -295,6 +319,22 @@ Options:
 - Use the Department for Education statement and the figures. (Power only: That says what is being done, but nobody affected or representing families is heard.)
 
 Explanation: Relying on one spokesman reduces a community to one voice. Building contacts with community groups takes time, but the book notes it builds trust and can lead to exclusive stories.
+
+### 4.7 Hosepipe ban announced as reservoirs fall (Environment, News)
+
+Situation: Every contact you have for the story lives within five miles of your city-centre newsroom.
+
+Fact: About 17% of people in England live in rural areas (Defra). Most newsrooms, and so most reporters’ contacts, are in towns and cities.
+
+Prompt: How do you reach people outside the city?
+
+Options:
+- **[CORRECT]** Contact the rural community council, the National Farmers’ Union and parish council clerks, and search village Facebook groups, for farmers, growers and residents affected. (Best choice: Representative bodies, parish councils and local online groups are the way in to rural communities.)
+- Do a vox pop in a market town on Saturday. (Vox pop: Still random passers-by, just in a different place.)
+- Stick with your city contacts. A ban is the same everywhere. (Assumption: The rules may be the same, but the impact isn’t: farms, growers and homes on private water supplies are affected differently.)
+- Ask the water company press office to find you a rural customer. (Second-hand access: They may put forward a customer who suits their message. Find people independently.)
+
+Explanation: Urban bias is often a matter of geography: reporters’ contacts sit near the newsroom. Rural sources take deliberate effort, and the story is often different there.
 
 ## Level 5: Check your habits (3 pts each)
 
@@ -424,6 +464,50 @@ Options:
 
 Explanation: ‘More women’ can still mean the same kind of woman. Thinking intersectionally, across race, class, age, disability and sexuality, helps you find the voices that are missing even from a story about under-representation.
 
+### 5.9 Thousands of pupils taught maths by teachers without a maths degree (Education, News)
+
+Situation: Dr Tom Hargreaves, an education researcher, agrees to an interview. He tells you he is autistic and asks for your questions in advance by email, and to do the interview by video rather than by phone.
+
+Prompt: What do you do?
+
+Options:
+- **[CORRECT]** Agree. Send the questions and set up the video call. (Best choice: Reasonable adjustment: Adjusting how you interview someone costs little, and questions in advance often get more accurate, considered answers.)
+- Call him anyway. A live phone interview gets more natural quotes. (Ignoring the request: You risk losing the source and getting a worse interview.)
+- Find a different expert, since this will take longer. (Exclusion: Dropping sources who ask for adjustments shuts neurodivergent and disabled experts out of the news.)
+- Agree, and mention in the story that he is autistic. (Irrelevant detail: His autism isn’t relevant to a story about maths teaching. Only include it if it is relevant and he is happy for you to.)
+
+Explanation: Reasonable adjustments are part of good interviewing. Some neurodivergent and disabled sources prefer written questions, a particular format or more time, and providing that widens the pool of experts you can use.
+
+### 5.10 Your editor asks how many disabled people you quoted this year (Newsroom, Practice)
+
+Situation: To answer, you go through photos of everyone you quoted and count anyone who uses a wheelchair, a cane or a hearing aid.
+
+Fact: Across the UK, 19% of working-age people are disabled (Disabled Living Foundation, cited in Everybody In). Many disabilities, including chronic pain, mental health conditions, diabetes, hearing loss and long-term illness, can’t be seen.
+
+Prompt: What is wrong with this method, and what should you do?
+
+Options:
+- Nothing. Counting photos is the only objective way. (Only what you can see: You will miss most disabled sources, and may wrongly count others.)
+- **[CORRECT]** Record what sources tell you when it is relevant, and work with disabled people’s organisations so disabled people are heard in every PEER role. (Best choice: An audit can only count what people choose to share. Disabled people’s organisations can put you in touch with disabled experts, not just case studies.)
+- Ask every source at the end of every interview whether they are disabled. (Intrusive: Asking without context can feel intrusive. Voluntary, anonymous source surveys are a better way to collect this.)
+- Disability is too sensitive to track, so leave it out. (Not tracking: If you don’t track it, you can’t see the gap.)
+
+Explanation: Most disabilities aren’t visible, so an audit based on appearance undercounts and reinforces a stereotype of what disability looks like. Track what people choose to tell you, and look for disabled sources in every role, not just in stories about disability.
+
+### 5.11 State pension age to rise to 68 sooner than planned (Money, News)
+
+Situation: You have booked Dr Rachel Moore, a pensions economist, through an experts directory. A colleague mentions that she is a trans woman and suggests asking her about it ‘for colour’.
+
+Prompt: What should you ask her?
+
+Options:
+- **[CORRECT]** Ask about the pension age, and check how she would like to be described in the story, as you would with any source. (Best choice: Expertise: She is in the story for her expertise. Checking how every source wants to be described, including names and pronouns, is good practice.)
+- Ask about her transition. Readers will find it interesting. (Identity, not expertise: It is irrelevant to the pension age, and it is her decision whether to talk about it.)
+- Mention in her description that she is trans, to show the story is diverse. (Outing: Including someone’s trans status without relevance or consent can out them and expose them to abuse.)
+- Swap her for another expert to avoid controversy. (Exclusion: There is nothing controversial about a pensions expert talking about pensions.)
+
+Explanation: LGBTQ+ and trans experts are sometimes approached only to talk about being LGBTQ+ or trans. Where it isn’t relevant, treat them like any other expert.
+
 ## Level 6: Answer the story’s questions (4 pts each)
 
 ### 6.1 Knife crime arrests of under-18s double in two years (Crime, News)
@@ -466,15 +550,16 @@ Questions and correct source:
 - Why has the club done this? (Right of reply) [Power] → **Club chief executive** (Ask: "Why are prices going up, and will you reconsider?")
 - Can the club justify it financially? [Expertise] → **Football finance analyst who studies club accounts** (Ask: "Does the club need the extra revenue?")
 - What does it mean for families who go every week? [Experience] → **Beverley Grant, season ticket holder of 30 years who takes her grandchildren, found via the supporters’ trust** (Ask: "Can you still afford to go?")
+- Will the rise push out fans who already feel unwelcome? [Representative] → **Co-chair of the club’s LGBTQ+ supporters’ group** (Ask: "Are members worried the rise will make it harder to keep coming?")
 
 Distractors:
 - Replies under the club’s announcement on social media. Ask: "(Quoting the angriest replies)" (Unverified: Anonymous replies can’t be verified. Use them to find sources, not as quotes.)
 - Your housemate, who supports a rival club. Ask: "What do you make of the price rise?" (Friend or family: Not affected, not independent.)
 - Former player turned TV pundit. Ask: "Is this bad for the game?" (Wrong role for this story: Cultural power and opinion, but not the supporters’ voice and not financial expertise.)
 
-Explanation: The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, and the season ticket holder shows the impact.
+Explanation: The supporters’ trust gives reaction, the chief executive gives a reply, the analyst tests the club’s claims, the season ticket holder shows the impact, and the LGBTQ+ supporters’ group speaks for fans who may already feel less welcome at matches.
 
-Widen the net: A supporters’ trust isn’t the only fan group. Disabled supporters’ associations and LGBTQ+ supporters’ groups may have different concerns about price and access.
+Widen the net: A supporters’ trust isn’t the only fan group. Disabled supporters’ associations and women’s supporters’ groups may also have different concerns about price and access.
 
 ## Level 7: Build the interview list (5 pts each)
 
@@ -501,7 +586,7 @@ Pick 4. Must cover: Power + Expertise + Experience or Representative. Any weak s
 
 - Rail operator’s managing director. Ask: "Why were so many trains cancelled, and when will it improve?" → Power: The operator is responsible, so it must get a right of reply.
 - Transport secretary. Ask: "Will you step in over the operator’s performance?" → Power: Political power to act on the operator’s contract.
-- Commuter who has received a warning at work for being late, found via a passenger forum. Ask: "How have the cancellations affected you?" → Experience: Shows the impact. Forums are a good place to find people affected.
+- Commuter with ME who books passenger assistance, found via a passenger forum. Ask: "What happens when your train is cancelled at short notice?" → Experience: Shows the impact. For passengers who book assistance, a cancellation can mean missed help and long waits, not just lateness. Forums are a good place to find people affected.
 - General secretary of the train drivers’ union. Ask: "Why are there not enough drivers?" → Representative: Speaks for drivers and can explain the shortage from their side.
 - Head of the independent passenger watchdog. Ask: "How many complaints have you received this week?" → Representative: Represents passengers and can say how widespread the problem is.
 - Transport academic who studies rail staffing. Ask: "Is this shortage a one-off or a long-term trend?" → Expertise: Independent context on whether things are getting better or worse.
@@ -528,6 +613,23 @@ Pick 4. Must cover: Power + Experience + Representative or Expertise. Any weak s
 Explanation: The board needs to reply, an affected student shows why it matters, and either a representative or an expert gives scale or explanation.
 
 Widen the net: Errors like this can hit students differently. A lost university place may be harder to recover for students without family support or private tutors. Ask the head teachers’ association whether some schools were hit harder than others.
+
+### 7.4 Council cuts funding for the city’s Pride event (Community, News)
+
+Pick 4. Must cover: Power + Representative + Experience or Expertise. Any weak source fails the list.
+
+- Council cabinet member for culture. Ask: "Why has the funding been cut, and will you reconsider?" → Power: The council made the decision, so it must get a right of reply.
+- Chair of the Pride organising committee. Ask: "What will the cut mean for this year’s event?" → Representative: Speaks for the organisers and the people who take part.
+- Volunteer who has run the Pride youth zone for five years. Ask: "What does the event mean to the young people who come?" → Experience: Shows what is at stake for the people involved.
+- Academic who studies the economic impact of city events. Ask: "What does an event like Pride bring to the local economy?" → Expertise: Independent context to test the council’s reasoning.
+- Chair of a local LGBTQ+ business network. Ask: "How much trade do your members do over Pride weekend?" → Representative: Another representative voice, speaking for businesses.
+- Your friend, who goes every year. Ask: "Are you upset about the cut?" → WEAK (Friend or family): Not independent. Find attendees through the organisers or community groups instead.
+- Replies under the council’s announcement. Ask: "(Quoting the angriest replies)" → WEAK (Unverified): Anonymous replies can’t be verified, and may include abuse.
+- Shoppers in the city centre. Ask: "Should the council pay for Pride?" → WEAK (Vox pop): Random opinions don’t answer any of the story’s questions.
+
+Explanation: The council needs a right of reply, the organisers speak for the event, and either someone involved or an independent expert shows what is at stake.
+
+Widen the net: Pride organising committees don’t always reflect the whole community. Ask whether trans people, disabled LGBTQ+ people and LGBTQ+ people of colour are involved, and seek their views too.
 
 ## Resources shown in the game
 

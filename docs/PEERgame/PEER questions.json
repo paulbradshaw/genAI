@@ -260,22 +260,22 @@
           "why": "A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them."
         },
         {
-          "genre": "Health",
+          "genre": "Transport",
           "format": "News",
-          "lead": "Nurses at the city hospital vote on strike action",
-          "source": "Marites Santos, nurse and union steward at the city hospital",
-          "ask": "How do your members feel about the latest pay offer?",
-          "answer": "rep",
-          "why": "As an elected steward she speaks for union members on her site. She is a nurse, but the question is about members’ views, not her own."
+          "lead": "Road bridge closed after cracks found in supporting pier",
+          "source": "Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers",
+          "ask": "What can cause cracks like these, and how serious could they be?",
+          "answer": "expertise",
+          "why": "She has no responsibility for this bridge, so she can give independent expert insight into what the cracks might mean. The council that owns the bridge is the source of power."
         },
         {
-          "genre": "Health",
-          "format": "Feature",
-          "lead": "Leaving home to nurse in the NHS: the international recruits keeping wards open",
-          "source": "Marites Santos, nurse and union steward at the city hospital",
-          "ask": "What was your first winter on the ward like after arriving from the Philippines?",
-          "answer": "experience",
-          "why": "Same person, different question. Now she is describing her own experience of moving to the UK to work, so she is an experience source."
+          "genre": "Business",
+          "format": "News",
+          "lead": "Engineering firms struggle to recruit graduates",
+          "source": "Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers",
+          "ask": "What are members across the region telling you about recruitment?",
+          "answer": "rep",
+          "why": "Same person, different question. As regional chair of a professional body she is speaking for its members, so here she is a representative."
         }
       ]
     },
@@ -372,7 +372,7 @@
             },
             {
               "id": "c",
-              "source": "Linh Nguyen, who runs a nail salon in the same village",
+              "source": "Linh Nguyen, who runs the bakery in the same village",
               "ask": "Have you been targeted too?",
               "tag": "Role already covered",
               "note": "A second case study adds colour but doesn’t fill the gap: nobody is being held to account."
@@ -1687,7 +1687,7 @@
             },
             {
               "id": "f",
-              "source": "Transport academic who studies rail staffing",
+              "source": "Dr Anh Tran, transport academic who studies rail staffing",
               "ask": "Is this shortage a one-off or a long-term trend?",
               "type": "expertise",
               "note": "Independent context on whether things are getting better or worse."

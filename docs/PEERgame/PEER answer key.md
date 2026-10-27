@@ -132,21 +132,21 @@ Explanation: An author can be a voice of expertise, but here they are using cult
 
 Explanation: A group admin can summarise what members are saying, but does not formally speak for them the way a union does. Make that clear when you quote them.
 
-### 2.9 Nurses at the city hospital vote on strike action (Health, News)
+### 2.9 Road bridge closed after cracks found in supporting pier (Transport, News)
 
-- Source: Marites Santos, nurse and union steward at the city hospital
-- Ask: "How do your members feel about the latest pay offer?"
+- Source: Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers
+- Ask: "What can cause cracks like these, and how serious could they be?"
+- **Answer: Expertise**
+
+Explanation: She has no responsibility for this bridge, so she can give independent expert insight into what the cracks might mean. The council that owns the bridge is the source of power.
+
+### 2.10 Engineering firms struggle to recruit graduates (Business, News)
+
+- Source: Marites Santos, chartered structural engineer and regional chair of the Institution of Structural Engineers
+- Ask: "What are members across the region telling you about recruitment?"
 - **Answer: Representative**
 
-Explanation: As an elected steward she speaks for union members on her site. She is a nurse, but the question is about members’ views, not her own.
-
-### 2.10 Leaving home to nurse in the NHS: the international recruits keeping wards open (Health, Feature)
-
-- Source: Marites Santos, nurse and union steward at the city hospital
-- Ask: "What was your first winter on the ward like after arriving from the Philippines?"
-- **Answer: Experience**
-
-Explanation: Same person, different question. Now she is describing her own experience of moving to the UK to work, so she is an experience source.
+Explanation: Same person, different question. As regional chair of a professional body she is speaking for its members, so here she is a representative.
 
 ## Level 3: Find the blind spot (3 pts each)
 
@@ -179,7 +179,7 @@ Prompt: The draft has context and colour. What question is left hanging?
 Options:
 - **[CORRECT]** Harry Singh Gill, police and crime commissioner. Ask: "What resources are being put into tackling retail crime across the county, including in rural areas?" (Best choice: Power: The commissioner sets police priorities and budgets. They can answer ‘What is being done?’ and give a right of reply.)
 - Shoppers on the high street. Ask: "Do you feel safe shopping in town?" (Vox pop: Opinions from random passers-by don’t answer any of the story’s questions.)
-- Linh Nguyen, who runs a nail salon in the same village. Ask: "Have you been targeted too?" (Role already covered: A second case study adds colour but doesn’t fill the gap: nobody is being held to account.)
+- Linh Nguyen, who runs the bakery in the same village. Ask: "Have you been targeted too?" (Role already covered: A second case study adds colour but doesn’t fill the gap: nobody is being held to account.)
 - Your uncle, a retired police officer. Ask: "Why don’t police turn up to shoplifting any more?" (Friend or family: Family members are not independent sources, and a retired officer has no power over current policy.)
 
 Explanation: Without a source of power the story never answers ‘What is being done?’. Where an authority is implicitly criticised, you also need to seek a right of reply.
@@ -589,7 +589,7 @@ Pick 4. Must cover: Power + Expertise + Experience or Representative. Any weak s
 - Commuter with ME who books passenger assistance, found via a passenger forum. Ask: "What happens when your train is cancelled at short notice?" → Experience: Shows the impact. For passengers who book assistance, a cancellation can mean missed help and long waits, not just lateness. Forums are a good place to find people affected.
 - General secretary of the train drivers’ union. Ask: "Why are there not enough drivers?" → Representative: Speaks for drivers and can explain the shortage from their side.
 - Head of the independent passenger watchdog. Ask: "How many complaints have you received this week?" → Representative: Represents passengers and can say how widespread the problem is.
-- Transport academic who studies rail staffing. Ask: "Is this shortage a one-off or a long-term trend?" → Expertise: Independent context on whether things are getting better or worse.
+- Dr Anh Tran, transport academic who studies rail staffing. Ask: "Is this shortage a one-off or a long-term trend?" → Expertise: Independent context on whether things are getting better or worse.
 - People waiting on the platform. Ask: "Are you annoyed?" → WEAK (Vox pop): Of course they are. That tells readers nothing new.
 - Your dad, who commutes by train. Ask: "Has your train been cancelled?" → WEAK (Friend or family): Family members aren’t independent sources.
 

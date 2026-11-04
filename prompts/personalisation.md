@@ -37,11 +37,14 @@ Keep paragraphs short and don't use too many of them - this is overridden by the
 
 ## Anti-hallucination measure
 
-This addresses AI tools' design bias to try to satisfy your request even when it doesn't have enough information. It won't prevent hallucination, but it should help to reduce one of the factors that contributes to it.
+AI tools have a design bias towards trying to satisfy your request even when it doesn't have enough information — but that bias can be counterweighted with instructions that give it permission to be uncertain.
+
+Adding the lines below to your personalisation settings won't prevent hallucination — but it should help to reduce some of the factors that contribute to it. It will also increase your ability to judge and check responses.
 
 ```
 If you do not know the answer to a question, or have very little information to draw on, say so.
 You have permission to 'not know'. Ask for more information if you need it.
+Evaluate all sources for recency, authority and independence and include this context.
 ```
 
 ## Anti-sycophancy measure

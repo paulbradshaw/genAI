@@ -1,0 +1,700 @@
+original_category,clean_category,category_level,match_confidence,class,class_confidence
+AGGRAVATED VEHICLE TAKING,Aggravated Vehicle Taking,Offence description,high,Vehicle Offences,high
+ALL OTHER THEFT OFFENCES,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+ARSON,Arson,Sub class,high,Arson and Criminal Damage,high
+ARSON AND CRIMINAL DAMAGE,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Absconding From Lawful Custody,Absconding from lawful custody,Offence description,high,Miscellaneous Crimes Against Society,high
+Absconding from Custody,Absconding from lawful custody,Offence description,medium,Miscellaneous Crimes Against Society,medium
+Absconding from Lawful Custody,Absconding from lawful custody,Offence description,high,Miscellaneous Crimes Against Society,high
+Absconding from lawful custody,Absconding from lawful custody,Offence description,high,Miscellaneous Crimes Against Society,high
+Act of outraging public decency - common law,Committing or Conspiring to Commit an Act Outraging Public Decency,Offence description,high,Miscellaneous Crimes Against Society,high
+Action Fraud,Fraud Offences,Class,high,Fraud Offences,high
+Acts intended or likely to stir up racial or religious hatred - Public performance of play,Acts intended or likely to stir up racial or religious hatred - Public performance of play,Offence description,high,Public Order Offences,high
+Acts intended or likely to stir up racial or religious hatred - Use of words or behaviour or display or written material,Acts intended or likely to stir up racial or religious hatred - Use of words or behaviour or display or written material,Offence description,high,Public Order Offences,high
+Administering poison with intent to injure or annoy,Administering poison with intent to injure or annoy,Offence description,high,Violence Against The Person,high
+Affray,Affray,Offence description,high,Public Order Offences,high
+Affray - Public Order Act 1986. Sec 3,Affray,Offence description,high,Public Order Offences,high
+Aggravated burglary business & community,aggravated burglary business and community,Offence category,high,Burglary,high
+Aggravated vehicle taking,Aggravated Vehicle Taking,Offence description,high,Vehicle Offences,high
+All Other Theft Offences,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+All other offences,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+All other theft offences,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Arrange or facilitate travel of another person with a view to exploitation,Arrange or facilitate travel of another person with a view to exploitation,Offence description,high,Violence Against The Person,high
+Arrange or facilitate travel of another person with a view to exploitation - Modern Slavery Act 2015 Sec 2 (1) & 5 (1),Arrange or facilitate travel of another person with a view to exploitation,Offence description,high,Violence Against The Person,high
+Arson,Arson,Sub class,high,Arson and Criminal Damage,high
+Arson & Criminal Damage,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Arson Endangering Life,Arson endangering life,Offence description,high,Arson and Criminal Damage,high
+Arson Not Endangering Life,Arson not endangering life,Offence description,high,Arson and Criminal Damage,high
+Arson and Criminal Damage,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Arson and criminal damage,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Arson endangering life,Arson endangering life,Offence description,high,Arson and Criminal Damage,high
+Arson endangering life - Criminal Damage Act 1971 Sec 1,Arson endangering life,Offence description,high,Arson and Criminal Damage,high
+Arson not endangering life,Arson not endangering life,Offence description,high,Arson and Criminal Damage,high
+Assault (without injury) on a constable (Police Act 1996),Assault without injury on a constable,Offence description,high,Violence Against The Person,high
+Assault - S20 - GBH Grievous bodily harm without intent,Wounding or Inflicting Grievous Bodily Harm (without intent),Offence description,high,Violence Against The Person,high
+Assault - S39 - Common assault,Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Assault - S47 - AOABH assault occasioning actual bodily harm,Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Assault - S47 - AOABH assault occasioning actual bodily harm on a Constable,Assault Occasioning Actual Bodily Harm on a Constable,Offence description,high,Violence Against The Person,high
+Assault / ill-treat / neglect etc child / young person,Cruelty to Children/Young Persons,Offence category,high,Violence Against The Person,high
+Assault Constable - assault occasioning actual bodily harm,Assault Occasioning Actual Bodily Harm on a Constable,Offence description,high,Violence Against The Person,high
+Assault Emergency Worker - actual bodily harm (Sec 47),Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault Occasioning ABH on an Emergency Worker - Offences against the Person Act 1861 Sec 47,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault Police Officer - Sec 47. Assault occasioning actual bodily harm,Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Assault Without Injury,Assault without Injury,Offence category,high,Violence Against The Person,high
+Assault Without Injury on a Constable,Assault without injury on a constable,Offence description,high,Violence Against The Person,high
+Assault constable - ABH,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault designated / accredited person - Police Reform Act 2002,Assault on a Designated or Accredited Person,Offence description,high,Violence Against The Person,high
+Assault emergency worker - ABH,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault emergency worker - wounding with intent to do GBH (Sec 18),Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault occasioning actual bodily harm (Sec 47),Assault occasioning  actual bodily harm,Offence description,high,Violence Against The Person,high
+Assault occasioning actual bodily harm (Section 47),Assault occasioning  actual bodily harm,Offence description,high,Violence Against The Person,high
+Assault occasioning actual bodily harm - Offences against the Person Act 1861 Sec 47,Assault occasioning  actual bodily harm,Offence description,high,Violence Against The Person,high
+Assault on a constable - Police Act 1996 Sec 89(1),Assault without Injury on a Constable,Offence category,high,Violence Against The Person,high
+Assault on a constable occasioning actual bodily harm - Offences against the Person Act 1861 Sec 47,Assault occasioning  actual bodily harm,Offence description,medium,Violence Against The Person,medium
+Assault on a female by penetration,Assault on a female by penetration,Offence description,high,Sexual Offences,high
+Assault or Assault by beating on an emergency worker (except a constable),Assault or assault by beating on a emergency worker (except a constable),Offence description,high,Violence Against The Person,high
+Assault or assault by beating of a constable,Assault or assault by beating on a constable,Offence description,high,Violence Against The Person,high
+Assault or assault by beating of a constable (Assaults on Emergency Workers (Offences) Act 2018 Sec 1),Assault or Assault by Beating on a Constable,Offence description,high,Violence Against The Person,high
+Assault or assault by beating of an emergency worker (except a constable),Assault or assault by beating on a emergency worker (except a constable),Offence description,high,Violence Against The Person,high
+Assault or assault by beating on a constable,Assault or assault by beating on a constable,Offence description,high,Violence Against The Person,high
+Assault or assault by beating on a constable - Criminal Justice Act 1988 Sec 39 as added by Assaults on Emergency Workers (Offences) Act 2018 Sec 1,Assault or assault by beating on a constable,Offence description,high,Violence Against The Person,high
+Assault or assault by beating on a emergency worker (except a constable),Assault or assault by beating on a emergency worker (except a constable),Offence description,high,Violence Against The Person,high
+Assault or assault by beating on a emergency worker (except a constable) - Criminal Justice Act 1988 Sec 39 as added by Assaults on Emergency Workers (Offences) Act 2018 Sec 1,Assault or assault by beating on a emergency worker (except a constable),Offence description,high,Violence Against The Person,high
+Assault with Injury,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with Intent to cause Serious Harm,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with injury EW,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with injury PC,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with injury on Emergency Worker,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with injury on a constable,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with intent to cause injury on Emergency Worker,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault with intent to cause serious harm,Violence with Injury,Sub class,high,Violence Against The Person,high
+Assault without injury,Assault without Injury,Offence category,high,Violence Against The Person,high
+Assault without injury PC,Assault without Injury,Offence category,high,Violence Against The Person,high
+Assault without injury on Emergency Worker,Assault without Injury,Offence category,high,Violence Against The Person,high
+Assault without injury on a Constable,Assault without injury on a constable,Offence description,high,Violence Against The Person,high
+Assault without injury on a constable,Assault without injury on a constable,Offence description,high,Violence Against The Person,high
+"Assault without injury on a constable, Assault or Assault by beating on a constable",Assault without Injury on a Constable,Offence description,high,Violence Against The Person,high
+Assaults on an emergency worker (other than constable),Assault with injury on an emergency worker (other than a constable),Offence category,medium,Violence Against The Person,medium
+Assaults on emergency workers (other than constables),Assault with injury on an emergency worker (other than a constable),Offence category,medium,Violence Against The Person,medium
+Attempted Burglary - Business & Community - Theft Act 1968 Sec 9,Attempted Burglary - Business and Community,Offence category,high,Burglary,high
+Attempted Burglary - Business and Community,Attempted Burglary - Business and Community,Offence category,high,Burglary,high
+Attempted Burglary Business and Community,Attempted Burglary - Business and Community,Offence category,high,Burglary,high
+Attempted burglary business & community,Attempted Burglary - Business and Community,Offence category,high,Burglary,high
+Attempted burglary business and community,Attempted Burglary - Business and Community,Offence category,high,Burglary,high
+Attempted murder,Attempted murder,Offence description,high,Violence Against The Person,high
+Attempted murder - Common Law. Criminal Attempts Act 1981,Attempted murder,Offence description,high,Violence Against The Person,high
+Attempted rape of a female aged 16 or over,Attempted rape of a female aged 16 or over,Offence description,high,Sexual Offences,high
+BICYCLE THEFT,Bicycle Theft,Sub class,high,Theft,high
+BURGLARY,Burglary,Class,high,Burglary,high
+BURGLARY - BUSINESS AND COMMUNITY,Burglary Business and Community,Sub class,high,Burglary,high
+BURGLARY - BUSINESS/COMMUNITY,Burglary Business and Community,Sub class,high,Burglary,high
+BURGLARY - RESIDENTIAL,Residential Burglary of a Home,Sub class,high,Burglary,high
+BURGLARY BUSINESS AND COMMUNITY,Burglary Business and Community,Sub class,high,Burglary,high
+BURGLARY RESIDENTIAL (UNCONNECTED BLDG),Residential Burglary of Unconnected Building,Sub class,high,Burglary,high
+Bicycle Theft,Bicycle Theft,Sub class,high,Theft,high
+Bicycle theft,Bicycle Theft,Sub class,high,Theft,high
+Blackmail,Blackmail,Offence description,high,Theft,high
+Breach Sexual Harm Prevention Order (SHPO) Sentencing Act 2020 Sec 354 (1) (4),Breach of a Sexual Harm Prevention Order,Offence description,high,Public Order Offences,high
+Breach a sexual risk order / risk of sexual harm order etc. or fail to comply with Sec 122 C (4) in relation to a sexual risk order,Breach a sexual risk order / risk of sexual harm order etc or fail to comply with requirement under Sec 122 C (4) in relation to a sexual risk order.,Offence description,high,Public Order Offences,high
+Breach of Criminal behaviour order,Breach of a criminal behaviour order,Offence description,high,Public Order Offences,high
+Breach of a Criminal Behaviour Order Sentencing Act,Breach of a criminal behaviour order,Offence description,medium,Public Order Offences,medium
+Breach of a Sexual Harm Prevention Order,Breach of a Sexual Harm Prevention Order,Offence description,high,Public Order Offences,high
+Breach of a criminal behaviour order,Breach of a criminal behaviour order,Offence description,high,Public Order Offences,high
+Breach of a restraining order,Breach of a Restraining Order,Offence description,high,Violence Against The Person,high
+Breach of a restraining order - Sentencing Act 2020 Sec 363 (1) (2).,Breach of a Restraining Order,Offence description,high,Violence Against The Person,high
+Breach of conditions of injunction against harassment,Breach of conditions of injunction against harassment,Offence description,high,Violence Against The Person,high
+Breach of conditions of injunction against harassment - Protection from Harassment Act 1997 Sec 3,Breach of conditions of injunction against harassment,Offence description,high,Violence Against The Person,high
+Breach of non-molestation order,Breach of non-molestation order,Offence description,high,Public Order Offences,high
+Burglary,Burglary,Class,high,Burglary,high
+Burglary - Business & Community - Theft Act 1968 Sec 9,Burglary business and community,Offence category,high,Burglary,high
+Burglary - Business And Community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary - Business and Community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary - Business and Community - Attempt,Burglary business and community,Offence category,medium,Burglary,medium
+Burglary - Residential,Residential Burglary of a Home,Sub class,high,Burglary,high
+Burglary - business and community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary - residential,Residential Burglary of a Home,Sub class,high,Burglary,high
+Burglary Business & Community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary Business and Community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary Residential,Residential Burglary of a Home,Sub class,high,Burglary,high
+Burglary Residential (Dwelling),Residential Burglary of a Home,Sub class,high,Burglary,high
+Burglary business & community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary business and community,Burglary Business and Community,Sub class,high,Burglary,high
+Burglary residential,Residential Burglary of a Home,Sub class,high,Burglary,high
+"Burglary, Robbery and Theft","Burglary, Robbery and Theft",Combined/generic,high,Burglary,high
+Business and community burglary,Burglary Business and Community,Sub class,high,Burglary,high
+CRIMINAL DAMAGE,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+CRIMINAL DAMAGE & ARSON,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Care worker ill-treat / wilfully neglect an individual,Care worker ill-treat /wilfully neglect an individual,Offence description,high,Violence Against The Person,high
+Care worker ill-treat /wilfully neglect an individual - Criminal Justice and Courts Act 2015 Sec 20 (1) and (2),Care worker ill-treat /wilfully neglect an individual,Offence description,high,Violence Against The Person,high
+Care workers : Sexual activity with a person with a mental disorder - Male person - Sexual Offences Act 2003 Sec 38,Care workers : Sexual activity with a person with a mental disorder - Male person,Offence description,high,Sexual Offences,high
+Care workers: Causing or inciting sexual activity with a person with a mental disorder: penetration,Care workers : Causing or inciting sexual activity (person with mental disorder) - Penetration,Offence description,high,Sexual Offences,high
+Causing Death by Careless or Inconsiderate Driving,Death or Serious Injury Caused by Illegal Driving,Sub class,high,Vehicle Offences,high
+Causing a child under 13 to watch a sexual act - Offender aged 18 or over - Sexual Offences Act 2003 Sec 12,Causing a child under 13 to watch a sexual act - Offender aged 18 or over,Offence description,high,Sexual Offences,high
+Causing danger to road-users,Vehicle Offences,Class,high,Vehicle Offences,high
+"Causing intentional harassment, alarm or distress","Causing intentional harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Causing intentional harassment, alarm or distress (S4A POA)","Causing intentional harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Causing intentional harassment, alarm or distress (Sec 4A)","Causing intentional harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Causing intentional harassment, alarm or distress (Sec 4a POA)","Causing intentional harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Causing intentional harassment, alarm or distress - Public Order Act 1986 Sec 4A","Causing intentional harassment, alarm or distress",Offence description,high,Public Order Offences,high
+Causing or inciting a child under 16 to engage in sexual activity - Female child - no penetration - Sexual Offences Act 2003 Sec 10,Causing or inciting a child under 16 to engage in sexual activity - Female child - no penetration,Offence description,high,Sexual Offences,high
+Causing or inciting a child under 16 to engage in sexual activity - Female child penetration - Sexual Offences Act 2003 Sec 10,Causing or inciting a child under 16 to engage in sexual activity - Female child penetration,Offence description,high,Sexual Offences,high
+"Causing or inciting a female child under 16 to engage in sexual activity, no penetration, offender aged under 18",Causing or inciting a child under 16 to engage in sexual activity - Male child -no penetration - Offender under 18,Offence description,medium,Sexual Offences,medium
+"Causing or inciting a female child under 16 to engage in sexual activity, penetration, offender aged under 18",Causing or inciting a child under 16 to engage in sexual activity - Male child penetration - Offender under 18,Offence description,medium,Sexual Offences,medium
+Causing or inciting a person with a mental disorder impeding choice to engage in sexual activity - Female person,Causing or inciting a person with a mental disorder impeding choice to engage in sexual activity - Female person,Offence description,high,Sexual Offences,high
+Causing sexual activity without consent,Causing sexual activity without consent,Offence description,high,Sexual Offences,high
+"Cheque, Plastic Card and Online Bank Accounts (not PSP)","Cheque, Plastic Card and Online Bank Accounts",Offence category,high,Fraud Offences,high
+Child abduction,Child Abduction,Offence category,high,Violence Against The Person,high
+Committing or conspiring to commit an act outraging public decency,"Committing or conspiring to commit, an act outraging public decency",Offence description,high,Public Order Offences,high
+"Committing or conspiring to commit, an act outraging public decency","Committing or conspiring to commit, an act outraging public decency",Offence description,high,Public Order Offences,high
+"Committing or conspiring to commit, an act outraging public decency - Common Law","Committing or conspiring to commit, an act outraging public decency",Offence description,high,Public Order Offences,high
+Common Assault and Battery,Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Common assault (S39) and assault without injury (Class 105A),Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Common assault (excluding on PC),Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Common assault and battery,Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Common assault and battery (Violence without injury),Common Assault and Battery,Offence description,high,Violence Against The Person,high
+Common assault and battery - Criminal Justice Act 1988 Sec 39,Common assault and battery,Offence description,high,Violence Against The Person,high
+Communicating false information alleging presence of bomb,Communicating false information alleging presence of bomb,Offence description,high,Public Order Offences,high
+Controlling & Coercive Behaviour,Controlling and Coercive Behaviour,Offence description,high,Violence Against The Person,high
+Controlling and coercive behavious,Controlling or Coercive Behaviour,Offence category,medium,Violence Against The Person,medium
+Conveyance etc. of List A articles into or out of prison - Prison Act 1952 as inserted by Offender Management Act 2007,Conveyance etc. of List A articles into or out of prison,Offence description,high,Miscellaneous Crimes Against Society,high
+Criminal Damage,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Criminal Damage - Dwelling,Criminal damage to a dwelling,Offence description,medium,Arson and Criminal Damage,medium
+Criminal Damage - Other Than Dwelling,Criminal Damage to a Building Other Than a Dwelling,Offence description,medium,Arson and Criminal Damage,high
+Criminal Damage - Vehicle,Criminal damage to a vehicle,Offence description,medium,Arson and Criminal Damage,medium
+Criminal Damage Other,Criminal damage,Sub class,medium,Arson and Criminal Damage,medium
+Criminal Damage and Arson,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Criminal Damage excluding Arson,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Criminal Damage to Other Buildings,Criminal Damage to a Building Other Than a Dwelling,Offence description,medium,Arson and Criminal Damage,high
+Criminal Damage to Vehicles,Criminal damage to a vehicle,Offence description,high,Arson and Criminal Damage,high
+Criminal Damage to a Building - Business and Community,Criminal Damage to a building - Business and Community,Offence category,high,Arson and Criminal Damage,high
+Criminal Damage to a Building other than a Dwelling,Criminal damage to a building other than a dwelling,Offence description,high,Arson and Criminal Damage,high
+Criminal Damage to a Dwelling,Criminal damage to a dwelling,Offence description,high,Arson and Criminal Damage,high
+Criminal Damage to a Vehicle,Criminal damage to a vehicle,Offence description,high,Arson and Criminal Damage,high
+Criminal damage,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Criminal damage and arson,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Criminal damage and arson offences,Arson and Criminal Damage,Class,high,Arson and Criminal Damage,high
+Criminal damage other - value under £5000,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Criminal damage to a building - business and community (under £5000),Other criminal damage to a building business and community  - under £5000,Offence description,medium,Arson and Criminal Damage,medium
+Criminal damage to a building other than a dwelling,Criminal damage to a building other than a dwelling,Offence description,high,Arson and Criminal Damage,high
+Criminal damage to a building other than a dwelling - value under £5000,Criminal damage to a building other than a dwelling,Offence description,medium,Arson and Criminal Damage,medium
+Criminal damage to a dwelling,Criminal damage to a dwelling,Offence description,high,Arson and Criminal Damage,high
+Criminal damage to a residence (under £5000),Other criminal damage to a residence  - under £5000,Offence description,medium,Arson and Criminal Damage,medium
+Criminal damage to a vehicle,Criminal damage to a vehicle,Offence description,high,Arson and Criminal Damage,high
+Criminal damage to a vehicle - value under £5000,"Other criminal damage to a vehicle - under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+Criminal damage to other property (under £5000),Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Criminal damage to vehicle (under £5000),"Other criminal damage to a vehicle - under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+Cruelty to Children/Young Persons,Cruelty to Children/Young Persons,Offence category,high,Violence Against The Person,high
+Cruelty to and neglect of children,Cruelty to Children/Young Persons,Offence category,high,Violence Against The Person,high
+Cruelty to and neglect of children - Children and Young Persons Act 1933 Sec 1,Cruelty to and neglect of children,Offence description,high,Violence Against The Person,high
+DRUG OFFENCES,Drug Offences,Class,high,Drug Offences,high
+DRUG POSSESSION,Possession of Drugs,Sub class,high,Drug Offences,high
+DRUG TRAFFICKING,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Damage to dwellings,Criminal Damage to a Dwelling,Offence description,high,Arson and Criminal Damage,high
+Damage to other buildings,Criminal Damage to a Building Other Than a Dwelling,Offence description,high,Arson and Criminal Damage,high
+Damage to vehicles,Criminal Damage to a Vehicle,Offence description,high,Arson and Criminal Damage,high
+Dangerous Driving,Dangerous Driving,Offence description,high,Vehicle Offences,high
+Dating Scam,Fraud Offences,Class,high,Fraud Offences,high
+Death or serious injury caused by unlawful driving,Death or Serious Injury Caused by Illegal Driving,Sub class,high,Vehicle Offences,high
+Disclose or threats to disclose private sexual photographs/film with intent to cause distress,Disclose or Threaten to Disclose Private Sexual Photographs/Film with Intent to Cause Distress,Offence description,high,Sexual Offences,high
+Disclose private sexual photographs and films with intent to cause distress Criminal Justice and Courts Act Sec 33(1) (9),Disclose or Threaten to Disclose Private Sexual Photographs/Film with Intent to Cause Distress,Offence description,high,Sexual Offences,high
+"Disclosure, Obstruction, False Or Misleading
+Statements Etc",Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Drug - Possession,Possession of Drugs,Sub class,high,Drug Offences,high
+Drug - Production,Drug Offences,Class,high,Drug Offences,high
+Drug - Supply,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Drug Offence,Drug Offences,Class,high,Drug Offences,high
+Drug Offences,Drug Offences,Class,high,Drug Offences,high
+Drug Possession and Use,Possession of Drugs,Sub class,high,Drug Offences,high
+Drug Trafficking,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Drug offences,Drug Offences,Class,high,Drug Offences,high
+Drugs - Class A - Cocaine - Possess,Possession of Drugs,Sub class,high,Drug Offences,high
+Drugs - Class A - Heroin - Possess,Possession of Drugs,Sub class,high,Drug Offences,high
+Drugs - Class B - Cannabis - Possess,Possession of Drugs,Sub class,high,Drug Offences,high
+Emergency Worker - Sec 20. Malicious wounding or inflicting grievous bodily harm (without intent),Violence with Injury,Sub class,high,Violence Against The Person,high
+Emergency Worker - Sec 47. Assault occasioning actual bodily harm,Violence with Injury,Sub class,high,Violence Against The Person,high
+Endangering Life,Violence Against The Person,Class,high,Violence Against The Person,high
+Engage in controlling/coercive behaviour in an intimate / family relationship.,Engage in controlling/coercive behaviour in an intimate / family relationship.,Offence description,high,Violence Against The Person,high
+Engage in controlling/coercive behaviour in an intimate family relationship,Engage in controlling/coercive behaviour in an intimate / family relationship.,Offence description,high,Violence Against The Person,high
+Engage in controlling/coercive behaviour in an intimate/family relationship - Serious Crime Act 2015 Sec 76,Engage in controlling/coercive behaviour in an intimate / family relationship.,Offence description,high,Violence Against The Person,high
+Exposure,Exposure,Offence description,high,Sexual Offences,high
+"Exposure  (S66, SOA 2003)",Exposure,Offence description,high,Sexual Offences,high
+Exposure & Voyeurism,Exposure and voyeurism,Offence description,high,Sexual Offences,high
+Exposure - Sexual Offences Act 2003 Sec 66,Exposure,Offence description,high,Sexual Offences,high
+Exposure and Voyeurism,Exposure and voyeurism,Offence description,high,Sexual Offences,high
+Exposure and voyeurism,Exposure and voyeurism,Offence description,high,Sexual Offences,high
+False imprisonment,False imprisonment,Offence description,high,Violence Against The Person,high
+Fear or provocation of violence,Fear or provocation of violence,Offence description,high,Public Order Offences,high
+Fear or provocation of violence (S4 POA),Fear or provocation of violence,Offence description,high,Public Order Offences,high
+Fear or provocation of violence (Sec 4),Fear or provocation of violence,Offence description,high,Public Order Offences,high
+Fear or provocation of violence - Public Order Act 1986 Sec 4,Fear or provocation of violence,Offence description,high,Public Order Offences,high
+Forgery or Use of Drug Prescription,Forgery or use of drug prescription,Offence category,high,Miscellaneous Crimes Against Society,high
+Fraud,Fraud Offences,Class,high,Fraud Offences,high
+Fraud offences to 2012/13,Fraud Offences,Class,high,Fraud Offences,high
+Going Equiped for Stealing etc.,Going Equipped for Stealing etc.,Offence description,high,Theft,high
+Going equipped for stealing etc,Going Equipped for Stealing etc.,Offence description,high,Theft,high
+Going equipped for theft (general) - not motor vehicle,Going Equipped for Stealing etc.,Offence description,high,Theft,high
+HOMICIDE,Homicide,Sub class,high,Violence Against The Person,high
+Harassment,Harassment,Offence description,high,Violence Against The Person,high
+Harassment (S2 Harassment Act 1997),Harassment,Offence description,high,Violence Against The Person,high
+Harassment - Protection from Harassment Act 1997 Sec 2,Harassment,Offence description,high,Violence Against The Person,high
+Harassment - Putting people in fear of violence - Protection from Harassment Act 1997 Sec 4,Putting people in fear of violence,Offence description,medium,Violence Against The Person,medium
+"Harassment, alarm or distress (S5 POA)","Harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Harassment, alarm or distress (Sec 5 POA)","Harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Harassment, alarm or distress (Sec 5)","Harassment, alarm or distress",Offence description,high,Public Order Offences,high
+"Harassment, alarm or distress - Public Order Act 1986 Sec 5","Harassment, alarm or distress",Offence description,high,Public Order Offences,high
+Having an article with a blade or point in a public place,Having an article with a blade or point in a public place,Offence description,high,Possession of Weapons Offences,high
+Having an article with a blade or point in a public place - Criminal Justice Act 1988 Sec 139 as amended by Offensive Weapons Act 1996,Having an article with a blade or point in a public place,Offence description,high,Possession of Weapons Offences,high
+Having possession of a controlled drug - Amphetamine,Having possession of a controlled drug - Amphetamine,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Cannabis,Having possession of a controlled drug - cannabis,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Class A - Other,Having possession of a controlled drug - Class A - Other,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Class A - Other - Misuse of Drugs Act 1971 Sec 5(2),Having possession of a controlled drug - Class A - Other,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Class C drug,Having possession of a controlled drug - Class C- Other,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Class C- Other,Having possession of a controlled drug - Class C- Other,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Cocaine,Having possession of a controlled drug - Cocaine,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Heroin,Having possession of a controlled drug - Heroin,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - Heroin - Misuse of Drugs Act 1971 Sec 5(2),Having possession of a controlled drug - Heroin,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - cannabis,Having possession of a controlled drug - cannabis,Offence description,high,Drug Offences,high
+Having possession of a controlled drug - cannabis - Misuse of Drugs Act 1971 Sec 5(2),Having possession of a controlled drug - cannabis,Offence description,high,Drug Offences,high
+Homicide,Homicide,Sub class,high,Violence Against The Person,high
+INTERFERING WITH A MOTOR VEHICLE,Interfering with a Motor Vehicle,Offence category,high,Vehicle Offences,high
+In charge of dog out of control in ANY place injuring any person or assistance dog,Dog Dangerously out of Control Injuring a Person or Assistance Dog,Offence description,high,Miscellaneous Crimes Against Society,high
+Incest or familial sexual offences,Incest or Familial Sexual Offences,Offence category,high,Sexual Offences,high
+Intentionally / recklessly cause a public nuisance,Intentionally / recklessly cause a public nuisance,Offence description,high,Public Order Offences,high
+"Intentionally / recklessly cause a public nuisance - Police, Crime, Sentencing and Courts Act 2022",Intentionally / recklessly cause a public nuisance,Offence description,high,Public Order Offences,high
+Interference with a motor vehicle,Interfering with a Motor Vehicle,Offence category,high,Vehicle Offences,high
+Interference with a motor vehicle - Criminal Attempts Act 1981 Sec 9,Interference with a motor vehicle,Offence description,high,Vehicle Offences,high
+Interfering With A Motor Vehicle,Interfering with a Motor Vehicle,Offence category,high,Vehicle Offences,high
+Interfering with a motor vehicle,Interfering with a Motor Vehicle,Offence category,high,Vehicle Offences,high
+Intimidation or intending to intimidate a witness - Criminal Justice & Police Act 2001 Sec 39,Intimidation or Intending to Intimidate a Witness,Offence description,high,Miscellaneous Crimes Against Society,high
+Ketamine (Special K or Club 'horse' drug),Ketamine (Special K or Club 'horse' drug),Offence description,high,Drug Offences,high
+Kidnapping,Kidnapping,Offence description,high,Violence Against The Person,high
+Less Serious Violence Against The Person,Violence without Injury,Sub class,high,Violence Against The Person,high
+MISC CRIMES AGAINST SOCIETY,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+MISCELLANEOUS CRIMES AGAINST SOCIETY,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Making off without payment,Making off without payment,Offence description,high,Theft,high
+Making off without payment - Theft Act 1978 Sec 3,Making off without payment,Offence description,high,Theft,high
+"Making, supplying or obtaining articles for use in offence under sections 1 or 3 - Computer Misuse Act 1990 as added by Police and Justice Act 2006","Making, supplying or obtaining articles for use in offence under sections 1 or 3",Offence description,high,Miscellaneous Crimes Against Society,high
+Malicious Comms - Sending letters etc with intent to cause distress or anxiety,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Malicious Communications,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Malicious Communucations,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Malicious Wounding:- Wounding or Inflicting grievous bodily harm (without intent Section 20),Wounding or Inflicting Grievous Bodily Harm (without intent),Offence description,high,Violence Against The Person,high
+Malicious Wounding:- wounding or inflicting grievous bodily harm,Wounding or Inflicting Grievous Bodily Harm (without intent),Offence description,high,Violence Against The Person,high
+Malicious Wounding:- wounding or inflicting grievous bodily harm - Offences against the Person Act 1861 Sec 20,Malicious Wounding:- wounding or inflicting grievous bodily harm,Offence description,high,Violence Against The Person,high
+Malicious communications,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Malicious wounding: wounding or inflicting grievous bodily harm (Sec 20),Malicious Wounding:- wounding or inflicting grievous bodily harm,Offence description,high,Violence Against The Person,high
+Misc Crimes Against Society,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Miscellaneous Crime,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Miscellaneous Crime Against Society,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Miscellaneous Crimes Against Society,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Miscellaneous crimes against society,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Most Serious Violence Against The Person,Violence with Injury,Sub class,high,Violence Against The Person,high
+Murder,Murder,Offence description,high,Violence Against The Person,high
+Murder & Attempted Murder,Murder and Attempted Murder,Combined/generic,high,Violence Against The Person,high
+Murder of a person under 1 year of age,Murder of persons under 1yr of age,Offence description,medium,Violence Against The Person,medium
+Murder of persons aged 1 yr or over - Common Law,Murder of persons aged 1 yr or over,Offence description,high,Violence Against The Person,high
+NFIB52B Hacking-Personal,Hacking - Personal,Offence category,high,Fraud Offences,high
+"NFIB5A Cheque, Plastic card and Online Bank
+Accounts (not PSP)","Cheque, Plastic Card and Online Bank Accounts",Offence category,high,Fraud Offences,high
+NFIB90 Other Fraud Not Covered Elsewhere,Other Fraud Not Covered Elsewhere,Offence category,high,Fraud Offences,high
+NON-NOTIFIABLE,Non-notifiable,N/A,high,N/A,high
+Non Crime,Non-crime,N/A,high,N/A,high
+Non-fatal Strangulation and Suffocation,Non-fatal Strangulation and Suffocation,Offence description,high,Violence Against The Person,high
+Non-fatal strangulation and suffocation,Non-fatal Strangulation and Suffocation,Offence description,high,Violence Against The Person,high
+Non-fatal strangulation and suffocation - on an Emergency Worker - Serious Crime Act Sec 75 (1) (a) (5),Non-fatal Strangulation and Suffocation,Offence description,high,Violence Against The Person,high
+OTHER OFFENCES PUBLIC ORDER,Other Offences Against the State or Public Order,Offence category,high,Public Order Offences,high
+OTHER SEXUAL OFFENCES,Other Sexual Offences,Sub class,high,Sexual Offences,high
+OTHER THEFT,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+"Obscene Publications, etc. and Protected Sexual Material",Obscene Publications and Protected Sexual Material,Offence category,high,Sexual Offences,high
+Offence Description,,N/A,high,N/A,high
+Other Criminal Damage,Other criminal damage,Offence description,high,Arson and Criminal Damage,high
+Other Forgery,Other forgery,Offence description,high,Miscellaneous Crimes Against Society,high
+Other Fraud (Not covered elsewhere),Other Fraud Not Covered Elsewhere,Offence category,high,Fraud Offences,high
+Other Notifiable Offences,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Other Offences Against The State Or Public Order,Other Offences Against the State or Public Order,Offence category,high,Public Order Offences,high
+Other Offences against the State and Public Order,Other Offences Against the State or Public Order,Offence category,high,Public Order Offences,high
+Other Serious Sexual Offences,Other Sexual Offences,Sub class,high,Sexual Offences,high
+Other Sexual Offences,Other Sexual Offences,Sub class,high,Sexual Offences,high
+Other Theft,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Other Theft And Handling,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Other Violence,Violence Against The Person,Class,high,Violence Against The Person,high
+Other criminal damage,Other criminal damage,Offence description,high,Arson and Criminal Damage,high
+Other criminal damage to a building - business and community ( Under £5000.00 damage ),Other criminal damage to a building business and community  - under £5000,Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a building - business and community (over £5000),Other criminal damage to a building business and community  - under £5000,Offence description,high,Arson and Criminal Damage,high
+Other criminal damage to a building - business and community (under £5000),Other criminal damage to a building business and community  - under £5000,Offence description,high,Arson and Criminal Damage,high
+Other criminal damage to a building business and community  ¬£500 -¬£5000,Other criminal damage to a building business and community  - under £5000,Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage to a building other than a dwelling - Explosive Substance Act 1883 Sec 2,3. Criminal Damage Act 1971 Sec 1(1)",Criminal damage to a building other than a dwelling,Offence description,high,Arson and Criminal Damage,high
+"Other criminal damage to a business or community building up to £500 - Explosive Substance Act 1883 Sec 2,3 Criminal Damage Act 1971 Sec 1(1)",Other Criminal Damage to a Building Business and Community - under £5000,Offence description,medium,Arson and Criminal Damage,high
+"Other criminal damage to a business or community building £500 -£5000 - Explosive Substance Act 1883 Sec 2,3 Criminal Damage Act 1971 Sec 1(1)",Other Criminal Damage to a Building Business and Community - £500-£5000,Offence description,medium,Arson and Criminal Damage,high
+"Other criminal damage to a dwelling - Explosive Substance Act 1883 Sec 2,3. Criminal Damage Act 1971 Sec 1(1)",Criminal damage to a dwelling,Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a residence,Other criminal damage to a residence,Offence description,high,Arson and Criminal Damage,high
+Other criminal damage to a residence ( Under £5000.00 damage ),Other criminal damage to a residence  - under £5000,Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a residence (under £5000),Other criminal damage to a residence  - under £5000,Offence description,high,Arson and Criminal Damage,high
+Other criminal damage to a vehicle ( Under £5000.00 damage ),"Other criminal damage to a vehicle - under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a vehicle (over £5000),"Other criminal damage to a vehicle - under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a vehicle (under £5000),"Other criminal damage to a vehicle - under £5,000",Offence description,high,Arson and Criminal Damage,high
+"Other criminal damage to a vehicle - Explosive Substance Act 1883 Sec 2,3. Criminal Damage Act 1971 Sec 1(1)",Other criminal damage to a vehicle,Offence description,high,Arson and Criminal Damage,high
+"Other criminal damage to a vehicle up to £5000 - Explosive Substance Act 1883 Sec 2,3 Criminal Damage Act 1971 Sec 1(1)","Other criminal damage to a vehicle - under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+Other criminal damage to a vehicle ¬£500 - ¬£5000,Other criminal damage to a vehicle,Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage to other residential building £500 - £5000 - Explosive Substance Act 1883 Sec 2,3 Criminal Damage Act 1971 Sec 1(1)",Criminal Damage to a Dwelling,Offence description,high,Arson and Criminal Damage,high
+"Other criminal damage, other ( Over £5000.00 damage )",Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+"Other criminal damage, other ( Under £5000.00 damage )",Other Criminal Damage - under £5000,Offence description,medium,Arson and Criminal Damage,high
+"Other criminal damage, other (over £5000)","Other criminal damage, under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage, other (under £5000)","Other criminal damage, under £5,000",Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage, other - Explosive Substance Act 1883 Sec 2,3. Criminal Damage Act 1971 Sec 1(1) Malicious Damage Act 1861 Secs 35, 36, 47,48. Ancient Monuments & Archaeological Areas Act 1979 Sec 28(1). Post Office Act 1953 Sec 60 Salmon and Freshwater Fisheries Act 1975 Sec 5.",Other criminal damage,Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage, other - Explosive Substance Act 1883 Sec 2,3. Criminal Damage Act 1971 Sec 1(1). Malicious Damage Act 1861 Secs 35, 36, 47,48. Ancient Monuments & Archaeological Areas Act 1979 Sec 28(1)",Other criminal damage,Offence description,medium,Arson and Criminal Damage,medium
+"Other criminal damage, other ¬£500 - ¬£5000",Other Criminal Damage - £500-£5000,Offence description,medium,Arson and Criminal Damage,high
+Other criminal offences,Miscellaneous Crimes Against Society,Class,high,Miscellaneous Crimes Against Society,high
+Other damage,Criminal Damage,Sub class,high,Arson and Criminal Damage,high
+Other fraud and forgery,Fraud and Forgery,Old PRC offence group,high,Fraud Offences,high
+Other offences against the State or public order,Other Offences Against the State or Public Order,Offence category,high,Public Order Offences,high
+Other serious sexual,Other Sexual Offences,Sub class,high,Sexual Offences,high
+Other sexual offences,Other Sexual Offences,Sub class,high,Sexual Offences,high
+Other theft,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Other theft and handling,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Other violence,Violence Against The Person,Class,high,Violence Against The Person,high
+Other violence with injury,Violence with Injury,Sub class,high,Violence Against The Person,high
+Other wounding,Violence with Injury,Sub class,high,Violence Against The Person,high
+Owner or person in charge allowing dog  to be dangerously out of control in any place in England and Wales (whether or not in a public place) injuring any person or assistance dog,Owner or person in charge allowing dog  to be dangerously out of control in any place in England and Wales (whether or not in a public place) injuring any person or assistance dog,Offence description,high,Violence Against The Person,high
+Owner or person in charge allowing dog to be dangerously out of control in any place in E&W (whether or not in public place) injuring any person or assistance dog,Owner or person in charge allowing dog  to be dangerously out of control in any place in England and Wales (whether or not in a public place) injuring any person or assistance dog,Offence description,high,Violence Against The Person,high
+POSSESSION OF DRUGS,Possession of Drugs,Sub class,high,Drug Offences,high
+POSSESSION OF WEAPONS,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+POSSESSION OF WEAPONS OFFENCES,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+PUBLIC DISORDER,Public Order Offences,Class,high,Public Order Offences,high
+"PUBLIC FEAR, ALARM OR DISTRESS","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+PUBLIC ORDER OFFENCES,Public Order Offences,Class,high,Public Order Offences,high
+Perverting The Course Of Justice,Perverting the Course of Justice,Offence description,high,Miscellaneous Crimes Against Society,high
+Perverting the course of justice,Perverting the Course of Justice,Offence description,high,Miscellaneous Crimes Against Society,high
+Possesion of a an article with a blade or point,Possession of an Article with a Blade or Point,Offence category,high,Possession of Weapons Offences,high
+Possesion of an article with a blade or point,Possession of an Article with a Blade or Point,Offence category,high,Possession of Weapons Offences,high
+Possess Drugs with Intent to Supply,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Possess an offensive weapon,Possession of an Offensive Weapon,Offence description,high,Possession of Weapons Offences,high
+Possess class B controlled drug - cannabis,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession Class A drug,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession Class C drug (NOT Cannabis),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession Firearms Offences,Possession of Firearms Offences,Offence category,high,Possession of Weapons Offences,high
+Possession Of Article With Blade Or Point,Possession of an Article with a Blade or Point,Offence category,high,Possession of Weapons Offences,high
+Possession Of Drugs,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession Of Other Weapons,Possession of Other Weapons,Offence category,high,Possession of Weapons Offences,high
+Possession Of Weapons,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession Of Weapons Offences,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession of Amphetamine (class B drug),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of Article with Blade or Point,Possession of an Article with a Blade or Point,Offence category,high,Possession of Weapons Offences,high
+Possession of Cannabis (class B drug),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of Cocaine (class A drug),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of Controlled Drugs (Cannabis),Possession of controlled drugs (Cannabis),Offence description,high,Drug Offences,high
+Possession of Controlled Drugs (excl. Cannabis),Possession of controlled drugs (excl. Cannabis),Offence description,high,Drug Offences,high
+Possession of Controlled Drugs (excluding Cannabis),Possession of controlled drugs (excl. Cannabis),Offence description,high,Drug Offences,high
+Possession of Drugs,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of Ketamine (class B drug),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of Other Weapons,Possession of Other Weapons,Offence category,high,Possession of Weapons Offences,high
+Possession of Weapons,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession of a controled drug (Cannabis),Possession of controlled drugs (Cannabis),Offence description,high,Drug Offences,high
+Possession of a controled drug (Excluding Cannabis),Possession of controlled drugs (excl. Cannabis),Offence description,medium,Drug Offences,medium
+Possession of a controlled drug with intent to supply - Cannabis,Possession of a controlled drug with intent to supply - cannabis,Offence description,high,Drug Offences,high
+Possession of an indecent or pseudo-photograph of a child,Possession of an Indecent or Pseudo-photograph of a Child,Offence description,high,Sexual Offences,high
+Possession of an offensive weapon in a private place - Criminal Justice Act 1988 Sec 141 (1A),Possession of an offensive weapon in a private place,Offence description,high,Possession of Weapons Offences,high
+Possession of article with blade or point,Possession of an Article with a Blade or Point,Offence category,high,Possession of Weapons Offences,high
+Possession of drugs,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of firearm offences (Class 10B),Possession of Firearms Offences,Offence category,high,Possession of Weapons Offences,high
+Possession of firearms offences (VAP BUT COUNTED UNDER OTHER OFFENCES),Possession of Firearms Offences,Offence category,high,Possession of Weapons Offences,high
+Possession of offensive weapon without lawful authority or reasonable excuse,Possession of offensive weapon without lawful authority or reasonable excuse,Offence description,high,Possession of Weapons Offences,high
+Possession of offensive weapon without lawful authority or reasonable excuse - Offensive Weapons Act 1996 Sec 2(1),Possession of offensive weapon without lawful authority or reasonable excuse,Offence description,high,Possession of Weapons Offences,high
+Possession of other class A drug,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of other class B drug,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of other class C drug,Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of other weapons,Possession of Other Weapons,Offence category,high,Possession of Weapons Offences,high
+Possession of synthetic cannabinoid receptor agonists (class B drug),Possession of Drugs,Sub class,high,Drug Offences,high
+Possession of unspecified controlled drug,Possession of controlled drugs,Offence description,medium,Drug Offences,medium
+Possession of weapon offences,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession of weapons,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession of weapons offences,Possession of Weapons Offences,Class,high,Possession of Weapons Offences,high
+Possession with intent to supply Cannabis (class B drug),Trafficking of Drugs,Sub class,high,Drug Offences,high
+Possession with intent to supply unspecified controlled drug,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Production or being concerned in production of a controlled drug - Cannabis,Production or being concerned in production of a controlled drug - Cocaine,Offence description,high,Drug Offences,high
+Profiting from or concealing knowledge of the proceeds of crime,Profiting from or concealing knowledge of the proceeds of crime,Offence description,high,Miscellaneous Crimes Against Society,high
+Public Disorder,Public Order Offences,Class,high,Public Order Offences,high
+Public Fear Alarm or Distress,"Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+"Public Fear, Alarm Or Distress","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+"Public Fear, Alarm or Distress - Public Order Act Sec 4","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+"Public Fear, Alarm or Distress - Public Order Act Sec 4a","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+"Public Fear, Alarm or Distress - Public Order Act Sec 5","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+Public Nuisance,Public Nuisance,Offence description,high,Miscellaneous Crimes Against Society,high
+Public Nuisance - Common Law,Public Nuisance,Offence description,high,Public Order Offences,high
+Public Order,Public Order Offences,Class,high,Public Order Offences,high
+Public Order - S4 words / behaviour - fear unlawful violence,Fear or Provocation of Violence,Offence description,high,Public Order Offences,high
+Public Order - S4A sign etc to harass alarm distress,"Causing Intentional Harassment, Alarm or Distress",Offence description,high,Public Order Offences,high
+Public Order - S5 Use threatening words / behaviour to cause harassment alarm or distress,"Harassment, Alarm or Distress",Offence description,high,Public Order Offences,high
+Public Order Offence,Public Order Offences,Class,high,Public Order Offences,high
+Public Order Offences,Public Order Offences,Class,high,Public Order Offences,high
+Public Order offences,Public Order Offences,Class,high,Public Order Offences,high
+"Public fear, alarm or distress","Public Fear, Alarm or Distress",New ONS sub-offence group,high,Public Order Offences,high
+Public nuisance,Public Nuisance,Offence description,high,Miscellaneous Crimes Against Society,high
+Public order offences,Public Order Offences,Class,high,Public Order Offences,high
+Pursue a course of conduct in breach of S1 (1) which amounts to stalking,Pursue a course of conduct in breach of S1 (1) which amounts to stalking,Offence description,high,Violence Against The Person,high
+Pursue a course of conduct in breach of S1 (1) which amounts to stalking - Protection from Harassment Act 1997 Sec 2A (1) as inserted by Protection of Freedoms Act 2012,Pursue a course of conduct in breach of S1 (1) which amounts to stalking,Offence description,high,Violence Against The Person,high
+Pursue course of conduct in breach of Sec 1 (1) which amounts to stalking,Pursue a course of conduct in breach of S1 (1) which amounts to stalking,Offence description,high,Violence Against The Person,high
+Putting people in fear of violence,Putting people in fear of violence,Offence description,high,Violence Against The Person,high
+RACE OR RELIGIOUS AGG PUBLIC FEAR,"Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+RAPE,Rape,Sub class,high,Sexual Offences,high
+RESIDENTIAL BURGLARY-UNCONNECTED BUILD,Residential Burglary of Unconnected Building,Sub class,high,Burglary,high
+ROBBERY,Robbery,Class,high,Robbery,high
+ROBBERY - PERSONAL,Robbery of Personal Property,Offence category,high,Robbery,high
+ROBBERY OF BUSINESS PROPERTY,Robbery of Business Property,Offence category,high,Robbery,high
+ROBBERY OF PERSONAL PROPERTY,Robbery of Personal Property,Offence category,high,Robbery,high
+Racially / religiously aggravated common assault,Racially or Religiously Aggravated Assault without Injury,Offence description,high,Violence Against The Person,high
+Racially / religiously aggravated harassment / alarm / distress,"Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+"Racially Or Religiously Aggravated Public Fear, Alarm
+Or Distress","Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+Racially or Religiously Aggravated Assault Without Injury,Racially or Religiously Aggravated Assault without Injury,Offence description,high,Violence Against The Person,high
+Racially or Religiously Aggravated Criminal Damage,Racially or Religiously Aggravated Criminal Damage,Offence description,high,Arson and Criminal Damage,high
+Racially or Religiously Aggravated Harassment,Racially or Religiously Aggravated Harassment without Violence,Offence description,high,Violence Against The Person,high
+Racially or Religiously Aggravated Public Fear Alarm or Distress,"Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+Racially or Religiously Aggravated Stalking or Harassment with fear of violence or serious alarm/distress- Crime & Disorder Act 1998 Sec 32(1)(b) & 4,Racially or Religiously Aggravated Stalking or Harassment with Fear of Violence,Offence description,high,Public Order Offences,high
+Racially or Religiously Aggravated assault occasioning actual bodily harm,Racially or Religiously Aggravated Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Racially or Religiously Aggravated assault occasioning actual bodily harm - Crime & Disorder Act 1998 Sec 29(1)(b) & (2),Racially or Religiously Aggravated Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Racially or Religiously aggravated common assault or beating,Racially or religiously aggravated common assault or beating,Offence description,high,Violence Against The Person,high
+Racially or Religiously aggravated common assault or beating - Crime & Disorder Act 1998 Sec 29(1)(c) & (3),Racially or Religiously Aggravated Common Assault or Beating,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated Assault with Injury,Racially or religiously aggravated assault with injury,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated Assault without injury,Racially or Religiously Aggravated Assault without Injury,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated assault occasioning actual bodily harm,Racially or Religiously Aggravated Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated assault or assault occasioning actual bodily harm (Sec 47),Racially or religiously aggravated assault occasioning actual bodily harm,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated common assault,Racially or religiously aggravated common assault or beating,Offence description,medium,Violence Against The Person,medium
+Racially or religiously aggravated common assault or beating,Racially or religiously aggravated common assault or beating,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated fear of violence,Racially or religiously aggravated fear or provocation of violence,Offence description,medium,Public Order Offences,medium
+Racially or religiously aggravated fear of violence - words or writing (Sec 4 POA ),Racially or Religiously Aggravated Fear or Provocation of Violence,Offence description,high,Public Order Offences,high
+Racially or religiously aggravated fear or provocation of violence,Racially or religiously aggravated fear or provocation of violence,Offence description,high,Public Order Offences,high
+"Racially or religiously aggravated fear or provocation of violence - Crime & Disorder Act 1998 Sec 31(1)(a) And (4) (as added to by Anti-terrorism, Crime and Disorder Act 2001 Sec 39)",Racially or Religiously Aggravated Fear or Provocation of Violence,Offence description,high,Public Order Offences,high
+Racially or religiously aggravated harassment,Racially or Religiously Aggravated Harassment without Violence,Offence description,high,Violence Against The Person,high
+Racially or religiously aggravated harassment or alarm or distress - words or writing,Racially or religiously aggravated harassment or alarm or distress - words or writing,Offence description,high,Public Order Offences,high
+Racially or religiously aggravated harassment or stalking without violence,Racially or religiously aggravated harassment or stalking without violence,Offence description,high,Violence Against The Person,high
+"Racially or religiously aggravated harassment, alarm or distress (Sec 5 POA)","Racially or religiously aggravated public fear, alarm or distress",Offence description,medium,Public Order Offences,medium
+"Racially or religiously aggravated harassment, alarm or distress.","Racially or religiously aggravated public fear, alarm or distress",Offence description,medium,Public Order Offences,medium
+Racially or religiously aggravated intentional harassment or alarm or distress - words or writing,Racially or religiously aggravated intentional harassment or alarm or distress - words or writing,Offence description,high,Public Order Offences,high
+"Racially or religiously aggravated intentional harassment, alarm or distress",Racially or religiously aggravated intentional harassment or alarm or distress - words or writing,Offence description,medium,Public Order Offences,medium
+"Racially or religiously aggravated intentional harassment, alarm or distress (Sec 4a POA)",Racially or religiously aggravated intentional harassment or alarm or distress - words or writing,Offence description,medium,Public Order Offences,medium
+"Racially or religiously aggravated public fear, alarm or distress","Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+Racially/Religiously Aggravated Assault without injury,Racially or Religiously Aggravated Assault without Injury,Offence description,high,Violence Against The Person,high
+"Racially/Religiously Aggravated Public Fear, Alarm or Distress","Racially or Religiously Aggravated Public Fear, Alarm or Distress",Offence description,high,Public Order Offences,high
+Rape,Rape,Sub class,high,Sexual Offences,high
+Rape of a Female,Rape of a female,Offence description,high,Sexual Offences,high
+Rape of a Female Child under 16,Rape of a female child under 16,Offence description,high,Sexual Offences,high
+Rape of a Female aged 16 and over,Rape of a female aged 16 and over,Offence description,high,Sexual Offences,high
+Rape of a Female aged 16 or over,Rape of a female aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a Female aged 16 or over (Sec 1 SOA 2003),Rape of a female aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a Female aged under 16 (Sec 1 SOA 2003),Rape of a female aged under 16,Offence description,high,Sexual Offences,high
+Rape of a Male aged 16 and over,Rape of a male aged 16 and over,Offence description,high,Sexual Offences,high
+Rape of a Male aged 16 or over (Sec 1 - SOA 2003),Rape of a male aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a female - multiple undefined offenders,Rape of a female - multiple undefined offenders,Offence category,high,Sexual Offences,high
+Rape of a female aged 16 and over,Rape of a female aged 16 and over,Offence description,high,Sexual Offences,high
+Rape of a female aged 16 or over,Rape of a female aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a female aged 16 or over - Sexual Offences Act 2003 Sec 1,Rape of a female aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a female aged under 16,Rape of a female aged under 16,Offence description,high,Sexual Offences,high
+Rape of a female child under 13 by a male,Rape of a female child under 13 by a male,Offence description,high,Sexual Offences,high
+Rape of a female child under 13 by a male (S5 SOA 2003),Rape of a female child under 13 by a male,Offence description,high,Sexual Offences,high
+Rape of a male aged 16 and over,Rape of a male aged 16 and over,Offence description,high,Sexual Offences,high
+Rape of a male aged 16 or over,Rape of a male aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a male aged 16 or over - Sexual Offences Act 2003 Sec 1,Rape of a male aged 16 or over,Offence description,high,Sexual Offences,high
+Rape of a male aged 16 or over - multiple undefined offenders - Sexual Offences Act 2003 Sec 1,Rape of a male - multiple undefined offenders,Offence category,medium,Sexual Offences,medium
+Rape of a male aged under 16 - Sexual Offences Act 2003 Sec 1,Rape of a male aged under 16,Offence description,high,Sexual Offences,high
+Rape of a male child under 13 by a male (S5 SOA 2003),Rape of a male child under 13 by a male,Offence description,high,Sexual Offences,high
+Residential Burglary of a Home,Residential Burglary of a Home,Offence category,high,Burglary,high
+Residential Burglary of a Home - Theft Act 1968 Sec 9,Residential Burglary of a Home,Offence category,high,Burglary,high
+Residential Burglary-Unconnected Build,Residential Burglary of Unconnected Building,Sub class,high,Burglary,high
+Residential burglary,Residential Burglary of a Home,Sub class,high,Burglary,high
+Robbery,Robbery,Class,high,Robbery,high
+Robbery - Personal,Robbery of Personal Property,Offence category,high,Robbery,high
+Robbery - personal,Robbery of Personal Property,Offence category,high,Robbery,high
+Robbery - personal - Theft Act 1968 Sec 8,Robbery -  personal,Offence description,high,Robbery,high
+Robbery Personal,Robbery of Personal Property,Offence category,high,Robbery,high
+Robbery business,Robbery of Business Property,Offence category,high,Robbery,high
+Robbery of Personal Property,Robbery of Personal Property,Offence category,high,Robbery,high
+Robbery of business property,Robbery of Business Property,Offence category,high,Robbery,high
+Robbery of personal property,Robbery of Personal Property,Offence category,high,Robbery,high
+Robbery personal,Robbery of Personal Property,Offence category,high,Robbery,high
+SEXUAL OFFENCES,Sexual Offences,Class,high,Sexual Offences,high
+SHOPLIFTING,Shoplifting,Sub class,high,Theft,high
+STALKING AND HARASSMENT,Stalking and Harassment,Sub class,high,Violence Against The Person,high
+Sec 18. Wounding with intent to do grievous bodily harm,Wounding with intent to do grievous bodily harm,Offence description,high,Violence Against The Person,high
+Sec 20. Malicious wounding or inflicting grievous bodily harm (without intent),Wounding or Inflicting Grievous Bodily Harm (without intent),Offence description,high,Violence Against The Person,high
+Sec 47. Assault occasioning actual bodily harm,Assault Occasioning Actual Bodily Harm,Offence description,high,Violence Against The Person,high
+Send communication threatening death or serious harm,Send communication threatening death or serious harm,Offence description,high,Violence Against The Person,high
+Send grossly offensive/indecent communication to cause distress or anxiety (Malicious Comms Act),Send Indecent or Grossly Offensive Communication to Cause Distress or Anxiety,Offence description,high,Miscellaneous Crimes Against Society,high
+Sending letters etc with intent to cause distress or anxiety,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Sending letters etc with intent to cause distress or anxiety - Malicious Communications Act 1988 Sec 1,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Sending letters etc. with intent to cause distress or anxiety,Malicious Communications,Offence description,high,Miscellaneous Crimes Against Society,high
+Serious wounding,Violence with Injury,Sub class,high,Violence Against The Person,high
+Sex - Assault a female 13 and over by penetration with part of body / a thing - SOA 2003,Sexual Assault of a Female 13 or over by Penetration,Offence description,high,Sexual Offences,high
+Sex - Assault a girl under 13 by penetration with a part of your body / a thing - SOA 2003,Sexual Assault of a Female Child under 13,Offence description,high,Sexual Offences,high
+Sex - Sexual assault on a female - SOA 2003,Sexual Assault on a Female Aged 13 or over,Offence description,high,Sexual Offences,high
+Sex - Sexual assault on a male - SOA 2003,Sexual Assault on a Male,Offence description,high,Sexual Offences,high
+Sex - Voyeurism - observing - SOA 2003,Voyeurism,Offence description,high,Sexual Offences,high
+Sexual Activity etc. with a Person with a Mental Disorder,Sexual Activity with a Person with a Mental Disorder,Offence category,high,Sexual Offences,high
+Sexual Assault Of A Female Child Under 13,Sexual assault of a female child under 13,Offence description,high,Sexual Offences,high
+Sexual Assault on Female aged 13 and over,Sexual assault on a female aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual Assault on a Female aged 13 or over,Sexual Assault on a Female aged 13 or over,Offence category,high,Sexual Offences,high
+Sexual Assault on a Male Child under 13,Sexual assault on a male child under 13,Offence description,high,Sexual Offences,high
+Sexual Assault on a female aged 13 and over,Sexual assault on a female aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual Assault on a male aged 13 and over,Sexual assault on a male aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual Assualt on a Male aged 13 and over,Sexual assault on a male aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual Grooming,Sexual Grooming,Offence description,high,Sexual Offences,high
+Sexual Offence,Sexual Offences,Class,high,Sexual Offences,high
+Sexual Offences,Sexual Offences,Class,high,Sexual Offences,high
+Sexual activity  etc with a person with a mental disorder (Class 70),Sexual Activity with a Person with a Mental Disorder,Offence category,high,Sexual Offences,high
+Sexual activity etc with a person with a mental disorder,Sexual Activity with a Person with a Mental Disorder,Offence category,high,Sexual Offences,high
+Sexual assault,Sexual Assault on a Female Aged 13 or over,Offence category,high,Sexual Offences,high
+"Sexual assault of a female 13 or over by penetration (S2, SOA 2003)",Sexual Assault of a Female 13 or over by Penetration,Offence description,medium,Sexual Offences,high
+Sexual assault of a female child under 13,Sexual assault of a female child under 13,Offence description,high,Sexual Offences,high
+Sexual assault on a female,Sexual assault on a female,Offence description,high,Sexual Offences,high
+Sexual assault on a female 13 and over - Sexual Offences Act 2003 Sec 3,Sexual assault on a female aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual assault on a female aged 13 or over,Sexual Assault on a Female aged 13 or over,Offence category,high,Sexual Offences,high
+"Sexual assault on a female aged 13 or over (S3, SOA 2003)",Sexual Assault on a Female aged 13 or over,Offence category,high,Sexual Offences,high
+Sexual assault on a male,Sexual assault on a male,Offence description,high,Sexual Offences,high
+Sexual assault on a male 13 and over - Sexual Offences Act 2003 Sec 3,Sexual assault on a male aged 13 and over,Offence description,high,Sexual Offences,high
+Sexual assault on a male aged 13 or over,Sexual Assault on a Female aged 13 or over,Offence category,high,Sexual Offences,high
+"Sexual assault on a male aged 13 or over (Sec 3, SOA 2003)",Sexual Assault on a Female aged 13 or over,Offence category,high,Sexual Offences,high
+Sexual assault on a male child under 13 - Sexual Offences Act 2003 Sec 7,Sexual assault on a male child under 13,Offence description,high,Sexual Offences,high
+Sexual offences,Sexual Offences,Class,high,Sexual Offences,high
+Shoplifting,Shoplifting,Sub class,high,Theft,high
+Single Offender: Attempted rape of a female aged 16 or over,Attempted rape of a female aged 16 or over,Offence description,medium,Sexual Offences,medium
+Single Offender: Rape of a female aged 16 or over,Rape of a Female Aged 16 or over,Offence description,high,Sexual Offences,high
+Single Offender: Rape of a female aged under 16,Rape of a Female Aged under 16,Offence description,high,Sexual Offences,high
+Single Offender: Rape of a male aged 16 or over,Rape of a Male Aged 16 or over,Offence description,high,Sexual Offences,high
+Stalking,Stalking,Offence description,high,Violence Against The Person,high
+Stalking and Harassment,Stalking and Harassment,Sub class,high,Violence Against The Person,high
+Stalking and harassment,Stalking and Harassment,Sub class,high,Violence Against The Person,high
+Stalking involving fear of violence,Stalking involving fear of violence,Offence description,high,Violence Against The Person,high
+Stalking involving fear of violence - Protection from Harassment Act 1997 Sec 4A (1) (a) (b) (i) as inserted by Protection of Freedom Act 2012 Sec 111,Stalking involving fear of violence,Offence description,high,Violence Against The Person,high
+Stalking involving serious alarm/distress,Stalking involving serious alarm/distress,Offence description,high,Violence Against The Person,high
+Stalking involving serious alarm/distress - Protection from Harassment Act 1997 Sec 4 (1) (a) (b) (ii) as inserted by Protection of Freedoms Act 2012,Stalking involving serious alarm/distress,Offence description,high,Violence Against The Person,high
+Stalking without fear/alarm/distress,Stalking without Fear of Violence or Serious Alarm or Distress,Offence description,high,Violence Against The Person,high
+Supplying Controlled Drugs,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Supplying or offering to supply or being concerned in the supply of a controlled drug - Cannabis,Supplying or offering to supply or being concerned in the supply of a controlled drug - Cocaine,Offence description,high,Drug Offences,high
+THEFT,Theft,Class,high,Theft,high
+THEFT FROM A VEHICLE,Theft from a Motor Vehicle,Offence description,high,Theft,high
+THEFT FROM MOTOR VEHICLE,Theft from a Motor Vehicle,Offence description,high,Theft,high
+THEFT FROM THE PERSON,Theft from the Person,New ONS sub-offence group,high,Theft,high
+THEFT OF MOTOR VEHICLE,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+THEFT OFFENCES,Theft,Class,high,Theft,high
+THEFT OR UNAUTH TAKING OF A MOTOR VEH,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+TRAFFICKING OF DRUGS,Trafficking of drugs,Sub class,high,Drug Offences,high
+"Take / make / distribute indecent photographs or pseudo- photographs, of children Obscene Publications","Take/ make / distribute indecent photographs or pseudo- photographs, of children",Offence description,medium,Miscellaneous Crimes Against Society,medium
+"Take/ make / distribute indecent photographs or pseudo- photographs, of children - Protection of Children Act 1978 Secs 1 & 6 as amended by the Criminal Justice & Public Order Act 1994 Sec 84","Take/ make / distribute indecent photographs or pseudo- photographs, of children",Offence description,high,Miscellaneous Crimes Against Society,high
+Taken Without Owners Consent,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Tampering with motor vehicles,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+Theft,Theft,Class,high,Theft,high
+Theft - other - including theft by finding,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Theft Bike,Bicycle Theft,Sub class,high,Theft,high
+Theft From MV,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft From Motor Vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft From The Person,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft From The Person Of Another,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft From Vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft Making Off Without Payment,Making Off Without Payment,Offence description,high,Theft,high
+Theft Of A Pedal Cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft Offence,Theft,Class,high,Theft,high
+Theft Person,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft Shop,Shoplifting,Sub class,high,Theft,high
+Theft by Employee,Theft by an employee,Offence description,medium,Theft,medium
+Theft by an Employee,Theft by an employee,Offence description,high,Theft,high
+Theft by an employee,Theft by an employee,Offence description,high,Theft,high
+Theft by an employee.,Theft by an employee,Offence description,high,Theft,high
+Theft by employee,Theft by an employee,Offence description,medium,Theft,medium
+Theft from a Motor Vehicle,Theft from a motor vehicle,Offence description,high,Theft,high
+Theft from a Vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft from a motor vehicle,Theft from a motor vehicle,Offence description,high,Theft,high
+Theft from a motor vehicle - Theft Act 1968 Sec 1,Theft from a motor vehicle,Offence description,high,Theft,high
+Theft from a motor vehicle.,Theft from a motor vehicle,Offence description,high,Theft,high
+Theft from a vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft from a vehicle - other than a motor vehicle,Theft from vehicle other than a motor vehicle,Offence description,high,Theft,high
+Theft from automatic machine or meter,Theft from automatic machine or meter,Offence description,high,Theft,high
+Theft from automatic machine or meter - Theft Act 1968 Sec 1,Theft from automatic machine or meter,Offence description,high,Theft,high
+Theft from automatic machine or meter.,Theft from automatic machine or meter,Offence description,high,Theft,high
+Theft from motor vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft from shops and stalls,Theft from shops and stalls,Offence description,high,Theft,high
+Theft from shops and stalls (Shoplifting),Theft from shops and stalls,Offence description,high,Theft,high
+Theft from shops and stalls.,Theft from shops and stalls,Offence description,high,Theft,high
+Theft from the Person,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft from the Person (Pickpocket),Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft from the person,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft from the person of another,Theft from the Person,New ONS sub-offence group,high,Theft,high
+Theft from the person of another - Theft Act 1968 Sec 1,Theft from the person of another,Offence description,high,Theft,high
+Theft from the person of another.,Theft from the person of another,Offence description,high,Theft,high
+Theft from vehicle,Theft from a Motor Vehicle,Offence description,high,Theft,high
+Theft if not classified elsewhere,Theft if not classified elsewhere,Offence description,high,Theft,high
+Theft if not classified elsewhere - Theft Act 1968 Sec 1,Theft if not classified elsewhere,Offence description,high,Theft,high
+Theft in a Dwelling other than from an Automatic Machine or Meter,Theft in a dwelling other than from an automatic machine or meter,Offence description,high,Theft,high
+Theft in a dwelling,Theft in a Dwelling Other Than from an Automatic Machine or Meter,Offence description,high,Theft,high
+Theft in a dwelling other than from automatic machine or meter,Theft in a Dwelling Other Than from an Automatic Machine or Meter,Offence description,high,Theft,high
+Theft in dwelling other than auto machine or meter,Theft in a Dwelling Other Than from an Automatic Machine or Meter,Offence description,high,Theft,high
+Theft of a motor vehicle,Theft of a motor vehicle,Offence description,high,Vehicle Offences,high
+Theft of a motor vehicle - Theft Act 1968 Sec 1,Theft of a motor vehicle,Offence description,high,Vehicle Offences,high
+Theft of a pedal cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft of a pedal cycle - Theft Act 1968 Sec 1,Theft of a pedal cycle,Offence description,high,Theft,high
+Theft of a pedal cycle.,Theft of a pedal cycle,Offence description,high,Theft,high
+Theft of conveyance other than motor vehicle or pedal cycle - Theft Act 1968 Sec 1,Theft of conveyance other than motor vehicle or pedal cycle,Offence description,high,Theft,high
+Theft of mail bag or postal packet,Theft of mail bag or postal packet,Offence description,high,Theft,high
+Theft of pedal cycle,Theft of a pedal cycle,Offence description,high,Theft,high
+Theft offences,Theft,Class,high,Theft,high
+Theft or Unauthorised Taking of a Motor Vehicle,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Theft or Unauthorised Taking of a Pedal Cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft or unauthorised taking of a cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft or unauthorised taking of a motor vehicle,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Theft or unauthorised taking of a pedal cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft or unauthorised taking of a vehicle,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Theft or unauthorised taking of motor vehicle,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Theft or unlawful taking of pedal cycle,Theft or Unauthorised Taking of a Pedal Cycle,Offence description,high,Theft,high
+Theft other,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Theft/UTMV,Theft or Unauthorised Taking of a Motor Vehicle,Offence description,high,Theft,high
+Theft: All Other Theft,All Other Theft Offences,New ONS sub-offence group,high,Theft,high
+Theft: Bicycle Theft,Bicycle Theft,Sub class,high,Theft,high
+Theft: Shoplifting,Shoplifting,Sub class,high,Theft,high
+Theft: Theft From Person,Theft from the Person,New ONS sub-offence group,high,Theft,high
+"Threat Or Possession With Intent To Commit
+Criminal Damage",Threat or possession with intent to commit Criminal damage,Offence description,high,Miscellaneous Crimes Against Society,high
+Threat or Possession with Intent to Commit Criminal Damage,Threat or possession with intent to commit Criminal damage,Offence description,high,Miscellaneous Crimes Against Society,high
+Threat or possession with intent to commit criminal damage,Threat or possession with intent to commit Criminal damage,Offence description,high,Miscellaneous Crimes Against Society,high
+Threat or possession with intent to commit criminal damage/to destroy own property,Threat or Possession with Intent to Commit Criminal Damage,Offence description,high,Arson and Criminal Damage,high
+Threaten a person with a bladed/pointed article in a private place - Offensive Weapons Act 2019 Sec 52 (1) & (6),Threaten a person with an article in a private place,Offence description,medium,Possession of Weapons Offences,medium
+Threaten a person with an article in a private place,Threaten a person with an article in a private place,Offence description,high,Possession of Weapons Offences,high
+Threaten a person with an offensive weapon / substance in a private place; Offensive Weapons Act 2019 Sec 52 (1) & (6),Threaten a Person with an Offensive Weapon in a Private Place,Offence description,high,Possession of Weapons Offences,high
+Threaten with a blade or sharply pointed article in a public place,Threaten with a blade or sharply pointed article in a public place,Offence description,high,Possession of Weapons Offences,high
+"Threaten with a blade or sharply pointed article in a public place - Criminal Justice Act 1988 Sec 139 AA as inserted by Legal Aid, Sentencing and Punishment of Offenders Act 2012",Threaten with a blade or sharply pointed article in a public place,Offence description,high,Possession of Weapons Offences,high
+Threaten with an offensive weapon in a public place,Threaten with an offensive weapon in a public place,Offence description,high,Possession of Weapons Offences,high
+"Threaten with an offensive weapon in a public place - Prevention of Crime Act 1953 Sec 1 (A) (1) as inserted by Legal Aid, Sentencing and Punishment of Offenders Act 2012",Threaten with an offensive weapon in a public place,Offence description,high,Possession of Weapons Offences,high
+Threats To Kill,Threats to Kill,Offence description,high,Violence Against The Person,high
+Threats or Possession with Intent to Commit Criminal Damage,Threat or possession with intent to commit Criminal damage,Offence description,high,Miscellaneous Crimes Against Society,high
+Threats to Kill,Threats to Kill,Offence description,high,Violence Against The Person,high
+Threats to Kill - Offences against the Person Act 1861 Sec 16,Threats to Kill,Offence description,high,Violence Against The Person,high
+Threats to destroy or damage property,Threats to destroy or damage property,Offence description,high,Miscellaneous Crimes Against Society,high
+Threats to destroy or damage property - Criminal Damage Act 1971 Sec 2 (note MOPI 2 if endanger life),Threats to destroy or damage property,Offence description,high,Miscellaneous Crimes Against Society,high
+Threats to kill,Threats to Kill,Offence description,high,Violence Against The Person,high
+Trafficking In Controlled Drugs,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Trafficking Of Drugs,Trafficking of drugs,Sub class,high,Drug Offences,high
+Trafficking in Controlled Drugs,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Trafficking in controlled drugs,Trafficking of Drugs,Sub class,high,Drug Offences,high
+Trafficking of drugs,Trafficking of drugs,Sub class,high,Drug Offences,high
+VEHICLE INTERFERENCE,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+VEHICLE OFFENCES,Vehicle Offences,Class,high,Vehicle Offences,high
+VIOLENCE AGAINST THE PERSON,Violence Against The Person,Class,high,Violence Against The Person,high
+VIOLENCE WITH INJURY,Violence with Injury,Sub class,high,Violence Against The Person,high
+VIOLENCE WITHOUT INJURY,Violence without Injury,Sub class,high,Violence Against The Person,high
+Vehicle Interference,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+Vehicle Interference and Tampering,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+Vehicle Offences,Vehicle Offences,Class,high,Vehicle Offences,high
+Vehicle interference,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+Vehicle interference/tampering - motor vehicle,Vehicle Interference and Tampering,Offence category,high,Vehicle Offences,high
+Vehicle offences,Vehicle Offences,Class,high,Vehicle Offences,high
+Violence Against The Person,Violence Against The Person,Class,high,Violence Against The Person,high
+Violence Against the Person,Violence Against The Person,Class,high,Violence Against The Person,high
+Violence With Injury,Violence with Injury,Sub class,high,Violence Against The Person,high
+Violence Without Injury,Violence without Injury,Sub class,high,Violence Against The Person,high
+Violence against the person,Violence Against The Person,Class,high,Violence Against The Person,high
+Violence with Injury,Violence with Injury,Sub class,high,Violence Against The Person,high
+Violence with injury,Violence with Injury,Sub class,high,Violence Against The Person,high
+Violence without Injury,Violence without Injury,Sub class,high,Violence Against The Person,high
+Violence without injury,Violence without Injury,Sub class,high,Violence Against The Person,high
+Wounding with intent or causing grievous bodily harm with intent (Sec 18),Wounding with intent or causing grievous bodily harm with intent,Offence description,high,Violence Against The Person,high
+Wounding with intent to do GBH Section 18,Wounding with Intent to do Grievous Bodily Harm,Offence description,high,Violence Against The Person,high
+Wounding with intent to do grievous bodily harm,Wounding with intent to do grievous bodily harm,Offence description,high,Violence Against The Person,high
+Wounding with intent to do grievous bodily harm - Offences against the Person Act 1861 Sec 18,Wounding with intent to do grievous bodily harm,Offence description,high,Violence Against The Person,high
+to Children/Young Persons,Cruelty to Children/Young Persons,Offence category,high,Violence Against The Person,high

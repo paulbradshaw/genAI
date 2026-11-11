@@ -9,7 +9,7 @@
 <x-dc>
 <helmet>
 <title>PEER: source diversity audit</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/styles.css">
 <script src="_ds/industry-e9cd18c7-68da-4d5f-8efc-1727613d526d/_ds_bundle.js"></script>
 <script src="peer-audit.js"></script>
 <style>body{margin:0;background:var(--color-bg)} a{color:var(--color-accent-700)} a:hover{color:var(--color-accent-800)} button{font:inherit;color:inherit}</style>
@@ -25,7 +25,7 @@
       <div style="display:flex;flex-direction:column;gap:16px;">
         <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-accent-700);">Practice: track your sources</div>
         <h1 style="font-size:60px;line-height:0.95;margin:0;text-wrap:balance;">Who is in this game?</h1>
-        <p style="font-size:17px;margin:0;max-width:60ch;text-wrap:pretty;">The game tells reporters to keep a record of who they contact and quote, and to review it. This page does the same for the game itself. Every character who appears as a source is listed below with the characteristics they were cast with, then counted.</p>
+        <p style="font-size:17px;margin:0;max-width:60ch;text-wrap:pretty;">The game tells reporters to keep a record of who they contact and quote, and to review it, as BBC teams do in the 50:50 Project. This page does the same for the game itself. Every character who appears as a source is listed below with the characteristics they were cast with, then counted.</p>
         <p style="font-size:14px;margin:0;max-width:62ch;color:var(--color-neutral-700);text-wrap:pretty;">These are the characteristics the designer gave each character. With real sources, don’t guess: record what people tell you about themselves, or what is on the public record, and only where it is relevant and they are comfortable with it.</p>
       </div>
       <div class="card blueprint" style="padding:20px;gap:14px;">
@@ -54,7 +54,7 @@
 
     <section data-screen-label="Breakdown" style="display:flex;flex-direction:column;gap:16px;">
       <h2 style="margin:0;font-size:36px;">Breakdown</h2>
-      <div style="font-size:13px;color:var(--color-neutral-700);">Each bar counts people, not appearances. The marker shows the share of the population in England and Wales, where a comparison is available.</div>
+      <div style="font-size:13px;color:var(--color-neutral-700);">Each bar counts people, not appearances. The black marker shows the share of the population in England and Wales. The blue marker shows the BBC’s 50:50 target, where there is one.</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px;">
         <sc-for list="{{ dims }}" as="d" hint-placeholder-count="6">
           <div class="card blueprint" style="padding:18px;gap:12px;">
@@ -66,8 +66,9 @@
                 <div style="position:relative;height:10px;border:1px solid var(--color-divider);">
                   <div style="position:absolute;left:0;top:0;bottom:0;width:{{ r.width }};background:var(--color-accent-500);"></div>
                   <sc-if value="{{ r.hasBench }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-3px;bottom:-3px;width:2px;left:{{ r.benchLeft }};background:var(--color-text);"></div></sc-if>
+                  <sc-if value="{{ r.hasTarget }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:-5px;bottom:-5px;width:3px;left:{{ r.targetLeft }};background:var(--color-accent-800);"></div></sc-if>
                 </div>
-                <sc-if value="{{ r.hasBench }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;color:var(--color-neutral-700);">Population: {{ r.bench }}</span></sc-if>
+                <sc-if value="{{ r.hasRef }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;color:var(--color-neutral-700);">{{ r.refText }}</span></sc-if>
               </div>
             </sc-for>
             <span style="font-size:11px;color:var(--color-neutral-600);">{{ d.source }}</span>
@@ -165,23 +166,27 @@ const BENCH = {
   disability: { "Disabled": 17.8 },
   lgbtq: { "LGBTQ+ shown": 3.2 },
   age: { "65+": 18.6 },
-  rural: { "Rural or small town": 17 }
+  rural: { "Rural or small town": 17 },
+  minority: { "Black, Asian and minority ethnic": 18.3 }
 };
+const TARGET = { gender: { Woman: 50 }, minority: { "Black, Asian and minority ethnic": 20 }, disability: { Disabled: 12 } };
 const DIMS = [
-  { key: "gender", title: "Gender", order: ["Woman", "Man", "Non-binary"], source: "Population: Census 2021, England and Wales (ONS)." },
+  { key: "gender", title: "Gender", order: ["Woman", "Man", "Non-binary"], source: "Population: Census 2021, England and Wales (ONS). Target: BBC 50:50 (50% women)." },
   { key: "ethnicity", title: "Ethnicity", order: ["White", "Asian", "Black", "Mixed", "Other"], source: "Population: Census 2021, England and Wales (ONS). Asian includes Chinese, Filipino, Korean and Vietnamese. Other includes Arab." },
+  { key: "ethnicity", id: "minority", title: "Minority ethnic, combined", map: v => v === "White" ? "White" : "Black, Asian and minority ethnic", order: ["Black, Asian and minority ethnic", "White"], source: "Population: Census 2021, England and Wales (ONS). Target: BBC 50:50 (20%)." },
   { key: "age", title: "Age", order: ["Under 18", "18–29", "30–44", "45–64", "65+"], source: "Population (65+): Census 2021, England and Wales (ONS)." },
-  { key: "disability", title: "Disability", map: v => v.indexOf("Yes") === 0 ? "Disabled" : "None shown", order: ["Disabled", "None shown"], source: "Population: Census 2021, England and Wales (ONS), disabled under the Equality Act." },
+  { key: "disability", title: "Disability", map: v => v.indexOf("Yes") === 0 ? "Disabled" : "None shown", order: ["Disabled", "None shown"], source: "Population: Census 2021, England and Wales (ONS), disabled under the Equality Act. Target: BBC 50:50 (12%)." },
   { key: "lgbtq", title: "LGBTQ+", map: v => v === "Yes" ? "LGBTQ+ shown" : "Not shown", order: ["LGBTQ+ shown", "Not shown"], source: "Population: Census 2021, England and Wales (ONS), 3.2% of people aged 16+ identify as LGB+." },
   { key: "rural", title: "Rural or small town", map: v => v === "Yes" ? "Rural or small town" : "Not stated", order: ["Rural or small town", "Not stated"], source: "Population: about 17% of people in England live in rural areas (Defra)." }
 ];
 const FINDINGS = [
-  "The cast is not dominated by white men. Without scenario figures, 44 of 86 people are women, 2 are non-binary, and 47 are from minority ethnic groups. Minority groups are over-represented compared with the population, which is a deliberate choice for a game about under-represented voices.",
-  "Power and expertise are shared out. Women hold 9 of the 16 power appearances and 16 of the 21 expertise appearances. Black and Asian sources hold 12 power appearances and 11 expertise appearances.",
+  "The cast is not dominated by white men. Without scenario figures, 43 of 85 people are women, 2 are non-binary, and 46 are from minority ethnic groups. Minority groups are over-represented compared with the population, which is a deliberate choice for a game about under-represented voices.",
+  "Power and expertise are shared out. Women hold 9 of the 16 power appearances and 15 of the 20 expertise appearances. Black and Asian sources hold 12 power appearances and 10 expertise appearances.",
   "Friends and family are mostly white: 9 of the 12 ‘friend or family’ characters. Journalists and journalism students are disproportionately white, so the people they know personally are likely to be too. Unlike experts, this is a group reporters can’t widen with the strategies in the game, which is another reason not to rely on it.",
-  "Disability is still under-represented: 10 of 86 people (12%), against 17.8% of the population. Half of these disabilities are hidden (ADHD, autism, long Covid, ME) and half are visible (wheelchairs, hearing aids).",
-  "Rural voices are thin: 4 of 86 people (5%), against about 17% of England’s population. LGBTQ+ people are 9 of 86 (10%), above the population figure, mostly because of the Pride and supporters’ group questions. Class isn’t recorded at all, because it rarely shows unless the story mentions it. A real source audit has the same problem: you can only count what you know.",
-  "Ages cluster in the middle: 51 of 86 people are 30–44. Older people (65+) appear 9 times and younger adults (18–29) 8 times."
+  "Disability is still under-represented: 10 of 85 people (12%), against 17.8% of the population. Half of these disabilities are hidden (ADHD, autism, long Covid, ME) and half are visible (wheelchairs, hearing aids).",
+  "Rural voices are thin: 4 of 85 people (5%), against about 17% of England’s population. LGBTQ+ people are 9 of 85 (11%), above the population figure, mostly because of the Pride and supporters’ group questions. Class isn’t recorded at all, because it rarely shows unless the story mentions it. A real source audit has the same problem: you can only count what you know.",
+  "Against the BBC’s 50:50 targets, the game meets two of the three: 51% women (target 50%) and 54% Black, Asian and minority ethnic (target 20%). Disability is just short: 10 of 85 people, or 11.8%, against a 12% target. One more disabled source would meet it. The BBC adjusts its targets to each audience, so a game for UK journalism students might set its own.",
+  "Ages cluster in the middle: 50 of 85 people are 30–44. Older people (65+) appear 9 times and younger adults (18–29) 8 times."
 ];
 
 class Component extends DCLogic {
@@ -206,12 +211,14 @@ class Component extends DCLogic {
     const dims = DIMS.map(D => {
       const counts = {};
       first.forEach(r => { const v = D.map ? D.map(r[D.key]) : r[D.key]; counts[v] = (counts[v] || 0) + 1; });
-      const order = D.order.filter(k => counts[k] || (BENCH[D.key] && BENCH[D.key][k] != null));
+      const bk = D.id || D.key;
+      const order = D.order.filter(k => counts[k] || (BENCH[bk] && BENCH[bk][k] != null));
       return {
         title: D.title, source: D.source,
         rows: order.map(k => {
-          const b = BENCH[D.key] && BENCH[D.key][k];
-          return { label: k, count: counts[k] || 0, pct: pct(counts[k] || 0), width: ((counts[k] || 0) / n * 100) + "%", hasBench: b != null, bench: b != null ? b + "%" : "", benchLeft: b != null ? "calc(" + b + "% - 1px)" : "0" };
+          const b = BENCH[bk] && BENCH[bk][k], tg = TARGET[bk] && TARGET[bk][k];
+          const ref = [b != null ? "Population: " + b + "%" : "", tg != null ? "BBC 50:50 target: " + tg + "%" : ""].filter(Boolean).join(" · ");
+          return { label: k, count: counts[k] || 0, pct: pct(counts[k] || 0), width: ((counts[k] || 0) / n * 100) + "%", hasBench: b != null, benchLeft: b != null ? "calc(" + b + "% - 1px)" : "0", hasTarget: tg != null, targetLeft: tg != null ? "calc(" + tg + "% - 1px)" : "0", hasRef: !!ref, refText: ref };
         })
       };
     });
